@@ -1,0 +1,5290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:art="http://www.rsc.org/schema/rscart38" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rsc="urn:rsc.org">
+ <head>
+  <title>
+   A new class of N–H excited-state intramolecular proton transfer (ESIPT) molecules bearing localized zwitterionic tautomers   - Physical Chemistry Chemical Physics (RSC Publishing) DOI:10.1039/C6CP05236C
+  </title>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYNF1oJ","queueTime":0,"applicationTime":1361,"ttGuid":"AE9F706087A3874F","agent":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,S=y.hash,this[u]=Date.now()}function o(){j--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),R=t(13),P=t("ee"),D=P.get("tracer");t(14),t("loader").features.spa=!0;var S,N=w[v],j=0;P.on(u,r),P.on(p,r),P.on(h,o),P.on(d,o),P.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),R.buffer([u,"new-xhr","send-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(R,"send-xhr"+c),a(P,"xhr-resolved"),a(P,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),N("hashchange",i,!0),N("load",i,!0),N("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(h+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),f.setCurrentRouteName=o(h+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(h){throw u(e+"err",[r,a,h],c),h}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,h(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){p([a,n,r,o])}s=i}}function h(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!p.aborted){t&&t(n,r,o);for(var i=e(o),a=l(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function d(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return h[t]=h[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},g={on:d,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},h={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=h.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(w,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=h.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===h.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=t("ee"),u=window,h=u.document,p="addEventListener",d="attachEvent",l=u.XMLHttpRequest,m=l&&l.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:l,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(16);var v=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-998.min.js"},y=l&&m&&m[p]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:v,features:{},xhrWrappable:y};h[p]?(h[p]("DOMContentLoaded",i,!1),u[p]("load",r,!1)):(h[d]("onreadystatechange",o),u[d]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,14,5,3,4]);
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Anton J. Stasyuk" name="DC.Creator"/>
+  <meta content="Yi-Ting Chen" name="DC.Creator"/>
+  <meta content="Chi-Lin Chen" name="DC.Creator"/>
+  <meta content="Pei-Jhen Wu" name="DC.Creator"/>
+  <meta content="Pi-Tai Chou" name="DC.Creator"/>
+  <meta content="A new class of N–H excited-state intramolecular proton transfer (ESIPT) molecules bearing localized zwitterionic tautomers  " name="DC.title"/>
+  <meta content="Royal Society of Chemistry" name="DC.publisher"/>
+  <meta content="2016/08/31" name="DC.Date"/>
+  <meta content="10.1039/C6CP05236C" name="DC.Identifier" scheme="doi"/>
+  <meta content="en" name="DC.Language"/>
+  <meta content="A new class of N–H excited-state intramolecular proton transfer (ESIPT) molecules bearing localized zwitterionic tautomers  " name="citation_title"/>
+  <meta content="Anton J. Stasyuk" name="citation_author"/>
+  <meta content="Yi-Ting Chen" name="citation_author"/>
+  <meta content="Chi-Lin Chen" name="citation_author"/>
+  <meta content="Pei-Jhen Wu" name="citation_author"/>
+  <meta content="Pi-Tai Chou" name="citation_author"/>
+  <meta content="2016/08/11" name="citation_online_date"/>
+  <meta content="2016" name="citation_date"/>
+  <meta content="Physical Chemistry Chemical Physics" name="citation_journal_title"/>
+  <meta content="18" name="citation_volume"/>
+  <meta content="35" name="citation_issue"/>
+  <meta content="24428" name="citation_firstpage"/>
+  <meta content="24436" name="citation_lastpage"/>
+  <meta content="10.1039/C6CP05236C" name="citation_doi"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticlePDF/2016/CP/C6CP05236C" name="citation_pdf_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleLanding/2016/CP/C6CP05236C" name="citation_abstract_html_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleHTML/2016/CP/C6CP05236C" name="citation_fulltext_html_url"/>
+  <link href="" rel="shortcut icon"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/rschtml2.css?ver=6_0_9" rel="stylesheet" type="text/css"/>
+  <script src="http://pubs.rsc.org/content/scripts/JQueryPlugins.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   (function ($) {
+        function grab_content(span_id) {
+            var content = $('span[id="' + span_id + '"]').text();
+
+            if (span_id.indexOf("fn", 0) != -1) {
+                return content; // could contain useful anchor text i.e. see doi:
+            }
+            else {
+                // strip external anchor text CrossRef etc. (but not Dera linked text)
+               $('span[id="' + span_id + '"] a[class !="simple"][class !="CH"][class !="TC"][class !="RTC"][class !="GB"]').each(
+            		function () {
+            					content = content.replace($(this).text(), '');
+              					}); return content;
+            }
+       }
+
+        $.fn.swapAttr = function (attribute) {
+            return this.each(function () {
+                $(this).hover(function () {
+                    var $this = $(this);
+                    var idval = $this.attr("href").replace("#", "");
+                    var textval = grab_content(idval);
+                    if (textval.replace(/\s+/g, '') != "") {
+                        $this.attr('title', textval.replace(/\s+/g, ' '));
+                    }
+                }, function () {
+                    var $this = $(this);
+                });
+            });
+        };
+
+    })(jQuery);
+
+    $(document).ready(function () {
+        $("a[href^='#']").swapAttr();
+    });
+  </script>
+  <!--6_0_9-->
+ </head>
+ <body>
+  <!--Google Tag Manager-->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-KW8L" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KW8L');
+  </script>
+  <!--End Google Tag Manager-->
+  <span id="top">
+  </span>
+  <div id="wrapper">
+   <div class="left_head">
+    <a class="URLLink" href="http://pubs.rsc.org">
+     <img alt="Royal Society of Chemistry" border="0" class="rsc-logo" src="http://pubs.rsc.org/content/NewImages/royal-society-of-chemistry-logo.png"/>
+    </a>
+    <br/>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlepdf/2016/CP/C6CP05236C" target="_blank" title="Link to PDF version">
+      View PDF Version
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C6CP04222H" target="_BLANK" title="Link to previous article (id:C6CP04222H)">
+      Previous Article
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C6CP04421B" target="_BLANK" title="Link to next article (id:C6CP04421B)">
+      Next Article
+     </a>
+    </span>
+   </div>
+   <div class="right_head">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js" type="text/javascript">
+    </script>
+    <script src="http://crossmark.crossref.org/javascripts/v1.4/crossmark.min.js" type="text/javascript">
+    </script>
+    <a href="#" id="open-crossmark" style="padding: 2.5em 0 1em 0;">
+     <img id="crossmark-icon" src="http://crossmark.crossref.org/images/crossmark_button.png" style="border: 0; display:inline;"/>
+    </a>
+    <div id="crossmark-dialog" style="display: none;" title="">
+     <iframe frameborder="0" id="crossmark-dialog-frame">
+     </iframe>
+    </div>
+   </div>
+   <div class="article_info">
+    DOI:
+    <a href="http://dx.doi.org/10.1039/C6CP05236C" target="_blank" title="Link to landing page via DOI">
+     10.1039/C6CP05236C
+    </a>
+    (Paper)
+    <span class="italic">
+     <a href="http://dx.doi.org/10.1039/1463-9084/1999" title="Link to journal home page">
+      Phys. Chem. Chem. Phys.
+     </a>
+    </span>
+    , 2016,
+    <strong>
+     18
+    </strong>
+    , 24428-24436
+   </div>
+   <h1 id="sect185">
+    <span class="title_heading">
+     A new class of N–H excited-state intramolecular proton transfer (ESIPT) molecules bearing localized zwitterionic tautomers
+     <a href="#fn1" title="Select to navigate to footnote">
+      †
+     </a>
+    </span>
+   </h1>
+   <p class="header_text">
+    <span class="bold">
+     Anton J. 
+            Stasyuk
+     <a href="#fn2" title="Select to navigate to footnote">
+      ‡
+     </a>
+    </span>
+    ,
+    <span class="bold">
+     Yi-Ting 
+            Chen
+     <a href="#fn2" title="Select to navigate to footnote">
+      ‡
+     </a>
+    </span>
+    ,
+    <span class="bold">
+     Chi-Lin 
+            Chen
+    </span>
+    ,
+    <span class="bold">
+     Pei-Jhen 
+            Wu
+    </span>
+    <span class="bold">
+     and
+    </span>
+    <span class="bold">
+     Pi-Tai 
+            Chou
+    </span>
+    *
+    <br/>
+    <span class="italic">
+     Department of Chemistry, National Taiwan University, Taipei, 10617 Taiwan, Republic of China. E-mail:
+     <a href="mailto:chop@ntu.edu.tw">
+      chop@ntu.edu.tw
+     </a>
+    </span>
+   </p>
+   <div id="art-admin">
+    <span class="italic bold">
+     Received 
+      28th July 2016
+    </span>
+    <span class="bold italic">
+     , Accepted 11th August 2016
+    </span>
+   </div>
+   <p class="bold italic">
+    First published on the web 11th August 2016
+   </p>
+   <hr/>
+   <p class="abstract">
+    A series of new amino (NH)-type intramolecular hydrogen-bonding (H-bonding) compounds have been strategically designed and synthesized. These molecules comprise a 2-(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridin-2-yl)aniline moiety, in which one of the amino hydrogens was replaced with substituents of different electronic properties. This, together with the versatile capability for modifying the parent moiety, makes feasible comprehensive spectroscopy and dynamics studies of excited-state intramolecular proton transfer (ESIPT) as a function of N–H acidity. Different from other (NH)-type ESIPT systems where the ESIPT rate and exergonicity increase with an increase in the N–H acidity and hence the H-bonding strength, the results reveal an irregular relationship among ESIPT dynamics, thermodynamics and H-bond strength. This discrepancy may be rationalized by the localized zwitterionic nature of 2-(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridin-2-yl)aniline in the proton-transfer tautomer form, which is different from the π-delocalized tautomer form in other (NH)-type ESIPT systems.
+   </p>
+   <hr/>
+   <h2 id="sect236">
+    <span class="a_heading">
+     1. Introduction
+    </span>
+   </h2>
+   <span>
+    Over the past few decades, considerable attention has been paid to organic molecules undergoing excited-state intramolecular proton transfer (ESIPT). ESIPT is essentially a photo-tautomerization process that occurs in the electronically excited state of a molecule (
+    <a href="#imgsch1" title="Select to navigate to scheme">
+     Scheme 1a
+    </a>
+    ), in which the proton-transfer tautomer emission reveals an anomalously large spectral red-shift with respect to absorption. This unique photophysical property leads to numerous practical optoelectronic applications, such as bioimaging,
+    <a href="#cit1" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       1–3
+      </span>
+     </sup>
+    </a>
+    fluorescent solar energy concentrators,
+    <a href="#cit4" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       4,5
+      </span>
+     </sup>
+    </a>
+    and UV-photostabilizers,
+    <a href="#cit6" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       6–8
+      </span>
+     </sup>
+    </a>
+    as well as chemosensors,
+    <a href="#cit9" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       9–11
+      </span>
+     </sup>
+    </a>
+    organic light-emitting devices,
+    <a href="#cit12" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       12,13
+      </span>
+     </sup>
+    </a>
+    laser dyes,
+    <a href="#cit14" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       14–16
+      </span>
+     </sup>
+    </a>
+    and molecular switches.
+    <a href="#cit17" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       17–19
+      </span>
+     </sup>
+    </a>
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgsch1">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-s1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-s1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-s1.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Scheme 1
+       </b>
+       <span id="sch1">
+        <span class="graphic_title">
+         (a) General scheme of ESIPT and (b) advantage of 2-(imidazo[1,2-
+         <span class="italic">
+          a
+         </span>
+         ]pyridin-2-yl)aniline over 2-(imidazo[1,2-
+         <span class="italic">
+          a
+         </span>
+         ]pyridin-2-yl)phenol in terms of impact on the acidity of a proton involved in ESIPT.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    It has been well accepted that the driving force of ESIPT reaction comes from significant changes in the acidity and basicity of the involved groups.
+    <a href="#cit20" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       20,21
+      </span>
+     </sup>
+    </a>
+    Proton transfer processes typically take place through the formation of a six-membered ring with a strong intramolecular hydrogen bond (H-bond) between the proton donor and acceptor groups. Five-membered
+    <a href="#cit22" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       22–24
+      </span>
+     </sup>
+    </a>
+    and seven-membered
+    <a href="#cit25" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       25,26
+      </span>
+     </sup>
+    </a>
+    units have also been described but they are much less common. For the vast majority of the previously described ESIPT-capable systems, a phenolic OH group acts as a proton donor, whereas a heterocyclic nitrogen atom of pyridine type or a carbonyl group serves as an acceptor of the proton. In comparison, ESIPT systems with other types of proton donors are rare. Several reports have dealt with ESIPT systems for which the amino NH group and heterocyclic nitrogen atom serve as the proton donor and acceptor, respectively.
+    <a href="#cit27" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       27–34
+      </span>
+     </sup>
+    </a>
+    Also, there are a few cases of intramolecular proton transfer reactions through (pyrrole)N–H⋯N(pyridine) hydrogen bonds.
+    <a href="#cit35" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       35–37
+      </span>
+     </sup>
+    </a>
+    In addition, the theoretical possibility of strong CH-acids acting as proton donors under photoexcitation has recently been reported.
+    <a href="#cit38" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       38
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    The aforementioned superiority of OH-type ESIPT can apparently be explained by the fact that its ground state acidity is much stronger than that of the primary amino or pyrrolic proton. This distinction can be clearly demonstrated by comparison of the acid dissociation constant measured in DMSO for aniline (p
+    <span class="italic">
+     K
+    </span>
+    <small>
+     <sub>
+      a
+     </sub>
+    </small>
+    ∼ 30.6
+    <a href="#cit39" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       39,40
+      </span>
+     </sup>
+    </a>
+    ) and phenol (p
+    <span class="italic">
+     K
+    </span>
+    <small>
+     <sub>
+      a
+     </sub>
+    </small>
+    ∼ 18.0
+    <a href="#cit41" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       41
+      </span>
+     </sup>
+    </a>
+    ). Assuming a similar magnitude of changes of p
+    <span class="italic">
+     K
+    </span>
+    <small>
+     <sub>
+      a
+     </sub>
+    </small>
+    * for both N–H and O–H protons in the excited state one would expect that OH-type ESIPT is more facile than that of NH-type intramolecular H-bonding systems.
+   </p>
+   <p class="otherpara">
+    Despite the significantly lower acidity of primary amine protons, compared with the hydroxyl proton, however, the NH-type H-bonding system offers an advantage in that one of the protons in the amino group can be replaced with either an electron-donating or an electron withdrawing substituent, providing the ability to efficiently influence the acidity of the proton involved in ESIPT. This additional degree of freedom thus allows “on and off” switching of additional deactivation channels affecting the observed optical properties of the considered NH-type intramolecular H-bonded systems (
+    <a href="#imgsch1" title="Select to navigate to scheme">
+     Scheme 1b
+    </a>
+    ).
+   </p>
+   <p class="otherpara">
+    Among various OH-type ESIPT systems, 2-hydroxyphenyl substituted imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridines
+    <a href="#cit42" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       42
+      </span>
+     </sup>
+    </a>
+    have attracted considerable interest in recent years. Acuña and co-workers were the first to report photoinduced intramolecular proton transfer in imidazopyridines.
+    <a href="#cit43" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       43
+      </span>
+     </sup>
+    </a>
+    Over the next few years after this discovery the same authors proposed and experimentally proved a hypothesis about the “on–off” switching of the ESIPT phenomenon based on interactions between the molecule of interest and the environment (polar, protogenic solvent).
+    <a href="#cit44" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       44
+      </span>
+     </sup>
+    </a>
+    Furthermore, great attention has been paid to the 2′-hydroxy derivative of 2-phenylimidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridines as an organic solid-state luminescent material. Araki and co-workers
+    <a href="#cit45" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       45–49
+      </span>
+     </sup>
+    </a>
+    have found that 2-(2′-hydroxyphenyl)imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine is capable to form different polymorphs with substantially different optical properties (fluorescence wavelengths and quantum efficiency). This was a demonstration of a novel design concept for tunable organic luminescent solids.
+    <a href="#cit45" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       45
+      </span>
+     </sup>
+    </a>
+    Considering that the OH-type of ESIPT has been intensively studied for 2-phenyl substituted imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine, we have chosen imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine as a main core to probe the NH-type of H-bonding systems. Herein, we report the synthesis and comprehensive photophysical studies of a new series of N(R)H-type intramolecular H-bonded system. This system bears an imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine chromophore as the proton acceptor and a secondary amide as the proton donor in which the R-substituent is able to be systematically derivatized to increase the electron-withdrawing property so that the N(R)–H proton acidity and hence the H-bonding strength can be fine-tuned. Interestingly, the results of this study reveal different correlations from other (NH)-type ESIPT systems; the latter showed that the ESIPT rate and exergonicity increase with an increase in the N–H acidity and hence the H-bonding strength. This discrepancy may be rationalized by the localized zwitterionic nature of 2-(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridin-2-yl)aniline in the tautomer form, which is different from the π-delocalized tautomer form in other NH-type ESIPT systems.
+    <a href="#cit27" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       27–34
+      </span>
+     </sup>
+    </a>
+    Details of the results and discussion are elaborated as follows.
+   </p>
+   <h2 id="sect284">
+    <span class="a_heading">
+     2. Results and discussion
+    </span>
+   </h2>
+   <h3 id="sect287">
+    <span class="b_heading">
+     2.1 Synthesis
+    </span>
+   </h3>
+   <span>
+    A comprehensive analysis of the published literature reveals that the most straightforward synthetic strategy to 2-(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridin-2-yl)aniline (H-NHPIP) and its derivatives is apparently the reduction of 2-(2-nitrophenyl)-imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine (NO
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    -PIP), which in turn can be (were) obtained
+    <span class="italic">
+     via
+    </span>
+    a tandem Ortoleva–King–Chichibabin reaction.
+    <a href="#cit50" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       50,51
+      </span>
+     </sup>
+    </a>
+    The advantage of the Chichibabin reaction, in addition to its simplicity, is that imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridines obtained following this approach maintain an open C3 position. The presence of a relatively bulky substituent at position C3 may lead to noticeable steric hindrance and as a result of the out of planarity of the phenyl ring. The fluorescence compounds studied in this work were synthesized starting from 1-(2-nitrophenyl)ethanone and 2-aminopyridine
+    <span class="italic">
+     via
+    </span>
+    an Ortoleva–King reaction,
+    <a href="#cit52" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       52
+      </span>
+     </sup>
+    </a>
+    followed by ring closure and subsequent derivatization of 2(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine-2yl)aniline (details are given in the ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). Recently, Gryko and co-workers
+    <a href="#cit53" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       53
+      </span>
+     </sup>
+    </a>
+    reported that the main and well-proven reduction methods of nitroarenes, such as reduction using H
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    and Pd on charcoal
+    <a href="#cit52" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       52
+      </span>
+     </sup>
+    </a>
+    or reaction with Fe powders in concentrated hydrochloric acid failed in the case of NO
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    -PIP. Instead of the desired reduction of the nitro group the authors noticed a dominant side reaction – reduction of the pyridine ring. Despite the fact that Chauhan and co-workers
+    <a href="#cit54" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       54
+      </span>
+     </sup>
+    </a>
+    reported that the reduction of NO
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    -PIP with Fe powder/acetic acid provided
+    <strong>
+     H-NHPIP
+    </strong>
+    in good yield, in this work, we have used the procedure developed by Kundu and co-workers
+    <a href="#cit55" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       55
+      </span>
+     </sup>
+    </a>
+    and evaluated by Gryko – reduction of nitro-imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine with SnCl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    in ethanol – as optimal, which leads to the desired
+    <strong>
+     H-NHPIP
+    </strong>
+    in good yield. Synthetic routes for the studied compounds are depicted in
+    <a href="#imgsch2" title="Select to navigate to scheme">
+     Scheme 2
+    </a>
+    .
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgsch2">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-s2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-s2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-s2.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Scheme 2
+       </b>
+       <span id="sch2">
+        <span class="graphic_title">
+         Synthetic routes for 2-(imidazo[1,2-
+         <span class="italic">
+          a
+         </span>
+         ]pyridin-2-yl)aniline and its derivatives.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Having
+    <strong>
+     H-NHPIP
+    </strong>
+    as a key substrate we have then functionalized the amino group. In order to tune the acidity of this group, one of the protons has been replaced with various substituents different in electron withdrawing power. Initial prototype
+    <strong>
+     H-NHPIP
+    </strong>
+    has been transformed into several sulfonamide (
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     H
+     <small>
+      <sub>
+       4
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    ,
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    ) and acetamide (
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    ,
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    ) derivatives. It should be noted that the reaction yield for the designated sulfonamides and acetamides are generally high. Only in the case of 2,3,4,5,6-pentafluorobenzene-1-sulfonyl chloride is the reaction yield relatively low (63%), which leads to by-products. Detailed synthetic procedures and characterization of these compounds are described in the experimental section of the ESI.
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+   </p>
+   <h3 id="sect331">
+    <span class="b_heading">
+     2.2 NMR spectroscopy
+    </span>
+   </h3>
+   <span>
+    Electron withdrawing substituents have a strong impact on the electron density at the amine nitrogen. Lowering the electron density has been directly reflected in the values of the chemical shift of the denoted amide protons. Introduction of a 4-methylbenzensulfonyl substituent immediately leads to pronounced downfield shift of the sulfonamide proton signal in
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H NMR to 12.65 ppm compared to 6.55 ppm for parental
+    <strong>
+     H-NHPIP
+    </strong>
+    . Trifluoroacetyl substituent (
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    ) causes an even greater shift to 14.62 ppm.
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    demonstrates scaled stacked
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H NMR spectra for all studied compounds. This figure clearly shows the amide proton chemical shift dependence on the electron withdrawing ability of the considered substituents. Thus, minimal downfield shift has been caused by the acetyl substituent (
+    <span class="italic">
+     δ
+    </span>
+    = 12.49), while the largest shift was observed for the trifluoroacetyl substituent. At the same time, for the studied sulfonamides,
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     H
+     <small>
+      <sub>
+       4
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    , the proton chemical shift was fairly large (
+    <span class="italic">
+     δ
+    </span>
+    = 12.68). The exception was
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    . In contrast to other studied compounds, in this case we have been unable to detect the amide proton signal in DMSO-
+    <span class="italic">
+     d
+    </span>
+    <small>
+     <sub>
+      6
+     </sub>
+    </small>
+    solution. We hypothesized that such behavior may be caused by the relatively high acidity of indicated protons, and as a consequence by a strong intermolecular (solute–solvent) interaction. Based on this assumption we have carried out a series of
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H NMR measurements for
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    in various solvents with different polarities. Fig. S1 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) demonstrates the scaled stacked
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H NMR spectra of
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    in various solvents. It is clear that decreasing polarity leads to an increase of the intensity of the amide proton signal. Only in benzene solution, for which a strong solute–solvent interaction seems unlikely,
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    amide protons demonstrate rather a sharp signal, characteristic for other sulfonamides. The proton signal for sulfonamides is also broader than that for acetamides. The observed dependence of the proton signal width and intensity in
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H NMR spectra on the electronic properties of the substituent at the semi-quantitative level can be described based on the acidity of the amide proton and thus the strength of the intramolecular N–H⋯N hydrogen bond.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig1">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-f1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f1.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 1
+       </b>
+       <span id="fig1">
+        <span class="graphic_title">
+         Scaled stacked
+         <small>
+          <sup>
+           1
+          </sup>
+         </small>
+         H NMR spectra of
+         <strong>
+          H-NHPIP
+         </strong>
+         and its derivatives in DMSO-
+         <span class="italic">
+          d
+         </span>
+         <small>
+          <sub>
+           6
+          </sub>
+         </small>
+         .
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    A widely used class of balanced reactions designated as “homodesmotic” has been used for the evaluation of the considered intramolecular hydrogen bond (IHB) strength. Scheme S1 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) demonstrates the formal chemical equation which has been used for IHB strength estimation. Orbital hybridization and the number of CH bonds in both parts of the equation are the same. All calculations have been performed without any solvation model,
+    <span class="italic">
+     i.e.
+    </span>
+    for free molecules. According to Scheme S1 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) the energy of hydrogen bonds can be estimated as a difference between the energy of the “reaction products” (
+    <span class="italic">
+     E
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    +
+    <span class="italic">
+     E
+    </span>
+    <small>
+     <sub>
+      4
+     </sub>
+    </small>
+    ) and the energy of the “reactants” (
+    <span class="italic">
+     E
+    </span>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    +
+    <span class="italic">
+     E
+    </span>
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ). Geometries and energies for each fragment have been calculated independently. As can be seen from
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ,
+    <span class="italic">
+     ab initio
+    </span>
+    calculations performed for the studied compounds do not allow for revealing a direct relationship between the length of hydrogen bonds and chemical shift values. This discrepancy can apparently be explained by the limitation of the model used for the calculations, namely the performed calculations do not take into account any solvation model for the studied compounds, while the solvent and intermolecular solute–solvent interaction play an important role in this case. However, despite the overall roughness of the used model, the chemical shift values are in good agreement with the N–H bond length of the amide moiety, which in turn is an indicator of the acidity of the considered bond. In spite of the semi-quantitative nature of the revealed relationships and the relative coarseness of the assessment, we have focused our attention on the
+    <strong>
+     H-NHPIP
+    </strong>
+    compound. The hydrogen bond energy in this case estimated by homodesmotic reaction demonstrates a value that is at least half as low as any other compound studied in this work. The structure of the
+    <strong>
+     H-NHPIP
+    </strong>
+    compound together with the estimated value of hydrogen bond strength allowed us to suggest that this compound can exist in at least two conformers – normal (
+    <strong>
+     H-NHPIP
+    </strong>
+    ) and rotated (
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    ) one (
+    <a href="#imgsch3" title="Select to navigate to scheme">
+     Scheme 3
+    </a>
+    ). The small value of the hydrogen bond energy suggests a notable contribution of the
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    conformer to the composition of the conformational mixture.
+   </p>
+   <div class="table_caption">
+    <b>
+     Table 1
+    </b>
+    <span id="tab1">
+     Intramolecular hydrogen bond strengths (in kcal mol
+     <small>
+      <sup>
+       −1
+      </sup>
+     </small>
+     ) estimated using homodesmotic reaction. Experimentally measured chemical shift values (
+     <small>
+      <sup>
+       1
+      </sup>
+     </small>
+     H NMR, in ppm) for amide protons in DMSO-
+     <span class="italic">
+      d
+     </span>
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+       R
+      </th>
+      <th align="left" class="border_black" colspan="2" valign="bottom">
+       Homodesmotic reaction
+      </th>
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+       N–H bond length,
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+       Å
+      </th>
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+       N⋯H hydrogen bond length,
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+       Å
+      </th>
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+       Chemical shift, ppm
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       Electronic energy (
+       <span class="italic">
+        ε
+       </span>
+       <small>
+        <sub>
+         0
+        </sub>
+       </small>
+       ), kcal mol
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Sum of electronic and zero-point energies (
+       <span class="italic">
+        ε
+       </span>
+       <small>
+        <sub>
+         0
+        </sub>
+       </small>
+       +
+       <span class="italic">
+        ε
+       </span>
+       <small>
+        <sub>
+         zpe
+        </sub>
+       </small>
+       ), kcal mol
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="6">
+       <a id="tab1fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        Values of bond lengths estimated at the PBE0/6-311++G(d,p) level of theory.
+       </span>
+       <a id="tab1fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        Chemical shift value obtained in C
+        <small>
+         <sub>
+          6
+         </sub>
+        </small>
+        D
+        <small>
+         <sub>
+          6
+         </sub>
+        </small>
+        .
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       H
+      </td>
+      <td align="char" char="." valign="top">
+       2.581
+      </td>
+      <td align="char" char="." valign="top">
+       2.306
+      </td>
+      <td align="char" char="." valign="top">
+       1.014
+      </td>
+      <td align="char" char="." valign="top">
+       1.951
+      </td>
+      <td align="char" char="." valign="top">
+       6.55
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       CH
+       <small>
+        <sub>
+         3
+        </sub>
+       </small>
+       CO
+      </td>
+      <td align="char" char="." valign="top">
+       3.591
+      </td>
+      <td align="char" char="." valign="top">
+       3.350
+      </td>
+      <td align="char" char="." valign="top">
+       1.021
+      </td>
+      <td align="char" char="." valign="top">
+       1.823
+      </td>
+      <td align="char" char="." valign="top">
+       12.49
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       CH
+       <small>
+        <sub>
+         3
+        </sub>
+       </small>
+       C
+       <small>
+        <sub>
+         6
+        </sub>
+       </small>
+       H
+       <small>
+        <sub>
+         4
+        </sub>
+       </small>
+       Sulf
+      </td>
+      <td align="char" char="." valign="top">
+       3.627
+      </td>
+      <td align="char" char="." valign="top">
+       3.467
+      </td>
+      <td align="char" char="." valign="top">
+       1.028
+      </td>
+      <td align="char" char="." valign="top">
+       1.846
+      </td>
+      <td align="char" char="." valign="top">
+       12.68
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       C
+       <small>
+        <sub>
+         6
+        </sub>
+       </small>
+       F
+       <small>
+        <sub>
+         5
+        </sub>
+       </small>
+       Sulf
+      </td>
+      <td align="char" char="." valign="top">
+       4.413
+      </td>
+      <td align="char" char="." valign="top">
+       4.430
+      </td>
+      <td align="char" char="." valign="top">
+       1.036
+      </td>
+      <td align="char" char="." valign="top">
+       1.777
+      </td>
+      <td align="char" char="." valign="top">
+       14.25
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       CF
+       <small>
+        <sub>
+         3
+        </sub>
+       </small>
+       CO
+      </td>
+      <td align="char" char="." valign="top">
+       4.470
+      </td>
+      <td align="char" char="." valign="top">
+       4.388
+      </td>
+      <td align="char" char="." valign="top">
+       1.032
+      </td>
+      <td align="char" char="." valign="top">
+       1.769
+      </td>
+      <td align="char" char="." valign="top">
+       14.62
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgsch3">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-s3_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-s3.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-s3.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Scheme 3
+       </b>
+       <span id="sch3">
+        <span class="graphic_title">
+         Spatial proximities of selected protons and NOESY spectrum (2D) in conformers of 2-(imidazo[1,2-
+         <span class="italic">
+          a
+         </span>
+         ]pyridin-2-yl)aniline (
+         <strong>
+          H-NHPIP
+         </strong>
+         ).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    <span class="italic">
+     Ab initio
+    </span>
+    calculations of the Gibbs reaction free energy and the resulting concentrations of the conformers (eqn (S1)–(S4), ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) in the mixture demonstrate that for 2-(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridin-2-yl)aniline in polar solvent the amount of the
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    conformer may reach several percent (see Table S1, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). Based on this we have assumed that the presence of both conformers in polar solution can be explicitly demonstrated on the basis of two-dimensional NMR spectroscopy. A careful examination of the geometrical structures of the
+    <strong>
+     H-NHPIP
+    </strong>
+    and
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    conformers (
+    <a href="#imgsch3" title="Select to navigate to scheme">
+     Scheme 3
+    </a>
+    ) reveals the closest proximities of the H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    proton to the H
+    <small>
+     <sup>
+      b
+     </sup>
+    </small>
+    and H
+    <small>
+     <sup>
+      c
+     </sup>
+    </small>
+    protons in conformer
+    <strong>
+     H-NHPIP
+    </strong>
+    , while for the
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    conformer, the H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    proton is in closest proximity to the H
+    <small>
+     <sup>
+      b
+     </sup>
+    </small>
+    and H
+    <small>
+     <sup>
+      d
+     </sup>
+    </small>
+    protons. This allows us to conclude that in NOESY experiment three signals corresponding to the above-mentioned interactions between protons – “H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    –H
+    <small>
+     <sup>
+      b
+     </sup>
+    </small>
+    ”, “H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    –H
+    <small>
+     <sup>
+      c
+     </sup>
+    </small>
+    ” and “H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    –H
+    <small>
+     <sup>
+      d
+     </sup>
+    </small>
+    ” should be observed. At the same time, it should be mentioned that the signal corresponding to the “H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    –H
+    <small>
+     <sup>
+      d
+     </sup>
+    </small>
+    ” interaction is significantly weaker than the other two signals due to the fact that the concentration of the conformer
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    is low. In full accordance with our expectations the NOESY experiment revealed three signals with coordinates [8.29, 8.57] – corresponding to “H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    –H
+    <small>
+     <sup>
+      b
+     </sup>
+    </small>
+    ” cross relaxation, [8.29, 7.56] – corresponding to “H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    –H
+    <small>
+     <sup>
+      c
+     </sup>
+    </small>
+    ” cross relaxation and [8.29, 6.56] – corresponding to “H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    –H
+    <small>
+     <sup>
+      d
+     </sup>
+    </small>
+    ” cross relaxation. Fig. S2 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) also demonstrates a one-dimensional experiment by pre-selecting the H
+    <small>
+     <sup>
+      a
+     </sup>
+    </small>
+    nuclei resonance (a large negative signal at 8.29 ppm). Integration of the signals in selective NOE spectra allows one to get the approximate ratio of the conformers in the mixture. This value is about a few percent. However, access to the quantitative or semi-quantitative level seems to be impossible due to the fact that the intensity of the signal in NOE spectroscopy is not only a function of the relative concentration but also depends on the spatial distance of the atoms undergoing cross relaxation.
+   </p>
+   <h3 id="sect514">
+    <span class="b_heading">
+     2.3 Photophysical properties
+    </span>
+   </h3>
+   <span>
+    The electronic absorption spectra and steady-state emission spectra for the titled compounds in toluene at room temperature are shown in
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    , and pertinent data are presented in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    . Similar results were observed in cyclohexane and dichloromethane. However, the sparse solubility in cyclohexane and fast decomposition in dichloromethane under high laser power prohibit further fluorescence up-conversion measurements in these two solvents. In toluene the studied compounds all have similar electronic absorption features, consisting of an intense band peaked in the UV region (from 300 to 380 nm) with a molar absorptivity (
+    <span class="italic">
+     ε
+    </span>
+    ) ranging from 10
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    290 to 12
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    400 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    , which is ascribed to the typical π–π* transitions. This assignment is also supported by the frontier orbital analyses shown in Table S2 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ), in which the S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    → S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    excitation involves mainly N(R)H-phenyl (HOMO) → imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine (LUMO) transition, manifesting its partial charge transfer character. Therefore, increasing the acidity of the N(R)–H proton by increasing the electron withdrawing strength of R should accompany the reduction of the HOMO energy and cause the blue-shift of absorption features, which is experimentally revealed in
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2a
+    </a>
+    . The computed lowest-lying electronic transition (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    → S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    ) in terms of wavelength also agrees with this tendency (see Table S2, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ).
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig2">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-f2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f2.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 2
+       </b>
+       <span id="fig2">
+        <span class="graphic_title">
+         (a) Absorption and (b) normalized emission spectra of
+         <strong>
+          H-NHPIP
+         </strong>
+         (black),
+         <strong>
+          CH
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          CO-NHPIP
+         </strong>
+         (red),
+         <strong>
+          CH
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          C
+          <small>
+           <sub>
+            6
+           </sub>
+          </small>
+          H
+          <small>
+           <sub>
+            4
+           </sub>
+          </small>
+          Sulf-NHPIP
+         </strong>
+         (blue),
+         <strong>
+          C
+          <small>
+           <sub>
+            6
+           </sub>
+          </small>
+          F
+          <small>
+           <sub>
+            5
+           </sub>
+          </small>
+          Sulf-NHPIP
+         </strong>
+         (green) and
+         <strong>
+          CF
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          CO-NHPIP
+         </strong>
+         (magenta) in toluene at room temperature. Inset: The enlargement of
+         <strong>
+          H-NHPIP
+         </strong>
+         and
+         <strong>
+          CH
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          CO-NHPIP
+         </strong>
+         emission in the region of 560–800 nm.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="table_caption">
+    <b>
+     Table 2
+    </b>
+    <span id="tab2">
+     The photophysical properties of titled compounds in toluene at room temperature
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+       In toluene
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       Steady-state measurement
+      </th>
+      <th align="left" class="border_black" colspan="5" valign="bottom">
+       Time-resolved measurement
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         abs
+        </sub>
+       </small>
+       /nm (
+       <span class="italic">
+        ε
+       </span>
+       /M
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       cm
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       )
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         em
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fna" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+       /nm
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        Φ
+       </span>
+       <small>
+        <sub>
+         f
+        </sub>
+       </small>
+       /%
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         obs
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnb" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+       /ps (pre-exp. factor)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        k
+       </span>
+       <small>
+        <sub>
+         pt
+        </sub>
+       </small>
+       /s
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        k
+       </span>
+       <small>
+        <sub>
+         −pt
+        </sub>
+       </small>
+       /s
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Δ
+       <span class="italic">
+        E
+       </span>
+       <small>
+        <sub>
+         exp
+        </sub>
+       </small>
+       */kcal mol
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Δ
+       <span class="italic">
+        E
+       </span>
+       <small>
+        <sub>
+         cal
+        </sub>
+       </small>
+       *
+       <small>
+        <sup>
+         <img align="top" alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+        </sup>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fne" title="">
+           e
+          </a>
+         </sup>
+        </small>
+       </i>
+       /kcal mol
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="9">
+       <a id="tab2fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        N = normal emission; T = tautomer (ESIPT) emission.
+       </span>
+       <a id="tab2fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        Lifetime was measured by using an up-conversion system with femtosecond excitation pulses (
+        <span class="italic">
+         λ
+        </span>
+        <small>
+         <sub>
+          ex
+         </sub>
+        </small>
+        = 360 nm).
+       </span>
+       <a id="tab2fnc">
+        <span class="tfootnote">
+         c
+        </span>
+       </a>
+       <span class="sup_inf">
+        Lifetime measured using a TCSPC system with femtosecond excitation pulses (
+        <span class="italic">
+         λ
+        </span>
+        <small>
+         <sub>
+          ex
+         </sub>
+        </small>
+        = 360 nm).
+       </span>
+       <a id="tab2fnd">
+        <span class="tfootnote">
+         d
+        </span>
+       </a>
+       <span class="sup_inf">
+        Lifetime measured using a TCSPC system with a pulsed hydrogen-filled lamp as the excitation source (
+        <span class="italic">
+         λ
+        </span>
+        <small>
+         <sub>
+          ex
+         </sub>
+        </small>
+        = 360 nm).
+       </span>
+       <a id="tab2fne">
+        <span class="tfootnote">
+         e
+        </span>
+       </a>
+       <span class="sup_inf">
+        Computed corresponding energy differences (Δ
+        <span class="italic">
+         E
+        </span>
+        * =
+        <span class="italic">
+         E
+        </span>
+        *(T) −
+        <span class="italic">
+         E
+        </span>
+        *(N)) between the normal form and tautomer form species in the lowest excited state (S
+        <small>
+         <sub>
+          1
+         </sub>
+        </small>
+        ) for the titled compounds.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       <strong>
+        H-NHPIP
+       </strong>
+      </td>
+      <td rowspan="2" valign="top">
+       350 (11
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       500)
+      </td>
+      <td valign="top">
+       N: 390
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       0.8
+      </td>
+      <td valign="top">
+       N: 1.58(0.64), 19.67(0.27), 1784(0.09)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+       <small>
+        <sup>
+         ,
+        </sup>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnd" title="">
+           d
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td rowspan="2" valign="top">
+       4.4 × 10
+       <small>
+        <sup>
+         11
+        </sup>
+       </small>
+      </td>
+      <td rowspan="2" valign="top">
+       1.9 × 10
+       <small>
+        <sup>
+         11
+        </sup>
+       </small>
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       −0.5
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       −4.3
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       T: 700
+      </td>
+      <td valign="top">
+       T: 1.58(−0.42), 19.67(0.58)
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       <strong>
+        CH
+        <small>
+         <sub>
+          3
+         </sub>
+        </small>
+        CO-NHPIP
+       </strong>
+      </td>
+      <td rowspan="2" valign="top">
+       336 (10
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       290)
+      </td>
+      <td valign="top">
+       N: 390
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       5.8
+      </td>
+      <td valign="top">
+       N: 53(0.74), 334(0.26)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td rowspan="2" valign="top">
+       1.4 × 10
+       <small>
+        <sup>
+         10
+        </sup>
+       </small>
+      </td>
+      <td rowspan="2" valign="top">
+       4.9 × 10
+       <small>
+        <sup>
+         9
+        </sup>
+       </small>
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       −0.62
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       −6.7
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       T: 650
+      </td>
+      <td valign="top">
+       T: 53(−0.47), 334(0.53)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       <strong>
+        CH
+        <small>
+         <sub>
+          3
+         </sub>
+        </small>
+        C
+        <small>
+         <sub>
+          6
+         </sub>
+        </small>
+        H
+        <small>
+         <sub>
+          4
+         </sub>
+        </small>
+        Sulf-NHPIP
+       </strong>
+      </td>
+      <td rowspan="2" valign="top">
+       333 (11
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       250)
+      </td>
+      <td valign="top">
+       N: 380
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       13.1
+      </td>
+      <td valign="top">
+       N: 16.3(0.99), 1950(0.01)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+       <small>
+        <sup>
+         ,
+        </sup>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnd" title="">
+           d
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td rowspan="2" valign="top">
+       6.1 × 10
+       <small>
+        <sup>
+         10
+        </sup>
+       </small>
+      </td>
+      <td rowspan="2" valign="top">
+       6.1 × 10
+       <small>
+        <sup>
+         8
+        </sup>
+       </small>
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       −2.72
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       −14.4
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       T: 580
+      </td>
+      <td valign="top">
+       T: 16.3(−0.38), 1950(0.62)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+       <small>
+        <sup>
+         ,
+        </sup>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnd" title="">
+           d
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        C
+        <small>
+         <sub>
+          6
+         </sub>
+        </small>
+        F
+        <small>
+         <sub>
+          5
+         </sub>
+        </small>
+        Sulf-NHPIP
+       </strong>
+      </td>
+      <td valign="top">
+       332 (10
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       340)
+      </td>
+      <td valign="top">
+       T: 545
+      </td>
+      <td align="char" char="." valign="top">
+       21.9
+      </td>
+      <td valign="top">
+       T: 3390
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnd" title="">
+           d
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td align="char" char="." valign="top">
+       −14.8
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       <strong>
+        CF
+        <small>
+         <sub>
+          3
+         </sub>
+        </small>
+        CO-NHPIP
+       </strong>
+      </td>
+      <td rowspan="2" valign="top">
+       331 (12
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       400)
+      </td>
+      <td valign="top">
+       N: 380
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       45.9
+      </td>
+      <td valign="top">
+       N: 106(0.98), 3900(0.02)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+       <small>
+        <sup>
+         ,
+        </sup>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnd" title="">
+           d
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td rowspan="2" valign="top">
+       9.3 × 10
+       <small>
+        <sup>
+         9
+        </sup>
+       </small>
+      </td>
+      <td rowspan="2" valign="top">
+       1.4 × 10
+       <small>
+        <sup>
+         8
+        </sup>
+       </small>
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       −2.47
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       −9.5
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       T: 510
+      </td>
+      <td valign="top">
+       T: 106(−0.46), 3900(0.54)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+       <small>
+        <sup>
+         ,
+        </sup>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnd" title="">
+           d
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    Except for
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    that exhibits solely a long wavelength emission band, all other studied compounds show dual emission behaviour (
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2b
+    </a>
+    ) in which the short wavelength band reveals a mirror image of the absorption spectrum with a small Stokes shift ascribed to the normal emission (N*, where the asterisk denotes the excited state). The other emission band with anomalously large Stokes shifted feature (
+    <span class="italic">
+     cf.
+    </span>
+    absorption) is denoted as the proton-transfer tautomer emission (T*), resulting from ESIPT.
+   </p>
+   <p class="otherpara">
+    An example of the studied compound
+    <strong>
+     H-NHPIP
+    </strong>
+    is given. The emission spectrum of
+    <strong>
+     H-NHPIP
+    </strong>
+    possessing an unsubstituted NH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    group has two maxima bands at 390 and 700 nm, indicative of the normal and tautomer form features, respectively. Note that this demonstrates the first case where a donor–acceptor moiety bridged by a single bond exhibits ESIPT from a weak proton donor (NH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ) without an additional substituent.
+    <a href="#cit27" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       27,28,32,33
+      </span>
+     </sup>
+    </a>
+    However, in comparison, the excitation spectrum of
+    <strong>
+     H-NHPIP
+    </strong>
+    monitored at the tautomer emission (
+    <span class="italic">
+     e.g.
+    </span>
+    700 nm) is red shifted by ∼15 nm with respect to that monitored at the normal emission (
+    <span class="italic">
+     e.g.
+    </span>
+    400 nm) (see Fig. S3, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). Excluding any artefact caused by traces of impurity, the unmatched excitation spectra should be ascribed to the relatively weak intramolecular H-bond that leads to the existence of two conformers: normal H-bonded (
+    <strong>
+     H-NHPIP
+    </strong>
+    ) and rotated (
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    ) isomers (
+    <a href="#imgsch3" title="Select to navigate to scheme">
+     Scheme 3
+    </a>
+    ) confirmed by both the NOESY spectrum (
+    <span class="italic">
+     vide supra
+    </span>
+    ) and the computational approach (see Fig. S2 and Table S2, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). The latter indicates that the normal H-bonded (
+    <strong>
+     H-NHPIP
+    </strong>
+    ) form is more stable than the rotated, non-H-bonded form (
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    ) by only ∼2.3 kcal mol
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    . The H-bonded
+    <strong>
+     H-NHPIP
+    </strong>
+    undergoes ESIPT, whereas ESIPT is prohibited in its non-H-bonded form due to its rather long fluorescence lifetime (1.78 ns,
+    <span class="italic">
+     vide infra
+    </span>
+    ). The red shift of 15 nm in the excitation spectrum for the H-bonded
+    <strong>
+     H-NHPIP
+    </strong>
+    (
+    <span class="italic">
+     cf.
+    </span>
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    ) can be rationalized by the intramolecular H-bond that stabilizes the conformation and elongates the π-conjugation. Moreover, the excitation spectrum monitored at tautomer emission is similar to the absorption spectrum, supporting the H-bonded
+    <strong>
+     H-NHPIP
+    </strong>
+    to be the dominant species in the ground state.
+   </p>
+   <p class="otherpara">
+    Upon increasing the acidity of the N(R)–H proton by the electron-withdrawing R group (
+    <span class="italic">
+     cf.
+    </span>
+    R = H for
+    <strong>
+     H-NHPIP
+    </strong>
+    ), it is reasonable to expect the intramolecular H-bonded conformer to be the predominant species in the ground state. Accordingly, the proton acidity can be identified by the chemical shift from the
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H NMR spectrum (
+    <span class="italic">
+     vide supra
+    </span>
+    ). As a result, the downfield shift of the N–H proton for the studied compounds is in the order of
+    <strong>
+     H-NHPIP
+    </strong>
+    (
+    <span class="italic">
+     δ
+    </span>
+    ∼ 6.55 ppm) &lt;
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    (
+    <span class="italic">
+     δ
+    </span>
+    ∼ 12.49 ppm) &lt;
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     H
+     <small>
+      <sub>
+       4
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    (
+    <span class="italic">
+     δ
+    </span>
+    ∼ 12.68 ppm) &lt;
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    (
+    <span class="italic">
+     δ
+    </span>
+    ∼ 14.25 ppm) &lt;
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    (
+    <span class="italic">
+     δ
+    </span>
+    ∼ 14.62 ppm). Correspondingly, the tautomer emission peak wavelength is strongly dependent on the electronic properties of the N(R) group, being blue shifted as R increases the electron-withdrawing ability (
+    <span class="italic">
+     i.e.
+    </span>
+    , the higher acidity and hence the stronger H-bond strength). This can be rationalized by the ESIPT reaction product,
+    <span class="italic">
+     i.e.
+    </span>
+    , a proton transfer tautomer for which the lowest lying excited state inherits a HOMO–LUMO charge transfer character from the imino (HOMO) to the imidazopyridine (LUMO) moiety. Thus, adding an electron withdrawing substituent R at the amino site results in the lowering of HOMO energy, hence the increase of the energy gap of the tautomer emission. Therefore, in good correlation with the increased N–H proton acidity, the trend of the blue shift of the proton-transfer tautomer emission in terms of peak wavelength is in the order of
+    <strong>
+     H-NHPIP
+    </strong>
+    (700 nm) &gt;
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    (650 nm) &gt;
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     H
+     <small>
+      <sub>
+       4
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    (580 nm) &gt;
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    (545 nm) &gt;
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    (510 nm) (see
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    ).
+   </p>
+   <p class="otherpara">
+    However, very different from recent studies on other NH-type ESIPT systems, which reveal the trend of increasing ESIPT rate upon increasing the N–H acidity,
+    <a href="#cit28" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       28
+      </span>
+     </sup>
+    </a>
+    the current system reveals certain controversial results. For example,
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    , which possesses the highest proton acidity hence the strongest H-bond among all the studied 2-(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridine-2yl)aniline derivatives, exhibits dual emission, whereas
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    with lower acidity (
+    <span class="italic">
+     cf.
+    </span>
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    ) reveals exclusively tautomer emission (see
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    ), implying an ultrafast ESIPT process.
+   </p>
+   <p class="otherpara">
+    We then made attempts to gain further insight into the ESIPT dynamics of the titled compounds using the femtosecond fluorescence up-conversion technique in combination with the pico-nanosecond time correlated single photon counting (TCSPC) method (see the experimental section for details).
+   </p>
+   <p class="otherpara">
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3
+    </a>
+    shows the fluorescence up-converted signal obtained for prototypical
+    <strong>
+     H-NHPIP
+    </strong>
+    ,
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    and
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    in toluene. All pertinent fitted kinetic data are listed in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    . As shown in
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3a
+    </a>
+    , for
+    <strong>
+     H-NHPIP
+    </strong>
+    in toluene, the emission monitored at the normal emission of
+    <span class="italic">
+     e.g.
+    </span>
+    410 nm clearly reveals multiple decay components, consisting of short (1.6 ps) and relatively long (19.6 ps) decays, accompanied by a very long population decay rate constant that is fitted to be 1.78 ns by TCSPC. First of all, in accordance with NOESY, the excitation spectrum and the computational approach (
+    <span class="italic">
+     vide supra
+    </span>
+    ), the long 1.78 ns decay component with a small pre-exponential factor (see
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3a
+    </a>
+    ) can reasonably be assigned to the long population decay from the rotated non-H-bonded conformer (
+    <strong>
+     H-NHPIP(r)
+    </strong>
+    ), for which ESIPT is prohibited due to the lack of intramolecular H-bonds.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig3">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f3_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-f3.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f3.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 3
+       </b>
+       <span id="fig3">
+        <span class="graphic_title">
+         Fluorescence up-conversion decay curves obtained for (a)
+         <strong>
+          H-NHPIP
+         </strong>
+         , (b)
+         <strong>
+          CH
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          CO-NHPIP
+         </strong>
+         and (c)
+         <strong>
+          CF
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          CO-NHPIP
+         </strong>
+         in toluene. The data points in blue and red shown are monitored at normal and tautomer emissions, respectively. Solid lines depict the best biexponential fits. The fitting parameters are summarized in
+         <a href="#tab2" title="Select to navigate to table">
+          Table 2
+         </a>
+         .
+         <span class="italic">
+          λ
+         </span>
+         <small>
+          <sub>
+           ex
+          </sub>
+         </small>
+         = 360 nm. Inset: The enlargement of the early dynamic profile.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    On the other hand, the tautomer emission monitored at
+    <span class="italic">
+     e.g.
+    </span>
+    650 nm consists of a 1.6 ps rise time component and a decay time of 19.6 ps (
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3
+    </a>
+    and
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ). The shorter decay component (1.6 ps) of normal emission and the rise component (1.6 ps) of the tautomer emission are well-matched with the opposite sign in terms of the pre-exponential factor. Another result worth mentioning is the identical population decay times for both normal and tautomer emissions (∼19.6 ps). The combination of these observations leads us to conclude the precursor (normal)-successor (tautomer) type of ESIPT at the early stage, followed by a fast pre-equilibrium between normal and tautomer emissions in the excited state prior to the decay of each individual emission. Supported by the identical population decay time between normal and tautomer emissions, similar excited-state equilibrium between normal and tautomer excited states is also established for
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    (
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3b
+    </a>
+    ),
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     H
+     <small>
+      <sub>
+       4
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    (Fig. S4, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) and
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    (
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3c
+    </a>
+    ) in toluene.
+   </p>
+   <p class="otherpara">
+    We then analyzed the corresponding reaction kinetics by a coupling reaction model depicted in
+    <a href="#imgsch4" title="Select to navigate to scheme">
+     Scheme 4b
+    </a>
+    with a kinetic expression for the concentrations of both the excited-state normal form ([N*]
+    <small>
+     <sub>
+      <span class="italic">
+       t
+      </span>
+     </sub>
+    </small>
+    ) and tautomer form ([T*]
+    <small>
+     <sub>
+      <span class="italic">
+       t
+      </span>
+     </sub>
+    </small>
+    ) shown in
+    <a href="#eqn1" title="">
+     eqn (1)
+    </a>
+    .
+   </p>
+   <table>
+    <td class="leftEqn">
+    </td>
+    <tr>
+     <td class="eqn">
+      <span id="eqn1">
+      </span>
+      <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-t1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+       <img alt="image file: c6cp05236c-t1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-t1.gif"/>
+      </a>
+     </td>
+     <td class="rightEqn">
+      (1)
+     </td>
+    </tr>
+   </table>
+   where
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sub>
+     N*
+    </sub>
+   </small>
+   and
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sub>
+     T*
+    </sub>
+   </small>
+   are the fluorescence decay rate constants of N* and T*, respectively.
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sub>
+     pt
+    </sub>
+   </small>
+   denotes the forward proton transfer rate and
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sub>
+     −pt
+    </sub>
+   </small>
+   represents the reverse proton transfer rate.
+   <span class="italic">
+    τ
+   </span>
+   <small>
+    <sub>
+     2
+    </sub>
+   </small>
+   and
+   <span class="italic">
+    τ
+   </span>
+   <small>
+    <sub>
+     1
+    </sub>
+   </small>
+   are the observed decay time constants of the fast and slow decay components, respectively. As a result, the equilibrium constant
+   <span class="italic">
+    K
+   </span>
+   <small>
+    <sub>
+     eq
+    </sub>
+   </small>
+   =
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sub>
+     pt
+    </sub>
+   </small>
+   /
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sub>
+     −pt
+    </sub>
+   </small>
+   can be obtained from the ratio of the pre-exponential factor (at
+   <span class="italic">
+    t
+   </span>
+   = 0) in
+   <a href="#eqn1" title="">
+    eqn (1)
+   </a>
+   , corresponding to a free energy Δ
+   <span class="italic">
+    E
+   </span>
+   * from N* to T* (Δ
+   <span class="italic">
+    E
+   </span>
+   * = T* − N*). Because 1/
+   <span class="italic">
+    τ
+   </span>
+   <small>
+    <sub>
+     2
+    </sub>
+   </small>
+   is equivalent to
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sub>
+     pt
+    </sub>
+   </small>
+   +
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sub>
+     −pt
+    </sub>
+   </small>
+   , the forward and backward proton transfer rate constants can be further deduced and summarized in
+   <a href="#tab2" title="Select to navigate to table">
+    Table 2
+   </a>
+   .
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgsch4">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-s4_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-s4.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-s4.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Scheme 4
+       </b>
+       <span id="sch4">
+        <span class="graphic_title">
+         (a) ESIPT of the
+         <strong>
+          BTA
+         </strong>
+         system through a planar-like semi-π-conjugated transition state. (b) ESIPT of the N(R)H-PIP system
+         <span class="italic">
+          via
+         </span>
+         a plausible non-planar transition state.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    As a result, a plot of the forward ESIPT rate constant (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      pt
+     </sub>
+    </small>
+    ) and Δ
+    <span class="italic">
+     E
+    </span>
+    * as a function of N–H acidity (in terms of N–H proton NMR scale) is depicted in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    . Previous results on another N–H ESIPT system containing 2-(benzo[
+    <span class="italic">
+     d
+    </span>
+    ]thiazol-2-yl)aniline (
+    <strong>
+     BTA
+    </strong>
+    , see
+    <a href="#imgsch4" title="Select to navigate to scheme">
+     Scheme 4
+    </a>
+    )
+    <a href="#cit28" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       28
+      </span>
+     </sup>
+    </a>
+    as the core moiety revealed a trend in that enhancing the N–H acidity and hence the increase of intramolecular H-bond strength increases both the ESIPT rate and exergonicity. In comparison,
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    shows very different results. In fact, the results even show the opposite trend with respect to N–H ESIPT systems bearing a
+    <strong>
+     BTA
+    </strong>
+    moiety.
+    <a href="#cit28" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       28
+      </span>
+     </sup>
+    </a>
+    For example,
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    possesses the highest proton acidity and hence the strongest H-bond among the studied compounds, yet it exhibits the slowest forward ESIPT rate (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      pt
+     </sub>
+    </small>
+    ) of 9.3 × 10
+    <small>
+     <sup>
+      9
+     </sup>
+    </small>
+    s
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    (see
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ). Moreover,
+    <strong>
+     H-NHPIP
+    </strong>
+    has the weakest acidity in this series, yet its forward ESIPT rate (4.4 × 10
+    <small>
+     <sup>
+      11
+     </sup>
+    </small>
+    s
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ) is the highest among the titled compounds (excluding
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    that exhibits ultrafast ESIPT of &lt;150 fs of the system response time).
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig4">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f4_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-f4.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f4.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 4
+       </b>
+       <span id="fig4">
+        <span class="graphic_title">
+         A plot of the corresponding free energy from N* to T* (Δ
+         <span class="italic">
+          E
+         </span>
+         *, solid blue circle) and forward ESIPT rate constant (
+         <span class="italic">
+          k
+         </span>
+         <small>
+          <sub>
+           pt
+          </sub>
+         </small>
+         solid red circle) in toluene as a function of N–H acidity (in terms of N–H proton NMR scale) for
+         <strong>
+          H-NHPIP
+         </strong>
+         ,
+         <strong>
+          CH
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          CO-NHPIP
+         </strong>
+         ,
+         <strong>
+          CH
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          C
+          <small>
+           <sub>
+            6
+           </sub>
+          </small>
+          H
+          <small>
+           <sub>
+            4
+           </sub>
+          </small>
+          Sulf-NHPIP
+         </strong>
+         and
+         <strong>
+          CF
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          CO-NHPIP
+         </strong>
+         .
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    This discrepancy, in our viewpoint, should be due to the difference in the canonical structure between the
+    <strong>
+     BTA
+    </strong>
+    <a href="#cit28" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       28
+      </span>
+     </sup>
+    </a>
+    and current 2-(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridin-2-yl)aniline (
+    <strong>
+     PIP
+    </strong>
+    ) ESIPT systems, in which the full π-conjugated, neutral structure can be drawn for the
+    <strong>
+     BTA
+    </strong>
+    systems, whereas for the
+    <strong>
+     PIP
+    </strong>
+    system only the “zwitterionic” structure can be depicted, localized at proton donor and acceptor sites with anionic and cationic character, respectively (see
+    <a href="#imgsch4" title="Select to navigate to scheme">
+     Scheme 4b
+    </a>
+    ). Accordingly, it is reasonable to expect the structure of the transition state to be a zwitterion-like configuration rather than a planar type of semi-π-conjugated structure proposed for the
+    <strong>
+     BTA
+    </strong>
+    system (see
+    <a href="#imgsch4" title="Select to navigate to scheme">
+     Scheme 4a
+    </a>
+    ).
+   </p>
+   <p class="otherpara">
+    To gain a deeper understanding we have performed DFT/TDDFT calculations for
+    <strong>
+     H-NHPIP
+    </strong>
+    and
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    in an attempt to reveal the possible structure for the transition state (TS*) along ESIPT. Accordingly, the structure and energetics of normal, transition state and tautomer species are depicted in Fig. S5 and S6 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ), respectively. Note that the potential energy diagram shown in Fig. S6 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) is only qualitative. As shown in Fig. S5 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ), the structures of TS* are closer to the tautomer (T*) species for both
+    <strong>
+     H-NHPIP
+    </strong>
+    and
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    . In other words, the computed structure confirms a zwitterionic-like configuration for TS*. However, the calculated ESIPT barrier for
+    <strong>
+     H-NHPIP
+    </strong>
+    (0.31 eV) is twice as much as that for the
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    (0.14 eV), the result of which contradicts the experimental results. Knowing that ESIPT is not solely a proton migration but involves multiple-dimension processes incorporating various vibrational/rotational motions, we believe that our current computational approach oversimplifies the reaction pathway. As for the zwitterion, the non-planar structure for TS*, the –R substituent at the N(R)–H site may play a key role in terms of displacement and/or orientation to optimize the geometry and hence minimize the energy of the transition state. For the case of
+    <strong>
+     H-NHPIP
+    </strong>
+    the –R (–H) group is subject to a very small spatial reorientation along ESIPT, whereas other groups such as R = –CF
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    C
+    <img alt="[double bond, length as m-dash]" class="charmap" src="http://www.rsc.org/images/entities/char_e001.gif"/>
+    O in
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    are expected to have a relatively large reorientation from the reactant (normal species in the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    state) to the zwitterion-like transition state, such that the steric and resonance (C
+    <img alt="[double bond, length as m-dash]" class="charmap" src="http://www.rsc.org/images/entities/char_e001.gif"/>
+    O) effects are to be optimized, resulting in an appreciable barrier.
+   </p>
+   <p class="otherpara">
+    On the other hand, we also made attempts to probe the reaction dynamics by the temperature dependent studies. Our current femtosecond fluorescence up-conversion setup was not suitable for this approach due to its utilization of the rotating sample cell. Alternatively, our TCSPC setup incorporating a short excitation pulse (∼100 fs) and a multichannel plate offers a ∼ 20 ps temporal resolution, which is fast enough to perform the temperature-dependent study on
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    due to its relatively slow ESIPT dynamics.
+   </p>
+   <p class="otherpara">
+    The temperature dependent relaxation dynamics for
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    was then studied by varying the temperature from 303 to 263 K in toluene. The temperature dependent forward proton-transfer rate constant
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      pt
+     </sub>
+    </small>
+    (
+    <span class="italic">
+     T
+    </span>
+    ) can thus be deduced by
+    <a href="#eqn1" title="">
+     eqn (1)
+    </a>
+    . As a result,
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    shows a plot for ln
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      pt
+     </sub>
+    </small>
+    (
+    <span class="italic">
+     T
+    </span>
+    ) as a function of 1/
+    <span class="italic">
+     T
+    </span>
+    according to the Arrhenius
+    <a href="#eqn2" title="">
+     eqn (2)
+    </a>
+    .
+   </p>
+   <table>
+    <td class="leftEqn">
+    </td>
+    <tr>
+     <td class="eqn">
+      <span id="eqn2">
+      </span>
+      <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-t2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+       <img alt="image file: c6cp05236c-t2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-t2.gif"/>
+      </a>
+     </td>
+     <td class="rightEqn">
+      (2)
+     </td>
+    </tr>
+   </table>
+   where
+   <span class="italic">
+    E
+   </span>
+   <small>
+    <sub>
+     a
+    </sub>
+   </small>
+   and
+   <span class="italic">
+    A
+   </span>
+   denote the reaction activation energy and frequency factor, respectively. The results reveal a straight line and consequently,
+   <span class="italic">
+    E
+   </span>
+   <small>
+    <sub>
+     a
+    </sub>
+   </small>
+   and
+   <span class="italic">
+    A
+   </span>
+   for the ESIPT of
+   <strong>
+    CF
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    CO-NHPIP
+   </strong>
+   are calculated to be 2.43 kcal mol
+   <small>
+    <sup>
+     −1
+    </sup>
+   </small>
+   and 5.21 × 10
+   <small>
+    <sup>
+     11
+    </sup>
+   </small>
+   s
+   <small>
+    <sup>
+     −1
+    </sup>
+   </small>
+   , respectively. The appreciable energy barrier and the small frequency factor support the viewpoint of the relatively large amplitude motion that may be, in part, associated with the –CF
+   <small>
+    <sub>
+     3
+    </sub>
+   </small>
+   CO substituent. Nevertheless, without the comprehensive kinetic data on other compounds as well as the advanced computational approaches it will be too primitive to describe any further subtlety of the ESIPT mechanism in this system.
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig5">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f5_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp05236c-f5.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp05236c/c6cp05236c-f5.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 5
+       </b>
+       <span id="fig5">
+        <span class="graphic_title">
+         Arrhenius plot of the rate constant (
+         <span class="italic">
+          k
+         </span>
+         <small>
+          <sub>
+           pt
+          </sub>
+         </small>
+         )
+         <span class="italic">
+          versus
+         </span>
+         reciprocal temperature of
+         <strong>
+          CF
+          <small>
+           <sub>
+            3
+           </sub>
+          </small>
+          CO-NHPIP
+         </strong>
+         in toluene from 303 to 263 K.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Despite the failure of resolving the transition-state structure for the studied NH-type systems, the thermodynamics of ESIPT,
+    <span class="italic">
+     i.e.
+    </span>
+    , Δ
+    <span class="italic">
+     E
+    </span>
+    *, can be estimated by the current time dependent-DFT (TD-DFT) approach (TD-B3LYP/6-311++G(d,p)), see the ESI,
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    the values of which are listed in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    . In comparison to the experimental data (see also
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ) the computed Δ
+    <span class="italic">
+     E
+    </span>
+    * apparently much overestimated the reaction exergonicity. Interestingly, however, the trend of Δ
+    <span class="italic">
+     E
+    </span>
+    * is consistent with the experimental data, being decreased in the negative number (more exergonic) in the order of
+    <strong>
+     H-NHPIP
+    </strong>
+    &lt;
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    &lt;
+    <strong>
+     CH
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     H
+     <small>
+      <sub>
+       4
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    &lt;
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    &lt;
+    <strong>
+     C
+     <small>
+      <sub>
+       6
+      </sub>
+     </small>
+     F
+     <small>
+      <sub>
+       5
+      </sub>
+     </small>
+     Sulf-NHPIP
+    </strong>
+    . Except for
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    the results show an increase of ESIPT exergonicity upon increasing the electron withdrawing power of the –R groups and hence the increase of the N(R)–H acidity. Nevertheless, as for
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    which possesses the strongest electron withdrawing –R (CF
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    CO) group, its large ESIPT barrier and less reaction exergonicity is pending resolution.
+   </p>
+   <h2 id="sect1013">
+    <span class="a_heading">
+     3. Conclusions
+    </span>
+   </h2>
+   <span>
+    In summary, a new series of N–H H-bonded molecules derived from the core chromophore 2-(imidazo[1,2-
+    <span class="italic">
+     a
+    </span>
+    ]pyridin-2-yl)aniline (
+    <strong>
+     PIP
+    </strong>
+    ) have been synthesized to investigate the associated N(R)–H⋯N proton transfer properties in the excited state. Similar to other N–H type ESIPT systems, in a qualitative manner, the results show the correlation of the increase of the N(R)–H acidity with increasing electron withdrawing power of the –R groups and hence the increase of the hydrogen bonding strength. Also, the PIP systems show the similarity of increasing the electron withdrawing –R resulting in a hypsochromic shift of the proton-transfer tautomer emission such that the tautomer emission peak wavelength can be largely tuned from 700 nm (in
+    <strong>
+     H-NHPIP
+    </strong>
+    ) to 510 nm (in
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    ).
+   </span>
+   <p class="otherpara">
+    Despite the above similarities, however, the dissimilarity lies in that the resulting ESIPT kinetics does not reveal an increase of the ESIPT rate with an increase in the N–H acidity, as concluded in the
+    <strong>
+     BTA
+    </strong>
+    system.
+    <a href="#cit28" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       28
+      </span>
+     </sup>
+    </a>
+    Even oppositely,
+    <strong>
+     CF
+     <small>
+      <sub>
+       3
+      </sub>
+     </small>
+     CO-NHPIP
+    </strong>
+    with the strongest electron withdrawing group reveals the slowest ESIPT rate and a large barrier. We tentatively rationalize the result by the uniqueness of the
+    <strong>
+     PIP
+    </strong>
+    system for which the proton transfer tautomer and the structure of the transition state can only be described by a zwitterionic character localized at proton donors and acceptors. Therefore, instead of the planar type semi-π-conjugated structure proposed for the
+    <strong>
+     BTA
+    </strong>
+    system, the –R configuration at the N(R)–H site in the
+    <strong>
+     PIP
+    </strong>
+    system may play a key role in terms of displacement and/or orientation to optimize the energy of the transition state. In other words, it seems like that independent of the N(R)–H acidity the structure of the transition state resembles that of the product,
+    <span class="italic">
+     i.e.
+    </span>
+    , the tautomer species. Under these circumstances the correlations among H-bonds, ESIPT kinetics and thermodynamics may no longer hold. The results thus bring a new insight regarding the difference
+    <span class="italic">
+     per se
+    </span>
+    in ESIPT dynamics between fully conjugated, neutral type ESIPT and localized zwitterionic type ESIPT, which extends the horizon of N–H type ESIPT in view of fundamental and future applications.
+   </p>
+   <h2 id="sect1033">
+    <span class="a_heading">
+     Acknowledgements
+    </span>
+   </h2>
+   <span>
+    P.-T. Chou thanks the Ministry of Science and Technology, Taiwan, for the financial support. A. J. S. gratefully acknowledges The Interdisciplinary Center for Mathematical and Molecular Modelling of the University of Warsaw (ICM) for computational facilities.
+   </span>
+   <span id="sect1035">
+    <h2 id="sect1032">
+     <span class="a_heading">
+      Notes and references
+     </span>
+    </h2>
+   </span>
+   <ol type="1">
+    <li>
+     <span id="cit1">
+      L. Feng, Z.-M. Liu, J. Hou, X. Lv, J. Ning, G.-B. Ge, J.-N. Cui and L. Yang,
+      <span class="italic">
+       Biosens. Bioelectron.
+      </span>
+      , 2015,
+      <span class="bold">
+       65
+      </span>
+      , 9–15
+      <a class="DOILink" href="http://dx.doi.org/10.1016/j.bios.2014.10.002" target="_blank" title="DOI Link to resource 10.1016/j.bios.2014.10.002">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXhslahurzF" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25461132%5Buid%5D" target="_blank" title="PubMed Link to resource 25461132">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/1_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit2">
+      L. Geng, X.-F. Yang, Y. Zhong, Z. Li and H. Li,
+      <span class="italic">
+       Dyes Pigm.
+      </span>
+      , 2015,
+      <span class="bold">
+       120
+      </span>
+      , 213–219
+      <a class="DOILink" href="http://dx.doi.org/10.1016/j.dyepig.2015.04.016" target="_blank" title="DOI Link to resource 10.1016/j.dyepig.2015.04.016">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXnt1SrtL4%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/2_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit3">
+      J. Zhang, L. Ning, J. Liu, J. Wang, B. Yu, X. Liu, X. Yao, Z. Zhang and H. Zhang,
+      <span class="italic">
+       Anal. Chem.
+      </span>
+      , 2015,
+      <span class="bold">
+       87
+      </span>
+      , 9101–9107
+      <a class="DOILink" href="http://dx.doi.org/10.1021/acs.analchem.5b02527" target="_blank" title="DOI Link to resource 10.1021/acs.analchem.5b02527">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXhtlemu7fI" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=26274784%5Buid%5D" target="_blank" title="PubMed Link to resource 26274784">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/3_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit4">
+      O. F. Mohammed, D. Pines, E. T. J. Nibbering and E. Pines,
+      <span class="italic">
+       Angew. Chem., Int. Ed.
+      </span>
+      , 2007,
+      <span class="bold">
+       46
+      </span>
+      , 1458–1461
+      <a class="DOILink" href="http://dx.doi.org/10.1002/anie.200603383" target="_blank" title="DOI Link to resource 10.1002/anie.200603383">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXitleiu70%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17212371%5Buid%5D" target="_blank" title="PubMed Link to resource 17212371">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/4_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit5">
+      F. Vollmer and W. Rettig,
+      <span class="italic">
+       J. Photochem. Photobiol., A
+      </span>
+      , 1996,
+      <span class="bold">
+       95
+      </span>
+      , 143–155
+      <a class="DOILink" href="http://dx.doi.org/10.1016/1010-6030(95)04252-0" target="_blank" title="DOI Link to resource 10.1016/1010-6030(95)04252-0">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28Xisl2qtrk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/5_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit6">
+      A. L. Sobolewski and W. Domcke,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2006,
+      <span class="bold">
+       8
+      </span>
+      , 3410–3417
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=B604610J&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/B604610J">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/6_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit7">
+      J. Catalan and J. C. del Valle,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1993,
+      <span class="bold">
+       115
+      </span>
+      , 4321–4325
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja00063a057" target="_blank" title="DOI Link to resource 10.1021/ja00063a057">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3sXitlegt7Y%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/7_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit8">
+      D. A. Parthenopoulos, D. P. McMorrow and M. Kasha,
+      <span class="italic">
+       J. Phys. Chem.
+      </span>
+      , 1991,
+      <span class="bold">
+       95
+      </span>
+      , 2668–2674
+      <a class="DOILink" href="http://dx.doi.org/10.1021/j100160a010" target="_blank" title="DOI Link to resource 10.1021/j100160a010">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3MXhsFentb0%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/8_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit9">
+      J. Zhao, S. Ji, Y. Chen, H. Guo and P. Yang,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2012,
+      <span class="bold">
+       14
+      </span>
+      , 8803–8817
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C2CP23144A&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C2CP23144A">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/9_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit10">
+      B. Liu, H. Wang, T. Wang, Y. Bao, F. Du, J. Tian, Q. Li and R. Bai,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 2012,
+      <span class="bold">
+       48
+      </span>
+      , 2867–2869
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C2CC17677G&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C2CC17677G">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/10_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit11">
+      M. D. Heagy,
+      <span class="italic">
+       Chemosensors
+      </span>
+      , John Wiley &amp; Sons, Inc.,  2011, pp. 253–273
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chemosensors%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202011%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/11_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit12">
+      S. Park, J. E. Kwon, S. H. Kim, J. Seo, K. Chung, S.-Y. Park, D.-J. Jang, B. M. Medina, J. Gierschner and S. Y. Park,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2009,
+      <span class="bold">
+       131
+      </span>
+      , 14043–14049
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja902533f" target="_blank" title="DOI Link to resource 10.1021/ja902533f">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1MXmsFyit7s%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=19480450%5Buid%5D" target="_blank" title="PubMed Link to resource 19480450">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/12_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit13">
+      K.-C. Tang, M.-J. Chang, T.-Y. Lin, H.-A. Pan, T.-C. Fang, K.-Y. Chen, W.-Y. Hung, Y.-H. Hsu and P.-T. Chou,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2011,
+      <span class="bold">
+       133
+      </span>
+      , 17738–17745
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja2062693" target="_blank" title="DOI Link to resource 10.1021/ja2062693">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXhtlems7bP" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=21957929%5Buid%5D" target="_blank" title="PubMed Link to resource 21957929">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/13_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit14">
+      S. Park, O.-H. Kwon, Y.-S. Lee, D.-J. Jang and S. Y. Park,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2007,
+      <span class="bold">
+       111
+      </span>
+      , 9649–9653
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp072212p" target="_blank" title="DOI Link to resource 10.1021/jp072212p">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXpslShsrY%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17760426%5Buid%5D" target="_blank" title="PubMed Link to resource 17760426">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/14_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit15">
+      P. Chou, D. McMorrow, T. J. Aartsma and M. Kasha,
+      <span class="italic">
+       J. Phys. Chem.
+      </span>
+      , 1984,
+      <span class="bold">
+       88
+      </span>
+      , 4596–4599
+      <a class="DOILink" href="http://dx.doi.org/10.1021/j150664a032" target="_blank" title="DOI Link to resource 10.1021/j150664a032">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL2cXlsVSlu78%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/15_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit16">
+      P.-T. Chou, M. L. Martinez and J. H. Clements,
+      <span class="italic">
+       Chem. Phys. Lett.
+      </span>
+      , 1993,
+      <span class="bold">
+       204
+      </span>
+      , 395–399
+      <a class="DOILink" href="http://dx.doi.org/10.1016/0009-2614(93)89175-H" target="_blank" title="DOI Link to resource 10.1016/0009-2614(93)89175-H">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3sXis1ehsbk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/16_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit17">
+      M. F. Rode and A. L. Sobolewski,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2010,
+      <span class="bold">
+       114
+      </span>
+      , 11879–11889
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp105710n" target="_blank" title="DOI Link to resource 10.1021/jp105710n">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3cXht12qt7%252FK" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20954735%5Buid%5D" target="_blank" title="PubMed Link to resource 20954735">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/17_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit18">
+      S. Mitra and S. Mukherjee,
+      <span class="italic">
+       J. Lumin.
+      </span>
+      , 2006,
+      <span class="bold">
+       118
+      </span>
+      , 1–11
+      <a class="DOILink" href="http://dx.doi.org/10.1016/j.jlumin.2005.04.014" target="_blank" title="DOI Link to resource 10.1016/j.jlumin.2005.04.014">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2MXht1Clt7%252FI" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/18_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit19">
+      S.-J. Lim, J. Seo and S. Y. Park,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2006,
+      <span class="bold">
+       128
+      </span>
+      , 14542–14547
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja0637604" target="_blank" title="DOI Link to resource 10.1021/ja0637604">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD28XhtV2jsL%252FF" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17090038%5Buid%5D" target="_blank" title="PubMed Link to resource 17090038">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/19_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit20">
+      P. F. Barbara, P. K. Walsh and L. E. Brus,
+      <span class="italic">
+       J. Phys. Chem.
+      </span>
+      , 1989,
+      <span class="bold">
+       93
+      </span>
+      , 29–34
+      <a class="DOILink" href="http://dx.doi.org/10.1021/j100338a011" target="_blank" title="DOI Link to resource 10.1021/j100338a011">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL1MXjvVejuw%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/20_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit21">
+      A. Douhal, F. Lahmani and A. H. Zewail,
+      <span class="italic">
+       Chem. Phys.
+      </span>
+      , 1996,
+      <span class="bold">
+       207
+      </span>
+      , 477–498
+      <a class="DOILink" href="http://dx.doi.org/10.1016/0301-0104(96)00067-5" target="_blank" title="DOI Link to resource 10.1016/0301-0104(96)00067-5">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28XjvF2rsrs%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/21_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit22">
+      E. Bardez, I. Devol, B. Larrey and B. Valeur,
+      <span class="italic">
+       J. Phys. Chem. B
+      </span>
+      , 1997,
+      <span class="bold">
+       101
+      </span>
+      , 7786–7793
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp971293u" target="_blank" title="DOI Link to resource 10.1021/jp971293u">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXlslGmtbk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/22_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit23">
+      O. M. Zamotaiev, V. Y. Postupalenko, V. V. Shvadchak, V. G. Pivovarenko, A. S. Klymchenko and Y. Mély,
+      <span class="italic">
+       Bioconjugate Chem.
+      </span>
+      , 2011,
+      <span class="bold">
+       22
+      </span>
+      , 101–107
+      <a class="DOILink" href="http://dx.doi.org/10.1021/bc100434d" target="_blank" title="DOI Link to resource 10.1021/bc100434d">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3cXhsF2jt7%252FP" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=21174445%5Buid%5D" target="_blank" title="PubMed Link to resource 21174445">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/23_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit24">
+      G. J. Woolfe and P. J. Thistlethwaite,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1981,
+      <span class="bold">
+       103
+      </span>
+      , 6916–6923
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja00413a026" target="_blank" title="DOI Link to resource 10.1021/ja00413a026">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL3MXmtVeju78%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/24_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit25">
+      K.-Y. Chen, Y.-M. Cheng, C.-H. Lai, C.-C. Hsu, M.-L. Ho, G.-H. Lee and P.-T. Chou,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2007,
+      <span class="bold">
+       129
+      </span>
+      , 4534–4535
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja070880i" target="_blank" title="DOI Link to resource 10.1021/ja070880i">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXjsVaisb8%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17385870%5Buid%5D" target="_blank" title="PubMed Link to resource 17385870">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/25_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit26">
+      T. Arai, M. Moriyama and K. Tokumaru,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1994,
+      <span class="bold">
+       116
+      </span>
+      , 3171–3172
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja00086a076" target="_blank" title="DOI Link to resource 10.1021/ja00086a076">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2cXjt1anu7o%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/26_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit27">
+      N. Nijegorodov, V. Zvolinski, P. V. C. Luhanga, R. Mabbs and J. Ahmad,
+      <span class="italic">
+       Spectrochim. Acta, Part A
+      </span>
+      , 2006,
+      <span class="bold">
+       65
+      </span>
+      , 196–205
+      <a class="DOILink" href="http://dx.doi.org/10.1016/j.saa.2005.10.031" target="_blank" title="DOI Link to resource 10.1016/j.saa.2005.10.031">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ASTN%3A280%3ADC%252BD28vntV2mug%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16495125%5Buid%5D" target="_blank" title="PubMed Link to resource 16495125">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/27_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit28">
+      H.-W. Tseng, J.-Q. Liu, Y.-A. Chen, C.-M. Chao, K.-M. Liu, C.-L. Chen, T.-C. Lin, C.-H. Hung, Y.-L. Chou, T.-C. Lin, T.-L. Wang and P.-T. Chou,
+      <span class="italic">
+       J. Phys. Chem. Lett.
+      </span>
+      , 2015,
+      <span class="bold">
+       6
+      </span>
+      , 1477–1486
+      <a class="DOILink" href="http://dx.doi.org/10.1021/acs.jpclett.5b00423" target="_blank" title="DOI Link to resource 10.1021/acs.jpclett.5b00423">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXlslGqs7o%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=26263155%5Buid%5D" target="_blank" title="PubMed Link to resource 26263155">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/28_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit29">
+      H.-W. Tseng, T.-C. Lin, C.-L. Chen, T.-C. Lin, Y.-A. Chen, J.-Q. Liu, C.-H. Hung, C.-M. Chao, K.-M. Liu and P.-T. Chou,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 2015,
+      <span class="bold">
+       51
+      </span>
+      , 16099–16102
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C5CC06633F&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C5CC06633F">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/29_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit30">
+      S. Santra, G. Krishnamoorthy and S. K. Dogra,
+      <span class="italic">
+       Chem. Phys. Lett.
+      </span>
+      , 1999,
+      <span class="bold">
+       311
+      </span>
+      , 55–61
+      <a class="DOILink" href="http://dx.doi.org/10.1016/S0009-2614(99)00822-2" target="_blank" title="DOI Link to resource 10.1016/S0009-2614(99)00822-2">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXmt1Cnt7w%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/30_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit31">
+      S. Santra, G. Krishnamoorthy and S. K. Dogra,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2000,
+      <span class="bold">
+       104
+      </span>
+      , 476–482
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp992678a" target="_blank" title="DOI Link to resource 10.1021/jp992678a">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXlvFKksw%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/31_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit32">
+      M. K. Nayak,
+      <span class="italic">
+       J. Photochem. Photobiol., A
+      </span>
+      , 2012,
+      <span class="bold">
+       241
+      </span>
+      , 26–37
+      <a class="DOILink" href="http://dx.doi.org/10.1016/j.jphotochem.2012.05.018" target="_blank" title="DOI Link to resource 10.1016/j.jphotochem.2012.05.018">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XpsVOrtro%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/32_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit33">
+      A. I. Ciuciu, K. Skonieczny, D. Koszelewski, D. T. Gryko and L. Flamigni,
+      <span class="italic">
+       J. Phys. Chem. C
+      </span>
+      , 2013,
+      <span class="bold">
+       117
+      </span>
+      , 791–803
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXlt1WjtA%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/33_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit34">
+      Z. Zhang, Y.-H. Hsu, Y.-A. Chen, C.-L. Chen, T.-C. Lin, J.-Y. Shen and P.-T. Chou,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 2014,
+      <span class="bold">
+       50
+      </span>
+      , 15026–15029
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4CC07109C&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4CC07109C">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/34_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit35">
+      W. S. Yu, C. C. Cheng, Y. M. Cheng, P. C. Wu, Y. H. Song, Y. Chi and P. T. Chou,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2003,
+      <span class="bold">
+       125
+      </span>
+      , 10800–10801
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja035382y" target="_blank" title="DOI Link to resource 10.1021/ja035382y">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3sXmt1eit74%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=12952455%5Buid%5D" target="_blank" title="PubMed Link to resource 12952455">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/35_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit36">
+      M. Kijak, Y. Nosenko, A. Singh, R. P. Thummel and J. Waluk,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2007,
+      <span class="bold">
+       129
+      </span>
+      , 2738–2739
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja068109f" target="_blank" title="DOI Link to resource 10.1021/ja068109f">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXhvVWjur0%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17305339%5Buid%5D" target="_blank" title="PubMed Link to resource 17305339">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/36_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit37">
+      P. O. Hubin, A. D. Laurent, D. P. Vercauteren and D. Jacquemin,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2014,
+      <span class="bold">
+       16
+      </span>
+      , 25288–25295
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4CP03223C&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4CP03223C">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/37_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit38">
+      A. J. Stasyuk, M. K. Cyrański, D. T. Gryko and M. Solà,
+      <span class="italic">
+       J. Chem. Theory Comput.
+      </span>
+      , 2015,
+      <span class="bold">
+       11
+      </span>
+      , 1046–1054
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ct501100t" target="_blank" title="DOI Link to resource 10.1021/ct501100t">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXitVertbY%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=26579756%5Buid%5D" target="_blank" title="PubMed Link to resource 26579756">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/38_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit39">
+      F. G. Bordwell, D. Algrim and N. R. Vanier,
+      <span class="italic">
+       J. Org. Chem.
+      </span>
+      , 1977,
+      <span class="bold">
+       42
+      </span>
+      , 1817–1819
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jo00430a039" target="_blank" title="DOI Link to resource 10.1021/jo00430a039">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaE2sXhvVyqt7k%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/39_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit40">
+      F. G. Bordwell and D. J. Algrim,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1988,
+      <span class="bold">
+       110
+      </span>
+      , 2964–2968
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja00217a045" target="_blank" title="DOI Link to resource 10.1021/ja00217a045">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL1cXhvVKisr8%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/40_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit41">
+      F. G. Bordwell, R. J. McCallum and W. N. Olmstead,
+      <span class="italic">
+       J. Org. Chem.
+      </span>
+      , 1984,
+      <span class="bold">
+       49
+      </span>
+      , 1424–1427
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jo00182a020" target="_blank" title="DOI Link to resource 10.1021/jo00182a020">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL2cXhsVGru74%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/41_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit42">
+      A. J. Stasyuk, P. J. Cywiński and D. T. Gryko,
+      <span class="italic">
+       J. Photochem. Photobiol., C
+      </span>
+      , 2016
+      <small>
+       DOI:
+       <a class="DOILink" href="http://dx.doi.org/10.1016/j.jphotochemrev.2016.05.003" target="_BLANK" title="DOI Link to 10.1016/j.jphotochemrev.2016.05.003">
+        10.1016/j.jphotochemrev.2016.05.003
+       </a>
+      </small>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/42_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit43">
+      A. Douhal, F. Amat-Guerri and A. U. Acuña,
+      <span class="italic">
+       J. Phys. Chem.
+      </span>
+      , 1995,
+      <span class="bold">
+       99
+      </span>
+      , 76–80
+      <a class="DOILink" href="http://dx.doi.org/10.1021/j100001a014" target="_blank" title="DOI Link to resource 10.1021/j100001a014">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXis12hs74%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/43_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit44">
+      A. Douhal, F. Amat-Guerri and A. U. Acuña,
+      <span class="italic">
+       Angew. Chem., Int. Ed.
+      </span>
+      , 1997,
+      <span class="bold">
+       36
+      </span>
+      , 1514–1516
+      <a class="DOILink" href="http://dx.doi.org/10.1002/anie.199715141" target="_blank" title="DOI Link to resource 10.1002/anie.199715141">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXlsVeqtbs%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/44_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit45">
+      T. Mutai, H. Tomoda, T. Ohkawa, Y. Yabe and K. Araki,
+      <span class="italic">
+       Angew. Chem., Int. Ed.
+      </span>
+      , 2008,
+      <span class="bold">
+       120
+      </span>
+      , 9664–9666
+      <a class="DOILink" href="http://dx.doi.org/10.1002/ange.200803975" target="_blank" title="DOI Link to resource 10.1002/ange.200803975">
+       CrossRef
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/45_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit46">
+      H. Shono, T. Ohkawa, H. Tomoda, T. Mutai and K. Araki,
+      <span class="italic">
+       ACS Appl. Mater. Interfaces
+      </span>
+      , 2011,
+      <span class="bold">
+       3
+      </span>
+      , 654–657
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXivVSgs74%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/46_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit47">
+      T. Shida, T. Mutai and K. Araki,
+      <span class="italic">
+       CrystEngComm
+      </span>
+      , 2013,
+      <span class="bold">
+       15
+      </span>
+      , 10179–10182
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C3CE41742E&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C3CE41742E">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/47_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit48">
+      S. Furukawa, H. Shono, T. Mutai and K. Araki,
+      <span class="italic">
+       ACS Appl. Mater. Interfaces
+      </span>
+      , 2014,
+      <span class="bold">
+       6
+      </span>
+      , 16065–16070
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXhsVSrtL7I" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/48_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit49">
+      T. Mutai, H. Shono, Y. Shigemitsu and K. Araki,
+      <span class="italic">
+       CrystEngComm
+      </span>
+      , 2014,
+      <span class="bold">
+       16
+      </span>
+      , 3890–3895
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C3CE42627K&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C3CE42627K">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/49_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit50">
+      A. E. Tschitschibabin,
+      <span class="italic">
+       Ber. Dtsch. Chem. Ges. (A and B Series)
+      </span>
+      , 1925,
+      <span class="bold">
+       58
+      </span>
+      , 1704–1706
+      <a class="DOILink" href="http://dx.doi.org/10.1002/cber.19250580852" target="_blank" title="DOI Link to resource 10.1002/cber.19250580852">
+       CrossRef
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/50_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit51">
+      H. L. Blewitt,
+      <span class="italic">
+       Chemistry of Heterocyclic Compounds
+      </span>
+      , John Wiley &amp; Sons, Inc.,  2008, pp. 117–178
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chemistry%20of%20Heterocyclic%20Compounds%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202008%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/51_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit52">
+      A. J. Stasyuk, M. Banasiewicz, M. K. Cyrański and D. T. Gryko,
+      <span class="italic">
+       J. Org. Chem.
+      </span>
+      , 2012,
+      <span class="bold">
+       77
+      </span>
+      , 5552–5558
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jo300643w" target="_blank" title="DOI Link to resource 10.1021/jo300643w">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XnvF2nt74%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22662878%5Buid%5D" target="_blank" title="PubMed Link to resource 22662878">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/52_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit53">
+      L. Kielesinski, M. Tasior and D. T. Gryko,
+      <span class="italic">
+       Org. Chem. Front.
+      </span>
+      , 2015,
+      <span class="bold">
+       2
+      </span>
+      , 21–28
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4QO00248B&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4QO00248B">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/53_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit54">
+      A. K. Pandey, R. Sharma, A. Singh, S. Shukla, K. Srivastava, S. K. Puri, B. Kumar and P. M. S. Chauhan,
+      <span class="italic">
+       RSC Adv.
+      </span>
+      , 2014,
+      <span class="bold">
+       4
+      </span>
+      , 26757–26770
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4RA03415E&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4RA03415E">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/54_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit55">
+      S. Sharma, B. Saha, D. Sawant and B. Kundu,
+      <span class="italic">
+       ACS Comb. Sci.
+      </span>
+      , 2007,
+      <span class="bold">
+       9
+      </span>
+      , 783–792
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXmsV2ltrY%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP05236C/55_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+   </ol>
+   <hr/>
+   <table>
+    <tr>
+     <td>
+      <h3>
+       Footnotes
+      </h3>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="sup_ref">
+       †
+       <span id="fn1">
+        Electronic supplementary information (ESI) available. See DOI:
+        <a href="http://xlink.rsc.org/?DOI=c6cp05236c" target="_blank" title="Select to resolve DOI: 10.1039/c6cp05236c">
+         10.1039/c6cp05236c
+        </a>
+       </span>
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="sup_ref">
+       ‡
+       <span id="fn2">
+        These two authors contributed equally.
+       </span>
+      </span>
+     </td>
+    </tr>
+   </table>
+   <table>
+    <tr>
+     <td>
+      <hr/>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       This journal is © the Owner Societies 2016
+      </b>
+     </td>
+    </tr>
+   </table>
+  </div>
+ </body>
+</html>

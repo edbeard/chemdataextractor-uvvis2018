@@ -1,0 +1,4277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:art="http://www.rsc.org/schema/rscart38" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rsc="urn:rsc.org">
+ <head>
+  <title>
+   Wavelength dependence of the photo-induced conversion of the Ni–C to the Ni–L redox state in the [NiFe] hydrogenase of Desulfovibrio vulgaris Miyazaki ...  - Physical Chemistry Chemical Physics (RSC Publishing) DOI:10.1039/B310205J
+  </title>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYNF1oJ","queueTime":0,"applicationTime":1071,"ttGuid":"2627C285CB14B72","agent":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,S=y.hash,this[u]=Date.now()}function o(){j--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),R=t(13),P=t("ee"),D=P.get("tracer");t(14),t("loader").features.spa=!0;var S,N=w[v],j=0;P.on(u,r),P.on(p,r),P.on(h,o),P.on(d,o),P.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),R.buffer([u,"new-xhr","send-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(R,"send-xhr"+c),a(P,"xhr-resolved"),a(P,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),N("hashchange",i,!0),N("load",i,!0),N("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(h+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),f.setCurrentRouteName=o(h+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(h){throw u(e+"err",[r,a,h],c),h}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,h(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){p([a,n,r,o])}s=i}}function h(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!p.aborted){t&&t(n,r,o);for(var i=e(o),a=l(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function d(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return h[t]=h[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},g={on:d,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},h={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=h.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(w,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=h.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===h.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=t("ee"),u=window,h=u.document,p="addEventListener",d="attachEvent",l=u.XMLHttpRequest,m=l&&l.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:l,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(16);var v=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-998.min.js"},y=l&&m&&m[p]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:v,features:{},xhrWrappable:y};h[p]?(h[p]("DOMContentLoaded",i,!1),u[p]("load",r,!1)):(h[d]("onreadystatechange",o),u[d]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,14,5,3,4]);
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Caroline Fichtner" name="DC.Creator"/>
+  <meta content="Maurice van Gastel" name="DC.Creator"/>
+  <meta content="Wolfgang Lubitz" name="DC.Creator"/>
+  <meta content="Wavelength dependence of the photo-induced conversion of the Ni–C to the Ni–L redox state in the [NiFe] hydrogenase of Desulfovibrio vulgaris Miyazaki F " name="DC.title"/>
+  <meta content="Royal Society of Chemistry" name="DC.publisher"/>
+  <meta content="2003/12/04" name="DC.Date"/>
+  <meta content="10.1039/B310205J" name="DC.Identifier" scheme="doi"/>
+  <meta content="en" name="DC.Language"/>
+  <meta content="Wavelength dependence of the photo-induced conversion of the Ni–C to the Ni–L redox state in the [NiFe] hydrogenase of Desulfovibrio vulgaris Miyazaki F " name="citation_title"/>
+  <meta content="Caroline Fichtner" name="citation_author"/>
+  <meta content="Maurice van Gastel" name="citation_author"/>
+  <meta content="Wolfgang Lubitz" name="citation_author"/>
+  <meta content="2003/11/11" name="citation_online_date"/>
+  <meta content="2003" name="citation_date"/>
+  <meta content="Physical Chemistry Chemical Physics" name="citation_journal_title"/>
+  <meta content="5" name="citation_volume"/>
+  <meta content="24" name="citation_issue"/>
+  <meta content="5507" name="citation_firstpage"/>
+  <meta content="5513" name="citation_lastpage"/>
+  <meta content="10.1039/B310205J" name="citation_doi"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticlePDF/2003/CP/B310205J" name="citation_pdf_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleLanding/2003/CP/B310205J" name="citation_abstract_html_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleHTML/2003/CP/B310205J" name="citation_fulltext_html_url"/>
+  <link href="" rel="shortcut icon"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/rschtml2.css?ver=6_0_9" rel="stylesheet" type="text/css"/>
+  <script src="http://pubs.rsc.org/content/scripts/prospect.js?ver=6_0_9" type="text/javascript">
+  </script>
+  <script src="http://pubs.rsc.org/content/scripts/JQueryPlugins.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   (function ($) {
+        function grab_content(span_id) {
+            var content = $('span[id="' + span_id + '"]').text();
+
+            if (span_id.indexOf("fn", 0) != -1) {
+                return content; // could contain useful anchor text i.e. see doi:
+            }
+            else {
+                // strip external anchor text CrossRef etc. (but not Dera linked text)
+               $('span[id="' + span_id + '"] a[class !="simple"][class !="CH"][class !="TC"][class !="RTC"][class !="GB"]').each(
+            		function () {
+            					content = content.replace($(this).text(), '');
+              					}); return content;
+            }
+       }
+
+        $.fn.swapAttr = function (attribute) {
+            return this.each(function () {
+                $(this).hover(function () {
+                    var $this = $(this);
+                    var idval = $this.attr("href").replace("#", "");
+                    var textval = grab_content(idval);
+                    if (textval.replace(/\s+/g, '') != "") {
+                        $this.attr('title', textval.replace(/\s+/g, ' '));
+                    }
+                }, function () {
+                    var $this = $(this);
+                });
+            });
+        };
+
+    })(jQuery);
+
+    $(document).ready(function () {
+        $("a[href^='#']").swapAttr();
+    });
+  </script>
+  <!--6_0_9-->
+ </head>
+ <body>
+  <!--Google Tag Manager-->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-KW8L" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KW8L');
+  </script>
+  <!--End Google Tag Manager-->
+  <span id="top">
+  </span>
+  <div id="wrapper">
+   <div class="left_head">
+    <a class="URLLink" href="http://pubs.rsc.org">
+     <img alt="Royal Society of Chemistry" border="0" class="rsc-logo" src="http://pubs.rsc.org/content/NewImages/royal-society-of-chemistry-logo.png"/>
+    </a>
+    <br/>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlepdf/2003/CP/B310205J" target="_blank" title="Link to PDF version">
+      View PDF Version
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2003/CP/B310320J" target="_BLANK" title="Link to previous article (id:B310320J)">
+      Previous Article
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2003/CP/B311845B" target="_BLANK" title="Link to next article (id:B311845B)">
+      Next Article
+     </a>
+    </span>
+   </div>
+   <div class="right_head">
+   </div>
+   <div class="article_info">
+    DOI:
+    <a href="http://dx.doi.org/10.1039/B310205J" target="_blank" title="Link to landing page via DOI">
+     10.1039/B310205J
+    </a>
+    (Paper)
+    <span class="italic">
+     <a href="http://dx.doi.org/10.1039/1463-9084/1999" title="Link to journal home page">
+      Phys. Chem. Chem. Phys.
+     </a>
+    </span>
+    , 2003,
+    <strong>
+     5
+    </strong>
+    , 5507-5513
+    <div id="chemnav">
+     <a class="tab" onclick="toggleColour('TC');" onmouseover="this.style.cursor='pointer';" title="Select to toggle highlighting of compound names">
+      <span alt="Show Compounds button" id="btnTC">
+       Show Compounds
+      </span>
+     </a>
+     <input id="inpTC" type="hidden" value="off"/>
+     <a class="tab" onclick="toggleColour('CH');" onmouseover="this.style.cursor='pointer';" title="Select to toggle highlighting of chem-ontology terms">
+      <span alt="Show Chemical Terms button" id="btnCH">
+       Show Chemical Terms
+      </span>
+     </a>
+     <input id="inpCH" type="hidden" value="off"/>
+    </div>
+   </div>
+   <h1 id="sect157">
+    <span class="title_heading">
+     Wavelength dependence of the photo-induced conversion of the Ni–C to the Ni–L redox state in the [NiFe] hydrogenase of
+     <span class="italic">
+      Desulfovibrio vulgaris
+     </span>
+     Miyazaki F
+    </span>
+   </h1>
+   <p class="header_text">
+    <span class="bold">
+     Caroline 
+            Fichtner
+    </span>
+    ,
+    <span class="bold">
+     Maurice 
+            van Gastel
+    </span>
+    <span class="bold">
+     and
+    </span>
+    <span class="bold">
+     Wolfgang 
+            Lubitz
+    </span>
+    *
+    <br/>
+    <span class="italic">
+     Max Planck Institute for Bioinorganic Chemistry, Stiftstrasse 34-36, D-45470, Mülheim/Ruhr, Germany. E-mail:
+     <a href="mailto:lubitz@mpi-muelheim.mpg.de">
+      lubitz@mpi-muelheim.mpg.de
+     </a>
+     ;  Fax: +49-208-306-3955;   Tel: +49-208-306-3614
+    </span>
+   </p>
+   <div id="art-admin">
+    <span class="italic bold">
+     Received 
+      27th August 2003
+    </span>
+    <span class="bold italic">
+     , Accepted 24th October 2003
+    </span>
+   </div>
+   <p class="bold italic">
+    First published on the web 11th November 2003
+   </p>
+   <hr/>
+   <p class="abstract">
+    The conversion process of the Ni–C to the Ni–L redox state of the [NiFe] center in
+    <span class="italic">
+     Desulfovibrio vulgaris
+    </span>
+    Miyazaki F hydrogenase is investigated by
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR spectroscopy">
+      EPR spectroscopy
+     </a>
+    </span>
+    following laser excitation at distinct wavelengths. The Ni–L state is characterized by a rhombic
+    <span class="sansserif">
+     <span class="bold italic">
+      g
+     </span>
+    </span>
+    tensor with principal values of 2.30, 2.12 and 2.05. The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000831','B310205J')" title="Chemical Methods Ontology link for: action spectrum">
+      action spectrum
+     </a>
+    </span>
+    associated with the Ni–C to Ni–L photoconversion spans the complete visible range and local maxima are present at 590 and 700 nm and a shoulder around 850 nm. In the UV/VIS spectrum of the Ni–C state, bands of low intensity can also be observed at 590 and 700 nm. It is proposed that these bands are associated with the [NiFe] center and correspond to electronic transitions that trigger the conversion process. On the basis of the small molar absorption coefficients (1100 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    and 1400 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ), these transitions contain at most a small amount of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    -to-metal charge transfer character. A light-induced back conversion, starting from the Ni–L redox state, has not been observed. Based on comparison with data available from
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000156','B310205J')" title="Chemical Methods Ontology link for: X-ray crystallography">
+      X-ray crystallography
+     </a>
+    </span>
+    and from
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000747','B310205J')" title="Chemical Methods Ontology link for: ENDOR">
+      ENDOR
+     </a>
+    </span>
+    and
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000330','B310205J')" title="Chemical Methods Ontology link for: pulse EPR">
+      pulse EPR
+     </a>
+    </span>
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000228','B310205J')" title="Chemical Methods Ontology link for: spectroscopy">
+      spectroscopy
+     </a>
+    </span>
+    of the Ni–C and Ni–L states, we propose that the Ni–C to Ni–L conversion process is associated with a dissociation of the Ni–H bond and translocation of the released
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:24636','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=24636')" title="ChEBI Ontology link for: proton">
+      proton
+     </a>
+    </span>
+    to the sulfur of one of the terminal cysteines.
+   </p>
+   <hr/>
+   <h2 id="sect205">
+    <span class="a_heading">
+     Introduction
+    </span>
+   </h2>
+   <span>
+    Hydrogenases (Enzyme Class 1.12.2.1) catalyse the reversible two-electron
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('MOP:0000568','B310205J')" title="Molecular Process Ontology link for: oxidation">
+      oxidation
+     </a>
+    </span>
+    of molecular hydrogen (H
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ) and play a key role in the energy generation process of a large variety of microorganisms, in particular in sulfate reducing bacteria. They can be divided into three classes according to their metal content (for a review see
+    <a href="#cit1" title="Select to navigate to references">
+     ref. 1
+    </a>
+    ). The enzymes without metal atoms directly participating in the catalytic cycle are known as “metal free” hydrogenases, those containing only iron are the [Fe] hydrogenases. Most commonly found are the [NiFe] hydrogenases
+    <a href="#cit2" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       2
+      </span>
+     </sup>
+    </a>
+    which contain both nickel and iron. This class includes the subclass of the nickel–iron–selenium [NiFeSe] hydrogenases.
+   </span>
+   <p class="otherpara">
+    The [NiFe] hydrogenase of
+    <span class="italic">
+     Desulfovibrio (D.) vulgaris
+    </span>
+    Miyazaki F, a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26820','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26820')" title="ChEBI Ontology link for: sulfate">
+      sulfate
+     </a>
+    </span>
+    reducing δ-proteobacterium, is a heterodimer consisting of two subunits. Its crystal structure has been resolved with 1.4 Å resolution.
+    <a href="#cit3" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       3
+      </span>
+     </sup>
+    </a>
+    The active site of the enzyme, a [NiFe] heterobimetallic center (
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    ) is located in the large subunit with a molecular mass of 61 kDa. The nickel is coordinated by four sulfur atoms from four cysteine residues (
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.5653.html" target="_blank" title="Chemspider Compound link for:cysteine">
+      cysteine
+     </a>
+    </span>
+    81, 84, 546, 549), two of them (84 and 549) form a bridge between Ni and Fe. As a special feature the Fe ion carries three inorganic diatomic
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligands">
+      ligands
+     </a>
+    </span>
+    .
+    <a href="#cit4" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       4–7
+      </span>
+     </sup>
+    </a>
+    Initially, the X-ray data of
+    <span class="italic">
+     D. vulgaris
+    </span>
+    Miyazaki F indicated that the inorganic
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligands">
+      ligands
+     </a>
+    </span>
+    at the iron are one SO and two COs or CNs
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    , but recent X-ray studies
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    and
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000636','B310205J')" title="Chemical Methods Ontology link for: FTIR">
+      FTIR
+     </a>
+    </span>
+    data (Fichtner, unpublished results) showed that the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligands">
+      ligands
+     </a>
+    </span>
+    are two CNs and one CO, as also found for other [NiFe] hydrogenases by
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000636','B310205J')" title="Chemical Methods Ontology link for: FTIR spectroscopy">
+      FTIR spectroscopy
+     </a>
+    </span>
+    .
+    <a href="#cit9" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       9,10
+      </span>
+     </sup>
+    </a>
+    In the bridge between Ni and Fe an additional small inorganic
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    has been detected in the oxidized states.
+    <a href="#cit3" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       3,4
+      </span>
+     </sup>
+    </a>
+    It has been identified as a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:33692','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=33692')" title="ChEBI Ontology link for: hydride">
+      hydride
+     </a>
+    </span>
+    in the reduced Ni–C state (see
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    ).
+    <a href="#cit11" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       11,12
+      </span>
+     </sup>
+    </a>
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig1">
+       <img alt="Structure of the active site of D. vulgaris Miyazaki F [NiFe] hydrogenase. The active site is located in the large subunit of the heterodimeric protein and is deeply buried in the protein. The small bridging ligand between Ni and Fe has recently been assigned to a hydride ion in the Ni–C state.11–13 The exact positions of the CO and CN ligands are not assigned by X-ray crystallography or spectroscopy.13" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-f1.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 1
+       </b>
+       <span id="fig1">
+        <span class="graphic_title">
+         Structure of the active site of
+         <span class="italic">
+          D. vulgaris
+         </span>
+         Miyazaki F [NiFe] hydrogenase. The active site is located in the large subunit of the heterodimeric
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CHEBI:36080','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=36080')" title="ChEBI Ontology link for: protein">
+           protein
+          </a>
+         </span>
+         and is deeply buried in the
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CHEBI:36080','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=36080')" title="ChEBI Ontology link for: protein">
+           protein
+          </a>
+         </span>
+         . The small bridging
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+           ligand
+          </a>
+         </span>
+         between Ni and Fe has recently been assigned to a
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CHEBI:33692','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=33692')" title="ChEBI Ontology link for: hydride">
+           hydride
+          </a>
+         </span>
+         ion in the Ni–C state.
+         <a href="#cit11" title="Select to navigate to reference">
+          <sup>
+           <span class="sup_ref">
+            11–13
+           </span>
+          </sup>
+         </a>
+         The exact positions of the CO and CN
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligands">
+           ligands
+          </a>
+         </span>
+         are not assigned by
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CMO:0000156','B310205J')" title="Chemical Methods Ontology link for: X-ray crystallography">
+           X-ray crystallography
+          </a>
+         </span>
+         or
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CMO:0000228','B310205J')" title="Chemical Methods Ontology link for: spectroscopy">
+           spectroscopy
+          </a>
+         </span>
+         .
+         <a href="#cit13" title="Select to navigate to references">
+          <sup>
+           <span class="sup_ref">
+            13
+           </span>
+          </sup>
+         </a>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    The small subunit with a molecular mass of 29 kDa contains two [4Fe4S] clusters and one [3Fe4S] cluster. One [4Fe4S] cluster is situated close to the interface of the two subunits near the active site and is deeply buried in the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:36080','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=36080')" title="ChEBI Ontology link for: protein">
+      protein
+     </a>
+    </span>
+    (proximal cluster), whereas the other resides at the periplasmic site of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:36080','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=36080')" title="ChEBI Ontology link for: protein">
+      protein
+     </a>
+    </span>
+    (distal cluster). The [3Fe4S] cluster is located in-between the proximal and the distal cluster.
+    <a href="#cit3" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       3–5
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    The hydrogenase passes through different redox states during its catalytic cycle.
+    <a href="#cit2" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       2
+      </span>
+     </sup>
+    </a>
+    In this process the nature of the bridging
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    between the nickel and the iron atom, which occupies the fifth coordination site of the nickel atom changes. After aerobic
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:36080','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=36080')" title="ChEBI Ontology link for: protein">
+      protein
+     </a>
+    </span>
+    isolation the hydrogenase exhibits two characteristic
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR">
+      EPR
+     </a>
+    </span>
+    signals that belong to the two oxidized states Ni–A (
+    <span class="italic">
+     g
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.32, 2.24, 2.01) and Ni–B (
+    <span class="italic">
+     g
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.33, 2.16. 2.01). Another
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR">
+      EPR
+     </a>
+    </span>
+    signal appears upon two-electron
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('MOP:0000569','B310205J')" title="Molecular Process Ontology link for: reduction">
+      reduction
+     </a>
+    </span>
+    called the Ni–C signal (
+    <span class="italic">
+     g
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.20, 2.14, 2.01). The Ni–C state is believed to directly participate in the catalytic cycle,
+    <a href="#cit14" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       14
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     i.e.
+    </span>
+    to bind and cleave the substrate hydrogen.
+   </p>
+   <p class="otherpara">
+    Experimental and theoretical evidence exists that the bridging
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    in Ni–C is a hydrogen species.
+    <a href="#cit11" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       11
+      </span>
+     </sup>
+    </a>
+    Theoretical calculations on models of the Ni–C state,
+    <a href="#cit11" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       11,14–16
+      </span>
+     </sup>
+    </a>
+    and
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H-
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000747','B310205J')" title="Chemical Methods Ontology link for: ENDOR">
+      ENDOR
+     </a>
+    </span>
+    experiments
+    <a href="#cit12" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       12,13,17
+      </span>
+     </sup>
+    </a>
+    suggested the presence of a formal
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:33692','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=33692')" title="ChEBI Ontology link for: hydride">
+      hydride
+     </a>
+    </span>
+    (H
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    ) in the bridge. Indirect evidence for this proposal is obtained by the analysis of the non-physiological, light-induced Ni–L states. Upon illumination with white light under anaerobic conditions at a temperature of &lt;100 K the formation of a mixture of two or even three different Ni–L species is observed in hydrogenases of different species.
+    <a href="#cit18" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       18–20
+      </span>
+     </sup>
+    </a>
+    The generation of the Ni–L states is accompanied by a change of the EPR signal. The most prominent state, here called Ni–L, is characterized by
+    <span class="italic">
+     g
+    </span>
+    values of 2.30, 2.12 and 2.05. The additional, less intense signal is thought to belong to a transient state produced during the Ni–C to Ni–L transition
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    .
+    <a href="#cit21" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       21
+      </span>
+     </sup>
+    </a>
+    At temperatures below 100 K the Ni–L state is stable but warming to higher temperatures re-establishes the Ni–C state. The photoreaction is nearly 6 times slower in D
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    O than in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.937.html" target="_blank" title="Chemspider Compound link for:H2O">
+      H
+      <small>
+       <sub>
+        2
+       </sub>
+      </small>
+      O
+     </a>
+    </span>
+    as has been shown for
+    <span class="italic">
+     Allochromatium (A.) vinosum
+    </span>
+    hydrogenase.
+    <a href="#cit18" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       18
+      </span>
+     </sup>
+    </a>
+    Additionally, the strong
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:24636','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=24636')" title="ChEBI Ontology link for: proton">
+      proton
+     </a>
+    </span>
+    coupling observed for Ni–C in
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0001970','B310205J')" title="Chemical Methods Ontology link for: 1H ENDOR">
+      <small>
+       <sup>
+        1
+       </sup>
+      </small>
+      H ENDOR
+     </a>
+    </span>
+    experiments on the hydrogenase of
+    <span class="italic">
+     Thiocapsa roseopersicina
+    </span>
+    ,
+    <a href="#cit17" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       17
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Ralstonia eutropha
+    </span>
+    ,
+    <a href="#cit12" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       12
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     D. gigas
+    </span>
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+    and
+    <span class="italic">
+     D. vulgaris
+    </span>
+    Miyazaki F,
+    <a href="#cit13" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       13
+      </span>
+     </sup>
+    </a>
+    assigned to the hydride bridge, is no longer present in Ni–L. This indicates a movement of the hydrogen involved in the photoreaction leaving the bridging position unoccupied in Ni–L.
+    <a href="#cit11" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       11,12,17
+      </span>
+     </sup>
+    </a>
+    This assumption is supported by relativistic DFT calculations showing that the EPR parameters can be best fitted by assuming a formal Ni(
+    <span class="small_caps">
+     III
+    </span>
+    )
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('MOP:0000568','B310205J')" title="Molecular Process Ontology link for: oxidation">
+      oxidation
+     </a>
+    </span>
+    state and a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:33692','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=33692')" title="ChEBI Ontology link for: hydride">
+      hydride
+     </a>
+    </span>
+    (H
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    ) bound between nickel and iron in the Ni–C state and a formal Ni(
+    <span class="small_caps">
+     I
+    </span>
+    )
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('MOP:0000568','B310205J')" title="Molecular Process Ontology link for: oxidation">
+      oxidation
+     </a>
+    </span>
+    state and a vacant bridging position in the Ni–L state.
+    <a href="#cit11" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       11
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    Although the Ni–L state has been investigated in detail by
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR spectroscopy">
+      EPR spectroscopy
+     </a>
+    </span>
+    ,
+    <a href="#cit17" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       17–21,23
+      </span>
+     </sup>
+    </a>
+    knowledge regarding how this state is created is limited to the observation that white light is necessary for the photoconversion to occur. In this contribution we examine this process as a function of the excitation wavelength. We found that the Ni–L state photoproduction is associated with a broad absorption that spans the range from 350 to 900 nm. In the spectrum maxima can be observed at 590 and 700 nm and a shoulder at around 850 nm. This prompted us to re-examine the UV/VIS spectrum of the reduced enzyme, which also shows maxima at 590 and 700 nm. Since the conversion process is not associated with the strong absorptions of the [FeS] clusters, which lie below 400 nm, an assignment to electronic transitions of the [NiFe] center is proposed. The molar absorption coefficients of the bands have been estimated to lie around 1250 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    , indicating that the electronic transitions involve
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    based orbitals and that only small charge-transfer character is present.
+   </p>
+   <h2 id="sect307">
+    <span class="a_heading">
+     Experimental
+    </span>
+   </h2>
+   <h3 id="sect309">
+    <span class="b_heading">
+     Sample preparation
+    </span>
+   </h3>
+   <span>
+    <span class="italic">
+     D. vulgaris
+    </span>
+    Miyazaki F cells were grown in 10 L cultures. The cell mass of 40 L was used for one enzyme
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0002231','B310205J')" title="Chemical Methods Ontology link for: purification">
+      purification
+     </a>
+    </span>
+    , which was performed as previously described.
+    <a href="#cit24" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       24
+      </span>
+     </sup>
+    </a>
+    A total of 80 μl of 1.5 mM hydrogenase were filled in an EPR tube and activated in a 100% H
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    atmosphere for 6 h at 37
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    °C by gentle stirring. After this treatment the enzyme was in the Ni–C state and was then rapidly frozen. This procedure was also followed when performing UV/VIS
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    .
+   </span>
+   <h3 id="sect317">
+    <span class="b_heading">
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR">
+       EPR
+      </a>
+     </span>
+     measurements and data analysis
+    </span>
+   </h3>
+   <span>
+    The measurements were carried out with a Bruker ESP380E X-band
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0001234','B310205J')" title="Chemical Methods Ontology link for: spectrometer">
+      spectrometer
+     </a>
+    </span>
+    using a dielectric ring (ERUI18SPT) resonator and an Oxford CF-935 flow cryostat. All
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    were recorded at 40 K. This temperature was chosen because at lower temperatures the EPR signals of Ni–C and Ni–L split due to spin-coupling with the proximal [4Fe4S] cluster.
+    <a href="#cit25" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       25
+      </span>
+     </sup>
+    </a>
+    The choice of
+    <span class="italic">
+     T
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    40 K simplifies the analysis and has the advantage that the transient Ni–L state only gives a minor contribution to the EPR spectra upon illumination. At higher temperature the intensity of the signal decreases. Prior to each measurement, the sample was dark-adapted by incubation in cold
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.682.html" target="_blank" title="Chemspider Compound link for:ethanol">
+      ethanol
+     </a>
+    </span>
+    (200 K) in the dark for 10 min in order to minimize the presence of the Ni–L state. Still in the dark it was mounted into the cavity. The sample was illuminated at a fixed wavelength from an OPO laser (GWU model VISIR 120) which was pumped by a Nd
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    ∶
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    YAG laser (
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: Spectra">
+      Spectra
+     </a>
+    </span>
+    Physics model GCR-130). For some experiments the fundamental wavelength (1064 nm) or the energy-tripled wavelength (355 nm) of the pump laser were used. The laser repetition rate was 10 Hz. The total energy of the excitation light was measured directly at the window of the flow cryostat with a homebuilt powermeter calibrated against a Spectrolas powermeter, which has an output linear with wavelength.
+   </span>
+   <p class="otherpara">
+    To study the Ni–C to Ni–L conversion we monitored the decay of the
+    <span class="italic">
+     g
+    </span>
+    <small>
+     <sub>
+      <span class="italic">
+       x
+      </span>
+     </sub>
+    </small>
+    component of the Ni–C spectrum. We chose this signal because it is well separated from the other signals in the first derivative
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectrum">
+      EPR spectrum
+     </a>
+    </span>
+    (
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    ). Two different detection schemes were used. In the first method we illuminated the dark-adapted hydrogenase sample with laser light of various wavelengths at excitation energies which were chosen such that the number of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:30212','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=30212')" title="ChEBI Ontology link for: photons">
+      photons
+     </a>
+    </span>
+    corresponded to that present with excitation light at 630 nm and 2.6 mJ pulse
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    (pulse length: 6 ns). The excitation energy
+    <span class="italic">
+     P
+    </span>
+    for a wavelength
+    <span class="italic">
+     λ
+    </span>
+    is calculated according to
+   </p>
+   <table>
+    <td class="leftEqn">
+    </td>
+    <tr>
+     <td class="eqn">
+      <span id="eqn1">
+      </span>
+      <img alt="ugraphic, filename = b310205j-t1.gif" class="centered" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-t1.gif"/>
+     </td>
+     <td class="rightEqn">
+      (1)
+     </td>
+    </tr>
+   </table>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig2">
+       <img alt="EPR spectra at X-band of (a) the Ni–C state; (b) the Ni–L state after illumination for 30 min with white light at 77 K outside the cavity; and (c) a mixture of the Ni–C, Ni–L and transient light-induced states after about 10 min of illumination inside the EPR resonator. The g values of all three states are indicated in the spectra. At a g value of 2.01, the EPR signal from the reduced [3Fe4S] cluster is observed, which is superimposed to the signal arising from gz of Ni–C. A rough estimate of the proportion of the Ni–L and the transient light-induced signal is obtained from the ratio of the gx signal amplitudes (3.5 ∶ 1). Experimental conditions: microwave frequency 9.76 GHz, microwave power 3.13 mW, modulation frequency 100 kHz, modulation amplitude 1 mT, measuring temperature 40 K." src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-f2.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 2
+       </b>
+       <span id="fig2">
+        <span class="graphic_title">
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectra">
+           EPR spectra
+          </a>
+         </span>
+         at X-band of (a) the Ni–C state; (b) the Ni–L state after illumination for 30 min with white light at 77 K outside the cavity; and (c) a mixture of the Ni–C, Ni–L and transient light-induced states after about 10 min of illumination inside the EPR resonator. The
+         <span class="italic">
+          g
+         </span>
+         values of all three states are indicated in the spectra. At a
+         <span class="italic">
+          g
+         </span>
+         value of 2.01, the EPR signal from the reduced [3Fe4S] cluster is observed, which is superimposed to the signal arising from
+         <span class="italic">
+          g
+          <small>
+           <sub>
+            z
+           </sub>
+          </small>
+         </span>
+         of Ni–C. A rough estimate of the proportion of the Ni–L and the transient light-induced signal is obtained from the ratio of the
+         <span class="italic">
+          g
+          <small>
+           <sub>
+            x
+           </sub>
+          </small>
+         </span>
+         signal amplitudes (3.5
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         ∶
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         1). Experimental conditions: microwave frequency 9.76 GHz, microwave power 3.13 mW, modulation frequency 100 kHz, modulation amplitude 1 mT, measuring temperature 40 K.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    During three hours we recorded the EPR signal at the field position, which corresponds to
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    of the Ni–C state (B
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    317.8 mT). In total, 4096 data points were acquired with a repetition time of 2.6 s. In the second method we recorded complete
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectra">
+      EPR spectra
+     </a>
+    </span>
+    during illumination every 5 min. The time needed to record one
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectrum">
+      EPR spectrum
+     </a>
+    </span>
+    in which the magnetic field was swept from 260 to 360 mT, is 42 s. The advantage of the second method is that the EPR signals of all redox states are monitored, the disadvantage is the slight timing inaccuracy arising from the finite scan time of a single EPR spectrum. The series of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectra">
+      EPR spectra
+     </a>
+    </span>
+    was recorded for 2 h with illumination at various wavelengths from 355 nm to 1064 nm, with intervals of typically 50 nm. At each excitation wavelength the energy was 5.6 mJ pulse
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    .
+   </p>
+   <p class="otherpara">
+    The data from the first method were used to calculate the conversion from Ni–C to Ni–L. At wavelengths above 780 nm, the decay curve could be fitted with a mono-exponential decay function. Below 750 nm, a tri-exponential decay curve was required (
+    <span class="italic">
+     cf.
+    </span>
+    Results). The amplitude
+    <span class="italic">
+     I
+    </span>
+    <small>
+     <sub>
+      <span class="italic">
+       x
+      </span>
+     </sub>
+    </small>
+    of the
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    signal of the Ni–C state was extrapolated to infinite illumination time and the conversion was calculated according to
+   </p>
+   <table>
+    <td class="leftEqn">
+    </td>
+    <tr>
+     <td class="eqn">
+      <span id="eqn2">
+      </span>
+      <img alt="ugraphic, filename = b310205j-t2.gif" class="centered" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-t2.gif"/>
+     </td>
+     <td class="rightEqn">
+      (2)
+     </td>
+    </tr>
+   </table>
+   <p class="otherpara">
+    At 630 nm and 355 nm, experiments were performed at 4 different excitation energies and saturation curves were obtained. These experiments showed that the excitation energy used between 4.6 mJ pulse
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    at 355 nm and 1.72 mJ pulse
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    at 930 nm is in the linear part of the energy-dependent curve,
+    <span class="italic">
+     i.e.
+    </span>
+    , saturation conditions, which become important at energies above 5 mJ pulse
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    , are avoided. The error of the measurements, resulting mainly from the reproducibility of the alignment of the optical components and the inaccuracy of the powermeter, was estimated to 7%.
+   </p>
+   <h3 id="sect372">
+    <span class="b_heading">
+     UV/VIS measurements
+    </span>
+   </h3>
+   <span>
+    UV/VIS measurements were carried out on an ATI Unicam UV2/300 UV/VIS spectrophotometer. The enzyme solution (30 μM) was filled in a 1 ml
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46727','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46727')" title="ChEBI Ontology link for: quartz">
+      quartz
+     </a>
+    </span>
+    cuvette (optical pathlength 1 cm) and measured against 25 mM
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.6257.html" target="_blank" title="Chemspider Compound link for:Tris">
+      Tris
+     </a>
+    </span>
+    /HCl
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:35225','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=35225')" title="ChEBI Ontology link for: buffer">
+      buffer
+     </a>
+    </span>
+    , pH 7.4.
+   </span>
+   <h2 id="sect378">
+    <span class="a_heading">
+     Results
+    </span>
+   </h2>
+   <span>
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('MOP:0000569','B310205J')" title="Molecular Process Ontology link for: Reduction">
+      Reduction
+     </a>
+    </span>
+    of the as-isolated [NiFe] hydrogenase with 100% H
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    gas leads to the formation of the reduced Ni–C state (characterized by
+    <span class="italic">
+     g
+    </span>
+    values of
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.20,
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       y
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.14,
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       z
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.01)
+    <a href="#cit2" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       2
+      </span>
+     </sup>
+    </a>
+    whose
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectrum">
+      EPR spectrum
+     </a>
+    </span>
+    is shown in
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2a
+    </a>
+    . After illumination for about 30 min at 77 K outside the cavity of the EPR spectrometer with white light from a projection lamp (250 W with heat filter), the Ni–C signal is completely converted to the Ni–L signal according to the EPR spectrum (
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.30,
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       y
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.12,
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       z
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.05),
+    <a href="#cit20" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       20
+      </span>
+     </sup>
+    </a>
+    as shown in
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2b
+    </a>
+    . After 10 min of illumination of the enzyme in the Ni–C state in the cavity (
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2c
+    </a>
+    ) a minor component resulting from a transient light-induced state is observed (
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.26,
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       y
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.11,
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       z
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.05). All signals in the EPR spectra have
+    <span class="italic">
+     g
+    </span>
+    values similar to those observed earlier for other hydrogenases (
+    <span class="italic">
+     A. vinosum
+    </span>
+    ,
+    <a href="#cit18" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       18
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     D. gigas
+    </span>
+    ,
+    <a href="#cit19" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       19,20
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     D. fructosovorans
+    </span>
+    and
+    <span class="italic">
+     Desulfomicrobium baculatum
+    </span>
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+    ). At the measuring temperature of 40 K the signal of the reduced [3Fe4S] cluster (
+    <span class="italic">
+     g
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.01) is also present in the spectra and overlaps with the
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       z
+      </sub>
+     </small>
+    </span>
+    component of the Ni–C signal.
+   </span>
+   <p class="otherpara">
+    The time course for the formation of the Ni–L states at different excitation wavelengths was monitored by recording
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectra">
+      EPR spectra
+     </a>
+    </span>
+    every 5 min during the illumination process (described as method two in Experimental). A selection of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    recorded at 40 K with an excitation wavelength of 630 nm and excitation energy of 5.6 mJ pulse
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    is shown in
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3
+    </a>
+    . Similar to the excitation with white light the decrease of the Ni–C signal is proportional to the increase of the Ni–L signal. At 40 K, the transient light-induced state appears as a minority species in all
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    . The intensity of its
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    signal increases during the first 15 min of illumination, but decreases again after longer illumination. This observation is compatible with earlier investigations, in which this state has been shown to be a transient state favored at low temperatures and short illumination time.
+    <a href="#cit19" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       19,21
+      </span>
+     </sup>
+    </a>
+    The signal of the Ni–L state increases monotonically with time.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig3">
+       <img alt="Series of EPR spectra at X-band recorded during illumination with laser light in the resonator at T = 40 K (wavelength 630 nm, excitation energy 5.6 mJ pulse−1, repetition frequency 10 Hz). The illumination time after which each spectrum was recorded is given in the figure. Experimental conditions: microwave frequency 9.77 GHz, microwave power 2 mW, modulation frequency 100 kHz, modulation amplitude 0.5 mT, temperature 40 K." src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-f3.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 3
+       </b>
+       <span id="fig3">
+        <span class="graphic_title">
+         Series of
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectra">
+           EPR spectra
+          </a>
+         </span>
+         at X-band recorded during illumination with laser light in the resonator at
+         <span class="italic">
+          T
+         </span>
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         =
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         40 K (wavelength 630 nm, excitation energy 5.6 mJ pulse
+         <small>
+          <sup>
+           −1
+          </sup>
+         </small>
+         , repetition frequency 10 Hz). The illumination time after which each
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectrum">
+           spectrum
+          </a>
+         </span>
+         was recorded is given in the figure. Experimental conditions: microwave frequency 9.77 GHz, microwave power 2 mW, modulation frequency 100 kHz, modulation amplitude 0.5 mT, temperature 40 K.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Because of the presence of multiple Ni–L states, a quantitative analysis of the total conversion at different excitation wavelengths can be best performed using the decay of the Ni–C EPR signal. In order to accurately determine the conversion, a series of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR">
+      EPR
+     </a>
+    </span>
+    measurements was performed in which the
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    signal (
+    <span class="italic">
+     g
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.20,
+    <span class="italic">
+     B
+    </span>
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    317.8 mT) was monitored (see Experimental). In the first derivative
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000836','B310205J')" title="Chemical Methods Ontology link for: EPR spectrum">
+      EPR spectrum
+     </a>
+    </span>
+    this signal does not overlap with signals belonging to other redox states of the [NiFe] center or of the [FeS] clusters. Two representative decay curves with excitation wavelengths of 530 nm and 870 nm are shown in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    after normalization to the EPR intensity at zero illumination time,
+    <span class="italic">
+     i.e.
+    </span>
+    , pure Ni–C. From the decay curves it is obvious that the conversion process is slower at 870 nm than at 530 nm. Surprisingly, the decay curve at 870 nm can be fitted with a mono-exponential decay function, whereas at 530 nm a tri-exponential function is needed. The Ni–C to Ni–L conversion takes place with three time constants for all observed wavelengths below 780 nm (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ). Above 780 nm the process is best described by one time constant that increases from
+    <span class="italic">
+     ca
+    </span>
+    . 110 min at 780 nm to
+    <span class="italic">
+     ca
+    </span>
+    . 162 min at 870 nm,
+    <span class="italic">
+     i.e.
+    </span>
+    , the lower the excitation energy the more difficult it becomes to generate Ni–L.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig4">
+       <img alt="Decay of the EPR signal of Ni–C monitored at gx
+(gx = 2.20, B0 = 317.8 mT) during illumination with laser light at a wavelength of 530 nm and 870 nm using a power of 3.1 mJ pulse−1 and 1.9 mJ pulse−1, respectively. During the illumination time of three hours, data points were recorded every 2.6 s. For other experimental conditions see Fig. 3. The decay curves were fitted with an exponential decay of 3rd order at 530 nm and 1st order at 870 nm, and are therefore characterized by three and one time constant(s), respectively. The fit curves follow the experimental curves so well that they are not included in the figure (standard deviation: σ2530 nm = 0.04, σ2870 nm = 0.02). The time constants of the fits for each wavelength are presented in Table 1." src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-f4.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 4
+       </b>
+       <span id="fig4">
+        <span class="graphic_title">
+         Decay of the EPR signal of Ni–C monitored at
+         <span class="italic">
+          g
+          <small>
+           <sub>
+            x
+           </sub>
+          </small>
+         </span>
+         (
+         <span class="italic">
+          g
+          <small>
+           <sub>
+            x
+           </sub>
+          </small>
+         </span>
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         =
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         2.20,
+         <span class="italic">
+          B
+         </span>
+         <small>
+          <sub>
+           0
+          </sub>
+         </small>
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         =
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         317.8 mT) during illumination with laser light at a wavelength of 530 nm and 870 nm using a power of 3.1 mJ pulse
+         <small>
+          <sup>
+           −1
+          </sup>
+         </small>
+         and 1.9 mJ pulse
+         <small>
+          <sup>
+           −1
+          </sup>
+         </small>
+         , respectively. During the illumination time of three hours, data points were recorded every 2.6 s. For other experimental conditions see
+         <a href="#imgfig3" title="Select to navigate to figure">
+          Fig. 3
+         </a>
+         . The decay curves were fitted with an exponential decay of 3
+         <small>
+          <sup>
+           rd
+          </sup>
+         </small>
+         order at 530 nm and 1
+         <small>
+          <sup>
+           st
+          </sup>
+         </small>
+         order at 870 nm, and are therefore characterized by three and one time constant(s), respectively. The fit curves follow the experimental curves so well that they are not included in the figure (standard deviation:
+         <span class="italic">
+          σ
+         </span>
+         <small>
+          <sup>
+           2
+          </sup>
+         </small>
+         <small>
+          <sub>
+           530 nm
+          </sub>
+         </small>
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         =
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         0.04,
+         <span class="italic">
+          σ
+         </span>
+         <small>
+          <sup>
+           2
+          </sup>
+         </small>
+         <small>
+          <sub>
+           870 nm
+          </sub>
+         </small>
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         =
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         0.02). The time constants of the fits for each wavelength are presented in
+         <a href="#tab1" title="Select to navigate to table">
+          Table 1
+         </a>
+         .
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="table_caption">
+    <b>
+     Table 1
+    </b>
+    <span id="tab1">
+     Time constants
+     <span class="italic">
+      t
+      <small>
+       <sub>
+        i
+       </sub>
+      </small>
+     </span>
+     [min] and relative amplitudes [%] in brackets describing the fits of the decay of the Ni–C
+     <span class="italic">
+      g
+      <small>
+       <sub>
+        x
+       </sub>
+      </small>
+     </span>
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR">
+       EPR
+      </a>
+     </span>
+     signal for each measured wavelength. The constant
+     <span class="italic">
+      y
+     </span>
+     <small>
+      <sub>
+       0
+      </sub>
+     </small>
+     describes the amplitude of the
+     <span class="italic">
+      g
+      <small>
+       <sub>
+        x
+       </sub>
+      </small>
+     </span>
+     EPR signal of Ni–C at
+     <span class="italic">
+      t
+     </span>
+     <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+     =
+     <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+     ∞
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col align="left">
+     </col>
+     <col align="char" char="." charoff="50">
+     </col>
+     <col align="char" char="." charoff="50">
+     </col>
+     <col align="char" char="." charoff="50">
+     </col>
+     <col align="char" char="." charoff="50">
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       /nm
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        y
+       </span>
+       <small>
+        <sub>
+         0
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        t
+       </span>
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        t
+       </span>
+       <small>
+        <sub>
+         2
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        t
+       </span>
+       <small>
+        <sub>
+         3
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="5">
+       <a id="tab1fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        Errors
+        <span class="italic">
+         t
+        </span>
+        <small>
+         <sub>
+          1
+         </sub>
+        </small>
+        and
+        <span class="italic">
+         t
+        </span>
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+        =
+        <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+        ±
+        <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+        0.1 min,
+        <span class="italic">
+         t
+        </span>
+        <small>
+         <sub>
+          3
+         </sub>
+        </small>
+        <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+        =
+        <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+        ±
+        <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+        1 min.
+       </span>
+       <a id="tab1fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        Value of time constant subject to large errors due to small conversion at this wavelength.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       355
+      </td>
+      <td valign="top">
+       69.8
+      </td>
+      <td valign="top">
+       2.2 (6.6)
+      </td>
+      <td valign="top">
+       20.3 (8.4)
+      </td>
+      <td valign="top">
+       149.8 (15.1)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       430
+      </td>
+      <td valign="top">
+       52.5
+      </td>
+      <td valign="top">
+       2.7 (7.0)
+      </td>
+      <td valign="top">
+       15.9 (9.7)
+      </td>
+      <td valign="top">
+       94.2 (30.9)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       480
+      </td>
+      <td valign="top">
+       44.2
+      </td>
+      <td valign="top">
+       2.8 (7.5)
+      </td>
+      <td valign="top">
+       19.1 (14.8)
+      </td>
+      <td valign="top">
+       129.5 (33.5)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       530
+      </td>
+      <td valign="top">
+       28.3
+      </td>
+      <td valign="top">
+       2.4 (14.0)
+      </td>
+      <td valign="top">
+       20.2 (23.2)
+      </td>
+      <td valign="top">
+       110.0 (34.5)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       580
+      </td>
+      <td valign="top">
+       24.0
+      </td>
+      <td valign="top">
+       2.5 (10.5)
+      </td>
+      <td valign="top">
+       18.7 (20.4)
+      </td>
+      <td valign="top">
+       100.9 (45.1)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       630
+      </td>
+      <td valign="top">
+       30.8
+      </td>
+      <td valign="top">
+       4.0 (10.2)
+      </td>
+      <td valign="top">
+       26.0 (16.4)
+      </td>
+      <td valign="top">
+       110.0 (42.5)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       680
+      </td>
+      <td valign="top">
+       28.7
+      </td>
+      <td valign="top">
+       2.9 (3.3)
+      </td>
+      <td valign="top">
+       9.9 (14.0)
+      </td>
+      <td valign="top">
+       110.0 (54.1)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       750
+      </td>
+      <td valign="top">
+       45.8
+      </td>
+      <td valign="top">
+       1.5 (0.003)
+      </td>
+      <td valign="top">
+       8.0 (14.4)
+      </td>
+      <td valign="top">
+       80.5 (39.8)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       780
+      </td>
+      <td valign="top">
+       71.0
+      </td>
+      <td valign="top">
+       3.0 (3.6)
+      </td>
+      <td valign="top">
+       24.4 (5.2)
+      </td>
+      <td valign="top">
+       110.0 (20.2)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       830
+      </td>
+      <td valign="top">
+       60.3
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       114.7 (39.7)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       870
+      </td>
+      <td valign="top">
+       75.9
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       162.7 (24.0)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       930
+      </td>
+      <td valign="top">
+       55.3
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       (9.3)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    From extrapolation of the decay curves to infinite illumination time, the total conversion of Ni–C to Ni–L was determined. The converted amount of Ni–C as measured in the EPR spectrum at
+    <span class="italic">
+     g
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2.20
+    <span class="italic">
+     vs.
+    </span>
+    the excitation wavelength
+    <span class="italic">
+     λ
+    </span>
+    <small>
+     <sub>
+      exc
+     </sub>
+    </small>
+    ,
+    <span class="italic">
+     i.e.
+    </span>
+    , the resulting action spectrum, is presented in
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    . The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectrum">
+      spectrum
+     </a>
+    </span>
+    is broad and covers almost the complete visible range. Using light with 550 nm
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    &lt;
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    <span class="italic">
+     λ
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    &lt;
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    700 nm a maximum conversion rate of
+    <span class="italic">
+     ca
+    </span>
+    . 75% was achieved. In the near infrared region (
+    <span class="italic">
+     λ
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    &gt;
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    900 nm) the conversion decreases and for
+    <span class="italic">
+     λ
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    &gt;
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    1050 nm no conversion process was observed at all. Using quanta of higher energy (550 nm
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    &lt;
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    <span class="italic">
+     λ
+    </span>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    &lt;
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    350 nm) the conversion decreases from 65 to 35%. Local maxima at about 590, 700 and 850 nm can be identified (
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    ). Although care was taken to ensure complete illumination of the sample, at none of the wavelengths and light intensities a conversion of 100% was obtained. This can result from spectrophotoselection and the fact that polarized laserlight is used, which means that molecules which are oriented such that their transition dipole moment is parallel to the
+    <span class="bold italic">
+     k
+    </span>
+    vector of the incident
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:30212','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=30212')" title="ChEBI Ontology link for: photons">
+      photons
+     </a>
+    </span>
+    (and perpendicular to the plane of the polarization vectors) are not converted. If scattering is disregarded, the maximum attainable conversion obtained from
+   </p>
+   <table>
+    <td class="leftEqn">
+    </td>
+    <tr>
+     <td class="eqn">
+      <span id="eqn3">
+      </span>
+      <img alt="ugraphic, filename = b310205j-t3.gif" class="centered" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-t3.gif"/>
+     </td>
+     <td class="rightEqn">
+      (3)
+     </td>
+    </tr>
+   </table>
+   (
+   <span class="italic">
+    θ
+   </span>
+   and
+   <span class="italic">
+    ϕ
+   </span>
+   are polar angles,
+   <span class="italic">
+    θ
+   </span>
+   is the angle between the transition dipole moment and the
+   <span class="bold italic">
+    k
+   </span>
+   vector of the incident
+   <span class="CH">
+    <a class="simple" href="javascript:popupOBO('CHEBI:30212','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=30212')" title="ChEBI Ontology link for: photons">
+     photons
+    </a>
+   </span>
+   ). It amounts to 78.5% and is indicated by a horizontal line in
+   <a href="#imgfig5" title="Select to navigate to figure">
+    Fig. 5
+   </a>
+   .
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig5">
+       <img alt="Total conversion of the Ni–C to the Ni–L state (as extrapolated from the decay curves, cf.Fig. 4)
+vs.λexc. This represents the action spectrum associated with the conversion process (black curve). The excitation energy is chosen such that at each wavelength the sample is illuminated with the same number of photons under non-saturating conditions. The basis for the conversion is the decrease of amplitude of the EPR signal at gx = 2.20 of Ni–C. The error of each data point is ± 7%. Also included is the UV/VIS spectrum of the reduced enzyme in the range 500 to 800 nm from which a mono-exponential background function has been subtracted (grey curve)." src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-f5.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 5
+       </b>
+       <span id="fig5">
+        <span class="graphic_title">
+         Total conversion of the Ni–C to the Ni–L state (as extrapolated from the decay curves,
+         <span class="italic">
+          cf.
+         </span>
+         <a href="#imgfig4" title="Select to navigate to figure">
+          Fig. 4
+         </a>
+         )
+         <span class="italic">
+          vs.
+         </span>
+         <span class="italic">
+          λ
+         </span>
+         <small>
+          <sub>
+           exc
+          </sub>
+         </small>
+         . This represents the action spectrum associated with the conversion process (black curve). The excitation energy is chosen such that at each wavelength the sample is illuminated with the same number of
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CHEBI:30212','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=30212')" title="ChEBI Ontology link for: photons">
+           photons
+          </a>
+         </span>
+         under non-saturating conditions. The basis for the conversion is the decrease of amplitude of the EPR signal at
+         <span class="italic">
+          g
+          <small>
+           <sub>
+            x
+           </sub>
+          </small>
+         </span>
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         =
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         2.20 of Ni–C. The error of each data point is
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         ±
+         <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+         7%. Also included is the UV/VIS spectrum of the reduced enzyme in the range 500 to 800 nm from which a mono-exponential background function has been subtracted (grey curve).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    UV/VIS
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    were recorded for the as-isolated (oxidized) and Ni–C (reduced) states of the enzyme (
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    ). Due to the fact that the enzyme contains three [FeS] clusters in addition to the [NiFe] center, the UV/VIS spectrum is dominated by the absorption of the [FeS] clusters.
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    The principal absorption bands for [3Fe4S] and [4Fe4S] clusters of several iron–sulfur
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:36080','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=36080')" title="ChEBI Ontology link for: proteins">
+      proteins
+     </a>
+    </span>
+    in their oxidized and reduced states have been reported (
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ).
+    <a href="#cit26" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       26
+      </span>
+     </sup>
+    </a>
+    In the spectrum of the oxidized hydrogenase (
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    , black curve) the broad absorption band around 420 nm results from contributions of the oxidized [4Fe4S]
+(390 nm) and the [3Fe4S] clusters (415 nm and 455 nm).
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('MOP:0000569','B310205J')" title="Molecular Process Ontology link for: Reduction">
+      Reduction
+     </a>
+    </span>
+    of the enzyme by an H
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    atmosphere leads to a reduction of all [FeS] clusters and to a decrease of the absorption at 420 nm.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig6">
+       <img alt="UV/VIS spectra of D. vulgaris Miyazaki F hydrogenase. Enzyme in the as-isolated, oxidized (black line) and the H2 reduced form (grey line). The inserted box shows an extension of the region between 500 and 900 nm." src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-f6.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 6
+       </b>
+       <span id="fig6">
+        <span class="graphic_title">
+         UV/VIS
+         <span class="CH">
+          <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+           spectra
+          </a>
+         </span>
+         of
+         <span class="italic">
+          D. vulgaris
+         </span>
+         Miyazaki F hydrogenase. Enzyme in the as-isolated, oxidized (black line) and the H
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         reduced form (grey line). The inserted box shows an extension of the region between 500 and 900 nm.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="table_caption">
+    <b>
+     Table 2
+    </b>
+    <span id="tab2">
+     UV/VIS spectroscopic characteristics of iron–sulfur clusters in
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CHEBI:36080','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=36080')" title="ChEBI Ontology link for: proteins">
+       proteins
+      </a>
+     </span>
+     , modified from
+     <a href="#cit26" title="Select to navigate to references">
+      ref. 26
+     </a>
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col align="left">
+     </col>
+     <col align="char" char="." charoff="50">
+     </col>
+     <col align="char" char="." charoff="50">
+     </col>
+     <col align="char" char="." charoff="50">
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       [FeS] cluster
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Ox. state
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Fe formal valence
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         max
+        </sub>
+       </small>
+       /nm
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        ε
+       </span>
+       /M
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       cm
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+     </tr>
+    </thead>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       [3Fe4S]
+      </td>
+      <td valign="top">
+       oxidized
+      </td>
+      <td valign="top">
+       3 Fe
+       <small>
+        <sup>
+         3+
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       415, 455
+      </td>
+      <td valign="top">
+       15
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       600, 13
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       200
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       [3Fe4S]
+      </td>
+      <td valign="top">
+       reduced
+      </td>
+      <td valign="top">
+       2 Fe
+       <small>
+        <sup>
+         3+
+        </sup>
+       </small>
+       , 1 Fe
+       <small>
+        <sup>
+         2+
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       425
+      </td>
+      <td valign="top">
+       9600
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       [4Fe4S]
+      </td>
+      <td valign="top">
+       oxidized
+      </td>
+      <td valign="top">
+       2 Fe
+       <small>
+        <sup>
+         3+
+        </sup>
+       </small>
+       , 2 Fe
+       <small>
+        <sup>
+         2+
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       390
+      </td>
+      <td valign="top">
+       15
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       200
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       [4Fe4S]
+      </td>
+      <td valign="top">
+       reduced
+      </td>
+      <td valign="top">
+       1 Fe
+       <small>
+        <sup>
+         3+
+        </sup>
+       </small>
+       , 3 Fe
+       <small>
+        <sup>
+         2+
+        </sup>
+       </small>
+      </td>
+      <td colspan="2" valign="top">
+       unfeatured; absorbance declines upon
+       <span class="CH">
+        <a class="simple" href="javascript:popupOBO('MOP:0000569','B310205J')" title="Molecular Process Ontology link for: reduction">
+         reduction
+        </a>
+       </span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    Strikingly, two features are present in the absorption spectrum of the reduced enzyme (
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    , grey curve), which are absent in the spectrum of the oxidized form. These are the bands at 590 nm and 700 nm, which have been observed before
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    but not further analyzed. In order to understand the origin of these bands, an attempt was made to estimate their molar absorption coefficients by subtracting an exponential background function from the UV/VIS spectrum of the reduced enzyme. The resulting difference
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectrum">
+      spectrum
+     </a>
+    </span>
+    is included in
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    and the molar absorption coefficients of these bands, calculated according to Lambert–Beer's law, were estimated to be
+    <span class="italic">
+     ca
+    </span>
+    . 1100 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    and 1400 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    , respectively (error
+    <span class="italic">
+     ca
+    </span>
+    . 300 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ).
+   </p>
+   <p class="otherpara">
+    An attempt was made to observe the conversion back from Ni–L to Ni–C by starting from a 100% Ni–L sample (created by illumination outside the cavity with white light from a projection lamp) and illuminating with the laser at different wavelengths at 40 K. At none of the wavelengths between 355 nm and 900 nm, a recovery of the Ni–C signal was observed.
+   </p>
+   <h2 id="sect713">
+    <span class="a_heading">
+     Discussion
+    </span>
+   </h2>
+   <span>
+    The photoconversion of the Ni–C to the Ni–L state is associated with a broad action spectrum in the visible range. This indicates that electronically excited states have to be involved. In the discussion we first address the conversion as a function of wavelength (
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    ) and the relation to the structure observed in the UV/VIS spectrum of the Ni–C state. Subsequently, an assignment of the bands observed in both
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    is proposed based on their molar absorption coefficients and a comparison with
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000801','B310205J')" title="Chemical Methods Ontology link for: absorption spectra">
+      absorption spectra
+     </a>
+    </span>
+    of nickel model complexes and [FeS] clusters. Finally, implications for the reaction mechanism of the enzyme are discussed.
+   </span>
+   <h3 id="sect719">
+    <span class="b_heading">
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR">
+       EPR
+      </a>
+     </span>
+     and UV/VIS
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+       spectra
+      </a>
+     </span>
+    </span>
+   </h3>
+   <span>
+    The decay of the Ni–C signal after illumination with light of distinct wavelengths can be described by an empirical fit involving a three-exponential decay for wavelengths between 350 nm and 780 nm. Only one time constant is necessary when the excitation wavelength is longer than 780 nm. At all wavelengths, the decay is dominated by the process assosiated with the largest time constant (
+    <span class="italic">
+     t
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    , see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ). The other two time constants are required to correctly simulate the first part of the decay curve. The observation that
+    <span class="italic">
+     t
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    hardly varies from 350 to 830 nm implies that the Ni–C to Ni–L conversion process proceeds
+    <span class="italic">
+     via
+    </span>
+    the same mechanism in this spectral region. Beyond 830 nm,
+    <span class="italic">
+     t
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    increases and the increase correlates with the decrease in conversion to Ni–L. At excitation wavelengths longer than 1050 nm, the energy is no longer sufficient to reach an electronically excited state associated with the conversion of Ni–C to Ni–L.
+   </span>
+   <p class="otherpara">
+    In order to understand the decay behavior of the Ni–C signal we consider a simple model (see
+    <a href="#imgsch1" title="Select to navigate to scheme">
+     Scheme 1
+    </a>
+    ). The model takes into account the Ni–C and Ni–L states and the electronically excited state (called Ni–C*) involved in the conversion process. The transition probabilities between the states are given by the constants
+    <span class="italic">
+     k
+    </span>
+    (
+    <a href="#imgsch1" title="Select to navigate to scheme">
+     Scheme 1
+    </a>
+    ). Assuming that the initial population is in the Ni–C state we can set up equations that describe the time evolution of the populations in all three states. We then make the simplification that the population of the Ni–C* state decays uni-directionally towards Ni–L (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    0,
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    1). In this case, the time dependence of Ni–C is described by a mono-exponential decay:
+   </p>
+   <table>
+    <td class="leftEqn">
+    </td>
+    <tr>
+     <td class="eqn">
+      <span id="eqn4">
+      </span>
+      <span id="eqn4">
+       <span class="italic">
+        N
+       </span>
+       <small>
+        <sub>
+         Ni–C
+        </sub>
+       </small>
+       (
+       <span class="italic">
+        t
+       </span>
+       )
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       =
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       <span class="italic">
+        N
+       </span>
+       <small>
+        <sub>
+         Ni–C
+        </sub>
+       </small>
+       (0)
+       <span class="italic">
+        e
+       </span>
+       <small>
+        <sup>
+         −
+         <span class="italic">
+          k
+         </span>
+         <small>
+          <sub>
+           1
+          </sub>
+         </small>
+         ·
+         <span class="italic">
+          t
+         </span>
+        </sup>
+       </small>
+      </span>
+     </td>
+     <td class="rightEqn">
+      (4)
+     </td>
+    </tr>
+   </table>
+   <p class="otherpara">
+    With this model the mono-exponential decay behavior observed above 780 nm can be understood. At these long excitation wavelengths the time constant increases. In our model this means that
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    becomes smaller which results in a longer decay time (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ).
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgsch1">
+       <img alt="scheme, filename = b310205j-s1.gif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2003/CP/b310205j/b310205j-s1.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Scheme 1
+       </b>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    At shorter wavelengths either more than one excited state is involved or an equilibrium may exist between the species (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    ≠
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    0,
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    ≠
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    1), both of which would lead to a multi-exponential decay of the population in the Ni–C state. This may be the reason for the multi-exponential function necessary to fit the decay curve at wavelength shorter than 830 nm. A shortcoming of the model is that it does not include spectrophotoselection and all population eventually ends up in the Ni–L state. As opposed to excitation with a laser spectrophotoselection does not occur when the sample is excited with a projection lamp and a complete conversion of Ni–C to Ni–L is obtained.
+   </p>
+   <p class="otherpara">
+    A comparison of the action spectrum of the conversion and the bands in the UV/VIS spectrum reveals striking similarities. Both
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    exhibit absorption maxima at 590 nm and 700 nm (
+    <span class="italic">
+     cf.
+    </span>
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    ). Interestingly, the conversion decreases when going from yellow to blue excitation light, where the absorption of [FeS] clusters reaches its maximum. Although it is clear from this observation that the conversion process is not directly coupled to these large absorptions (
+    <span class="italic">
+     ε
+    </span>
+    <small>
+     <sub>
+      total
+     </sub>
+    </small>
+    ∼ 47
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    000 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ), the conversion in the blue region (
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    ) might be underestimated, since the [FeS] clusters absorb many of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:30212','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=30212')" title="ChEBI Ontology link for: photons">
+      photons
+     </a>
+    </span>
+    . Nevertheless, with 5.6 mJ pulse
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    of excitation energy at 355 nm, it was possible to saturate the conversion process to a similar extent as it was the case at 630 nm and 5.6 mJ pulse
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    . Under these conditions the respective time constants of the decay curves did not change. This shows that the conversion extrapolated to infinite illumination time should be influenced only to a minor extent by the absorption of the [FeS] clusters. We therefore conclude that the bands at 590 and 700 nm observed in both the UV/VIS spectrum and the action spectrum and also the low-intensity band at 850 nm observed in the latter spectrum involve electronic transitions that trigger the Ni–C to Ni–L conversion process.
+   </p>
+   <h3 id="sect775">
+    <span class="b_heading">
+     Nature of the transitions
+    </span>
+   </h3>
+   <span>
+    The Ni–C to Ni–L conversion process affects predominantly the electronic and geometric structure of the [NiFe] center. Recently, it was shown experimentally that Ni–C carries a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:33692','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=33692')" title="ChEBI Ontology link for: hydride">
+      hydride
+     </a>
+    </span>
+    as bridge between Ni and Fe and that this
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:33692','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=33692')" title="ChEBI Ontology link for: hydride">
+      hydride
+     </a>
+    </span>
+    is lost in the Ni–L state.
+    <a href="#cit11" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       11–13
+      </span>
+     </sup>
+    </a>
+    For Ni–C it is assumed that the Ni has a 3d
+    <small>
+     <sub>
+      <span class="italic">
+       z
+      </span>
+      <small>
+       <sup>
+        2
+       </sup>
+      </small>
+     </sub>
+    </small>
+    electronic ground state whereas Ni–L has a larger 3d
+    <small>
+     <sub>
+      <span class="italic">
+       x
+      </span>
+      <small>
+       <sup>
+        2
+       </sup>
+      </small>
+      −
+      <span class="italic">
+       y
+      </span>
+      <small>
+       <sup>
+        2
+       </sup>
+      </small>
+     </sub>
+    </small>
+    contribution.
+    <a href="#cit27" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       27
+      </span>
+     </sup>
+    </a>
+    It is tempting to assign the bands at 590 and 700 nm and possibly the broad absorption around 850 nm to electronic transitions of the [NiFe] center. It is known, however, that the [NiFe] center has a magnetic spin–spin interaction with the proximal reduced [4Fe4S] cluster with a significant contribution from exchange interaction.
+    <a href="#cit21" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       21,25
+      </span>
+     </sup>
+    </a>
+    An energy transfer mechanism from an excited proximal [4Fe4S] cluster to the [NiFe] center can therefore not be excluded. In order to see whether [FeS] clusters exhibit structure in the visible absorption spectrum between 500 and 900 nm, a literature search of UV/VIS
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    for [FeS] clusters was performed. The overall spectroscopic characteristics of [FeS] clusters differ depending on their redox state
+    <a href="#cit26" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       26
+      </span>
+     </sup>
+    </a>
+    (
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ). It is important to realize that in the Ni–C and the Ni–L state the [4Fe4S] clusters are in their reduced S
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    =
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    ½ state. Although UV/VIS
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    for oxidized [4Fe4S] clusters can be rich in bands over the visible range, those for reduced [4Fe4S] clusters are structureless and show a declined absorbance in the region between 500 and 900 nm.
+    <a href="#cit28" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       28–30
+      </span>
+     </sup>
+    </a>
+    Therefore, we conclude that the bands present above 500 nm in both the UV/VIS spectrum of the reduced enzyme and the action spectrum of the conversion originate from the [NiFe] center.
+   </span>
+   <p class="otherpara">
+    In 1964, Gray and coworkers
+    <a href="#cit31" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       31
+      </span>
+     </sup>
+    </a>
+    characterized the square-planar nickel–maleonitriledithiolate complexes Ni(mnt)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    and Ni(mnt)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    <small>
+     <sup>
+      2−
+     </sup>
+    </small>
+    in which the nickel is coordinated by four sulfur atoms and has an electronic ground state with predominant 3d
+    <small>
+     <sub>
+      <span class="italic">
+       yz
+      </span>
+     </sub>
+    </small>
+    character. Here,
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    -to-metal charge transfer transitions (
+    <span class="italic">
+     ε
+    </span>
+    ∼ 2500–8000 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ) and parity forbidden transitions (
+    <span class="italic">
+     ε
+    </span>
+    ∼ 500 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ) have been observed in the 250
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    −
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    900 nm spectral region. The exact nature of the latter is still disputed, but may correspond to a transition involving
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    orbitals.
+    <a href="#cit32" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       32
+      </span>
+     </sup>
+    </a>
+    Although Ni(mnt)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    has a different electronic ground state as Ni–C (3d
+    <small>
+     <sub>
+      <span class="italic">
+       yz
+      </span>
+     </sub>
+    </small>
+    <span class="italic">
+     vs.
+    </span>
+    3d
+    <small>
+     <sub>
+      <span class="italic">
+       z
+      </span>
+      <small>
+       <sup>
+        2
+       </sup>
+      </small>
+     </sub>
+    </small>
+    <a href="#cit27" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       27
+      </span>
+     </sup>
+    </a>
+    ) and does not contain iron, we use the
+    <span class="italic">
+     ε
+    </span>
+    values of the bands for Ni(mnt)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    as a confirmation that Ni-related transitions in the UV/VIS spectrum between 250 and 900 nm may exist. From the low values of the molar absorption coefficients observed for the bands at 590 and 700 nm (1100 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    and 1400 M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ) in the UV/VIS spectrum of the reduced enzyme it is clear that the corresponding transitions contain only a small amount of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    -to-metal charge transfer character.
+   </p>
+   <h3 id="sect830">
+    <span class="b_heading">
+     Implications for the reaction mechanism
+    </span>
+   </h3>
+   <span>
+    The Ni–C state can be recovered from Ni–L at temperatures above 120 K.
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+    This indicates that the former state is lower in energy than the Ni–L state. Due to the fact that the back-reaction from Ni–L to Ni–C cannot be achieved by illumination, either the relaxation from the electronically excited states is uni-directional towards Ni–L or the Ni–L state does not absorb the excitation light.
+   </span>
+   <p class="otherpara">
+    An X-ray crystallographic investigation of the binding of CO to the [NiFe] center in
+    <span class="italic">
+     D. vulgaris
+    </span>
+    Miyazaki F hydrogenase has been recently reported.
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    Similar to the case of the conversion of Ni–C to Ni–L, the exogenous CO in the CO-bound form can be liberated by illumination with strong white light and a typical Ni–L
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR">
+      EPR
+     </a>
+    </span>
+    signal is observed. In this investigation, in which CO-flushed reduced crystals were analyzed before and after illumination, changes in electron density at the sulfur of
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.5653.html" target="_blank" title="Chemspider Compound link for:cysteine">
+      cysteine
+     </a>
+    </span>
+    546 were observed when comparing the CO-bound and CO-liberated forms of the crystal. In addition, a high temperature factor was found for the sulfur of this terminal cysteine 546 and it was suggested that this sulfur is protonated in the CO-liberated form.
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    The presence of such a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:29917','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=29917')" title="ChEBI Ontology link for: thiol group">
+      thiol group
+     </a>
+    </span>
+    has also been suggested earlier.
+    <a href="#cit14" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       14,33,34
+      </span>
+     </sup>
+    </a>
+    Analogously, it is conceivable that the bridging
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:33692','B310205J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=33692')" title="ChEBI Ontology link for: hydride">
+      hydride
+     </a>
+    </span>
+    of the Ni–C state binds as an H
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    to the sulfur of
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.5653.html" target="_blank" title="Chemspider Compound link for:cysteine">
+      cysteine
+     </a>
+    </span>
+    546 in the Ni–L state, leaving the Ni in a formal Ni(
+    <span class="small_caps">
+     I
+    </span>
+    ) state. This would also explain the decrease observed for the respective
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H hyperfine coupling upon Ni–C to Ni–L conversion.
+    <a href="#cit12" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       12,13,17
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    Because of the low energy barrier between Ni–C and Ni–L the hydrogen species in the bridge appears to be relatively mobile at room temperature. It is conceivable that the binding of CO to Ni–C traps it in a position where it binds to the sulfur of
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.5653.html" target="_blank" title="Chemspider Compound link for:cysteine">
+      cysteine
+     </a>
+    </span>
+    546. This would explain why after liberation of CO with strong white light at low temperature, the typical Ni–L
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000328','B310205J')" title="Chemical Methods Ontology link for: EPR">
+      EPR
+     </a>
+    </span>
+    signal is observed. To validate this hypothesis it would be interesting to see if an S–H (or S–D) vibrational frequency can be observed by
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000636','B310205J')" title="Chemical Methods Ontology link for: FTIR spectroscopy">
+      FTIR spectroscopy
+     </a>
+    </span>
+    in Ni–C/Ni–L difference
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B310205J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    measured at low temperature in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.937.html" target="_blank" title="Chemspider Compound link for:H2O">
+      H
+      <small>
+       <sub>
+        2
+       </sub>
+      </small>
+      O
+     </a>
+    </span>
+    and D
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    O.
+   </p>
+   <h2 id="sect857">
+    <span class="a_heading">
+     Acknowledgements
+    </span>
+   </h2>
+   <span>
+    The expert technical assistance of Tanja Berndsen and Gudrun Klihm is gratefully acknowledged. We thank Silvia E. Braslavsky for critically reading the manuscript and helpful discussions. This work was supported financially by the Max Planck Gesellschaft and the Fonds der Chemischen Industrie (WL).
+   </span>
+   <span id="sect859">
+    <h2 id="sect856">
+     <span class="a_heading">
+      References
+     </span>
+    </h2>
+   </span>
+   <ol type="1">
+    <li>
+     <span id="cit1">
+      P. M. Vignais, B. Billoud and J. Meyer,
+      <span class="italic">
+       FEMS Microbiology Review
+      </span>
+      , 2001,
+      <span class="bold">
+       25
+      </span>
+      , 455
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=FEMS%20Microbiology%20Review%5BJour%5D%20AND%2025%5Bvolume%5D%20AND%20455%5Bpage%5D%20and%202001%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/1_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit2">
+      S. P. J. Albracht,
+      <span class="italic">
+       Biochim. Biophys. Acta
+      </span>
+      , 1994,
+      <span class="bold">
+       1188
+      </span>
+      , 167
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXivVKgtLk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/2_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit3">
+      Y. Higuchi, H. Ogata, K. Miki, N. Yasuoka and T. Yagi,
+      <span class="italic">
+       Structure (London)
+      </span>
+      , 1999,
+      <span class="bold">
+       7
+      </span>
+      , 549
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Structure%20(London)%5BJour%5D%20AND%207%5Bvolume%5D%20AND%20549%5Bpage%5D%20and%201999%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/3_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit4">
+      A. Volbeda, M.-H. Charon, E. C. Hatchikian, M. Frey and J. C. Fontecilla-Camps,
+      <span class="italic">
+       Nature (London)
+      </span>
+      , 1995,
+      <span class="bold">
+       373
+      </span>
+      , 580
+      <a class="DOILink" href="http://dx.doi.org/10.1038/373580a0" target="_blank" title="DOI Link to resource 10.1038/373580a0">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXjsl2msLk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/4_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit5">
+      Y. Higuchi, T. Yagi and N. Yasuoka,
+      <span class="italic">
+       Structure (London)
+      </span>
+      , 1997,
+      <span class="bold">
+       15
+      </span>
+      , 1671
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Structure%20(London)%5BJour%5D%20AND%2015%5Bvolume%5D%20AND%201671%5Bpage%5D%20and%201997%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/5_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit6">
+      M. Rousset, Y. Montet, B. Guigliarelli, N. Forget, M. Asso, P. Bertrand, J. C. Fontecilla-Camps and E. C. Hatchikian,
+      <span class="italic">
+       Proc. Natl. Acad. Sci. U. S. A.
+      </span>
+      , 1998,
+      <span class="bold">
+       95
+      </span>
+      , 11
+      <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+      625
+      <a class="DOILink" href="http://dx.doi.org/10.1073/pnas.95.20.11625" target="_blank" title="DOI Link to resource 10.1073/pnas.95.20.11625">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1cXmsV2iurc%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/6_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit7">
+      P. M. Matias, C. M. Soares, L. M. Saraiva, R. Coelho, J. Morais, J. LeGall and M. A. Carrando,
+      <span class="italic">
+       J. Biol. Inorg. Chem.
+      </span>
+      , 2001,
+      <span class="bold">
+       6
+      </span>
+      , 63
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Biol.%20Inorg.%20Chem.%5BJour%5D%20AND%206%5Bvolume%5D%20AND%2063%5Bpage%5D%20and%202001%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/7_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit8">
+      H. Ogata, Y. Mizogushi, N. Mizuno, K. Miki, S. Adachi, N. Yasuoka, T. Yagi, O. Yamauchi, S. Hirota and Y. Higuchi,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2002,
+      <span class="bold">
+       124
+      </span>
+      , 11
+      <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+      628
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja012645k" target="_blank" title="DOI Link to resource 10.1021/ja012645k">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD38Xms1Omt7k%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/8_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit9">
+      R. P. Happe, W. Roseboom, A. J. Pierik, S. P. J. Albracht and K. A. Bagley,
+      <span class="italic">
+       Nature (London)
+      </span>
+      , 1997,
+      <span class="bold">
+       385
+      </span>
+      , 126
+      <a class="DOILink" href="http://dx.doi.org/10.1038/385126a0" target="_blank" title="DOI Link to resource 10.1038/385126a0">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXksFOntw%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/9_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit10">
+      A. L. De Lacey, E. C. Hatchikian, A. Volbeda, M. Frey, J. C. Fontecilla-Camps and V. M. Fernandez,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1997,
+      <span class="bold">
+       119
+      </span>
+      , 7181
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja963802w" target="_blank" title="DOI Link to resource 10.1021/ja963802w">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXltFSiu7w%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/10_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit11">
+      S. Foerster, M. Stein, M. Brecht, H. Ogata, Y. Higuchi and W. Lubitz,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2003,
+      <span class="bold">
+       125
+      </span>
+      , 83
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja027522u" target="_blank" title="DOI Link to resource 10.1021/ja027522u">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD38Xpt1Cmu70%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/11_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit12">
+      M. Brecht, M. van Gastel, T. Buhrke, B. Friedrich and W. Lubitz,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2003,
+      <span class="bold">
+       125
+      </span>
+      , 13075
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja036624x" target="_blank" title="DOI Link to resource 10.1021/ja036624x">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3sXns1Ggt7s%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/12_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit13">
+      S. Foerster, Ph.D. Thesis, Technische Universität Berlin, Berlin, Germany,  2003.
+     </span>
+    </li>
+    <li>
+     <span id="cit14">
+      S. Niu, L. M. Thomson and M. B. Hall,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1999,
+      <span class="bold">
+       121
+      </span>
+      , 4000
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja983469r" target="_blank" title="DOI Link to resource 10.1021/ja983469r">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXit1akt7k%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/14_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit15">
+      M. Stein, E. van Lenthe, E. J. Baerends and W. Lubitz,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2001,
+      <span class="bold">
+       123
+      </span>
+      , 5839
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja005808y" target="_blank" title="DOI Link to resource 10.1021/ja005808y">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3MXjvVWhsr8%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/15_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit16">
+      M. Pavlov, P. E. M. Siegbahn, M. R. A. Blomberg and R. H. Crabtree,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1998,
+      <span class="bold">
+       120
+      </span>
+      , 548
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja971681+" target="_blank" title="DOI Link to resource 10.1021/ja971681+">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1cXmvFWhsw%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/16_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit17">
+      J. P. Whitehead, R. J. Gurbiel, C. Bagyinka, B. M. Hoffman and M. J. Maroney,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1993,
+      <span class="bold">
+       115
+      </span>
+      , 5629
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja00066a032" target="_blank" title="DOI Link to resource 10.1021/ja00066a032">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3sXkt1elsLg%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/17_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit18">
+      J. W. van der Zwaan, S. P. J. Albracht, R. D. Fontijn and E. C. Slater,
+      <span class="italic">
+       FEBS Lett.
+      </span>
+      , 1985,
+      <span class="bold">
+       2
+      </span>
+      , 271
+      <a class="DOILink" href="http://dx.doi.org/10.1016/0014-5793(85)80533-0" target="_blank" title="DOI Link to resource 10.1016/0014-5793(85)80533-0">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL2MXpt1Wjuw%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/18_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit19">
+      M. Medina, E. C. Hatchikian and R. Cammack,
+      <span class="italic">
+       Biochim. Biophys. Acta
+      </span>
+      , 1996,
+      <span class="bold">
+       1275
+      </span>
+      , 227
+      <a class="DOILink" href="http://dx.doi.org/10.1016/0005-2728(96)00007-2" target="_blank" title="DOI Link to resource 10.1016/0005-2728(96)00007-2">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28XktVOisLs%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/19_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit20">
+      M. Medina, R. Williams and R. Cammack,
+      <span class="italic">
+       J. Chem. Soc., Faraday Trans.
+      </span>
+      , 1994,
+      <span class="bold">
+       90
+      </span>
+      , 2921
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=FT9949002921&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/FT9949002921">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/20_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit21">
+      F. Dole, M. Medina, C. More, R. Cammack, P. Bertrand and B. Guigliarelli,
+      <span class="italic">
+       Biochemistry
+      </span>
+      , 1996,
+      <span class="bold">
+       35
+      </span>
+      , 16
+      <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+      399
+      <a class="DOILink" href="http://dx.doi.org/10.1021/bi961662x" target="_blank" title="DOI Link to resource 10.1021/bi961662x">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28XntVyis7w%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/21_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit22">
+      C. Fan, M. Teixeira, J. J. G. Moura, I. Moura, B.-H. Huynh, J. LeGall, H. D. Peck Jr. and B. M. Hoffman,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1991,
+      <span class="bold">
+       113
+      </span>
+      , 20
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja00001a003" target="_blank" title="DOI Link to resource 10.1021/ja00001a003">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3MXhvFyiug%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/22_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit23">
+      F. Dole, A. Fournel, V. Magro, E. C. Hatchikian, P. Bertrand and B. Guigliarelli,
+      <span class="italic">
+       Biochemistry
+      </span>
+      , 1997,
+      <span class="bold">
+       36
+      </span>
+      , 7847
+      <a class="DOILink" href="http://dx.doi.org/10.1021/bi963171i" target="_blank" title="DOI Link to resource 10.1021/bi963171i">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXjs1Wmsbs%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/23_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit24">
+      T. Yagi, K. Kimura, H. Daidoji, F. Sakai, S. Tamura and H. Inokuchi,
+      <span class="italic">
+       J. Biochem.
+      </span>
+      , 1976,
+      <span class="bold">
+       79
+      </span>
+      , 661
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaE28XhsVKksLg%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/24_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit25">
+      B. Guigliarelli, C. More, A. Fournel, M. Asso, E. C. Hatchikian, R. Williams, R. Cammack and P. Bertrand,
+      <span class="italic">
+       Biochemistry
+      </span>
+      , 1995,
+      <span class="bold">
+       34
+      </span>
+      , 4781
+      <a class="DOILink" href="http://dx.doi.org/10.1021/bi00014a036" target="_blank" title="DOI Link to resource 10.1021/bi00014a036">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXks1Grs7g%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/25_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit26">
+      S. J. Lippard, J. M. Berg,
+      <span class="italic">
+       Principles of Bioinorganic Chemistry
+      </span>
+      , University Science Books, Mill Valley, CA, USA,  1994
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Principles%20of%20Bioinorganic%20Chemistry%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201994%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/26_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit27">
+      W. Lubitz, M. Brecht, S. Foerster, M. van Gastel, M. Stein, in
+      <span class="italic">
+       Paramagnetic Resonance of Metallobiomolecules
+      </span>
+      , ACS Symposium Series,  2003, 858, 128
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Paramagnetic%20Resonance%20of%20Metallobiomolecules%5BJour%5D%20AND%20858%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202003%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/27_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit28">
+      W. Shin, P. R. Stafford and P. A. Lindahl,
+      <span class="italic">
+       Biochemistry
+      </span>
+      , 1992,
+      <span class="bold">
+       31
+      </span>
+      , 6003
+      <a class="DOILink" href="http://dx.doi.org/10.1021/bi00141a007" target="_blank" title="DOI Link to resource 10.1021/bi00141a007">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK38XksVentbw%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/28_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit29">
+      B. R. Gibney, S. E. Mulholland, F. Rabanal and P. L. Dutton,
+      <span class="italic">
+       Proc. Natl. Acad. Sci. U. S. A.
+      </span>
+      , 1996,
+      <span class="bold">
+       93
+      </span>
+      , 15
+      <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+      041
+      <a class="DOILink" href="http://dx.doi.org/10.1073/pnas.93.26.15041" target="_blank" title="DOI Link to resource 10.1073/pnas.93.26.15041">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXmslyk" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/29_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit30">
+      M. L. Kennedy and B. R. Gibney,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2002,
+      <span class="bold">
+       124
+      </span>
+      , 6826
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja0171613" target="_blank" title="DOI Link to resource 10.1021/ja0171613">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD38XjvFagsLo%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/30_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit31">
+      S. I. Shupack, E. Billig, R. J. H. Clark, R. Williams and H. B. Gray,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1964,
+      <span class="bold">
+       86
+      </span>
+      , 4594
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja01075a016" target="_blank" title="DOI Link to resource 10.1021/ja01075a016">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaF2cXkvV2htL0%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/31_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit32">
+      M. Sano, H. Adachi and H Yamatera,
+      <span class="italic">
+       Bull. Chem. Soc. Jpn.
+      </span>
+      , 1981,
+      <span class="bold">
+       54
+      </span>
+      , 2636
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL3MXlslKjsbk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/32_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit33">
+      M. J. Maroney,
+      <span class="italic">
+       Comments Inorg. Chem.
+      </span>
+      , 1995,
+      <span class="bold">
+       17
+      </span>
+      , 347
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28XhsVKksQ%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/33_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit34">
+      J. C. Fontecilla-Camps,
+      <span class="italic">
+       J. Biol. Inorg. Chem.
+      </span>
+      , 1996,
+      <span class="bold">
+       1
+      </span>
+      , 91
+      <a class="DOILink" href="http://dx.doi.org/10.1007/s007750050027" target="_blank" title="DOI Link to resource 10.1007/s007750050027">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28XlvFGnsbY%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B310205J/34_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+   </ol>
+   <hr/>
+   <table>
+    <tr>
+     <td>
+      <h3>
+       Footnote
+      </h3>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="sup_ref">
+       †
+       <span id="fn1">
+        Dole
+        <span class="italic">
+         et. al.
+        </span>
+        <a href="#cit21" title="Select to navigate to references">
+         <sup>
+          <span class="sup_ref">
+           21
+          </span>
+         </sup>
+        </a>
+        called the transient state Ni–L1 and the most prominent state Ni–L2 (here called Ni–L). The transient state Ni–L1 becomes more prominent when the temperature is decreased.
+       </span>
+      </span>
+     </td>
+    </tr>
+   </table>
+   <table>
+    <tr>
+     <td>
+      <hr/>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       This journal is © the Owner Societies 2003
+      </b>
+     </td>
+    </tr>
+   </table>
+  </div>
+ </body>
+</html>

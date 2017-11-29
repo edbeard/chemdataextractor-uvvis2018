@@ -1,0 +1,5485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:art="http://www.rsc.org/schema/rscart38" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rsc="urn:rsc.org">
+ <head>
+  <title>
+   Bis-porphyrinic clamp for photo- and electro-active guests: a spectroscopic and photophysical study  - Physical Chemistry Chemical Physics (RSC Publishing) DOI:10.1039/B105547J
+  </title>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYNF1oJ","queueTime":0,"applicationTime":1425,"ttGuid":"DB6C23367283165E","agent":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,S=y.hash,this[u]=Date.now()}function o(){j--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),R=t(13),P=t("ee"),D=P.get("tracer");t(14),t("loader").features.spa=!0;var S,N=w[v],j=0;P.on(u,r),P.on(p,r),P.on(h,o),P.on(d,o),P.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),R.buffer([u,"new-xhr","send-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(R,"send-xhr"+c),a(P,"xhr-resolved"),a(P,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),N("hashchange",i,!0),N("load",i,!0),N("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(h+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),f.setCurrentRouteName=o(h+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(h){throw u(e+"err",[r,a,h],c),h}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,h(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){p([a,n,r,o])}s=i}}function h(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!p.aborted){t&&t(n,r,o);for(var i=e(o),a=l(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function d(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return h[t]=h[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},g={on:d,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},h={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=h.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(w,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=h.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===h.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=t("ee"),u=window,h=u.document,p="addEventListener",d="attachEvent",l=u.XMLHttpRequest,m=l&&l.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:l,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(16);var v=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-998.min.js"},y=l&&m&&m[p]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:v,features:{},xhrWrappable:y};h[p]?(h[p]("DOMContentLoaded",i,!1),u[p]("load",r,!1)):(h[d]("onreadystatechange",o),u[d]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,14,5,3,4]);
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Lucia Flamigni" name="DC.Creator"/>
+  <meta content="Giancarlo Marconi" name="DC.Creator"/>
+  <meta content="Martin R. Johnston" name="DC.Creator"/>
+  <meta content="Bis-porphyrinic clamp for photo- and electro-active guests: a spectroscopic and photophysical study " name="DC.title"/>
+  <meta content="Royal Society of Chemistry" name="DC.publisher"/>
+  <meta content="2001/10/10" name="DC.Date"/>
+  <meta content="10.1039/B105547J" name="DC.Identifier" scheme="doi"/>
+  <meta content="en" name="DC.Language"/>
+  <meta content="Bis-porphyrinic clamp for photo- and electro-active guests: a spectroscopic and photophysical study " name="citation_title"/>
+  <meta content="Lucia Flamigni" name="citation_author"/>
+  <meta content="Giancarlo Marconi" name="citation_author"/>
+  <meta content="Martin R. Johnston" name="citation_author"/>
+  <meta content="2001/09/21" name="citation_online_date"/>
+  <meta content="2001" name="citation_date"/>
+  <meta content="Physical Chemistry Chemical Physics" name="citation_journal_title"/>
+  <meta content="3" name="citation_volume"/>
+  <meta content="20" name="citation_issue"/>
+  <meta content="4488" name="citation_firstpage"/>
+  <meta content="4494" name="citation_lastpage"/>
+  <meta content="10.1039/B105547J" name="citation_doi"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticlePDF/2001/CP/B105547J" name="citation_pdf_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleLanding/2001/CP/B105547J" name="citation_abstract_html_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleHTML/2001/CP/B105547J" name="citation_fulltext_html_url"/>
+  <link href="" rel="shortcut icon"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/rschtml2.css?ver=6_0_9" rel="stylesheet" type="text/css"/>
+  <script src="http://pubs.rsc.org/content/scripts/prospect.js?ver=6_0_9" type="text/javascript">
+  </script>
+  <script src="http://pubs.rsc.org/content/scripts/JQueryPlugins.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   (function ($) {
+        function grab_content(span_id) {
+            var content = $('span[id="' + span_id + '"]').text();
+
+            if (span_id.indexOf("fn", 0) != -1) {
+                return content; // could contain useful anchor text i.e. see doi:
+            }
+            else {
+                // strip external anchor text CrossRef etc. (but not Dera linked text)
+               $('span[id="' + span_id + '"] a[class !="simple"][class !="CH"][class !="TC"][class !="RTC"][class !="GB"]').each(
+            		function () {
+            					content = content.replace($(this).text(), '');
+              					}); return content;
+            }
+       }
+
+        $.fn.swapAttr = function (attribute) {
+            return this.each(function () {
+                $(this).hover(function () {
+                    var $this = $(this);
+                    var idval = $this.attr("href").replace("#", "");
+                    var textval = grab_content(idval);
+                    if (textval.replace(/\s+/g, '') != "") {
+                        $this.attr('title', textval.replace(/\s+/g, ' '));
+                    }
+                }, function () {
+                    var $this = $(this);
+                });
+            });
+        };
+
+    })(jQuery);
+
+    $(document).ready(function () {
+        $("a[href^='#']").swapAttr();
+    });
+  </script>
+  <!--6_0_9-->
+ </head>
+ <body>
+  <!--Google Tag Manager-->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-KW8L" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KW8L');
+  </script>
+  <!--End Google Tag Manager-->
+  <span id="top">
+  </span>
+  <div id="wrapper">
+   <div class="left_head">
+    <a class="URLLink" href="http://pubs.rsc.org">
+     <img alt="Royal Society of Chemistry" border="0" class="rsc-logo" src="http://pubs.rsc.org/content/NewImages/royal-society-of-chemistry-logo.png"/>
+    </a>
+    <br/>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlepdf/2001/CP/B105547J" target="_blank" title="Link to PDF version">
+      View PDF Version
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2001/CP/B104761M" target="_BLANK" title="Link to previous article (id:B104761M)">
+      Previous Article
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2001/CP/B105510K" target="_BLANK" title="Link to next article (id:B105510K)">
+      Next Article
+     </a>
+    </span>
+   </div>
+   <div class="right_head">
+   </div>
+   <div class="article_info">
+    DOI:
+    <a href="http://dx.doi.org/10.1039/B105547J" target="_blank" title="Link to landing page via DOI">
+     10.1039/B105547J
+    </a>
+    (Paper)
+    <span class="italic">
+     <a href="http://dx.doi.org/10.1039/1463-9084/1999" title="Link to journal home page">
+      Phys. Chem. Chem. Phys.
+     </a>
+    </span>
+    , 2001,
+    <strong>
+     3
+    </strong>
+    , 4488-4494
+    <div id="chemnav">
+     <a class="tab" onclick="toggleColour('TC');" onmouseover="this.style.cursor='pointer';" title="Select to toggle highlighting of compound names">
+      <span alt="Show Compounds button" id="btnTC">
+       Show Compounds
+      </span>
+     </a>
+     <input id="inpTC" type="hidden" value="off"/>
+     <a class="tab" onclick="toggleColour('CH');" onmouseover="this.style.cursor='pointer';" title="Select to toggle highlighting of chem-ontology terms">
+      <span alt="Show Chemical Terms button" id="btnCH">
+       Show Chemical Terms
+      </span>
+     </a>
+     <input id="inpCH" type="hidden" value="off"/>
+    </div>
+   </div>
+   <h1 id="sect154">
+    <span class="title_heading">
+     Bis-porphyrinic clamp for photo- and electro-active guests: a spectroscopic and photophysical study
+    </span>
+   </h1>
+   <p class="header_text">
+    <span class="bold">
+     Lucia 
+            Flamigni
+    </span>
+    *
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Giancarlo 
+            Marconi
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    <span class="bold">
+     and
+    </span>
+    <span class="bold">
+     Martin R. 
+            Johnston
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      b
+     </span>
+    </sup>
+    <br/>
+    <a id="affa">
+     <sup>
+      <span class="sup_ref italic">
+       a
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Istituto FRAE-CNR, Via P. Gobetti 101, 40129, Bologna, Italy. E-mail:
+     <a href="mailto:flamigni@frae.bo.cnr.it">
+      flamigni@frae.bo.cnr.it
+     </a>
+     ;  Fax: + 39 (0)51 639 9844;  Tel: + 39 (0)51 639 9812
+    </span>
+    <br/>
+    <a id="affb">
+     <sup>
+      <span class="sup_ref italic">
+       b
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Center for Molecular Architecture, Central Queensland Uni
+     <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/char_e0f5.gif"/>
+     ersity, Rockhampton, Queensland 4702, Australia
+    </span>
+   </p>
+   <div id="art-admin">
+    <span class="italic bold">
+     Received 
+      25th June 2001
+    </span>
+    <span class="bold italic">
+     , Accepted 14th August 2001
+    </span>
+   </div>
+   <p class="bold italic">
+    First published on the web 21st September 2001
+   </p>
+   <hr/>
+   <p class="abstract">
+    The spectroscopic and photophysical characterization of a V-shaped Zn(
+    <span class="small_caps">
+     II
+    </span>
+    ) bis-porphyrinic structure,
+    <span class="bold">
+     ZnH
+    </span>
+    , its free-base analogue
+    <span class="bold">
+     FBH
+    </span>
+    and the model
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    components
+    <span class="bold">
+     ZnB
+    </span>
+    and
+    <span class="bold">
+     FBB
+    </span>
+    is presented. With respect to the unsubstituted zinc porphyrin
+    <span class="bold">
+     Zn
+    </span>
+    , asymmetric substitution with
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.11585804.html" target="_blank" title="Chemspider Compound link for:tetraazaanthracene">
+      tetraazaanthracene
+     </a>
+    </span>
+    is responsible for the increase of dipole moment in the excited state of Zn(
+    <span class="small_caps">
+     II
+    </span>
+    ) derivatives. The charge transfer character of the transition causes a remarkable
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    effect on the luminescence properties. Axial complexation of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:27365','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=27365')" title="ChEBI Ontology link for: zinc ion">
+      zinc ion
+     </a>
+    </span>
+    in
+    <span class="bold">
+     ZnB
+    </span>
+    and
+    <span class="bold">
+     ZnH
+    </span>
+    by
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1020.html" target="_blank" title="Chemspider Compound link for:pyridine">
+      pyridine
+     </a>
+    </span>
+    induces a strong perturbation of the photophysical properties. In the free base derivatives
+    <span class="bold">
+     FBB
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    the substituent displaces the equilibrium population with respect to unsubstituted
+    <span class="bold">
+     FB
+    </span>
+    , on both the ground and excited states of the two tautomers, allowing for the presence of two
+ independent populations (
+    <span class="italic">
+     ca
+    </span>
+    . 90% and 10%) of distinct species detected by
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000292','B105547J')" title="Chemical Methods Ontology link for: UV-Vis">
+      UV-Vis
+     </a>
+    </span>
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000228','B105547J')" title="Chemical Methods Ontology link for: spectroscopy">
+      spectroscopy
+     </a>
+    </span>
+    . The data are supported by semiempirical calculations.
+   </p>
+   <hr/>
+   <h2 id="sect216">
+    <span class="a_heading">
+     Introduction
+    </span>
+   </h2>
+   <span>
+    The demand for complex, multi-component molecular architectures able to perform useful acts upon external stimuli is rapidly increasing.
+    <a href="#cit1" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       1
+      </span>
+     </sup>
+    </a>
+    The use of light to trigger a transformation of the system appears appealing and the spatial and temporal definition of today's laser sources allows a high degree of control over the key function of either a “molecular machine” or a “molecular logic gate”.
+    <a href="#cit2" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       2
+      </span>
+     </sup>
+    </a>
+    In addition, one of the most important consequences in the use of light to drive a chemical transformation in a system is the conversion of light energy into chemical energy, which opens new possibilities in the demand for a sustainable and environmentally friendly energy source. “ Artificial photosynthesis”
+    <a href="#cit3" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       3
+      </span>
+     </sup>
+    </a>
+    is the discipline that addresses this point, and is based on a re-interpretation of aspects of the natural process including light collection
+and transport, and charge separation over long distances.
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: Porphyrins">
+      Porphyrins
+     </a>
+    </span>
+    , or closely related structures, are key components in the processes occurring in nature,
+    <a href="#cit4" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       4
+      </span>
+     </sup>
+    </a>
+    and they have been widely used in artificial systems due to their remarkable photo- and electrochemical properties and to the presence of spectroscopically diagnostic signals associated with their photoinduced intermediates.
+    <a href="#cit5" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       5,6
+      </span>
+     </sup>
+    </a>
+   </span>
+   <p class="otherpara">
+    In nature, the organization of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:23240','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=23240')" title="ChEBI Ontology link for: chromophores">
+      chromophores
+     </a>
+    </span>
+    in space is achieved by a cooperative network of weak non-covalent interactions, which provide optimal distances and orientations of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:23240','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=23240')" title="ChEBI Ontology link for: chromophores">
+      chromophores
+     </a>
+    </span>
+    so as to maximize the efficiency of processes.
+    <a href="#cit4" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       4
+      </span>
+     </sup>
+    </a>
+    Synthetic multi-component systems have mostly been based on covalent connections between components,
+    <a href="#cit6" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       6
+      </span>
+     </sup>
+    </a>
+    a means to provide the necessary geometrical arrangement and electronic connections, but there is now an increasing interest in systems based on weak interactions that better mimic the natural approach.
+    <a href="#cit7" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       7
+      </span>
+     </sup>
+    </a>
+    Serious drawbacks for such systems are the lower association constants between components and the less well defined geometry of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:23240','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=23240')" title="ChEBI Ontology link for: chromophores">
+      chromophores
+     </a>
+    </span>
+    .
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    To overcome such problems, synthetic chemists have focussed their efforts on the preparation of systems able to offer multi-point interactions between
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:23240','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=23240')" title="ChEBI Ontology link for: chromophores">
+      chromophores
+     </a>
+    </span>
+    , a successful strategy to ensure both a precise geometry and efficient self-assembling of components.
+    <a href="#cit9" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       9
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    The Zn(
+    <span class="small_caps">
+     II
+    </span>
+    ) bis-porphyrin host
+    <span class="bold">
+     ZnH
+    </span>
+    here presented,
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    , is a V-shaped cavity which is able to coordinate with a precise geometry a complementary guest containing two
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:51635','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=51635')" title="ChEBI Ontology link for: pyridyl">
+      pyridyl
+     </a>
+    </span>
+    units at the extremities.
+    <a href="#cit10" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10
+      </span>
+     </sup>
+    </a>
+    Complexation occurs with a high constant,
+    <span class="italic">
+     K
+    </span>
+    <small>
+     <sub>
+      a
+     </sub>
+    </small>
+    <span class="italic">
+     ca
+    </span>
+    . 10
+    <small>
+     <sup>
+      8
+     </sup>
+    </small>
+    M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    , and fast photoinduced processes, like
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('MOP:0000615','B105547J')" title="Molecular Process Ontology link for: electron transfer">
+      electron transfer
+     </a>
+    </span>
+    , can take place efficiently within the complex.
+    <a href="#cit11" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       11
+      </span>
+     </sup>
+    </a>
+    A detailed spectroscopic and photophysical characterization of
+    <span class="bold">
+     ZnH
+    </span>
+    , of the free base analogue
+    <span class="bold">
+     FBH
+    </span>
+    and of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    building components shown in
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    , is presented. The experimental findings are supported by the results of semiempirical calculations carried out on the model compounds
+    <span class="bold">
+     FBB
+    </span>
+    and
+    <span class="bold">
+     ZnB
+    </span>
+    .
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig1">
+       <img alt="
+          Schematic formulae of the compounds and models studied.
+        " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f1.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 1
+       </b>
+       <span id="fig1">
+        <span class="graphic_title">
+         <span>
+          Schematic formulae of the compounds and models studied.
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h2 id="sect257">
+    <span class="a_heading">
+     Experimental
+    </span>
+   </h2>
+   <h3 id="sect259">
+    <span class="b_heading">
+     Spectroscopic and photophysical determination
+    </span>
+   </h3>
+   <span>
+    The synthesis of the porphyrinic hosts and mono-porphyrin reference compounds has been reported in preliminary accounts.
+    <a href="#cit10" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       10,12
+      </span>
+     </sup>
+    </a>
+    The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvents">
+      solvents
+     </a>
+    </span>
+    used were spectroscopic grade (C. Erba).
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: Absorption spectra">
+      Absorption spectra
+     </a>
+    </span>
+    were recorded with a Perkin-Elmer Lambda 9
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0002232','B105547J')" title="Chemical Methods Ontology link for: spectrophotometer">
+      spectrophotometer
+     </a>
+    </span>
+    , and
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000813','B105547J')" title="Chemical Methods Ontology link for: emission spectra">
+      emission spectra
+     </a>
+    </span>
+    , uncorrected if not otherwise specified, were detected by a Spex Fluorolog II
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0002252','B105547J')" title="Chemical Methods Ontology link for: spectrofluorimeter">
+      spectrofluorimeter
+     </a>
+    </span>
+    equipped with a Hamamatsu R928 photomultiplier. A phosphorimeter accessory (1934D-Spex) allowed for the determination of time delayed
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B105547J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    and phosphorescence lifetime; the phosphorescence was detected with a gate open for 20 ms after a delay of 40 μs with respect to the lamp pulse. Relative luminescence intensities were evaluated from the area (on an energy scale) of the luminescence spectra corrected for the photomultiplier response. Luminescence quantum yields
+    <span class="italic">
+     ϕ
+    </span>
+    for the samples were obtained with reference to a standard, model
+    <span class="bold">
+     Zn
+    </span>
+    in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+      toluene
+     </a>
+    </span>
+    with
+    <span class="italic">
+     ϕ
+    </span>
+    = 0.08.
+    <a href="#cit13" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       13
+      </span>
+     </sup>
+    </a>
+    Luminescence lifetimes in the range 20–2000 ps were determined by an apparatus based on a Nd:YAG laser (Continuum PY62-10) with 35 ps pulse duration, 532 nm, 1 mJ/pulse and a streak camera.
+    <a href="#cit14" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       14
+      </span>
+     </sup>
+    </a>
+    Lifetimes longer than 2 ns were detected by a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0001963','B105547J')" title="Chemical Methods Ontology link for: time correlated single photon counting">
+      time correlated single photon counting
+     </a>
+    </span>
+    apparatus with 1 ns resolution and excitation at 337 nm. T-T
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: absorption spectra">
+      absorption spectra
+     </a>
+    </span>
+    and lifetimes were determined by a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0002510','B105547J')" title="Chemical Methods Ontology link for: laser flash photolysis">
+      laser flash photolysis
+     </a>
+    </span>
+    apparatus based on a Nd:YAG laser (Surelite II, Continuum) coupled to an optical parametric oscillator (SL OPO, Continuum) delivering 5 ns pulses of 1–7 mJ from 410 to 705 nm. More details on the detection and acquisition systems are reported elsewhere.
+    <a href="#cit15" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       15
+      </span>
+     </sup>
+    </a>
+    T-T
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: absorption spectra">
+      absorption spectra
+     </a>
+    </span>
+    at room temperature were conducted in air-free solutions, whereas removal of air was unnecessary for
+fluorescence experiments at room temperature and luminescence at 77 K. Samples were contained in 10 mm
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46727','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46727')" title="ChEBI Ontology link for: quartz">
+      quartz
+     </a>
+    </span>
+    cuvettes and, for luminescence experiments at 77 K, in
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46727','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46727')" title="ChEBI Ontology link for: quartz">
+      quartz
+     </a>
+    </span>
+    capillary tubes immersed in liquid
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:25555','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=25555')" title="ChEBI Ontology link for: nitrogen">
+      nitrogen
+     </a>
+    </span>
+    contained in a home-made
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46727','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46727')" title="ChEBI Ontology link for: quartz">
+      quartz
+     </a>
+    </span>
+    dewar. Estimated errors are 10% on lifetimes and 20% on quantum yields.
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000838','B105547J')" title="Chemical Methods Ontology link for: 1H NMR spectra">
+      <small>
+       <sup>
+        1
+       </sup>
+      </small>
+      H NMR spectra
+     </a>
+    </span>
+    were recorded using Bruker spectrometers (300 or 400 MHz) using standard Bruker pulse programs and were referenced to internal
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.6156.html" target="_blank" title="Chemspider Compound link for:tetramethylsilane">
+      tetramethylsilane
+     </a>
+    </span>
+    .
+   </span>
+   <h3 id="sect287">
+    <span class="b_heading">
+     Calculations
+    </span>
+   </h3>
+   <span>
+    Quantum mechanical semiempirical calculations were performed both on the ground state and on the excited states of model compounds
+    <span class="bold">
+     FBB
+    </span>
+    and
+    <span class="bold">
+     ZnB
+    </span>
+    . The heat of formation of the possible isomers was calculated by the AM1 method, whereas the excitation energies, oscillator strengths and transition dipole moments were evaluated using the ZINDO/S program on structures optimized by the MM + method (all programs included in the Hyperchem package
+    <a href="#cit16" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       16
+      </span>
+     </sup>
+    </a>
+    ). The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    effect was estimated through standard methods
+    <a href="#cit17" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       17
+      </span>
+     </sup>
+    </a>
+    using the calculated dipole moments of the states, the molecular radius and literature dielectric constants.
+    <a href="#cit18" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       18
+      </span>
+     </sup>
+    </a>
+   </span>
+   <h2 id="sect296">
+    <span class="a_heading">
+     Results and discussion
+    </span>
+   </h2>
+   <h3 id="sect298">
+    <span class="b_heading">
+     Steady state emission and absorption
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CMO:0000228','B105547J')" title="Chemical Methods Ontology link for: spectroscopy">
+       spectroscopy
+      </a>
+     </span>
+     in
+     <span class="TC">
+      <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+       toluene
+      </a>
+     </span>
+    </span>
+   </h3>
+   <span>
+    The ground state
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: absorption spectra">
+      absorption spectra
+     </a>
+    </span>
+    of the two bis-porphyrins
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+      toluene
+     </a>
+    </span>
+    are reported in
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2 and 3
+    </a>
+    respectively, together with the spectra of the mono-porphyrinic ref erence systems,
+    <span class="bold">
+     ZnB
+    </span>
+    and
+    <span class="bold">
+     FBB
+    </span>
+    . In the same figures are shown, for comparison purposes, the spectra of the simple unsubstituted
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrins">
+      porphyrins
+     </a>
+    </span>
+    <span class="bold">
+     Zn
+    </span>
+    and
+    <span class="bold">
+     FB
+    </span>
+    , measured in the same
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    . The mono-porphyrinic models
+    <span class="bold">
+     ZnB
+    </span>
+    and
+    <span class="bold">
+     FBB
+    </span>
+    display
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B105547J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    identical in shape to those of the bis-porphyrinic
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    , while the molar absorption coefficient value is half that of the corresponding bis-porphyrin host, as expected on the basis of the number of chromophore units. This is indicative of the absence of interactions between the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:23240','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=23240')" title="ChEBI Ontology link for: chromophores">
+      chromophores
+     </a>
+    </span>
+    , electronically isolated by the rigid alicyclic backbone, in the bis-porphyrinic compounds. In comparison
+with the unsubstituted
+    <span class="bold">
+     Zn
+    </span>
+    and
+    <span class="bold">
+     FB
+    </span>
+    , the presence of the tetraazaanthracene substituent, connecting the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    and the alicyclic backbone, introduces an asymmetry element which is responsible for the observed differences in the spectra.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig2">
+       <img alt="
+            Ground state absorption spectra in toluene of Zn (···), ZnB (– – –) and ZnH (——).
+          " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f2.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 2
+       </b>
+       <span id="fig2">
+        <span class="graphic_title">
+         <span>
+          Ground state
+          <span class="CH">
+           <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: absorption spectra">
+            absorption spectra
+           </a>
+          </span>
+          in
+          <span class="TC">
+           <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+            toluene
+           </a>
+          </span>
+          of
+          <span class="bold">
+           Zn
+          </span>
+          (···),
+          <span class="bold">
+           ZnB
+          </span>
+          (– – –) and
+          <span class="bold">
+           ZnH
+          </span>
+          (——).
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig3">
+       <img alt="
+            Ground state absorption spectra in toluene of FB (···), FBB (– – –), FBH (——).
+          " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f3.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 3
+       </b>
+       <span id="fig3">
+        <span class="graphic_title">
+         <span>
+          Ground state
+          <span class="CH">
+           <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: absorption spectra">
+            absorption spectra
+           </a>
+          </span>
+          in
+          <span class="TC">
+           <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+            toluene
+           </a>
+          </span>
+          of
+          <span class="bold">
+           FB
+          </span>
+          (···),
+          <span class="bold">
+           FBB
+          </span>
+          (– – –),
+          <span class="bold">
+           FBH
+          </span>
+          (——).
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    In addition, substitution causes a sizeable energy difference in the two isomers
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+    denoted as
+    <span class="bold">
+     a
+    </span>
+    and
+    <span class="bold">
+     b
+    </span>
+    (
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    ), which have to be considered for each porphyrinic unit. In the case of
+    <span class="bold">
+     ZnB
+    </span>
+    and
+    <span class="bold">
+     ZnH
+    </span>
+    the interconversion of the two species is expected to be fast since no net molecular motion of the metal is required and, see below, the calculated population distributions in the ground state are rather close. This allows us to consider the mixture of isomers for the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:51216','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=51216')" title="ChEBI Ontology link for: zinc porphyrins">
+      zinc porphyrins
+     </a>
+    </span>
+    as a single species. On the contrary, in the case of the free base derivatives, isomerization requires hydrogen ion motion, for which rates of the order of 10
+    <small>
+     <sup>
+      4
+     </sup>
+    </small>
+    –10
+    <small>
+     <sup>
+      5
+     </sup>
+    </small>
+    s
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    have been reported in similar systems.
+    <a href="#cit20" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       20
+      </span>
+     </sup>
+    </a>
+    Such a rate is slow compared to the excited state lifetimes and moreover calculations (see below) indicate rather different
+ energies for the ground state of the free-base derivative. These facts require that the single isomeric species,
+    <span class="bold">
+     FBBa
+    </span>
+    and
+    <span class="bold">
+     FBBb
+    </span>
+    , are considered as separate
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:23367','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=23367')" title="ChEBI Ontology link for: molecular entities">
+      molecular entities
+     </a>
+    </span>
+    whose relative abundance will depend on the Boltzmann distribution at room temperature.
+    <span class="bold">
+     FBB
+    </span>
+    was examined by
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000591','B105547J')" title="Chemical Methods Ontology link for: NMR spectroscopy">
+      NMR spectroscopy
+     </a>
+    </span>
+    in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.6104.html" target="_blank" title="Chemspider Compound link for:dichloromethane">
+      dichloromethane
+     </a>
+    </span>
+    and
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+      toluene
+     </a>
+    </span>
+    solutions, both at room temperature and at lower temperatures down to 203 K, which revealed only the presence of isomer
+    <span class="bold">
+     a
+    </span>
+    . This was achieved by decoupling experiments to remove the
+    <small>
+     <sup>
+      4
+     </sup>
+    </small>
+    <span class="italic">
+     J
+    </span>
+    long range coupling between the inner hydrogen atoms and the β-pyrrole
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:24636','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=24636')" title="ChEBI Ontology link for: protons">
+      protons
+     </a>
+    </span>
+    of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:51026','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=51026')" title="ChEBI Ontology link for: macrocycle">
+      macrocycle
+     </a>
+    </span>
+    .
+    <a href="#cit20" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       20
+      </span>
+     </sup>
+    </a>
+    In all experiments, only the resonances for
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.7736.html" target="_blank" title="Chemspider Compound link for:pyrrole">
+      pyrrole
+     </a>
+    </span>
+    hydrogen atoms positioned adjacent to the tetraazaanthracene substituent were affected by the decoupling experiments. In the case of
+    <span class="bold">
+     FBH
+    </span>
+    , similar results were seen in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+      toluene
+     </a>
+    </span>
+    solutions at room
+temperature and at lower temperatures down to 203 K. The indication which can be derived from such determinations is that at least 90–95% of the free-base systems is present in the form denoted as
+    <span class="bold">
+     a
+    </span>
+    ; nonetheless spectroscopic techniques which are more sensitive than
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000591','B105547J')" title="Chemical Methods Ontology link for: NMR">
+      NMR
+     </a>
+    </span>
+    clearly indicate the existence of a sizeable percentage of the form
+    <span class="bold">
+     b
+    </span>
+    , as discussed below.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig4">
+       <img alt="
+            Formulae of the possible isomers.
+          " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f4.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 4
+       </b>
+       <span id="fig4">
+        <span class="graphic_title">
+         <span>
+          Formulae of the possible isomers.
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    The spectroscopic features can be summarized as follows. The Soret band (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    → S
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ) for zinc and free-base derivatives
+    <span class="bold">
+     ZnH
+    </span>
+    ,
+    <span class="bold">
+     ZnB
+    </span>
+    ,
+    <span class="bold">
+     FBB
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    is broader with respect to the models
+    <span class="bold">
+     Zn
+    </span>
+    and
+    <span class="bold">
+     FB
+    </span>
+    due to a splitting of the B
+    <span class="italic">
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    and B
+    <span class="italic">
+     <small>
+      <sub>
+       y
+      </sub>
+     </small>
+    </span>
+    components, caused by the decrease in symmetry. A weaker band in the 460–490 nm region, not present in the model compounds, derives presumably from π–π* transitions of the azaanthracenic fragment. In the visible, the number of Q bands in
+    <span class="bold">
+     ZnB
+    </span>
+    and
+    <span class="bold">
+     ZnH
+    </span>
+    increases with respect to
+    <span class="bold">
+     Zn
+    </span>
+    as expected on the basis of the decreased symmetry. In addition they display a red shift with a general increase in the molar absorption coefficient (inset of
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    ). In the case of the free-base derivatives
+    <span class="bold">
+     FBB
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    , the bands appear broad and
+display several shoulders accounted for by the presence of two distinct isomers; in addition the peaks are slightly red shifted with respect to the unsubstituted model
+    <span class="bold">
+     FB
+    </span>
+    (inset of
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3
+    </a>
+    ). All the above facts can be accounted for by a general decrease in the symmetry of the molecules which is also responsible for the existence of independent species in the case of
+    <span class="bold">
+     FBB
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    . A detailed account is given in the calculations subsection. Similar features have been observed previously for related systems and in some cases they have been discussed on the basis of theoretical calculations.
+    <a href="#cit20" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       20,21
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000813','B105547J')" title="Chemical Methods Ontology link for: emission spectra">
+      emission spectra
+     </a>
+    </span>
+    upon excitation on the Soret band of
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+      toluene
+     </a>
+    </span>
+    at ambient temperature are reported in
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    (a) and (b), along with their low energy absorption bands. The emission of optically matched solutions of the reference
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrins">
+      porphyrins
+     </a>
+    </span>
+    <span class="bold">
+     Zn
+    </span>
+    and
+    <span class="bold">
+     FB
+    </span>
+    are also reported. The properties of the mono-porphyrin reference compounds are essentially identical to those of the bis-porphyrin, which will be discussed in detail. The emission of
+    <span class="bold">
+     ZnH
+    </span>
+    is a good mirror image of the absorption spectrum [
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    (a)], whereas the situation is less straightforward for
+    <span class="bold">
+     FBH
+    </span>
+    , whose high energy emission band is exactly overlapping the lowest absorption transition [
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    (b)]. This can only be understood if one considers that
+    <span class="bold">
+     FBH
+    </span>
+    is a mixture of distinct species, not interconverting on the time scale of
+the excited state (10
+    <small>
+     <sup>
+      −8
+     </sup>
+    </small>
+    s). As a consequence, the low energy absorption band reported in
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    (b) would represent the convolution of two different transitions: a high oscillator strength transition belonging to the minor component, placed at lower energy, and a low oscillator strength transition belonging to the major component at a slightly higher energy. The emission occurs for 90–95% of the molecules from the latter while the minor component emits independently at lower energies and has its band overshadowed by the main emission. The absolute emission quantum yields for the compounds have been determined following the procedures outlined in the experimental section, and are reported in
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    . There is a general decrease to
+    <span class="italic">
+     ca
+    </span>
+    . 50% with respect to the quantum yields of the reference
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrins">
+      porphyrins
+     </a>
+    </span>
+    <span class="bold">
+     Zn
+    </span>
+    and
+    <span class="bold">
+     FB
+    </span>
+    .
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig5">
+       <img alt="
+            Luminescence spectra at 298 K in toluene solutions: (a) excitation at 427 nm of optically matched solutions of Zn (···), ZnH (——), and normalized absorbance of ZnH (– – –); (b) excitation at 423 nm of optically matched solutions of FB (···), FBH (——) and normalized absorbance of FBH (– – –).
+          " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f5.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 5
+       </b>
+       <span id="fig5">
+        <span class="graphic_title">
+         <span>
+          <span class="CH">
+           <a class="simple" href="javascript:popupOBO('CMO:0000864','B105547J')" title="Chemical Methods Ontology link for: Luminescence spectra">
+            Luminescence spectra
+           </a>
+          </span>
+          at 298 K in
+          <span class="CH">
+           <a class="simple" href="javascript:popupOBO('CHEBI:27024','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=27024')" title="ChEBI Ontology link for: toluene">
+            toluene
+           </a>
+          </span>
+          solutions: (a) excitation at 427 nm of optically matched solutions of
+          <span class="bold">
+           Zn
+          </span>
+          (···),
+          <span class="bold">
+           ZnH
+          </span>
+          (——), and normalized absorbance of
+          <span class="bold">
+           ZnH
+          </span>
+          (– – –); (b) excitation at 423 nm of optically matched solutions of
+          <span class="bold">
+           FB
+          </span>
+          (···),
+          <span class="bold">
+           FBH
+          </span>
+          (——) and normalized absorbance of
+          <span class="bold">
+           FBH
+          </span>
+          (– – –).
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="table_caption">
+    <b>
+     Table 1
+    </b>
+    <span id="tab1">
+     Luminescence data in
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CHEBI:27024','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=27024')" title="ChEBI Ontology link for: toluene">
+       toluene
+      </a>
+     </span>
+     solution, except where otherwise specified
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th>
+      </th>
+      <th>
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       298 K
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       77 K
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th>
+      </th>
+      <th>
+      </th>
+      <th colspan="3">
+      </th>
+      <th colspan="3">
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       State
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         max
+        </sub>
+       </small>
+       /nm
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       /ns
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        Φ
+       </span>
+       <small>
+        <sub>
+         fluo
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         max
+        </sub>
+       </small>
+       /nm
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       /ns
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        E
+       </span>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+       /eV
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th colspan="8">
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="8">
+       <a id="tab1fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        Absolute quantum yields, determined by comparing
+        <span class="CH">
+         <a class="simple" href="javascript:popupOBO('CMO:0000814','B105547J')" title="Chemical Methods Ontology link for: corrected emission spectra">
+          corrected emission spectra
+         </a>
+        </span>
+        , using
+        <span class="bold">
+         Zn
+        </span>
+        in
+        <span class="TC">
+         <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+          toluene
+         </a>
+        </span>
+        as standard,
+        <span class="italic">
+         ϕ
+        </span>
+        = 0.08.
+        <a href="#cit13" title="Select to navigate to references">
+         <sup>
+          <span class="sup_ref">
+           13
+          </span>
+         </sup>
+        </a>
+       </span>
+       <a id="tab1fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        Energies derived from the maxima of emission at 77 K.
+       </span>
+       <a id="tab1fnc">
+        <span class="tfootnote">
+         c
+        </span>
+       </a>
+       <span class="sup_inf">
+        In butyronitrile solutions, from ref. 22.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        Zn
+       </span>
+      </td>
+      <td valign="top">
+       <span class="bold">
+       </span>
+       <small>
+        <sup>
+         1
+        </sup>
+       </small>
+       <span class="bold">
+        Zn
+       </span>
+      </td>
+      <td valign="top">
+       596
+      </td>
+      <td valign="top">
+       2.2
+      </td>
+      <td valign="top">
+       0.08
+      </td>
+      <td valign="top">
+       596
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       2.08
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td valign="top">
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       <span class="bold">
+        Zn
+       </span>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       776
+      </td>
+      <td valign="top">
+       18.9 × 10
+       <small>
+        <sup>
+         6
+         <span class="italic">
+          c
+         </span>
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       1.60
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        FB
+       </span>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       <small>
+        <sup>
+         1
+        </sup>
+       </small>
+       FB
+      </td>
+      <td valign="top">
+       652
+      </td>
+      <td valign="top">
+       8.3
+      </td>
+      <td valign="top">
+       0.15
+      </td>
+      <td valign="top">
+       647
+      </td>
+      <td valign="top">
+       11.0
+      </td>
+      <td valign="top">
+       1.92
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td valign="top">
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       <span class="bold">
+        FB
+       </span>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       840
+      </td>
+      <td valign="top">
+       6 × 10
+       <small>
+        <sup>
+         6
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       1.47
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        ZnB
+       </span>
+      </td>
+      <td valign="top">
+       <span class="bold">
+       </span>
+       <small>
+        <sup>
+         1
+        </sup>
+       </small>
+       <span class="bold">
+        ZnB
+       </span>
+      </td>
+      <td valign="top">
+       658
+      </td>
+      <td valign="top">
+       1.2
+      </td>
+      <td valign="top">
+       0.053
+      </td>
+      <td valign="top">
+       660
+      </td>
+      <td valign="top">
+       1.6
+      </td>
+      <td valign="top">
+       1.88
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td valign="top">
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       <span class="bold">
+        ZnB
+       </span>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       830
+      </td>
+      <td valign="top">
+       11 × 10
+       <small>
+        <sup>
+         6
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       1.49
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        FBB
+       </span>
+      </td>
+      <td valign="top">
+       <span class="bold">
+       </span>
+       <small>
+        <sup>
+         1
+        </sup>
+       </small>
+       <span class="bold">
+        FBB
+       </span>
+      </td>
+      <td valign="top">
+       658
+      </td>
+      <td valign="top">
+       8.5
+      </td>
+      <td valign="top">
+       0.095
+      </td>
+      <td valign="top">
+       654
+      </td>
+      <td valign="top">
+       11.0
+      </td>
+      <td valign="top">
+       1.89
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td valign="top">
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       <span class="bold">
+        FBB
+       </span>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       &gt;850
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       &lt;1.45
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        ZnH
+       </span>
+      </td>
+      <td valign="top">
+       <span class="bold">
+       </span>
+       <small>
+        <sup>
+         1
+        </sup>
+       </small>
+       <span class="bold">
+        ZnH
+       </span>
+      </td>
+      <td valign="top">
+       660
+      </td>
+      <td valign="top">
+       1.2
+      </td>
+      <td valign="top">
+       0.043
+      </td>
+      <td valign="top">
+       666
+      </td>
+      <td valign="top">
+       1.5
+      </td>
+      <td valign="top">
+       1.86
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td valign="top">
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       <span class="bold">
+        ZnH
+       </span>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       830
+      </td>
+      <td valign="top">
+       12.5 × 10
+       <small>
+        <sup>
+         6
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       1.49
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        FBH
+       </span>
+      </td>
+      <td valign="top">
+       <span class="bold">
+       </span>
+       <small>
+        <sup>
+         1
+        </sup>
+       </small>
+       <span class="bold">
+        FBH
+       </span>
+      </td>
+      <td valign="top">
+       658
+      </td>
+      <td valign="top">
+       8.5
+      </td>
+      <td valign="top">
+       0.09
+      </td>
+      <td valign="top">
+       654
+      </td>
+      <td valign="top">
+       11.3
+      </td>
+      <td valign="top">
+       1.89
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td valign="top">
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       <span class="bold">
+        FBH
+       </span>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       &gt;850
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       &lt;1.45
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000864','B105547J')" title="Chemical Methods Ontology link for: luminescence spectra">
+      luminescence spectra
+     </a>
+    </span>
+    of the bis-porphyrins in a glassy
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:27024','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=27024')" title="ChEBI Ontology link for: toluene">
+      toluene
+     </a>
+    </span>
+    solution at 77 K are shown in
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Figs. 6
+    </a>
+    (a) and (b). In the case of
+    <span class="bold">
+     ZnH
+    </span>
+    (and
+    <span class="bold">
+     ZnB
+    </span>
+    ) a delayed emission, assigned to the phosphorescence from the triplet state of the tetraazaanthracene porphyrin moiety, can be detected at 830 nm and is shown in the inset of
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    (a). No delayed emission could be measured for the free-base
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrins">
+      porphyrins
+     </a>
+    </span>
+    <span class="bold">
+     FBH
+    </span>
+    and
+    <span class="bold">
+     FBB
+    </span>
+    up to 850 nm, a wavelength at which the sensitivity of the instrumentation drops. Also the triplet state of
+    <span class="bold">
+     ZnH
+    </span>
+    displays, in analogy to the singlet excited state, a lower energy than the triplet state of
+    <span class="bold">
+     Zn
+    </span>
+    , at 776 nm in the same
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    .
+    <a href="#cit13" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       13
+      </span>
+     </sup>
+    </a>
+    A summary of the emission properties and of the energy levels of the compounds studied along with the reference
+    <span class="bold">
+     FB
+    </span>
+    and
+    <span class="bold">
+     Zn
+    </span>
+    is reported in
+    <a href="#tab1" title="Select to navigate to table">
+     Table
+1
+    </a>
+    , both at 298 K and at 77 K.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig6">
+       <img alt="
+            Luminescence at 77 K in toluene glassy solutions: (a) ZnH, in the inset is the delayed luminescence spectrum assigned to phosphorescence (see experimental section for details); (b) FBH.
+          " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f6.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 6
+       </b>
+       <span id="fig6">
+        <span class="graphic_title">
+         <span>
+          Luminescence at 77 K in
+          <span class="TC">
+           <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+            toluene
+           </a>
+          </span>
+          glassy solutions: (a)
+          <span class="bold">
+           ZnH
+          </span>
+          , in the inset is the delayed luminescence spectrum assigned to phosphorescence (see experimental section for details); (b)
+          <span class="bold">
+           FBH
+          </span>
+          .
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h3 id="sect662">
+    <span class="b_heading">
+     Time resolved
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CMO:0000228','B105547J')" title="Chemical Methods Ontology link for: spectroscopy">
+       spectroscopy
+      </a>
+     </span>
+     in
+     <span class="TC">
+      <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+       toluene
+      </a>
+     </span>
+    </span>
+   </h3>
+   <span>
+    The luminescence lifetimes of
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     ZnB
+    </span>
+    at 298 K are essentially identical, 1.2 ns, and lower than that for the corresponding
+    <span class="bold">
+     Zn
+    </span>
+    model, which is 2.2 ns. The phosphorescence lifetime at 77 K of both
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     ZnB
+    </span>
+    is
+    <span class="italic">
+     ca
+    </span>
+    . 12 ms, slightly shorter than the one measured for the model
+    <span class="bold">
+     Zn
+    </span>
+    in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.7717.html" target="_blank" title="Chemspider Compound link for:butyronitrile">
+      butyronitrile
+     </a>
+    </span>
+    , 18.9 ms.
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+    The free-base analogues
+    <span class="bold">
+     FBB
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    display a single luminescence lifetime, 8.5 ns, in spite of the existence of two independent species; perhaps a modest difference in lifetimes and a very minor amount (5–10%) does not allow the detection of the minor component. The measured lifetime is essentially identical to the one of the model
+    <span class="bold">
+     FB
+    </span>
+    . From the lifetime data (
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ), the radiative rate constants,
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      r
+     </sub>
+    </small>
+    =
+    <span class="italic">
+     ϕ
+    </span>
+    /
+    <span class="italic">
+     τ
+    </span>
+    , can be calculated and
+some information on the deactivation pathways inferred. In particular, in the case of the zinc derivative
+    <span class="bold">
+     ZnH
+    </span>
+    the radiative rate constant is apparently the same as the one in the
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.10447586.html" target="_blank" title="Chemspider Compound link for:porphyrin">
+      porphyrin
+     </a>
+    </span>
+    model
+    <span class="bold">
+     Zn
+    </span>
+    ,
+    <span class="italic">
+     i
+    </span>
+    .
+    <span class="italic">
+     e
+    </span>
+    . 3.6 × 10
+    <small>
+     <sup>
+      7
+     </sup>
+    </small>
+    s
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    , and the detected difference in emission quantum yields can be assigned to an increased intersystem crossing to the triplet. The singlet–triplet energy difference is 0.36 eV in the case of
+    <span class="bold">
+     ZnH
+    </span>
+    , and 0.48 eV in the case of
+    <span class="bold">
+     Zn
+    </span>
+    ; thus such a reduction could well be the reason for the postulated increase in intersystem crossing.
+   </span>
+   <p class="otherpara">
+    The triplet states of
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    have been characterized at room temperature by determining their
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: absorption spectra">
+      absorption spectra
+     </a>
+    </span>
+    with a nanosecond laser flash photolysis apparatus. The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000800','B105547J')" title="Chemical Methods Ontology link for: spectra">
+      spectra
+     </a>
+    </span>
+    are dominated by the bleaching of the ground state bands superimposed on a broad absorption extending up to 800 nm [
+    <a href="#imgfig7" title="Select to navigate to figure">
+     Figs. 7
+    </a>
+    (a) and (b)]. The lifetime in air-free solutions is 330 μs for
+    <span class="bold">
+     ZnH
+    </span>
+    and 300 μs for
+    <span class="bold">
+     FBH
+    </span>
+    , as shown in the insets of
+    <a href="#imgfig7" title="Select to navigate to figure">
+     Fig. 7
+    </a>
+    . The reactions of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    <span class="bold">
+     FBH
+    </span>
+    with oxygen have been determined to be 1 × 10
+    <small>
+     <sup>
+      9
+     </sup>
+    </small>
+    M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    s
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    and 1.4 × 10
+    <small>
+     <sup>
+      9
+     </sup>
+    </small>
+    M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    s
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    , respectively, typical of
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.10447586.html" target="_blank" title="Chemspider Compound link for:porphyrin">
+      porphyrin
+     </a>
+    </span>
+    triplets.
+    <a href="#cit23" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       23
+      </span>
+     </sup>
+    </a>
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig7">
+       <img alt="
+            Transient absorption spectra at the end of a 490 nm laser pulse (5 ns, 1.5 mJ) for toluene solutions of: (a) ZnH and (b) FBH. The decay of the absorbance, assigned to the triplet state in air-free solutions is reported in the insets.
+          " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f7.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 7
+       </b>
+       <span id="fig7">
+        <span class="graphic_title">
+         <span>
+          Transient
+          <span class="CH">
+           <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: absorption spectra">
+            absorption spectra
+           </a>
+          </span>
+          at the end of a 490 nm laser pulse (5 ns, 1.5 mJ) for
+          <span class="CH">
+           <a class="simple" href="javascript:popupOBO('CHEBI:27024','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=27024')" title="ChEBI Ontology link for: toluene">
+            toluene
+           </a>
+          </span>
+          solutions of: (a)
+          <span class="bold">
+           ZnH
+          </span>
+          and (b)
+          <span class="bold">
+           FBH
+          </span>
+          . The decay of the absorbance, assigned to the triplet state in air-free solutions is reported in the insets.
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h3 id="sect721">
+    <span class="b_heading">
+     Results of calculations
+    </span>
+   </h3>
+   <span>
+    The results of calculations undertaken on the molecules under investigation are reported in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    . The heats of formation (Δ
+    <span class="italic">
+     H
+    </span>
+    <small>
+     <sup>
+      0
+     </sup>
+    </small>
+    ) of the possible isomers of the model compound
+    <span class="bold">
+     FBB
+    </span>
+    indicate the presence of two separate species with a Boltzmann population composed mainly (90%) of the isomer with two hydrogens attached to the pyrrole rings adjacent to the one condensed with the tetraazaanthracene (
+    <span class="bold">
+     FBBa
+    </span>
+    ,
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    ). In contrast to this, the metallated
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    <span class="bold">
+     ZnB
+    </span>
+    does not show any appreciable difference in the ground state isomer distributions. Similar results have been reported recently for a series of
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.21106470.html" target="_blank" title="Chemspider Compound link for:quinoxaline">
+      quinoxaline
+     </a>
+    </span>
+    substituted bis-porphyrins.
+    <a href="#cit20" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       20
+      </span>
+     </sup>
+    </a>
+   </span>
+   <div class="table_caption">
+    <b>
+     Table 2
+    </b>
+    <span id="tab2">
+     Calculated figures for: heat of formation, transition wavelength and oscillator strength, and dipole moment difference between ground and lowest excited state
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col align="left">
+     </col>
+     <col>
+     </col>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th>
+      </th>
+      <th>
+      </th>
+      <th align="left" class="border_black" colspan="2" valign="bottom">
+       S
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+       ,
+       <span class="italic">
+        λ
+       </span>
+       /nm
+       <span class="italic">
+        f
+       </span>
+      </th>
+      <th align="left" class="border_black" colspan="2" valign="bottom">
+       S
+       <small>
+        <sub>
+         2
+        </sub>
+       </small>
+       ,
+       <span class="italic">
+        λ
+       </span>
+       /nm
+       <span class="italic">
+        f
+       </span>
+      </th>
+      <th>
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th>
+      </th>
+      <th>
+      </th>
+      <th colspan="2">
+      </th>
+      <th colspan="2">
+      </th>
+      <th>
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Δ
+       <span class="italic">
+        H
+       </span>
+       <small>
+        <sup>
+         0
+        </sup>
+       </small>
+       / kcal mol
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Q
+       <span class="italic">
+        <small>
+         <sub>
+          x
+         </sub>
+        </small>
+       </span>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Q
+       <span class="italic">
+        <small>
+         <sub>
+          y
+         </sub>
+        </small>
+       </span>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       B
+       <span class="italic">
+        <small>
+         <sub>
+          x
+         </sub>
+        </small>
+       </span>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       B
+       <span class="italic">
+        <small>
+         <sub>
+          y
+         </sub>
+        </small>
+       </span>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Δ
+       <span class="italic">
+        μ
+       </span>
+       (S
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+       − S
+       <small>
+        <sub>
+         0
+        </sub>
+       </small>
+       )
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+       /D
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th colspan="7">
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="7">
+       <a id="tab2fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        Difference in dipole moment between the ground and emitting excited state (Q
+        <span class="italic">
+         <small>
+          <sub>
+           x
+          </sub>
+         </small>
+        </span>
+        ).
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        ZnBb
+       </span>
+      </td>
+      <td valign="top">
+       499.26
+      </td>
+      <td valign="top">
+       628
+      </td>
+      <td valign="top">
+       609
+      </td>
+      <td valign="top">
+       387
+      </td>
+      <td valign="top">
+       359
+      </td>
+      <td valign="top">
+       +2.01
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       0.35
+      </td>
+      <td valign="top">
+       0.02
+      </td>
+      <td valign="top">
+       0.72
+      </td>
+      <td valign="top">
+       3.57
+      </td>
+      <td>
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        ZnBa
+       </span>
+      </td>
+      <td valign="top">
+       500.09
+      </td>
+      <td valign="top">
+       620
+      </td>
+      <td valign="top">
+       583
+      </td>
+      <td valign="top">
+       420
+      </td>
+      <td valign="top">
+       366
+      </td>
+      <td valign="top">
+       +2.30
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       0.26
+      </td>
+      <td valign="top">
+       0.06
+      </td>
+      <td valign="top">
+       0.39
+      </td>
+      <td valign="top">
+       3.76
+      </td>
+      <td>
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        FBBb
+       </span>
+      </td>
+      <td valign="top">
+       469.60
+      </td>
+      <td valign="top">
+       646
+      </td>
+      <td valign="top">
+       589
+      </td>
+      <td valign="top">
+       413
+      </td>
+      <td valign="top">
+       356
+      </td>
+      <td valign="top">
+       +1.64
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       0.40
+      </td>
+      <td valign="top">
+       0.01
+      </td>
+      <td valign="top">
+       0.72
+      </td>
+      <td valign="top">
+       2.80
+      </td>
+      <td>
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        FBBa
+       </span>
+      </td>
+      <td valign="top">
+       468.31
+      </td>
+      <td valign="top">
+       649
+      </td>
+      <td valign="top">
+       593
+      </td>
+      <td valign="top">
+       405
+      </td>
+      <td valign="top">
+       357
+      </td>
+      <td valign="top">
+       −0.27
+      </td>
+     </tr>
+     <tr align="left">
+      <td>
+      </td>
+      <td>
+      </td>
+      <td valign="top">
+       0.01
+      </td>
+      <td valign="top">
+       0.20
+      </td>
+      <td valign="top">
+       0.31
+      </td>
+      <td valign="top">
+       4.26
+      </td>
+      <td>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    The excited state properties of the two isomers of
+    <span class="bold">
+     FBB
+    </span>
+    are quite different and fit well the model proposed above. It should be noted, however, that the calculated energies are
+    <span class="italic">
+     relati
+     <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/i_char_e0f5.gif"/>
+     e
+    </span>
+    and should be considered on a
+    <span class="italic">
+     qualitati
+     <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/i_char_e0f5.gif"/>
+     e
+    </span>
+    basis. From inspection of
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    , one notices that, while the first absorption band is calculated at almost the same energy (∽650 nm), the oscillator strength of the two Q components appears inverted with Q
+    <span class="italic">
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    intense for
+    <span class="bold">
+     FBBb
+    </span>
+    (the less stable isomer) and weak for
+    <span class="bold">
+     FBBa
+    </span>
+    and
+    <span class="italic">
+     <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/i_char_e0f5.gif"/>
+     ice
+     <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/i_char_e0f5.gif"/>
+     ersa
+    </span>
+    for Q
+    <span class="italic">
+     <small>
+      <sub>
+       y
+      </sub>
+     </small>
+    </span>
+    . This feature explains the presence of a fluorescence band superposed on the first absorption band, and we interpret the fluorescence band as specular to the hidden absorption band of the most abundant isomer,
+    <span class="bold">
+     FBBa
+    </span>
+    . The Q bands are calculated at lower energies with respect to the symmetrical
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    , as expected for a system with a more extended π system [Δ
+    <span class="italic">
+     ν
+    </span>
+    (Q
+    <span class="italic">
+     <small>
+      <sub>
+       x
+      </sub>
+     </small>
+    </span>
+    )≈10 nm] and both ground and excited states appear more polar due to the decreased symmetry of the molecule (from
+    <span class="italic">
+     D
+    </span>
+    <small>
+     <sub>
+      2h
+     </sub>
+    </small>
+    to
+    <span class="italic">
+     C
+    </span>
+    <small>
+     <sub>
+      2v
+     </sub>
+    </small>
+    ). A similar splitting is calculated for the Soret bands below 460 nm.
+   </p>
+   <p class="otherpara">
+    In the metal substituted compounds, one notices the relative inactivity of the zinc atom in affecting the spectral properties of the molecule, when compared to the free base, in accord with Gouterman's type of classification of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:51216','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=51216')" title="ChEBI Ontology link for: zinc porphyrins">
+      zinc porphyrins
+     </a>
+    </span>
+    as regular-normal.
+    <a href="#cit24" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       24
+      </span>
+     </sup>
+    </a>
+    In the present case, the energies of the Q bands are calculated at higher energies for the zinc derivative, as predicted for
+    <span class="bold">
+     Zn
+    </span>
+    when compared to
+    <span class="bold">
+     FB
+    </span>
+    , but with much enhanced polarity (Δ
+    <span class="italic">
+     μ
+    </span>
+    ,
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ).
+   </p>
+   <p class="otherpara">
+    An examination of the electron density changes brought about by the electron promotions involved in the emitting state reveals a large amount of charge concentration on the tetraazaanthracene moiety. This is apparently caused by the presence of the zinc atom since in the free-base
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrins">
+      porphyrins
+     </a>
+    </span>
+    this phenomenon is much less evident. The increased dipole moment of the ground state, and especially its difference Δ
+    <span class="italic">
+     μ
+    </span>
+    (S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    –S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    ), is responsible for the large
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    effects observed on both the spectral and dynamic properties of
+    <span class="bold">
+     ZnB
+    </span>
+    . Indeed, on changing from an apolar
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    such as
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+      toluene
+     </a>
+    </span>
+    to a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:48354','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=48354')" title="ChEBI Ontology link for: polar solvent">
+      polar solvent
+     </a>
+    </span>
+    such as
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.7224.html" target="_blank" title="Chemspider Compound link for:benzonitrile">
+      benzonitrile
+     </a>
+    </span>
+    , a red shift of ∽30 nm is estimated on the basis of the calculated dipole moments of
+    <span class="bold">
+     ZnB
+    </span>
+    (and ∽0 for the corresponding free base), in qualitative agreement with the experiment (see next subsection).
+   </p>
+   <h3 id="sect905">
+    <span class="b_heading">
+     Effect of
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvents">
+       solvents
+      </a>
+     </span>
+     and coordination on the photophysical properties of ZnB and ZnH
+    </span>
+   </h3>
+   <span>
+    The absorption and emission properties of both
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     ZnB
+    </span>
+    were found to be
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    dependent. This is shown for
+    <span class="bold">
+     ZnH
+    </span>
+    in
+    <a href="#imgfig8" title="Select to navigate to figure">
+     Figs. 8
+    </a>
+    (a) and (b), where normalized
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000801','B105547J')" title="Chemical Methods Ontology link for: absorption spectra">
+      absorption spectra
+     </a>
+    </span>
+    (a) and emission upon excitation of optically matched solutions at 431 nm (b) are shown for a group of
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvents">
+      solvents
+     </a>
+    </span>
+    possessing different dielectric constants. In contrast to this behaviour, the analogues
+    <span class="bold">
+     FBH
+    </span>
+    and
+    <span class="bold">
+     FBB
+    </span>
+    , in passing from
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+      toluene
+     </a>
+    </span>
+    to
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.6104.html" target="_blank" title="Chemspider Compound link for:dichloromethane">
+      dichloromethane
+     </a>
+    </span>
+    , exhibit no change in either the absorption properties or the emission maxima, yet reveal a reduction to
+    <span class="italic">
+     ca
+    </span>
+    . 40% in quantum yield (data not shown). For the simple
+    <span class="bold">
+     Zn
+    </span>
+    model there is no
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    effect, with respect to emission yield, lifetime or energy of the transitions.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig8">
+       <img alt="
+            (a) Normalized ground state absorbance and (b) luminescence upon excitation at 431 nm of optically matched solutions, of ZnH in: toluene (– – –), dichloromethane (——) and benzonitrile (···). In the inset the normalized luminescence decay of ZnH following excitation at 532 nm (35 ps pulse, 1 mJ) in the different solvents is reported.
+          " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f8.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 8
+       </b>
+       <span id="fig8">
+        <span class="graphic_title">
+         <span>
+          (a) Normalized ground state absorbance and (b) luminescence upon excitation at 431 nm of optically matched solutions, of
+          <span class="bold">
+           ZnH
+          </span>
+          in:
+          <span class="TC">
+           <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+            toluene
+           </a>
+          </span>
+          (– – –),
+          <span class="TC">
+           <a class="simple" href="http://www.chemspider.com/Chemical-Structure.6104.html" target="_blank" title="Chemspider Compound link for:dichloromethane">
+            dichloromethane
+           </a>
+          </span>
+          (——) and
+          <span class="TC">
+           <a class="simple" href="http://www.chemspider.com/Chemical-Structure.7224.html" target="_blank" title="Chemspider Compound link for:benzonitrile">
+            benzonitrile
+           </a>
+          </span>
+          (···). In the inset the normalized luminescence decay of
+          <span class="bold">
+           ZnH
+          </span>
+          following excitation at 532 nm (35 ps pulse, 1 mJ) in the different
+          <span class="CH">
+           <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvents">
+            solvents
+           </a>
+          </span>
+          is reported.
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    The luminescence lifetimes of
+    <span class="bold">
+     ZnH
+    </span>
+    in different
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvents">
+      solvents
+     </a>
+    </span>
+    are collected in
+    <a href="#tab3" title="Select to navigate to table">
+     Table 3
+    </a>
+    with various luminescence and
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    parameters.
+    <span class="bold">
+     ZnB
+    </span>
+    displays essentially identical data, except for a lifetime in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.6104.html" target="_blank" title="Chemspider Compound link for:dichloromethane">
+      dichloromethane
+     </a>
+    </span>
+    which is 0.75 ns in the mono-porphyrinic compound compared to 0.52 ns in the bis-porphyrin
+    <span class="bold">
+     ZnH
+    </span>
+    . From inspection of
+    <a href="#tab3" title="Select to navigate to table">
+     Table 3
+    </a>
+    , one can see that the energy level of the emitting state appears stabilized by increasing the polarity of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    , the luminescence lifetime decreases and the calculated radiative rate constant,
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      r
+     </sub>
+    </small>
+    , increases remarkably. These data are in agreement with the fact that the emitting state has a higher dipole moment than the ground state, as discussed in the previous section. In contrast to this, there is no
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    effect on the free-base analogues, in accord with the results of the calculations undertaken indicating
+a weak increase (and decrease in the case of the most abundant species,
+    <span class="bold">
+     FBBa
+    </span>
+    ) in the dipole moment of the emitting state.
+   </p>
+   <div class="table_caption">
+    <b>
+     Table 3
+    </b>
+    <span id="tab3">
+     Effect of
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvents">
+       solvents
+      </a>
+     </span>
+     and complexation by
+     <span class="TC">
+      <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1020.html" target="_blank" title="Chemspider Compound link for:pyridine">
+       pyridine
+      </a>
+     </span>
+     on the luminescence parameters of
+     <span class="bold">
+      ZnH
+     </span>
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+     <col align="left">
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col align="left">
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Solvent
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         max
+        </sub>
+       </small>
+       /nm
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        ϕ
+       </span>
+       <small>
+        <sub>
+         f
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       /ns
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        k
+       </span>
+       <small>
+        <sub>
+         r
+        </sub>
+       </small>
+       /s
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Dielectric constant
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab3fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th colspan="7">
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="7">
+       <a id="tab3fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        From ref. 18.
+       </span>
+       <a id="tab3fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        The concentration of
+        <span class="bold">
+         ZnH
+        </span>
+        was 5 × 10
+        <small>
+         <sup>
+          −7
+         </sup>
+        </small>
+        M for steady state and 1.5 × 10
+        <small>
+         <sup>
+          −6
+         </sup>
+        </small>
+        M for time resolved experiments; the concentration of
+        <span class="TC">
+         <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1020.html" target="_blank" title="Chemspider Compound link for:pyridine">
+          pyridine
+         </a>
+        </span>
+        was 10
+        <small>
+         <sup>
+          −3
+         </sup>
+        </small>
+        M in both cases.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        ZnH
+       </span>
+      </td>
+      <td valign="top">
+       toluene
+      </td>
+      <td valign="top">
+       660
+      </td>
+      <td valign="top">
+       0.043
+      </td>
+      <td valign="top">
+       1.20
+      </td>
+      <td valign="top">
+       3.6 × 10
+       <small>
+        <sup>
+         7
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       2.379
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        ZnH
+       </span>
+      </td>
+      <td valign="top">
+       dichloromethane
+      </td>
+      <td valign="top">
+       710
+      </td>
+      <td valign="top">
+       0.004
+      </td>
+      <td valign="top">
+       0.52
+      </td>
+      <td valign="top">
+       7.6 × 10
+       <small>
+        <sup>
+         7
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       8.93
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        ZnH
+       </span>
+      </td>
+      <td valign="top">
+       benzonitrile
+      </td>
+      <td valign="top">
+       720
+      </td>
+      <td valign="top">
+       0.003
+      </td>
+      <td valign="top">
+       0.31
+      </td>
+      <td valign="top">
+       9.6 × 10
+       <small>
+        <sup>
+         8
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       25.9
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        ZnH–
+        <span class="TC">
+         <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1020.html" target="_blank" title="Chemspider Compound link for:pyridine">
+          pyridine
+         </a>
+        </span>
+       </span>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab3fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       toluene
+      </td>
+      <td valign="top">
+       690
+      </td>
+      <td valign="top">
+       0.034
+      </td>
+      <td valign="top">
+       1.10
+      </td>
+      <td valign="top">
+       2.3 × 10
+       <small>
+        <sup>
+         7
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       2.379
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvents">
+      solvents
+     </a>
+    </span>
+    causing stabilization in the excited state of
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     ZnB
+    </span>
+    can also display a good complexation ability with respect to axial coordination to the zinc(
+    <span class="small_caps">
+     II
+    </span>
+    ) ion within the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    . This type of interaction is known to displace the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:27365','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=27365')" title="ChEBI Ontology link for: zinc ion">
+      zinc ion
+     </a>
+    </span>
+    from the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    plane
+    <a href="#cit25" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       25
+      </span>
+     </sup>
+    </a>
+    and could contribute to altering the parameters of the emitting states. To gain a better insight into this point we have determined the photophysical properties of the complex of
+    <span class="bold">
+     ZnH
+    </span>
+    with
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1020.html" target="_blank" title="Chemspider Compound link for:pyridine">
+      pyridine
+     </a>
+    </span>
+    , a
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:52214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=52214')" title="ChEBI Ontology link for: ligand">
+      ligand
+     </a>
+    </span>
+    which is known to coordinate axially the zinc(
+    <span class="small_caps">
+     II
+    </span>
+    )
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrins">
+      porphyrins
+     </a>
+    </span>
+    . The association constant can be determined by measuring the effect of increasing amounts of
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1020.html" target="_blank" title="Chemspider Compound link for:pyridine">
+      pyridine
+     </a>
+    </span>
+    on the Soret band maximum which displays a shift, from 424 nm to 434 nm in this case, typical of axial complexation.
+    <a href="#cit8e" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       8e,9d,f
+      </span>
+     </sup>
+    </a>
+    <small>
+     <sup>
+      8
+      <span class="italic">
+       e
+      </span>
+      ,9
+      <span class="italic">
+       d
+      </span>
+      ,
+      <span class="italic">
+       f
+      </span>
+     </sup>
+    </small>
+    The association constant
+calculated is of the order of 5 × 10
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    M
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    , in agreement with similar complexes.
+    <a href="#cit8a" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       8a,8e,9a
+      </span>
+     </sup>
+    </a>
+    The data for
+    <span class="bold">
+     ZnH–
+     <span class="TC">
+      <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1020.html" target="_blank" title="Chemspider Compound link for:pyridine">
+       pyridine
+      </a>
+     </span>
+    </span>
+    complex are reported in
+    <a href="#imgfig9" title="Select to navigate to figure">
+     Fig. 9
+    </a>
+    (a) and
+    <a href="#tab3" title="Select to navigate to table">
+     Table 3
+    </a>
+    , and show that upon complex formation there is a spectral red shift of the emission maximum, a decrease in the emission quantum yield and a minor decrease in the lifetime. The results of a similar experiment performed on the model
+    <span class="bold">
+     Zn
+    </span>
+    are reported in
+    <a href="#imgfig9" title="Select to navigate to figure">
+     Fig. 9
+    </a>
+    (b) for comparison, and indicate a red shift of the emission but no quenching. The radiative rate constant in the
+    <span class="bold">
+     ZnH–
+     <span class="CH">
+      <a class="simple" href="javascript:popupOBO('CHEBI:26421','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26421')" title="ChEBI Ontology link for: pyridine">
+       pyridine
+      </a>
+     </span>
+    </span>
+    complex appears only slightly decreased with respect to
+    <span class="bold">
+     ZnH
+    </span>
+    . Therefore, the detected
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    effect on the luminescence properties of
+    <span class="bold">
+     ZnH
+    </span>
+    and
+    <span class="bold">
+     ZnB
+    </span>
+    seems to be mostly ascribable to
+a polarity effect on the stabilization of the transition rather than the influence of axial coordination of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:27365','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=27365')" title="ChEBI Ontology link for: zinc ion">
+      zinc ion
+     </a>
+    </span>
+    by the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    .
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig9">
+       <img alt="
+            Luminescence of: (a) ZnH (——), and ZnH–pyridine complex (– – –) in toluene upon excitation at 429 nm (isosbestic); (b) Zn (——) and Zn–pyridine complex (– – –) in toluene upon excitation at 428.5 nm (isosbestic).
+          " src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2001/CP/b105547j/b105547j-f9.gif"/>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 9
+       </b>
+       <span id="fig9">
+        <span class="graphic_title">
+         <span>
+          Luminescence of: (a)
+          <span class="bold">
+           ZnH
+          </span>
+          (——), and
+          <span class="bold">
+           ZnH–pyridine
+          </span>
+          complex (– – –) in
+          <span class="TC">
+           <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+            toluene
+           </a>
+          </span>
+          upon excitation at 429 nm (isosbestic); (b)
+          <span class="bold">
+           Zn
+          </span>
+          (——) and
+          <span class="bold">
+           Zn–pyridine
+          </span>
+          complex (– – –) in
+          <span class="TC">
+           <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+            toluene
+           </a>
+          </span>
+          upon excitation at 428.5 nm (isosbestic).
+         </span>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h2 id="sect1087">
+    <span class="a_heading">
+     Conclusions
+    </span>
+   </h2>
+   <span>
+    The
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000292','B105547J')" title="Chemical Methods Ontology link for: UV-Vis">
+      UV-Vis
+     </a>
+    </span>
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CMO:0000228','B105547J')" title="Chemical Methods Ontology link for: spectroscopy">
+      spectroscopy
+     </a>
+    </span>
+    and photophysical properties of the novel tetraazaanthracene porphyrinic compounds
+    <span class="bold">
+     ZnB
+    </span>
+    ,
+    <span class="bold">
+     ZnH
+    </span>
+    ,
+    <span class="bold">
+     FBB
+    </span>
+    and
+    <span class="bold">
+     FBH
+    </span>
+    have been determined in
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1108.html" target="_blank" title="Chemspider Compound link for:toluene">
+      toluene
+     </a>
+    </span>
+    at ambient temperature and at 77 K. A comparison with the unsubstituted model
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrins">
+      porphyrins
+     </a>
+    </span>
+    has been performed and rationalized with the aid of semiempirical calculations. The increase of dipole moment of the emitting state of the zinc derivatives, related to a partial charge transfer character of the transition, is responsible for the dramatic
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:46787','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46787')" title="ChEBI Ontology link for: solvent">
+      solvent
+     </a>
+    </span>
+    effect observed on the luminescence properties. Axial complexation of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:51216','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=51216')" title="ChEBI Ontology link for: zinc porphyrin">
+      zinc porphyrin
+     </a>
+    </span>
+    derivatives
+    <span class="bold">
+     ZnB
+    </span>
+    and
+    <span class="bold">
+     ZnH
+    </span>
+    by
+    <span class="TC">
+     <a class="simple" href="http://www.chemspider.com/Chemical-Structure.1020.html" target="_blank" title="Chemspider Compound link for:pyridine">
+      pyridine
+     </a>
+    </span>
+    is found to alter the luminescence properties of the
+    <span class="CH">
+     <a class="simple" href="javascript:popupOBO('CHEBI:26214','B105547J','http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26214')" title="ChEBI Ontology link for: porphyrin">
+      porphyrin
+     </a>
+    </span>
+    . This fact is of relevance for the use of
+    <span class="bold">
+     ZnH
+    </span>
+    as host for bis-pyridyl derivatives in the construction of self-assembling multi-component systems for light energy harvesting and conversion.
+   </span>
+   <h2 id="sect1106">
+    <span class="a_heading">
+     Acknowledgements
+    </span>
+   </h2>
+   <span>
+    The research has been supported by CNR of Italy and CQU (Research Advancement Award to MRJ).
+   </span>
+   <span id="sect1108">
+    <h2 id="sect1105">
+     <span class="a_heading">
+      References
+     </span>
+    </h2>
+   </span>
+   <ol type="1">
+    <li>
+     <span id="cit1">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit1a">
+       J.-M. Lehn,
+       <span class="italic">
+        Supramolecular Chemistry
+       </span>
+       , VCH, Weinheim,  1995
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Supramolecular%20Chemistry%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201995%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/1a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit1b">
+       J.-M. Lehn,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1990,
+       <span class="bold">
+        29
+       </span>
+       , 1304
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.199013041" target="_blank" title="DOI Link to resource 10.1002/anie.199013041">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/1b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit1c">
+       <span class="italic">
+        Comprehensi
+        <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/char_e0f5.gif"/>
+        e Supramolecular Chemistry
+       </span>
+       , ed. J. L. Atwood, J. E. D. Davies, D. D. MacNicol and F. Vögtle, Pergamon Elsevier, Oxford,  1996
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Comprehensie%20Supramolecular%20Chemistry%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201996%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/1c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit1d">
+       M. Fisher and F. Vögtle,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1999,
+       <span class="bold">
+        38
+       </span>
+       , 884
+       <a class="DOILink" href="http://dx.doi.org/10.1002/(SICI)1521-3773(19990401)38:7&lt;884::AID-ANIE884&gt;3.0.CO;2-K" target="_blank" title="DOI Link to resource 10.1002/(SICI)1521-3773(19990401)38:7&lt;884::AID-ANIE884&gt;3.0.CO;2-K">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/1d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       e
+      </i>
+      )
+      <span id="cit1e">
+       <span class="italic">
+        Electron Transfer in Chemistry
+       </span>
+       , ed. V. Balzani, Wiley-VCH, Weinheim,  2001, vol. III, part 2, p. 177.
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Electron%20Transfer%20in%20Chemistry%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202001%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/1e_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit2">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit2a">
+       V. Balzani, A. Credi, F. M. Raymo and J. F. Stoddart,
+       <span class="italic">
+        Angew. Chem., Int. Ed.
+       </span>
+       , 2000,
+       <span class="bold">
+        39
+       </span>
+       , 3348
+       <a class="DOILink" href="http://dx.doi.org/10.1002/1521-3773(20001002)39:19&lt;3348::AID-ANIE3348&gt;3.0.CO;2-X" target="_blank" title="DOI Link to resource 10.1002/1521-3773(20001002)39:19&lt;3348::AID-ANIE3348&gt;3.0.CO;2-X">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3MXpslGgug%253D%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/2a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit2b">
+       A. P. De Silva, H. Q. Nimal Gunaratne, T. Gunnlaugsson, A. J. M. Huxley, C. P. McCoy, J. T. Rademacher and T. E. Rice,
+       <span class="italic">
+        Chem. Re
+        <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/char_e0f5.gif"/>
+        .
+       </span>
+       , 1997,
+       <span class="bold">
+        97
+       </span>
+       , 1515
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Re.%5BJour%5D%20AND%2097%5Bvolume%5D%20AND%201515%5Bpage%5D%20and%201997%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/2b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit2c">
+       A. P. De Silva and N. D. McClenaghan,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2000,
+       <span class="bold">
+        122
+       </span>
+       , 3965
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja994080m" target="_blank" title="DOI Link to resource 10.1021/ja994080m">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXit1agsr8%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/2c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit2d">
+       J. R. Heath,
+       <span class="italic">
+        Pure Appl. Chem.
+       </span>
+       , 2000,
+       <span class="bold">
+        72
+       </span>
+       , 11
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Pure%20Appl.%20Chem.%5BJour%5D%20AND%2072%5Bvolume%5D%20AND%2011%5Bpage%5D%20and%202000%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/2d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       e
+      </i>
+      )
+      <span id="cit2e">
+       <span class="italic">
+        Electron Transfer in Chemistry
+       </span>
+       , ed. V. Balzani and A. P. de Silva, Wiley-VCH, Weinheim,  2001, vol. V, part 1, p. 1.
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Electron%20Transfer%20in%20Chemistry%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202001%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/2e_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit3">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit3a">
+       D. Gust, T. A. Moore and A. L. Moore,
+       <span class="italic">
+        Acc. Chem. Res.
+       </span>
+       , 1993,
+       <span class="bold">
+        26
+       </span>
+       , 198
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ar00028a010" target="_blank" title="DOI Link to resource 10.1021/ar00028a010">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3sXhvVOkt78%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/3a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit3b">
+       M. R. Wasielewski,
+       <span class="italic">
+        Chem. Re
+        <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/char_e0f5.gif"/>
+        .
+       </span>
+       , 1992,
+       <span class="bold">
+        92
+       </span>
+       , 435
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Re.%5BJour%5D%20AND%2092%5Bvolume%5D%20AND%20435%5Bpage%5D%20and%201992%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/3b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit3c">
+       H. Kurreck and M. Huber,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1995,
+       <span class="bold">
+        34
+       </span>
+       , 849
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.199508491" target="_blank" title="DOI Link to resource 10.1002/anie.199508491">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXlsV2jtLo%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/3c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit3d">
+       A. Harriman and J.-P. Sauvage,
+       <span class="italic">
+        Chem. Soc. Re
+        <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/char_e0f5.gif"/>
+        .
+       </span>
+       , 1996, 41
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Soc.%20Re.%5BJour%5D%20AND%20%5Bvolume%5D%20AND%2041%5Bpage%5D%20and%201996%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/3d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       e
+      </i>
+      )
+      <span id="cit3e">
+       D. Gust, T. A. Moore and A. L. Moore,
+       <span class="italic">
+        Acc. Chem. Res.
+       </span>
+       , 2001,
+       <span class="bold">
+        34
+       </span>
+       , 40
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ar9801301" target="_blank" title="DOI Link to resource 10.1021/ar9801301">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXnvVWmtrw%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/3e_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       f
+      </i>
+      )
+      <span id="cit3f">
+       L. Sun, L. Hammarström, B. Åkermark and S. Styring,
+       <span class="italic">
+        Chem. Soc. Re
+        <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/char_e0f5.gif"/>
+        .
+       </span>
+       , 2001,
+       <span class="bold">
+        30
+       </span>
+       , 36
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Soc.%20Re.%5BJour%5D%20AND%2030%5Bvolume%5D%20AND%2036%5Bpage%5D%20and%202001%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/3f_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       g
+      </i>
+      )
+      <span id="cit3g">
+       H. Himamori and Y. Sakata,
+       <span class="italic">
+        Eur. J. Org. Chem.
+       </span>
+       , 1999, 2445
+       <a class="DOILink" href="http://dx.doi.org/10.1002/(SICI)1099-0690(199910)1999:10&lt;2445::AID-EJOC2445&gt;3.0.CO;2-G" target="_blank" title="DOI Link to resource 10.1002/(SICI)1099-0690(199910)1999:10&lt;2445::AID-EJOC2445&gt;3.0.CO;2-G">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXmtlKlsLs%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/3g_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit4">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit4a">
+       W. Kühlbrandt, D. N. Wang and Y. Fujiyoshi,
+       <span class="italic">
+        Nature
+       </span>
+       , 1994,
+       <span class="bold">
+        367
+       </span>
+       , 614
+       <a class="DOILink" href="http://dx.doi.org/10.1038/367614a0" target="_blank" title="DOI Link to resource 10.1038/367614a0">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ASTN%3A280%3AByuC2M%252FmslE%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/4a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit4b">
+       G. McDermott, S. M. Prince, A. A. Freer, A. M. Hawthornthwaite-Lawless, M. Z. Papiz, R. J. Cogdell and N. W. Isaacs,
+       <span class="italic">
+        Nature
+       </span>
+       , 1995,
+       <span class="bold">
+        374
+       </span>
+       , 517
+       <a class="DOILink" href="http://dx.doi.org/10.1038/374517a0" target="_blank" title="DOI Link to resource 10.1038/374517a0">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXkvVKqsb8%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/4b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit4c">
+       J. Deisenhofer and H. Michel,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1989,
+       <span class="bold">
+        28
+       </span>
+       , 829
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.198908293" target="_blank" title="DOI Link to resource 10.1002/anie.198908293">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/4c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit4d">
+       R. Huber,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1989,
+       <span class="bold">
+        28
+       </span>
+       , 848
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.198908481" target="_blank" title="DOI Link to resource 10.1002/anie.198908481">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/4d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit5">
+      <span class="italic">
+       The Porphyrin Handbook
+      </span>
+      , ed. K. M. Kadish, K. M. Smith and R. Guilard, Academic Press, San Diego, CA,  2000, Vol. 8 and 9.
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=The%20Porphyrin%20Handbook%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202000%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/5_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit6">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit6a">
+       K. Kilsa, J. Kajanus, A. N. Macpherson, J. Mårtensson and B. Albinsson,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2001,
+       <span class="bold">
+        123
+       </span>
+       , 3069
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja003820k" target="_blank" title="DOI Link to resource 10.1021/ja003820k">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ASTN%3A280%3ADC%252BD3MvgsVyrsw%253D%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/6a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit6b">
+       C. Luo, D.
+M. Guldi, H. Imamori, K. Tamaki and Y. Sakata,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2000,
+       <span class="bold">
+        122
+       </span>
+       , 6535
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja993959z" target="_blank" title="DOI Link to resource 10.1021/ja993959z">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXksVaqurY%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/6b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit6c">
+       I. M. Dixon, J.-P. Collin, J.-P. Sauvage, F. Barigelletti and L. Flamigni,
+       <span class="italic">
+        Angew. Chem., Int. Ed.
+       </span>
+       , 2000,
+       <span class="bold">
+        39
+       </span>
+       , 1292
+       <a class="DOILink" href="http://dx.doi.org/10.1002/(SICI)1521-3773(20000403)39:7&lt;1292::AID-ANIE1292&gt;3.0.CO;2-V" target="_blank" title="DOI Link to resource 10.1002/(SICI)1521-3773(20000403)39:7&lt;1292::AID-ANIE1292&gt;3.0.CO;2-V">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXisFymu7g%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/6c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit6d">
+       M. Asano-Someda and Y. Kaizu,
+       <span class="italic">
+        Inorg. Chem.
+       </span>
+       , 1999,
+       <span class="bold">
+        38
+       </span>
+       , 2303
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ic981009t" target="_blank" title="DOI Link to resource 10.1021/ic981009t">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXisFGnsb0%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/6d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       e
+      </i>
+      )
+      <span id="cit6e">
+       R. K. Lammi, A. Ambroise, T. Balasubramanian, R. W. Wagner, D. F. Bocian, D. Holten and J. S. Lindsey,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2000,
+       <span class="bold">
+        122
+       </span>
+       , 7579
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja001031x" target="_blank" title="DOI Link to resource 10.1021/ja001031x">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXkvFKrsLo%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/6e_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit7">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit7a">
+       T. Hayashi and H. Ogoshi,
+       <span class="italic">
+        Chem. Soc. Re
+        <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/char_e0f5.gif"/>
+        .
+       </span>
+       , 1997,
+       <span class="bold">
+        26
+       </span>
+       , 355
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Soc.%20Re.%5BJour%5D%20AND%2026%5Bvolume%5D%20AND%20355%5Bpage%5D%20and%201997%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/7a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit7b">
+       M. D. Ward,
+       <span class="italic">
+        Chem. Soc. Re
+        <img alt="[italic v]" class="charmap" src="http://www.rsc.org/images/entities/char_e0f5.gif"/>
+        .
+       </span>
+       , 1997,
+       <span class="bold">
+        26
+       </span>
+       , 365
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Soc.%20Re.%5BJour%5D%20AND%2026%5Bvolume%5D%20AND%20365%5Bpage%5D%20and%201997%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/7b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit7c">
+       H. Tamiaki, T. Miyatake, R. Tanikaga, A. R. Holzwarth and K. Shaffner,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1996,
+       <span class="bold">
+        35
+       </span>
+       , 772
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.199607721" target="_blank" title="DOI Link to resource 10.1002/anie.199607721">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28Xis1Sgsrg%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/7c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit7d">
+       Y. Deng, J. A. Roberts, S.-M. Peng, C. K. Chang and D. G. Nocera,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1997,
+       <span class="bold">
+        36
+       </span>
+       , 2124
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.199721241" target="_blank" title="DOI Link to resource 10.1002/anie.199721241">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXntFCgsLs%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/7d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       e
+      </i>
+      )
+      <span id="cit7e">
+       C. J. Chang, J. D. K. Brown,  M. C. Y. Chang, E. A. Baker and D. G. Nocera, in
+       <span class="italic">
+        Electron Transfer in Chemistry
+       </span>
+       , ed. V. Balzani, Wiley-VCH, Weinheim,  2001, vol. III, part 2, p. 409.
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Electron%20Transfer%20in%20Chemistry%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202001%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/7e_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit8">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit8a">
+       C. A. Hunter, J. K. M. Sanders, G. S. Beddard and S. Evans,
+       <span class="italic">
+        J. Chem. Soc., Chem. Commun.
+       </span>
+       , 1989, 1765
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=C39890001765&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C39890001765">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/8a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit8b">
+       S. L. Springs, D. Gosztola, M. R. Wasielewski, V. Král, A. Andrievsky and J. L. Sessler,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 1999,
+       <span class="bold">
+        121
+       </span>
+       , 2281
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja9835436" target="_blank" title="DOI Link to resource 10.1021/ja9835436">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXhtlOltbk%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/8b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit8c">
+       T. H. Ghaddar, E. W. Castner and S. S. Isied,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2000,
+       <span class="bold">
+        122
+       </span>
+       , 1233
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja9930465" target="_blank" title="DOI Link to resource 10.1021/ja9930465">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXmvV2gsA%253D%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/8c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit8d">
+       J. Otsuki, K. Harada, K. Toyama, Y. Hirose, K. Araki, M. Seno, K. Takatera and T. Watanabe,
+       <span class="italic">
+        Chem. Commun.
+       </span>
+       , 1998, 1515
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=a801453a&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/a801453a">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/8d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       e
+      </i>
+      )
+      <span id="cit8e">
+       N. Armaroli, F. Diederich, L. Echegoyen, T. Abisher, L. Flamigni, G. Marconi and J.-F. Nierengarten,
+       <span class="italic">
+        New J. Chem.
+       </span>
+       , 1999,
+       <span class="bold">
+        23
+       </span>
+       , 77
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=a807400c&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/a807400c">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/8e_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit9">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit9a">
+       H. L. Anderson, C. A. Hunter, M. N. Meah and J. K. M. Sanders,
+       <span class="italic">
+        J. Am Chem. Soc.
+       </span>
+       , 1990,
+       <span class="bold">
+        112
+       </span>
+       , 5773
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja00171a016" target="_blank" title="DOI Link to resource 10.1021/ja00171a016">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit9b">
+       H. Anderson and J. K.
+M. Sanders,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1990,
+       <span class="bold">
+        29
+       </span>
+       , 1400
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.199014001" target="_blank" title="DOI Link to resource 10.1002/anie.199014001">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit9c">
+       I. P. Danks, I. O. Sutherland and C. H. Yap,
+       <span class="italic">
+        J. Chem. Soc., Perkin Trans. 1
+       </span>
+       , 1990, 421
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=P19900000421&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/P19900000421">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit9d">
+       C. A. Hunter and L. D. Sarson,
+       <span class="italic">
+        Angew. Chem., Int. Ed. Engl.
+       </span>
+       , 1994,
+       <span class="bold">
+        33
+       </span>
+       , 2313
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.199423131" target="_blank" title="DOI Link to resource 10.1002/anie.199423131">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       e
+      </i>
+      )
+      <span id="cit9e">
+       H. Imahori, E. Yoshizawa, K. Yamada, K. Hagiwara, T. Okada and Y. Sakata,
+       <span class="italic">
+        J. Chem. Soc., Chem. Commun.
+       </span>
+       , 1995, 1133
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=C39950001133&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C39950001133">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9e_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       f
+      </i>
+      )
+      <span id="cit9f">
+       J. Brettar, J.-P. Gisselbrecht, M. Gross and N. Solladié,
+       <span class="italic">
+        Chem. Commun.
+       </span>
+       , 2001,  733
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=b100423i&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/b100423i">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9f_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       g
+      </i>
+      )
+      <span id="cit9g">
+       M. J. Crossley, L. G. Mackay and A. C. Try,
+       <span class="italic">
+        J. Chem.
+Soc., Chem. Commun.
+       </span>
+       , 1995, 1925
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=C39950001925&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C39950001925">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9g_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       h
+      </i>
+      )
+      <span id="cit9h">
+       P. N. Taylor and H. L. Anderson,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 1999,
+       <span class="bold">
+        121
+       </span>
+       , 11538
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja992821d" target="_blank" title="DOI Link to resource 10.1021/ja992821d">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXnsFymtr8%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9h_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       i
+      </i>
+      )
+      <span id="cit9i">
+       Z. Clyde-Watson, N. Bampos and J. K. M. Sanders,
+       <span class="italic">
+        New J. Chem.
+       </span>
+       , 1998, 1135
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=a805504a&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/a805504a">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9i_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       j
+      </i>
+      )
+      <span id="cit9j">
+       J. L. Sessler, M. Sathiosatham, C. T. Brown, T. A. Rhodes and G. Wiederrecht,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2001,
+       <span class="bold">
+        123
+       </span>
+       , 3655
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja005547s" target="_blank" title="DOI Link to resource 10.1021/ja005547s">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3MXit1Whu7w%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/9j_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit10">
+      M. R. Johnston, M. J. Gunter and R. N. Warrener,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 1998, 2739
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=a807339b&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/a807339b">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/10_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit11">
+      L. Flamigni and M. R. Johnston,
+      <span class="italic">
+       New J. Chem.
+      </span>
+      , in the press.
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=New%20J.%20Chem.%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%20%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/11_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit12">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit12a">
+       R. N. Warrener, M. R. Johnston and M.
+J. Gunter,
+       <span class="italic">
+        Synlett
+       </span>
+       , 1998, 593
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1cXjslKmtrk%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/12a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit12b">
+       R. N. Warrener, M. R. Johnston, A. C. Schultz, M. Golic, M. A. Houghton and M. J. Gunter,
+       <span class="italic">
+        Synlett
+       </span>
+       , 1998, 590
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1cXjslKmtrg%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/12b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit13">
+      I. M. Dixon, J.-P. Collin, J.-P. Sauvage and L. Flamigni,
+      <span class="italic">
+       Inorg.
+Chem.
+      </span>
+      , in the press.
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Inorg.
+Chem.%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%20%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/13_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit14">
+      Flamigni,
+      <span class="italic">
+       J. Phys. Chem.
+      </span>
+      , 1993,
+      <span class="bold">
+       97
+      </span>
+      , 9566
+      <a class="DOILink" href="http://dx.doi.org/10.1021/j100140a006" target="_blank" title="DOI Link to resource 10.1021/j100140a006">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3sXmt1Gms7s%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/14_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit15">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit15a">
+       L. Flamigni,
+       <span class="italic">
+        J. Phys. Chem.
+       </span>
+       , 1992,
+       <span class="bold">
+        96
+       </span>
+       , 3331
+       <a class="DOILink" href="http://dx.doi.org/10.1021/j100187a029" target="_blank" title="DOI Link to resource 10.1021/j100187a029">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK38XhvVCgtL8%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/15a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit15b">
+       L. Flamigni,
+       <span class="italic">
+        J. Chem. Soc., Faraday Trans.
+       </span>
+       , 1994,
+       <span class="bold">
+        90
+       </span>
+       , 2331
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=FT9949002331&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/FT9949002331">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/15b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit16">
+      <span class="italic">
+       Hyperchem 6.02
+      </span>
+      , Hypercube Inc., Gainesville, FL,  2000.
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Hyperchem%206.02%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202000%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/16_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit17">
+      N. Mataga and T. Kubota,
+      <span class="italic">
+       Molecular Interactions and Electronic Spectra
+      </span>
+      , Dekker, New York,  1970, ch. 8.
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Molecular%20Interactions%20and%20Electronic%20Spectra%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201970%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/17_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit18">
+      <span class="italic">
+       Handbook of Chemistry and Physics
+      </span>
+      , CRC Press, Boca Raton, FL, 75th edn.,  1994, vol. 6, p. 155.
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Handbook%20of%20Chemistry%20and%20Physics%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201994%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/18_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit19">
+      D. K. Maity and T. N. Truong,
+      <span class="italic">
+       J. Porphyrins Phthalocyanines
+      </span>
+      , 2001,
+      <span class="bold">
+       5
+      </span>
+      , 289
+      <a class="DOILink" href="http://dx.doi.org/10.1002/jpp.314" target="_blank" title="DOI Link to resource 10.1002/jpp.314">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3MXhvFSmtbg%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/19_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit20">
+      E. K. L. Yeow, P. L. Sintic, N.
+M. Cabral, J. N. H. Reek, M. J. Crossley and K. P. Ghiggino,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2000,
+      <span class="bold">
+       2
+      </span>
+      , 4281
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=b003612i&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/b003612i">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/20_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit21">
+      T. A. Vannelli and T. B. Karpishin,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 2000,
+      <span class="bold">
+       39
+      </span>
+      , 340
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic990914q" target="_blank" title="DOI Link to resource 10.1021/ic990914q">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXmtVWmuw%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/21_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit22">
+      L. Flamigni, N. Armaroli, F. Barigelletti, V. Balzani, J.-P. Collin, J.-O. Dalbavie, V. Heitz and J.-P. Sauvage,
+      <span class="italic">
+       J. Phys. Chem. B
+      </span>
+      , 1997,
+      <span class="bold">
+       101
+      </span>
+      , 5936
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp963773b" target="_blank" title="DOI Link to resource 10.1021/jp963773b">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXksVShtbk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/22_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit23">
+      C. Tanielian and C. Wolff,
+      <span class="italic">
+       J. Phys. Chem.
+      </span>
+      , 1995,
+      <span class="bold">
+       99
+      </span>
+      , 9825
+      <a class="DOILink" href="http://dx.doi.org/10.1021/j100024a025" target="_blank" title="DOI Link to resource 10.1021/j100024a025">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXlvFWqsbo%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/23_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit24">
+      M. Gouterman, in
+      <span class="italic">
+       The Porphyrins
+      </span>
+      , ed. D. Dolphin, Academic Press, New York,  1978, vol. III, p. 1.
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=The%20Porphyrins%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201978%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/24_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit25">
+      J. K. M. Sanders, N. Bampos, Z. Clyde-Watson, S. L. Darling, J. C. Hawley, H.-J. Kim, C. C. Mak and S. J. Webb, in
+      <span class="italic">
+       The Porphyrin Handbook
+      </span>
+      , ed. K. M. Kadish, K. M. Smith and R. Guilard, Academic Press, San Diego, CA,  2000, vol. 3/15, p. 1.
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=The%20Porphyrin%20Handbook%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202000%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/B105547J/25_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+   </ol>
+   <table>
+    <tr>
+     <td>
+      <hr/>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       This journal is © the Owner Societies 2001
+      </b>
+     </td>
+    </tr>
+   </table>
+  </div>
+ </body>
+</html>

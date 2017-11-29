@@ -1,0 +1,5126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:art="http://www.rsc.org/schema/rscart38" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rsc="urn:rsc.org">
+ <head>
+  <title>
+   New insights into the photoswitching mechanisms of normal dithienylethenes   - Physical Chemistry Chemical Physics (RSC Publishing) DOI:10.1039/C6CP03471C
+  </title>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYNF1oJ","queueTime":0,"applicationTime":1480,"ttGuid":"B8525F516BA7AA4","agent":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,S=y.hash,this[u]=Date.now()}function o(){j--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),R=t(13),P=t("ee"),D=P.get("tracer");t(14),t("loader").features.spa=!0;var S,N=w[v],j=0;P.on(u,r),P.on(p,r),P.on(h,o),P.on(d,o),P.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),R.buffer([u,"new-xhr","send-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(R,"send-xhr"+c),a(P,"xhr-resolved"),a(P,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),N("hashchange",i,!0),N("load",i,!0),N("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(h+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),f.setCurrentRouteName=o(h+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(h){throw u(e+"err",[r,a,h],c),h}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,h(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){p([a,n,r,o])}s=i}}function h(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!p.aborted){t&&t(n,r,o);for(var i=e(o),a=l(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function d(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return h[t]=h[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},g={on:d,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},h={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=h.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(w,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=h.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===h.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=t("ee"),u=window,h=u.document,p="addEventListener",d="attachEvent",l=u.XMLHttpRequest,m=l&&l.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:l,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(16);var v=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-998.min.js"},y=l&&m&&m[p]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:v,features:{},xhrWrappable:y};h[p]?(h[p]("DOMContentLoaded",i,!1),u[p]("load",r,!1)):(h[d]("onreadystatechange",o),u[d]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,14,5,3,4]);
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="I. Hamdi" name="DC.Creator"/>
+  <meta content="G. Buntinx" name="DC.Creator"/>
+  <meta content="A. Perrier" name="DC.Creator"/>
+  <meta content="O. Devos" name="DC.Creator"/>
+  <meta content="N. Jaïdane" name="DC.Creator"/>
+  <meta content="S. Delbaere" name="DC.Creator"/>
+  <meta content="A. K. Tiwari" name="DC.Creator"/>
+  <meta content="J. Dubois" name="DC.Creator"/>
+  <meta content="M. Takeshita" name="DC.Creator"/>
+  <meta content="Y. Wada" name="DC.Creator"/>
+  <meta content="S. Aloïse" name="DC.Creator"/>
+  <meta content="New insights into the photoswitching mechanisms of normal dithienylethenes  " name="DC.title"/>
+  <meta content="Royal Society of Chemistry" name="DC.publisher"/>
+  <meta content="2016/10/12" name="DC.Date"/>
+  <meta content="10.1039/C6CP03471C" name="DC.Identifier" scheme="doi"/>
+  <meta content="en" name="DC.Language"/>
+  <meta content="New insights into the photoswitching mechanisms of normal dithienylethenes  " name="citation_title"/>
+  <meta content="I. Hamdi" name="citation_author"/>
+  <meta content="G. Buntinx" name="citation_author"/>
+  <meta content="A. Perrier" name="citation_author"/>
+  <meta content="O. Devos" name="citation_author"/>
+  <meta content="N. Jaïdane" name="citation_author"/>
+  <meta content="S. Delbaere" name="citation_author"/>
+  <meta content="A. K. Tiwari" name="citation_author"/>
+  <meta content="J. Dubois" name="citation_author"/>
+  <meta content="M. Takeshita" name="citation_author"/>
+  <meta content="Y. Wada" name="citation_author"/>
+  <meta content="S. Aloïse" name="citation_author"/>
+  <meta content="2016/09/13" name="citation_online_date"/>
+  <meta content="2016" name="citation_date"/>
+  <meta content="Physical Chemistry Chemical Physics" name="citation_journal_title"/>
+  <meta content="18" name="citation_volume"/>
+  <meta content="40" name="citation_issue"/>
+  <meta content="28091" name="citation_firstpage"/>
+  <meta content="28100" name="citation_lastpage"/>
+  <meta content="10.1039/C6CP03471C" name="citation_doi"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticlePDF/2016/CP/C6CP03471C" name="citation_pdf_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleLanding/2016/CP/C6CP03471C" name="citation_abstract_html_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleHTML/2016/CP/C6CP03471C" name="citation_fulltext_html_url"/>
+  <link href="" rel="shortcut icon"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/rschtml2.css?ver=6_0_9" rel="stylesheet" type="text/css"/>
+  <script src="http://pubs.rsc.org/content/scripts/JQueryPlugins.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   (function ($) {
+        function grab_content(span_id) {
+            var content = $('span[id="' + span_id + '"]').text();
+
+            if (span_id.indexOf("fn", 0) != -1) {
+                return content; // could contain useful anchor text i.e. see doi:
+            }
+            else {
+                // strip external anchor text CrossRef etc. (but not Dera linked text)
+               $('span[id="' + span_id + '"] a[class !="simple"][class !="CH"][class !="TC"][class !="RTC"][class !="GB"]').each(
+            		function () {
+            					content = content.replace($(this).text(), '');
+              					}); return content;
+            }
+       }
+
+        $.fn.swapAttr = function (attribute) {
+            return this.each(function () {
+                $(this).hover(function () {
+                    var $this = $(this);
+                    var idval = $this.attr("href").replace("#", "");
+                    var textval = grab_content(idval);
+                    if (textval.replace(/\s+/g, '') != "") {
+                        $this.attr('title', textval.replace(/\s+/g, ' '));
+                    }
+                }, function () {
+                    var $this = $(this);
+                });
+            });
+        };
+
+    })(jQuery);
+
+    $(document).ready(function () {
+        $("a[href^='#']").swapAttr();
+    });
+  </script>
+  <!--6_0_9-->
+ </head>
+ <body>
+  <!--Google Tag Manager-->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-KW8L" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KW8L');
+  </script>
+  <!--End Google Tag Manager-->
+  <span id="top">
+  </span>
+  <div id="wrapper">
+   <div class="left_head">
+    <a class="URLLink" href="http://pubs.rsc.org">
+     <img alt="Royal Society of Chemistry" border="0" class="rsc-logo" src="http://pubs.rsc.org/content/NewImages/royal-society-of-chemistry-logo.png"/>
+    </a>
+    <br/>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlepdf/2016/CP/C6CP03471C" target="_blank" title="Link to PDF version">
+      View PDF Version
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C6CP05042E" target="_BLANK" title="Link to previous article (id:C6CP05042E)">
+      Previous Article
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C6CP02529C" target="_BLANK" title="Link to next article (id:C6CP02529C)">
+      Next Article
+     </a>
+    </span>
+   </div>
+   <div class="right_head">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js" type="text/javascript">
+    </script>
+    <script src="http://crossmark.crossref.org/javascripts/v1.4/crossmark.min.js" type="text/javascript">
+    </script>
+    <a href="#" id="open-crossmark" style="padding: 2.5em 0 1em 0;">
+     <img id="crossmark-icon" src="http://crossmark.crossref.org/images/crossmark_button.png" style="border: 0; display:inline;"/>
+    </a>
+    <div id="crossmark-dialog" style="display: none;" title="">
+     <iframe frameborder="0" id="crossmark-dialog-frame">
+     </iframe>
+    </div>
+   </div>
+   <div class="article_info">
+    DOI:
+    <a href="http://dx.doi.org/10.1039/C6CP03471C" target="_blank" title="Link to landing page via DOI">
+     10.1039/C6CP03471C
+    </a>
+    (Paper)
+    <span class="italic">
+     <a href="http://dx.doi.org/10.1039/1463-9084/1999" title="Link to journal home page">
+      Phys. Chem. Chem. Phys.
+     </a>
+    </span>
+    , 2016,
+    <strong>
+     18
+    </strong>
+    , 28091-28100
+   </div>
+   <h1 id="sect174">
+    <span class="title_heading">
+     New insights into the photoswitching mechanisms of normal dithienylethenes
+     <a href="#fn1" title="Select to navigate to footnote">
+      †
+     </a>
+    </span>
+   </h1>
+   <p class="header_text">
+    <span class="bold">
+     I. 
+            Hamdi
+    </span>
+    *
+    <sup>
+     <span class="sup_ref italic">
+      ab
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     G. 
+            Buntinx
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     A. 
+            Perrier
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      cd
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     O. 
+            Devos
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     N. 
+            Jaïdane
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      b
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     S. 
+            Delbaere
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     A. K. 
+            Tiwari
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     J. 
+            Dubois
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     M. 
+            Takeshita
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      e
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Y. 
+            Wada
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      e
+     </span>
+    </sup>
+    <span class="bold">
+     and
+    </span>
+    <span class="bold">
+     S. 
+            Aloïse
+    </span>
+    *
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    <br/>
+    <a id="affa">
+     <sup>
+      <span class="sup_ref italic">
+       a
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Univ. Lille, CNRS, UMR 8516, LASIR, Laboratoire de Spectrochimie Infrarouge et Raman, F59 000 Lille, France. E-mail:
+     <a href="mailto:stephane.aloise@univ-lille1.fr">
+      stephane.aloise@univ-lille1.fr
+     </a>
+    </span>
+    <br/>
+    <a id="affb">
+     <sup>
+      <span class="sup_ref italic">
+       b
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Laboratoire de Spectroscopie Atomique, Moléculaire et Applications–LSAMA, Université de Tunis El Manar, 1060 Tunis, Tunisia
+    </span>
+    <br/>
+    <a id="affc">
+     <sup>
+      <span class="sup_ref italic">
+       c
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Université Paris Diderot, Sorbonne Paris Cité, 5 rue Thomas Mann, 75205 Paris Cedex 13, France
+    </span>
+    <br/>
+    <a id="affd">
+     <sup>
+      <span class="sup_ref italic">
+       d
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Chimie Paris Tech, PSL Research University, CNRS, Institut de Recherche de Chimie Paris (IRCP), F-75005 Paris, France
+    </span>
+    <br/>
+    <a id="affe">
+     <sup>
+      <span class="sup_ref italic">
+       e
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Department of Chemistry and Applied Chemistry, Faculty of Science and Engineering, Saga University, Honjo 1, Saga 840-8502, Japan
+    </span>
+   </p>
+   <div id="art-admin">
+    <span class="italic bold">
+     Received 
+      20th July 2016
+    </span>
+    <span class="bold italic">
+     , Accepted 12th September 2016
+    </span>
+   </div>
+   <p class="bold italic">
+    First published on the web 13th September 2016
+   </p>
+   <hr/>
+   <p class="abstract">
+    The photoswitching and competitive processes of the referent photochromic diarylethene derivative 1,2-bis(2,4-dimethyl-5-phenyl-3-thienyl)perfluorocyclopentene (DTE) and a novel bridged analog DTE-m5 have been investigated by state-of-the-art TD-DFT calculations and ultrafast spectroscopy supported by advanced chemometric data treatments. Focusing on DTE, the overall deactivation pathway of both antiparallel (AP) and parallel (P) conformers of the open form (OF) (1
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    1 in solution) has been resolved and rationalized starting from the Franck–Condon (FC) region to the ground state recovery. For the photo-excited P conformer, after ultrafast relaxation (∼200 fs) towards the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    relaxed state, an expected ISC occurred (55 ps) to produce a triplet state,
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    P, the latter relaxing within 2.5 μs. Concerning the AP conformer, the photocyclization reaction is reported to proceed immediately (100 fs) starting from the FC region while the relaxed singlet state is populated in parallel. For the first time, we discovered that the latter state evolves through an unexpected ISC process (1 ps) giving rise to a second triplet state,
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP. For DTE-m5, by slightly constraining the molecule with the bridge, this triplet becomes reactive and participates in the formation of 10% of closed form (CF) probably through an adiabatic mechanism. Concerning the photoreversion, in accordance with the literature, we report on a two-step process, a 190 fs vibrational relaxation followed by a 6 ps ring-opening reaction. For the overall species at the singlet or triplet manifold, the use of advanced MCR-ALS allows us to obtain specific spectral signatures. This study is therefore a new step within the comprehension of DTE photochemistry.
+   </p>
+   <hr/>
+   <h2 id="sect293">
+    <span class="a_heading">
+     Introduction
+    </span>
+   </h2>
+   <span>
+    In recent years much research efforts have been devoted to the development of photochromic materials,
+    <span class="italic">
+     i.e.
+    </span>
+    systems that can be converted reversibly from one form to another upon light excitation.
+    <a href="#cit1" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       1
+      </span>
+     </sup>
+    </a>
+    The interest in these compounds stems from their potential applications in optoelectronics, information storage, molecular electronics, supramolecular chemistry,
+    <span class="italic">
+     etc
+    </span>
+    .
+    <a href="#cit2" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       2
+      </span>
+     </sup>
+    </a>
+    As explained in exhaustive reviews dealing with diarylethenes,
+    <a href="#cit3" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       3
+      </span>
+     </sup>
+    </a>
+    dithienylethenes with a perfluorocyclopentane core are some of the most efficient bistable photoswitchable molecules (thermally irreversible) with fatigue resistance.
+    <a href="#cit4" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       4
+      </span>
+     </sup>
+    </a>
+    Upon UV irradiation, dithienylethenes undergo efficient photocyclization (
+    <span class="italic">
+     ϕ
+    </span>
+    <small>
+     <sub>
+      cycl
+     </sub>
+    </small>
+    ∼ 0.2–0.5) between the uncolored open form (OF) and the colored closed form (CF) while switching to visible light leads to less efficient photoreversion reactions (
+    <span class="italic">
+     ϕ
+    </span>
+    <small>
+     <sub>
+      rev
+     </sub>
+    </small>
+    ∼ 0.01).
+    <a href="#cit1a" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       1a,2a
+      </span>
+     </sup>
+    </a>
+    For photocyclization reactions based on carbone–carbone electrocyclization, the quantum yield was thought to be limited to 0.5 explained by the coexistence, in equal proportions, of two isomers having parallel (P) and anti-parallel (AP) conformations, only the latter being photoactive.
+    <a href="#cit5" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       5
+      </span>
+     </sup>
+    </a>
+    Overcoming this inherent limitation was the focus of various research studies relying on a purpose-designed synthetic approach
+    <a href="#cit6" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       6
+      </span>
+     </sup>
+    </a>
+    or specific excited-state reactivity.
+    <a href="#cit7" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       7
+      </span>
+     </sup>
+    </a>
+    Anyhow, except for few exceptions, the coexistence of the two conformers for dithienylethenes prevents a clear resolution of their individual spectral features. To discriminate between AP and P behavior, our group has chosen to investigate molecules with an additional alkyl or polyether bridge between the two aryl nuclei in order to block the molecule into the photoactive AP conformation. We applied successfully such an approach on 1,2-dicyano[2,
+    <span class="italic">
+     n
+    </span>
+    ]metacyclophanene
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    or inverse dithienylethenes.
+    <a href="#cit9" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       9
+      </span>
+     </sup>
+    </a>
+   </span>
+   <p class="otherpara">
+    In the last decade, considering studies in solution, both photocyclization
+    <a href="#cit8" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       8,10
+      </span>
+     </sup>
+    </a>
+    and photoreversion mechanisms
+    <a href="#cit11" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       11
+      </span>
+     </sup>
+    </a>
+    have been investigated intensively through a combination of time-resolved spectroscopies and calculations. The photoswitching mechanisms into the crystalline phase have also been investigated.
+    <a href="#cit12" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       12
+      </span>
+     </sup>
+    </a>
+    It is worth reminding that photocylization is an ultrafast process ranging from hundred femtoseconds to several picoseconds
+    <a href="#cit12a" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       12a,b
+      </span>
+     </sup>
+    </a>
+    occurring within the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    state maniflod from the Franck–Condon (FC) region through a conical intersection (CI) well identified by advanced CASSCF/CASPT2 calculations.
+    <a href="#cit13" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       13
+      </span>
+     </sup>
+    </a>
+    The exact mechanism, either direct (FC → CI) or requiring an initial relaxation within the relaxed S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    state (FC → S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (rel) → CI), is always a delicate question.
+    <a href="#cit14" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       14
+      </span>
+     </sup>
+    </a>
+    Concerning photoreversion, the low value of the quantum yield is explained by the presence of a high energy barrier within the excited state pathway before the reactive topologic point.
+    <a href="#cit12c" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       12c,15
+      </span>
+     </sup>
+    </a>
+    Additionally, novel photocyclization pathways have been found through excitation of high excited states
+    <a href="#cit7" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       7
+      </span>
+     </sup>
+    </a>
+    or triplet excited states. By the way, during the last few years, several groups have paid more and more attention to the role of the low-lying triplet excited state populated either by sensitization
+    <a href="#cit16" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       16
+      </span>
+     </sup>
+    </a>
+    or intersystem crossing (ISC) enhanced by an appropriate dyad substituent.
+    <a href="#cit16a" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       16a,17
+      </span>
+     </sup>
+    </a>
+    Furthermore, the special involvements of triplet species within the photooxidation process of dithienylethenes have been reported recently.
+    <a href="#cit4" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       4
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    Among normal dithienylethenes, 1,2-bis(2,4-dimethyl-5-phenyl-3-thienyl) perfluorocyclopentene called later DTE (see
+    <a href="#imgsch1" title="Select to navigate to scheme">
+     Scheme 1
+    </a>
+    ) is of special importance due to its excellent fatigue resistance reported with more than 850 switching cycles.
+    <a href="#cit4" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       4
+      </span>
+     </sup>
+    </a>
+    This is the reason why this molecule has been commercially produced by several companies for decades and consequently purchased by worldwide
+    <a href="#cit8" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       8,10
+      </span>
+     </sup>
+    </a>
+    groups who need a molecular switch to get a proof of principal (patents) dealing with applicative topics like semiconductor applications,
+    <a href="#cit18" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       18
+      </span>
+     </sup>
+    </a>
+    optical memory devices,
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+    and smart ink,
+    <a href="#cit20" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       20
+      </span>
+     </sup>
+    </a>
+    to name a few examples. Recently, DTE has been used in papers dealing with sequential two-photon cycloreversion techniques,
+    <a href="#cit21" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       21
+      </span>
+     </sup>
+    </a>
+    time-resolved Raman spectroscopy,
+    <a href="#cit10a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10a
+      </span>
+     </sup>
+    </a>
+    2D femtosecond stimulated Raman techniques,
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+    photochromism of single crystals
+    <a href="#cit12a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       12a
+      </span>
+     </sup>
+    </a>
+    and femtosecond electron diffraction.
+    <a href="#cit12b" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       12b
+      </span>
+     </sup>
+    </a>
+    Clearly, the DTE molecule is extensively used by a broad spectroscopist community and thorough rationalization of the photoswitching mechanisms is highly desired taking into consideration that several competitive pathways can co-exist.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgsch1">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-s1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-s1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-s1.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Scheme 1
+       </b>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    In 2014, DTE photocyclization in solution was studied by Pontecorvo
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit10a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10a
+      </span>
+     </sup>
+    </a>
+    using both femtosecond transient absorption and Raman spectroscopies to unravel AP and P photochemistry. Both conformers co-exist in equal proportion as proved by
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H-NMR measurements, with the AP
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    P ratio being 48
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    52.
+    <a href="#cit23" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       23
+      </span>
+     </sup>
+    </a>
+    They reported that the electrocyclization reaction takes place in ∼300 fs while a triplet state coming from the P conformer was populated according to the ISC process within ∼23 ps; no AP triplet state was detected by this group. Note that they did not investigate the decay mechanism of the DTE triplet state referring to the decay of another representative photochromic diarylethene, 1,2-bis(2-methyl-3-benzothienyl)perfluorocyclopentene (BT).
+    <a href="#cit10b" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10b
+      </span>
+     </sup>
+    </a>
+    In parallel, the cycloreversion dynamics for the DTE molecule has been studied by Ward
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit21a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       21a
+      </span>
+     </sup>
+    </a>
+    using sequential two-photon excitation (pump–repump–probe) ultrafast spectroscopy. Transient data have been interpreted in terms of ultrafast relaxation from the FC region (∼100 fs) to the relaxed excited state S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    overpassing a barrier (∼3 ps) and final internal conversion (IC) to the ground state manifold (∼9 ps). Note that no spectral signature distinguishing FC from relax states has been proposed.
+   </p>
+   <p class="otherpara">
+    In the present paper, we aim to review both photoinduced ring-closing and ring-opening processes using the combination of femtosecond and nanosecond absorption spectroscopy apparatus supported with time-dependent density functional theory (TD-DFT) calculations. We are interested in determining the individual spectral signature of any electronic excited states regardless whether they are populated efficiently or not. This challenging task will be undertaken with the aid of multivariate curve resolution methods (MCR-ALS) which are able to extract hidden spectral signatures of intermediate states.
+    <a href="#cit24" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       24
+      </span>
+     </sup>
+    </a>
+    Furthermore, in this study, we paid more attention to the triplet state photophysics. To do so, we continue our approach investigating a neighboring analog called DTE-m5 with an additional polyether chain (see
+    <a href="#imgsch1" title="Select to navigate to scheme">
+     Scheme 1
+    </a>
+    ) which induces a constraint on the DTE core. At first glance, this molecule was thought to freeze the molecule into the parallel conformation following our strategy we initiated for inverse diarylethene (bis(3,5-dimethyl-2-thienyl)-perfluorocyclopentene).
+    <a href="#cit9" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       9
+      </span>
+     </sup>
+    </a>
+    As we will see, this point will be crucial for opening a new photocyclization pathway in the microsecond time-scale.
+   </p>
+   <h2 id="sect366">
+    <span class="a_heading">
+     Experimental and theoretical methods
+    </span>
+   </h2>
+   <h3 id="sect368">
+    <span class="b_heading">
+     Stationary techniques
+    </span>
+   </h3>
+   <span>
+    Dithienylethene DTE is a commercial compound (Sigma Aldrich), and bridged DTE-m5 was synthesized by Takeshita
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit25" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       25
+      </span>
+     </sup>
+    </a>
+    and the preparation is detailed in the ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    (Document S0). Chloroform (CHCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    ) solvent (spectroscopic grade, Sigma-Aldrich) was used as received. The stationary absorption spectra were recorded using a CARY 100bio absorption spectrometer.
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H-NMR spectra in CDCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    were recorded on a Bruker Avance-300 (300 MHz). The photocyclization and photoreversion yields have already been published for DTE
+    <a href="#cit23" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       23
+      </span>
+     </sup>
+    </a>
+    and were determined in this work for DTE-m5 according to the usual procedure.
+    <a href="#cit25" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       25
+      </span>
+     </sup>
+    </a>
+   </span>
+   <h3 id="sect379">
+    <span class="b_heading">
+     Transient absorption techniques
+    </span>
+   </h3>
+   <span>
+    Our nanosecond transient absorption spectroscopy setup has been described elsewhere.
+    <a href="#cit26" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       26
+      </span>
+     </sup>
+    </a>
+    Briefly, a third harmonic pulse (355 nm) of a Nd:YAG laser with
+    <span class="italic">
+     ca.
+    </span>
+    1 mJ output power and 5 ns pulse width was used as the excitation light and a pulsed Xe lamp was utilized as the probe light. Transient absorption spectra were obtained from the transient absorption decays recorded at various wavelengths by sampling the absorbance changes for different given delay-times. The triplet yields
+    <span class="italic">
+     ϕ
+    </span>
+    <small>
+     <sub>
+      T
+     </sub>
+    </small>
+    of DTE and DTE-m5 were determined by energy transfer to β-carotene compared to the results obtained with benzophenone (Bp) using an excitation wavelength at 320 nm. For this experiment, optical density of benzophenone and DTE solutions were matched at 320 nm. The following equation for triplet yields was used.
+    <a href="#cit27" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       27
+      </span>
+     </sup>
+    </a>
+    <table>
+     <td class="leftEqn">
+     </td>
+     <tr>
+      <td class="eqn">
+       <span id="eqn1">
+       </span>
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-t1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-t1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-t1.gif"/>
+       </a>
+      </td>
+      <td class="rightEqn">
+       (1)
+      </td>
+     </tr>
+    </table>
+    where
+    <span class="italic">
+     A
+    </span>
+    <small>
+     <sup>
+      DTE
+     </sup>
+    </small>
+    <small>
+     <sub>
+      ∞
+     </sub>
+    </small>
+    and
+    <span class="italic">
+     A
+    </span>
+    <small>
+     <sup>
+      Bp
+     </sup>
+    </small>
+    <small>
+     <sub>
+      ∞
+     </sub>
+    </small>
+    designate the plateau absorbance for DTE and benzophenone,
+    <span class="italic">
+     K
+    </span>
+    <small>
+     <sub>
+      obs
+     </sub>
+    </small>
+    is the pseudo-first-order rate constant for the growth of the β-carotene triplet,
+    <span class="italic">
+     K
+    </span>
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    is the rate constant for the decay of the triplet donor (DTE, DTE-m5 or benzophenone), and
+    <span class="italic">
+     ϕ
+    </span>
+    <small>
+     <sub>
+      Bp
+     </sub>
+    </small>
+    is the triplet yield of benzophenone.
+   </span>
+   <p class="otherpara">
+    Femtosecond time-resolved experiments were performed using a pump–probe spectrometer
+    <a href="#cit28" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       28
+      </span>
+     </sup>
+    </a>
+    based on a Ti:sapphire laser system (Coherent Mira-900-D oscillator and Libra-S regenerative amplifier) delivering 800 nm, 1 mJ and 90 fs pulses with a repetition rate of 1 kHz. The pump pulses adjusted at 320 nm were generated by frequency quadrupling the output of a Quantronix Palitra OPA pumped at 800 nm and the energy at the sample was about 2 μJ (0.2 mJ cm
+    <small>
+     <sup>
+      −2
+     </sup>
+    </small>
+    ). Note that we chose to excite the molecule far from the maximum of absorption localized near 270 nm to avoid short-time signals coming from solvent. The probe pulses were obtained by focusing 1 μJ, 800 nm pulses into a 1 mm CaF
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    plate to generate a white light continuum. The pump–probe polarization configuration was set at the magic angle (54.7°). Transient absorbance was obtained by comparing signal and reference spectra with and without pump pulses for different delay-times. The delay-times between the pump and the probe were varied up to 0.5 ns using an optical delay line. Sample solutions (∼10
+    <small>
+     <sup>
+      −3
+     </sup>
+    </small>
+    mol dm
+    <small>
+     <sup>
+      −3
+     </sup>
+    </small>
+    , OD = 1 at the pump wavelength) were circulated in a cell equipped with a 200 μm thick CaF
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    entrance window and having an optical path length of 2 mm. The sample solution was circulated during measurements and was irradiated by CW Xe lamp visible light to prevent the formation of CF. In this configuration, for 320 nm excitation, the instrumental response function determined by fitting the Stimulated Raman transient spectra of acetonitrile was determined to be 180 fs. All the transient spectra presented in this paper are GVD corrected according to the typical extrapolation method
+    <a href="#cit29" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       29
+      </span>
+     </sup>
+    </a>
+    (the temporal chirp over the white-light 350–800 nm range was about 400 fs). The characteristic times deduced from kinetics are obtained by fitting the data with the result of a multiexponential function convolved using a Gaussian pulse mimicking the pump–probe cross-correlation function (FWHM of 180 fs).
+   </p>
+   <h3 id="sect412">
+    <span class="b_heading">
+     Theoretical calculations
+    </span>
+   </h3>
+   <span>
+    All the calculations have been performed by using the Gaussian 09 package.
+    <a href="#cit30" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       30
+      </span>
+     </sup>
+    </a>
+    The density functional theory (DFT) and time dependent DFT (TD-DFT) calculations have been carried out to model ground-state (GS) and excited-state (ES) properties, respectively. In the course of the geometry optimization, we used the ωB97XD range-separated hybrid (RSH) functional combined with the 6-31G(d) atomic basis set. In contrast to the conventional hybrid functional, the RSH is known to avoid inconsistencies for ES geometries.
+    <a href="#cit9" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       9
+      </span>
+     </sup>
+    </a>
+    For all the optimized structures, vibrational frequencies were computed to ensure that the geometries correspond to true minima of the potential energy surfaces. All the geometry optimizations have been carried out in CHCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    , applying the Polarizable Continuum Model (PCM)
+    <a href="#cit31" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       31
+      </span>
+     </sup>
+    </a>
+    to quantify the impact of the environment. The GS and ES geometry optimizations have been carried out in the equilibrium limit using the linear-response (LR) PCM scheme. For the GS, the transition state (TS) searched for both DTE and DTE-m5 molecules has been performed using the Synchronous Transit-Guided Quasi-Newton (QST3) method.
+    <a href="#cit32" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       32
+      </span>
+     </sup>
+    </a>
+    For the lowest triplet state exploration (T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    ), we have used the unrestricted formalism and systematically checked the spin-contamination.
+   </span>
+   <p class="otherpara">
+    The optical properties have been determined using vertical TD-DFT calculations computed by the LR-PCM scheme in its non-equilibrium limit. We have compared the results obtained using two different computational strategies namely the ωB97XD/6-31G(d) method that is used in the course of geometry optimizations and the CAM-B3LYP/6-311+G(2d,p) methodology. The latter scheme is actually known to reproduce accurately the observed absorption wavelengths of dithienylethenes.
+    <a href="#cit14" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       14
+      </span>
+     </sup>
+    </a>
+    For the CF isomer, we have obtained a maximum absorbance wavelength of 502 nm with ωB97XD/6-31G(d) and 526 nm with CAM-B3LYP/6-311+G(2d,p) which, respectively, leads to an error of +0.33 eV and +0.22 eV if we compare with experimental measurements (575 nm, see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ). We have thus decided to rely on the CAM-B3LYP/6-311+G(2d,p) strategy to determine the spectroscopic parameters.
+   </p>
+   <div class="table_caption">
+    <b>
+     Table 1
+    </b>
+    <span id="tab1">
+     Wavelength of maximum absorbance for OF and CF (in chloroform) compared with PCM-TDDFT calculations for DTE and DTE-m5. Experimental quantum yields are displayed
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" colspan="2" rowspan="2" valign="bottom">
+      </th>
+      <th align="left" class="border_black" colspan="2" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sup>
+         max
+        </sup>
+       </small>
+       <small>
+        <sub>
+         abs
+        </sub>
+       </small>
+       (nm)
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       Quantum yields
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       OF
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       CF
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Cyclization
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Reversion
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Triplet
+      </th>
+     </tr>
+    </thead>
+    <tbody align="left">
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       DTE
+      </td>
+      <td valign="top">
+       Exp
+      </td>
+      <td valign="top">
+       273
+      </td>
+      <td align="char" char="." valign="top">
+       575
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       0.46
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       0.015
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       0.4
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       Theo
+      </td>
+      <td valign="top">
+       266 (AP) 267 (P)
+      </td>
+      <td align="char" char="." valign="top">
+       526
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       DTE-m5
+      </td>
+      <td valign="top">
+       Exp
+      </td>
+      <td valign="top">
+       289
+      </td>
+      <td align="char" char="." valign="top">
+       580
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       0.36
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       0.015
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       0.55
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       Theo
+      </td>
+      <td valign="top">
+       271 (AP) 278 (P)
+      </td>
+      <td align="char" char="." valign="top">
+       513
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <h2 id="sect475">
+    <span class="a_heading">
+     Results and discussion
+    </span>
+   </h2>
+   <span>
+    Our goal is to obtain a deep understanding of the photoreactivity of DTE and bridged analog DTE-m5 with the special challenge of distinguishing between the contributions coming from the P and AP conformers as we did for 1,2-dicyano[2,
+    <span class="italic">
+     n
+    </span>
+    ]metacyclophanene
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    and inverse pentafluoro-dithienylethene.
+    <a href="#cit9" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       9,33
+      </span>
+     </sup>
+    </a>
+    As a matter of fact, we track some new pathways for the photocyclization with special interest on the triplet state suggested by Herder
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit4" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       4
+      </span>
+     </sup>
+    </a>
+    To do so, we first assess the exact proportion of P and AP conformers for both molecules using
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H-NMR measurements. Concerning respective optical properties, absorption spectra were analyzed with the aid of TD-DFT calculations. Finally, the excited state dynamics were investigated using distinct time-resolved spectroscopy setups for probing singlet (femtosecond laser setup) and triplet photophysics (nanosecond laser-flash photolysis). For the first time, we used the multivariate curve resolution alternating least squares (MCR-ALS) method to obtain the pure spectrum of the triplet and singlet species of both AP and P conformers.
+   </span>
+   <h3 id="sect484">
+    <span class="b_heading">
+     Basic properties of DTE series
+    </span>
+   </h3>
+   <span>
+    First of all, it is worth reminding that the P
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    AP ratio of DTE has been unambiguously determined based on
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H-NMR measurements to be 52
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    48 at ambient temperature (in CDCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    )
+    <a href="#cit23" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       23
+      </span>
+     </sup>
+    </a>
+    in reasonable accordance with the Boltzmann populations (67
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    33), calculated from the Gibbs free energies obtained at the PCM-ωB97XD/6-31G(d) level. For DTE-m5, similar
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H-NMR measurements give a 60
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    40 ratio (see Fig. S1, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). One can note that the decrease in photocyclization yield from 0.46 to 0.36 (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ) parallels the decrease of AP population from 48 to 40%. Clearly, we failed to reduce significantly the proportion of the AP conformer. However studying DTE-m5 is still of interest as we will see later. Anyhow, the vertical excitations responsible for OF spectra considering the existence of AP/P conformers are worth investigating as we did for inverse dithenylethenes.
+    <a href="#cit14" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       14
+      </span>
+     </sup>
+    </a>
+    Note that previous TD-DFT calculations have been done by Morrison
+    <span class="italic">
+     et al.
+    </span>
+    ,
+    <a href="#cit12a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       12a
+      </span>
+     </sup>
+    </a>
+    with the moderate B3LYP/6-31G(d) level of calculation focusing on the AP conformer, the only one present in the single crystal phase. As displayed in
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    , it is important to highlight that theoretical absorption spectra are merely similar with the maximum at 266 nm and 267 nm for AP and P, respectively. For both conformers, this band arises from π−π* electronic excitations where the involved occupied and unoccupied π orbitals are localized on the phenyl-thienyl lateral chains (see, in the ESI,
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    Tables S18 and S20 for the description of the electronic excitations and Fig. S19 and S21 for a representation of the molecular orbitals).
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig1">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-f1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f1.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 1
+       </b>
+       <span id="fig1">
+        <span class="graphic_title">
+         Comparison of experimental absorption spectra (red line) of DTE (left) and DTE-m5 (right) using PCM(CHCl
+         <small>
+          <sub>
+           3
+          </sub>
+         </small>
+         )-TD-CAM-B3LYP/6-311+G(2d,p) calculations for AP, P and CF (dashed line). Spectra are obtained after convoluting by the 0.33 eV FWHM Gaussian function.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    After adding the polyether chain (DTE-m5), the maximum of the absorption band shifted slightly compared to DTE (16 nm experimental shift). As a matter of fact, TD-DFT calculations show that there is no modification in the FC states as compared to DTE for the P conformer. In contrast, for the AP conformer, there is an inversion of the two quasi-degenerated S
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    and S
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    states and a blue shift of the S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    → S
+    <small>
+     <sub>
+      4
+     </sub>
+    </small>
+    electronic transition. This modification arises from the constraint imposed by the polyether chain which increases the distance between the two reactive carbon atoms, 3.78 Å for DTE and 3.89 Å for DTE-m5 (Tables S15 and S17, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). This structural modification has an impact on the electronic properties as shown by the representation of the first unoccupied molecular orbitals in Fig. S19 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ), which should lead to a modification of the AP conformer photoreactivity. For both DTE and DTE-m5, it is worth noting that for the AP isomers, due to the multi-state nature of the low-lying singlet excited states along the photocyclisation pathway,
+    <a href="#cit13" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       13
+      </span>
+     </sup>
+    </a>
+    it was not possible to investigate the topology of the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    excited state using TD-DFT.
+   </p>
+   <p class="otherpara">
+    The analysis of CF spectra is straightforward and strictly similar for both molecules. For DTE the visible band of CF peaking at 575 nm is assigned to S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    → S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    excitation while the UV band peaking at 373 nm is related to the S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    → S
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    transition. For both compounds, these two bands arise from π−π* electronic excitations as shown by TD-DFT and orbital analysis presented in the ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    (Fig. S19–S21). As a matter of fact, due to the inefficient constraint on CF geometry, we do not expect a change in the photophysics of both molecules. By the way, photoreversion yields (0.015) are strictly similar for both molecules.
+   </p>
+   <h3 id="sect517">
+    <span class="b_heading">
+     Photoreactivity of triplet species (microsecond regime)
+    </span>
+   </h3>
+   <span>
+    Apart from one spectrum reported by Pontecorvo
+    <span class="italic">
+     et al.
+    </span>
+    ,
+    <a href="#cit10a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10a
+      </span>
+     </sup>
+    </a>
+    a careful investigation of the photophysics of DTE in the microsecond regime has never been reported. Although the distinct vibrational signatures of AP and P conformers have been obtained,
+    <a href="#cit10a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10a
+      </span>
+     </sup>
+    </a>
+    the electronic spectra of the various excited states are still missing. The transient absorption spectra of DTE were recorded in the 350–700 nm spectral range, within the 0.2–180 μs time window after laser excitation at 355 nm and are shown in
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    . At 0.2 μs, the transient signal is almost similar to the CF absorption spectra (two absorption bands located near 350 and 570 nm) with a very weak additional transient band peaking probably near 450 nm and decaying within two steps. First within the 0.2–6 μs time window, spectral evolution shows a subsequent decrease in the 440–450 nm range while during the 9–180 μs time domain, the decrease is so weak that it is difficult to notice any characteristic band. Finally, after 180 μs, all the decaying processes are completed, letting appear the CF spectra (see photostationary state (PSS) spectra; black dashed curve). Note that strictly similar transient data are obtained for DTE-m5 (see Fig. S2 in the ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). Decay profiles for selected wavelengths are presented in
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3
+    </a>
+    . As seen in
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3a
+    </a>
+    , the transient kinetics (blue curve at 440 nm) is well-fitted with a biexponential function with decay times of 2.5 μs (80%) and 25 μs (20%) (data reported in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ). After the addition of oxygen to solution, both decays are totally quenched, which suggests that both transient species are probably triplet states that we denoted by T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    and T
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    . Unlike the DTE molecule, the bridged DTE-m5 (
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3b
+    </a>
+    ) molecule kinetics was fitted by a tri-exponential function with decay times of 1.7 μs (35%), 11.5 μs (55%) and 43 μs (10%). Surprisingly, the three decay times were totally quenched by oxygen but the hypothesis of three triplet species is hard to believe. So, the nature of this additional species denoted species X as well as T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    and T
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    has to be confirmed. To do so, we undertook a Stern–Volmer analysis using 2,5-dimethyl-2,4-hexadiene as a quencher. As seen in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4a and b
+    </a>
+    , for the two molecules, the observed decay rate constants
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sup>
+      exp
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (species T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    ) and
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sup>
+      exp
+     </sup>
+    </small>
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (species T
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ) at 440 nm depend linearly on the quencher concentration according to the Stern–Volmer equation:
+    <table>
+     <td class="leftEqn">
+     </td>
+     <tr>
+      <td class="eqn">
+       <span id="eqn2">
+       </span>
+       <span id="eqn2">
+        <span class="italic">
+         k
+        </span>
+        <small>
+         <sup>
+          exp
+         </sup>
+        </small>
+        <small>
+         <sub>
+          <span class="italic">
+           n
+          </span>
+         </sub>
+        </small>
+        =
+        <span class="italic">
+         k
+        </span>
+        <small>
+         <sup>
+          0
+         </sup>
+        </small>
+        <small>
+         <sub>
+          <span class="italic">
+           n
+          </span>
+         </sub>
+        </small>
+        +
+        <span class="italic">
+         k
+        </span>
+        <small>
+         <sup>
+          Q
+         </sup>
+        </small>
+        <small>
+         <sub>
+          <span class="italic">
+           n
+          </span>
+         </sub>
+        </small>
+        [Q]
+        <span class="italic">
+         n
+        </span>
+        = 1, 2
+       </span>
+      </td>
+      <td class="rightEqn">
+       (2)
+      </td>
+     </tr>
+    </table>
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig2">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-f2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f2.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 2
+       </b>
+       <span id="fig2">
+        <span class="graphic_title">
+         (a) Microsecond time-resolved spectra of DTE in chloroform using 355 nm excitation. (b) Spectra of triplet state AP and P conformers, respectively, obtained by the MCR-ALS approach.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig3">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f3_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-f3.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f3.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 3
+       </b>
+       <span id="fig3">
+        <span class="graphic_title">
+         Time profiles of the transient absorbance of DTE (a) and DTE-m5 (b) in chloroform at 440 nm and 580 nm, respectively. Solutions were initially purged with N
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         gas (blue line) or O
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         gas (red line).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="table_caption">
+    <b>
+     Table 2
+    </b>
+    <span id="tab2">
+     Lifetimes deduced from multiexponential fitting of transient kinetics obtained from the laser-flash photolysis experiment (the relative contributions are given in parentheses) for DTE and DTE-m5. Quenching rate constants of T
+     <small>
+      <sub>
+       1
+      </sub>
+     </small>
+     , T
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     and CF species are shown (see the text)
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       Lifetimes (μs)
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       Quenching rate (10
+       <small>
+        <sup>
+         8
+        </sup>
+       </small>
+       M
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       s
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       )
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         2
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         3
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        k
+       </span>
+       <small>
+        <sup>
+         Q
+        </sup>
+       </small>
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        k
+       </span>
+       <small>
+        <sup>
+         Q
+        </sup>
+       </small>
+       <small>
+        <sub>
+         2
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        k
+       </span>
+       <small>
+        <sup>
+         0
+        </sup>
+       </small>
+       <small>
+        <sub>
+         CF
+        </sub>
+       </small>
+      </th>
+     </tr>
+    </thead>
+    <tbody align="left">
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       DTE
+      </td>
+      <td valign="top">
+       2.55(3)
+      </td>
+      <td valign="top">
+       25.5(4)
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td align="char" char="." valign="top">
+       0.10(4)
+      </td>
+      <td rowspan="2" valign="top">
+       2.23(1)
+      </td>
+      <td rowspan="2" valign="top">
+       —
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       (80%)
+      </td>
+      <td valign="top">
+       (20%)
+      </td>
+      <td valign="top">
+      </td>
+      <td valign="top">
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       DTE-m5
+      </td>
+      <td valign="top">
+       1.65(4)
+      </td>
+      <td valign="top">
+       11.6(3)
+      </td>
+      <td valign="top">
+       43(1)
+      </td>
+      <td align="char" char="." rowspan="2" valign="top">
+       1.17(6)
+      </td>
+      <td rowspan="2" valign="top">
+       3.92(1)
+      </td>
+      <td rowspan="2" valign="top">
+       0.036(7)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       (35%)
+      </td>
+      <td valign="top">
+       (55%)
+      </td>
+      <td valign="top">
+       (10%)
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig4">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f4_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-f4.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f4.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 4
+       </b>
+       <span id="fig4">
+        <span class="graphic_title">
+         Stern–Volmer plots concerning DTE (a) and DTE-m5 (b), respectively: experimental decay
+         <span class="italic">
+          k
+         </span>
+         <small>
+          <sub>
+           exp
+          </sub>
+         </small>
+         of two triplet states obtained from kinetics with the 440 nm wavelength function of quencher concentration [Q]. (c) Calculated ratio (
+         <a href="#eqn3" title="">
+          eqn (3)
+         </a>
+         ) obtained from long time plateau absorbance of CF with the 580 nm function of the inverse of quencher concentration.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Both intrinsic decay
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sup>
+      0
+     </sup>
+    </small>
+    <small>
+     <sub>
+      <span class="italic">
+       n
+      </span>
+     </sub>
+    </small>
+    and quenching constant
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sup>
+      Q
+     </sup>
+    </small>
+    <small>
+     <sub>
+      <span class="italic">
+       n
+      </span>
+     </sub>
+    </small>
+    values (
+    <span class="italic">
+     n
+    </span>
+    = 1, 2) are given in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    . For both molecules, significant quenching effects induced by the diene give the final evidence for the triplet nature of both transient T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    and T
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    species. Reversely, the species
+    <span class="italic">
+     X
+    </span>
+    is not quenched by the diene and observed only for DTE-m5, which is probably a conformational process induced by the polyether chain. Note that we exclude the possible photodegradation of the sample as proved by unchanged stationary OF spectra after successive quencher addition (see Fig. S5, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). The non-dependence on the oxygen adduct is still not clear, but the statistical weight of
+    <span class="italic">
+     X
+    </span>
+    being around 10% we will neglect this contribution in the following. By the way, as seen in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    , it is worth noticing that the quenching rate of T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sup>
+      Q
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    ) is one order of magnitude higher compared to the T
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    one (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sup>
+      Q
+     </sup>
+    </small>
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ), such a difference is in accordance with the distinct molecular conformations of the AP and P triplet conformers. Geometries of triplet species will be commented later with TD-DFT support. However at this point, we are still not able to assign definitively both transient species T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    and T
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    to the conformer triplet
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    P. Note that we excluded the possible existence of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    CF because we never detected such species after
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    CF visible excitation (see below). As a matter of fact, the photoreactivity of such triplets toward CF species can help for such unambiguous assignment.
+   </p>
+   <p class="otherpara">
+    As recently reported by several groups, the cyclization reaction of dithienylethene can take place at the triplet manifold either based on intermolecular energy transfer in the dyad system
+    <a href="#cit16a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       16a
+      </span>
+     </sup>
+    </a>
+    or triplet sensitization.
+    <a href="#cit16c" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       16c
+      </span>
+     </sup>
+    </a>
+    Specifically for DTE, Pontecorvo
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit10a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10a
+      </span>
+     </sup>
+    </a>
+    have reported that the triplet production is nascent from the P conformer. To the best of our knowledge, we are the first group to report on the two triplet states. We have investigated their photoreactivity paying attention to the CF plateau variation at 580 nm upon quencher addition (few percents of photocyclization reaction can be expected to come from the triplet manifold). First, upon comparing the oxygen effect for both molecules (CF plateau at 580 nm in
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3a and b
+    </a>
+    ), one can immediately notice that the final quantity is not changing for DTE whereas a 10% diminution is reported for DTE-m5. This result gives evidence for a small part of the CF population formed by
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP as a precursor but we still need to assign the latter one to either the T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    or the T
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    states. Then, the Stern–Volmer dependency on the DTE-m5 CF signal upon quencher addition is analyzed: the intensity of the long time absorbance plateau at 580 nm in the presence of the quencher (Δ
+    <span class="italic">
+     A
+    </span>
+    <small>
+     <sup>
+      Q
+     </sup>
+    </small>
+    <small>
+     <sub>
+      ∞
+     </sub>
+    </small>
+    ) is expected to vary according to
+    <a href="#eqn3" title="">
+     eqn (3)
+    </a>
+    :
+   </p>
+   <table>
+    <td class="leftEqn">
+    </td>
+    <tr>
+     <td class="eqn">
+      <span id="eqn3">
+      </span>
+      <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-t2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+       <img alt="image file: c6cp03471c-t2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-t2.gif"/>
+      </a>
+     </td>
+     <td class="rightEqn">
+      (3)
+     </td>
+    </tr>
+   </table>
+   where
+   <span class="italic">
+    A
+   </span>
+   <small>
+    <sup>
+     0
+    </sup>
+   </small>
+   <small>
+    <sub>
+     ∞
+    </sub>
+   </small>
+   is the final absorbance plateau at 580 nm in the absence of the quencher (this equation has been established according to some approximations presented in the ESI
+   <a href="#fn1" title="Select to navigate to footnote">
+    †
+   </a>
+   ). On the one hand, as seen in
+   <a href="#imgfig4" title="Select to navigate to figure">
+    Fig. 4c
+   </a>
+   , a linear correlation is indeed observed according to
+   <a href="#eqn3" title="">
+    eqn (3)
+   </a>
+   with a slope equal to 0.038. On the other hand the two ratios
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sup>
+     0
+    </sup>
+   </small>
+   <small>
+    <sub>
+     <span class="italic">
+      n
+     </span>
+    </sub>
+   </small>
+   /
+   <span class="italic">
+    k
+   </span>
+   <small>
+    <sup>
+     Q
+    </sup>
+   </small>
+   <small>
+    <sub>
+     <span class="italic">
+      n
+     </span>
+    </sub>
+   </small>
+   computed from the quenching data (
+   <a href="#eqn1" title="">
+    eqn (1)
+   </a>
+   ) of T
+   <small>
+    <sub>
+     1
+    </sub>
+   </small>
+   and T
+   <small>
+    <sub>
+     2
+    </sub>
+   </small>
+   (see
+   <a href="#tab2" title="Select to navigate to table">
+    Table 2
+   </a>
+   ) are equal respectively to 0.014 and 0.034 which allows assigning T
+   <small>
+    <sub>
+     2
+    </sub>
+   </small>
+   to
+   <small>
+    <sup>
+     3
+    </sup>
+   </small>
+   AP. At present, the assignment is not ambiguous anymore: T
+   <small>
+    <sub>
+     2
+    </sub>
+   </small>
+   species is noted as the only triplet conformer able to be cyclized,
+   <span class="italic">
+    i.e.
+   </span>
+   <small>
+    <sup>
+     3
+    </sup>
+   </small>
+   AP and logically T
+   <small>
+    <sub>
+     1
+    </sub>
+   </small>
+   have to be denoted as
+   <small>
+    <sup>
+     3
+    </sup>
+   </small>
+   P. Furthermore, unlike DTE, we reported here for DTE-m5, a new photocyclization pathway
+   <span class="italic">
+    via
+   </span>
+   the triplet state as compared to the expected classical singlet pathway. The additional molecular constraint due to the polyether chain must be probably responsible for such an effect but we will discuss this point later. Finally, to appreciate in a better way the singularities of both the triplets, we presented in
+   <a href="#imgfig2" title="Select to navigate to figure">
+    Fig. 2b
+   </a>
+   MCR-ALS decomposition (see Fig. S11 and S12, ESI
+   <a href="#fn1" title="Select to navigate to footnote">
+    †
+   </a>
+   ) of transient data to distinguish
+   <small>
+    <sup>
+     3
+    </sup>
+   </small>
+   P and
+   <small>
+    <sup>
+     3
+    </sup>
+   </small>
+   AP spectral signatures. The pure spectrum of
+   <small>
+    <sup>
+     3
+    </sup>
+   </small>
+   P is intense and peaking near 460 nm whereas the
+   <small>
+    <sup>
+     3
+    </sup>
+   </small>
+   AP spectrum is weaker and wider without a noticeable maximum.
+   <p class="otherpara">
+    To rationalize the new photocyclization pathway observed only for DTE-m5
+    <span class="italic">
+     via
+    </span>
+    the triplet state (
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP → CF), a TD-DFT computational study has been performed for both molecules with optimized
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP structures. The results are displayed in an energy diagram in
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    , comparing the ground state AP (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    ) and the lowest triplet state
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP energy
+    <span class="italic">
+     versus
+    </span>
+    the CC distance between reactive carbons
+    <span class="italic">
+     R
+    </span>
+    <small>
+     <sub>
+      CC
+     </sub>
+    </small>
+    . As immediately seen in this figure, a drastic structure effect is noticed comparing the Δ
+    <span class="italic">
+     R
+    </span>
+    <small>
+     <sub>
+      CC
+     </sub>
+    </small>
+    difference between the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP and AP (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    ) minima: the moderate decrease of 0.11 Å for DTE contrasts with the substantial decrease of 0.73 Å for DTE-m5 (see
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    ). As evidence, rationalization of such an effect is the key point of this study. Clearly, this structure effect is not due to a change of MO. The electronic structure of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP is not modified by the additional bridge as shown by the analysis of the singly occupied molecular orbitals and spin density (see Fig. S18 and S19, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). Reversely, close inspection of DFT structures is much more instructive.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig5">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f5_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-f5.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f5.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 5
+       </b>
+       <span id="fig5">
+        <span class="graphic_title">
+         Topologic points within S
+         <small>
+          <sub>
+           0
+          </sub>
+         </small>
+         and T
+         <small>
+          <sub>
+           1
+          </sub>
+         </small>
+         manifolds calculated at the PCM(CHCl
+         <small>
+          <sub>
+           3
+          </sub>
+         </small>
+         )-uCAM-B3LYP/6-311+G(2d,p) level for the geometries optimized with PCM(CHCl
+         <small>
+          <sub>
+           3
+          </sub>
+         </small>
+         )-ωB97XD/6-31G(d). The lines are the schematic representation of the potential energy profiles for DTE (red line) and DTE-m5 (black line). The variation of the main geometrical parameters along the reaction coordinate can be found in the ESI.
+         <a href="#fn1" title="Select to navigate to footnote">
+          †
+         </a>
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Indeed, one can first notice a stretching of the central double bond of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP as compared to the AP (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    ) structure. For DTE (DTE-m5) this distance is 1.346 Å (1.347 Å) for AP (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    ) and 1.487 Å (1.478 Å) for
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP. The double bond character of the central C–C bond is thus lost for the AP triplet minimum as already shown by Indelli and coworkers
+    <a href="#cit16a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       16a
+      </span>
+     </sup>
+    </a>
+    for diarylethene models, namely the 1,2-bis(3-thienyl)ethene compound (CASSCF calculations) and the 1,2-bis(2-methylbenzothiophene-3-yl) maleide molecule (DFT calculations). As a consequence, the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP geometry of DTE-m5 has to face two constraints, (i) the stretching of the C
+    <img alt="[double bond, length as m-dash]" class="charmap" src="http://www.rsc.org/images/entities/char_e001.gif"/>
+    C central bond and (ii) the additional constraint imposed by the polyether bridge, which brings the two phenyl-thienyl chains closer. The competition between these two constraints thus leads to a compression of the DTE core and to a decrease of the distance between the two reactive carbon atoms which rationalize the structure effect reported above. Finally, still closer inspection of the triplet and singlet potential energy surfaces (PESs) shows that this structural modification may have a strong impact on the cyclization reaction. For
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP, the plateau leading to the transition state TS
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    becomes less wide for DTE-m5 (0.73 Å) as compared to DTE (1.24 Å) and thus the system should more efficiently reach the transition state region which finally brought a robust explanation for the second pathway opened by the structural modification.
+   </p>
+   <h3 id="sect772">
+    <span class="b_heading">
+     Reconsidering the photocyclization process (femtosecond regime)
+    </span>
+   </h3>
+   <span>
+    The discovery of both
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    P implies to review the post-excitation mechanism of the OF published in the past with a special focus on the two expected ISC processes responsible for the formation of these two triplets. Despite the difference observed in the microsecond regime between DTE and DTE-m5, the behavior of both molecules is similar in the femtosecond regime. In the following, we present only the femtosecond results obtained for DTE. The major results obtained for the DTE-m5 molecule are described in the ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    (see Fig. S6).
+   </span>
+   <p class="otherpara">
+    Transient absorption spectra recorded for DTE (in chloroform) following 320 nm laser excitation within four time windows (−0.22–0.10, 0.16–0.78, 1–3 and 5–300 ps) are shown as parts a, b, c and d, respectively in
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    (350–700 nm spectral range). Global fitting of transient signals with four-exponential functions convoluted using a Gaussian (see Fig. S7 and S8, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) and final characteristic times are gathered together in
+    <a href="#tab3" title="Select to navigate to table">
+     Table 3
+    </a>
+    . In the first panel, just after the laser excitation of the OF (uncolored solution), one noticed the rise of a major excited state absorption (ESA) with two distinguishable maxima peaking at 360 nm and 410 nm. One has to take into consideration that both AP and P are in similar proportion (∼50%) and possess identical absorption spectra (see TD-DFT results above) which implies that both conformers have to contribute to this native ESA. By anticipation, we assign the 360 nm feature to the FC singlet state absorption of the AP conformer,
+    <span class="italic">
+     i.e.
+    </span>
+    S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (AP), while the 410 nm shoulder is related to the P conformer,
+    <span class="italic">
+     i.e.
+    </span>
+    S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (P). The analysis of the 0.16–0.78 ps temporal window is characterized by two important spectral features: (i) the ultrafast decrease of the S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (AP) ESA band at 360 nm concomitant with the rise of a new ESA visible band within 500–700 nm range which coincides with the typical CF absorption (see the black dashed curve); (ii) the S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (P) is barely constant. Both observations are consistent with an ultrafast ring closing reaction proceeding directly from the FC region while the P conformer has not initiated its own deactivation process (constant signal). As seen in
+    <a href="#tab3" title="Select to navigate to table">
+     Table 3
+    </a>
+    , the characteristic time for this photocyclization process is about 100 fs which is lower as compared to the 300 fs, obtained by Pontecorvo
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit10a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10a
+      </span>
+     </sup>
+    </a>
+    In the past, such a short lifetime has been already reported for bridged diarylethene (120 fs),
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    for inverse dithienylethene (100 fs)
+    <a href="#cit9" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       9
+      </span>
+     </sup>
+    </a>
+    and for photochromic diarylethene derivatives, 1,2-bis(2-methyl-3-benzothienyl)perfluorocyclopentene (BT), in nonpolar alkane solutions (450 fs).
+    <a href="#cit10b" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10b
+      </span>
+     </sup>
+    </a>
+    Note that earlier publications dealing with diarylethene reported photocyclization time longer than 1 ps which is probably overestimated.
+    <a href="#cit34" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       34
+      </span>
+     </sup>
+    </a>
+    With anticipation, apart from the CF ESA, it is worth considering that the rise of the new ESA band also contains a contribution from the expected relaxed singlet state S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (AP). Indeed such a singlet state being the precursor of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP according to the ISC process, it might appear during FC state relaxation; in other words, we propose that photocyclization and vibrational relaxation into the relaxed state proceed along two parallel (and competitive) pathways. The overall photocyclization process is presented in
+    <a href="#imgfig8" title="Select to navigate to figure">
+     Fig. 8
+    </a>
+    . For times longer than 1 ps, one observes merely distinct decaying processes. Indeed, in the third panel (until 3 ps) a short decrease of ESA signals around 480 nm is noticed while in the fourth panel (5–300 ps) this signal corresponding to the maximum of triplet ESA is invariant during the double exponential decay of ESA bands near 425 and 560 nm. Logically, reminding that the ISC process will be the terminal one during the picosecond regime, we assigned the shortest decay with a characteristic time of 200 fs to be the IC relaxation process S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (P) → S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (P) while 1 ps and 55 ps times were assigned to the ISC processes giving rise to the two triplet states,
+    <span class="italic">
+     i.e.
+    </span>
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    P and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP as shown in
+    <a href="#imgfig8" title="Select to navigate to figure">
+     Fig. 8
+    </a>
+    . Due to spectral and temporal overlaps, the unambiguous distinction between those processes is not straightforward but referring to previous nanosecond laser-flash photolysis experiments, the main signal can be assigned to the non-reactive conformer. As a consequence, we decided to assign the 55 ps time (in chloroform) to S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (P) →
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    P process in accordance with the 23 ps (in cyclohexane solvent) reported by Pontecorvo
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit10a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       10a
+      </span>
+     </sup>
+    </a>
+    While the 1 ps lifetime has to be connected with the S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (AP) →
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    AP process.
+   </p>
+   <div class="table_caption">
+    <b>
+     Table 3
+    </b>
+    <span id="tab3">
+     Characteristic times deduced from the global fitting method applied to femtosecond transient absorption data for DTE and DTE-m5 open and close form excitations, respectively
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+      </th>
+      <th align="left" class="border_black" colspan="4" valign="bottom">
+       Open form excitation
+      </th>
+      <th align="left" class="border_black" colspan="2" valign="bottom">
+       Close form excitation
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+       (ps)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         2
+        </sub>
+       </small>
+       (ps)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         3
+        </sub>
+       </small>
+       (ps)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         4
+        </sub>
+       </small>
+       (ps)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+       (ps)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       <small>
+        <sub>
+         2
+        </sub>
+       </small>
+       (ps)
+      </th>
+     </tr>
+    </thead>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       DTE
+      </td>
+      <td align="char" char="." valign="top">
+       0.10(2)
+      </td>
+      <td align="char" char="." valign="top">
+       0.20(5)
+      </td>
+      <td align="char" char="." valign="top">
+       1.0(2)
+      </td>
+      <td align="char" char="." valign="top">
+       55(8)
+      </td>
+      <td align="char" char="." valign="top">
+       0.12(8)
+      </td>
+      <td align="char" char="." valign="top">
+       6.0(5)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       DTE-m5
+      </td>
+      <td align="char" char="." valign="top">
+       0.19(1)
+      </td>
+      <td align="char" char="." valign="top">
+       0.40(2)
+      </td>
+      <td align="char" char="." valign="top">
+       1.3(1)
+      </td>
+      <td align="char" char="." valign="top">
+       70(1)
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td valign="top">
+       —
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    Distinguishing the spectral signature of FC states from relaxed singlet and triplet states for AP, P and CF species is a challenging task, because it represents at least 7 species to resolve. We address this issue with the aid of MCR-ALS decomposition (see Document S13 and Fig. S14, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) of the entire transient dataset presented in
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    and following the same strategy we applied in the past for resolving the photophysics of benzophenone
+    <a href="#cit35" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       35
+      </span>
+     </sup>
+    </a>
+    and solvatochromic betaine pyridinium.
+    <a href="#cit36" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       36
+      </span>
+     </sup>
+    </a>
+    The results of the decomposition, given in the right side panel of
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    , consist of six species labelled ① to ⑥ and the associated concentration profiles are presented in Fig. S14 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). As a matter of fact, our purpose is to assign the MCR-ALS spectral features to the species discussed just above.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig6">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f6_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-f6.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f6.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 6
+       </b>
+       <span id="fig6">
+        <span class="graphic_title">
+         Subpicosecond time-resolved absorption spectra of DTE (left) in chloroform using 320 nm excitation wavelength (all spectra are corrected from the GVD), and spectra (right) of the 6 excited state species of DTE identified by MCR-ALS analysis.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    As seen in Fig. S14 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ), the two first species ① and ② appear very quickly with a very similar time profile. The species ① presents a maximum around 360 nm which corroborates the S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (AP) assignment. Similarly, the species ② presents a maximum at 410 nm related as a consequence to the P conformer S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (P). After 0.43 ps, two species (③ and ④) appear and decrease over time. These species correspond to the relaxed singlet state of the two conformers. The species ⑤ appears in the beginning and show afterward quasi-constant concentration. This species shows spectra with characteristic features of the closed form (CF) and therefore has been attributed to this species. The last species ⑥ appears continuously and is the last one (with the closed form) still present after 300 ps. As evidence, this species (in black in
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    ) represents the blend of the triplet conformers.
+   </p>
+   <p class="otherpara">
+    To the best of our knowledge, we are the first group to present the FC and relaxed singlet state spectra for each conformer of dithienylethene. It is striking to note that FC (②) and relax state spectra (③) are very similar for the P conformer with a maximum near 430 nm. Reversely, two different spectra are obtained for AP conformers comparing ① and ④. In the case of the non-reactive P conformer, a possible explanation is given by the analysis of the calculated optimized geometry of the P conformer in the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    state which presents a similar geometry to the FC one and which probably induces similar FC factors during S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    → S
+    <small>
+     <sub>
+      <span class="italic">
+       n
+      </span>
+     </sub>
+    </small>
+    transitions. For the AP conformer, we were not able to find the optimized S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    state due to wave function instabilities in the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (relax) region that is much far from the FC region. We however have to keep in mind that such results can be due to the “scale ambiguity” encountered during MCR-ALS decomposition (see the ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ).
+   </p>
+   <h3 id="sect909">
+    <span class="b_heading">
+     Photoreversion process: spectral signatures revealed
+    </span>
+   </h3>
+   <span>
+    To complete the study of DTE, transient absorption spectra have been recorded for a blue solution of CF of DTE (in chloroform) following 600 nm laser excitation which corresponds to S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    excitation (see TD-DFT results above). The data are presented in
+    <a href="#imgfig7" title="Select to navigate to figure">
+     Fig. 7
+    </a>
+    and the proposed mechanism in
+    <a href="#imgfig8" title="Select to navigate to figure">
+     Fig. 8
+    </a>
+    . Note that the laser perturbation, situated right in the middle of the detection region (and despite the use of a notch filter), was important in such a way that we just present a restricted spectral region between 400 and 560 nm. Only two temporal windows are necessary to describe the data. First, between 0 and 0.4 ps, an ESA band is rising and slowly shifting around 420 nm together with the formation of a negative band due to bleaching of the ground state. Then between 0.6 and 100 ps a double exponential decay is found with 120 fs and 6 ps characteristic times (
+    <a href="#tab3" title="Select to navigate to table">
+     Table 3
+    </a>
+    ) in total accordance with the data reported by Cassandra
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit37" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       37
+      </span>
+     </sup>
+    </a>
+    For shorter times (until ∼2 ps), one can notice the decay of the ESA band without ground state recovery (bleaching band is constant); then the ESA band decay continues concomitantly with ground state recovery. The interpretation is straightforward because only a two-step mechanism is required. First, one observes a decay of the FC state toward the relaxed state within a characteristic time of 120 fs S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (CF) → S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (CF) followed by an IC toward the CF ground state within 6 ps,
+    <span class="italic">
+     i.e.
+    </span>
+    S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (CF) → S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    (CF). In parallel with this main process, a small part of the electronic population within S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (AP) evolves toward a S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    /S
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    conical intersection in order for the photoreversion reaction to proceed within a characteristic time of 6 ps. Note that we do not succeed to detect the triplet CF species which probably confirms the hypothesis of the adiabatic pathway stipulated before. Finally, as a new result, we publish here, for the first time, the two spectral signatures of both FC and relaxed singlet states of CF.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig7">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f7_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-f7.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f7.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 7
+       </b>
+       <span id="fig7">
+        <span class="graphic_title">
+         Subpicosecond time-resolved absorption spectra (left) of DTE in chloroform using 600 nm excitation wavelengths (all spectra are corrected from the GVD) and spectroscopic evolution (right) of the two excited state species of DTE identified by MCR-ALS analysis.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig8">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f8_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp03471c-f8.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp03471c/c6cp03471c-f8.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 8
+       </b>
+       <span id="fig8">
+        <span class="graphic_title">
+         Possible photophysical scheme for (a) the photocyclization of DTE and (b) the photoreversion of the DTE CF.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h2 id="sect938">
+    <span class="a_heading">
+     Conclusion
+    </span>
+   </h2>
+   <span>
+    Both photocyclization and photoreversion processes of DTE and the novel bridged analog DTE-m5 have been investigated by state-of-the-art TD-DFT calculations and ultrafast spectroscopy supported by advanced chemometric data treatments. The overall findings of this study are schematized in
+    <a href="#imgfig8" title="Select to navigate to figure">
+     Fig. 8
+    </a>
+    . Concerning the photoreversion process, we basically confirm the findings of Cassandra
+    <span class="italic">
+     et al.
+    </span>
+    ,
+    <a href="#cit37" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       37
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     i.e.
+    </span>
+    a first ∼120 fs vibrational relaxation from S
+    <small>
+     <sup>
+      FC
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (CF) to S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (CF) followed by a 6 ps ring-opening reaction in competition with IC to the ground state. Such a low quantum yield of DTE can be explained by the necessity of the system to relax first toward S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (CF) before reaching the conical intersection.
+    <a href="#cit9" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       9
+      </span>
+     </sup>
+    </a>
+    As a new result, based on MCR-ALS decomposition, we reported for the first time two distinct spectra for FC and relaxed singlet species of the closed form. The reinvestigation of the photocyclization process has been much fruitful. As evidenced by quite similar spectral signatures, the photophysics of the excited P conformer is characterized by the fact that all excited states either singlet or triplet are located in a very narrow FC region. Starting from the FC region, the initial vibrational relaxation occurs within 200 fs while the subsequent relaxed singlet state gives rise to a triplet state with a high quantum yield (
+    <span class="italic">
+     ϕ
+    </span>
+    ∼ 0.4) according to the ISC process (competitive IC to the ground state is expected although not mentioned in
+    <a href="#imgfig8" title="Select to navigate to figure">
+     Fig. 8
+    </a>
+    ). Finally, typical triplet ISC occurs within ∼2.5 μs. Of course, the situation is drastically different for the AP conformer. From the FC region, the direct ring-closing reaction proceeds immediately within ∼100 fs passing through the appropriate CI. This ultrafast event in chloroform is worth comparing with the 5 ps value reported in the monocrystal;
+    <a href="#cit12b" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       12b
+      </span>
+     </sup>
+    </a>
+    probably, the solid phase constraints prevent the molecule from reaching the CI easily, making the process slower. Even if we were not able to locate computationally S
+    <small>
+     <sup>
+      rel
+     </sup>
+    </small>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    (AP), we succeeded in obtaining its distinct spectral signature compared to the FC one. To the best of our knowledge, we are the first group to report the ISC (∼1 ps) and subsequent decay (∼25 μs) of the triplet state of the AP conformer with a difficult-to-detect spectral signature. Furthermore, we demonstrated with the bridged DTE-m5 analog that applying a proper constraint on the triplet geometry brings the state close to the reactive topologic point. However, we assess the new photocyclization pathway to be less than 10%. Anyhow, this contribution will provide new light for the photochromism community who needs a photoswitch operating within triplet manifolds
+    <a href="#cit16a" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       16a
+      </span>
+     </sup>
+    </a>
+    or new insight into the photodegradation of diarylethene
+    <span class="italic">
+     via
+    </span>
+    the triplet state.
+    <a href="#cit4" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       4
+      </span>
+     </sup>
+    </a>
+    Optimizing the new photocyclization pathway by changing the length and/or the chemical nature of the bridge is now under investigation in our laboratories.
+   </span>
+   <h2 id="sect967">
+    <span class="a_heading">
+     Acknowledgements
+    </span>
+   </h2>
+   <span>
+    Chevreul Institute (FR 2638), Ministère de l'Enseignement Supérieur et de la Recherche, Région Nord–Pas de Calais and FEDER are acknowledged for supporting and funding this work. Also, this work was granted access to the HPC resources of CINES and IDRIS under the allocation x2016087623 made by GENCI (Grand Equipement National de Calcul Intensif).
+   </span>
+   <span id="sect969">
+    <h2 id="sect966">
+     <span class="a_heading">
+      Notes and references
+     </span>
+    </h2>
+   </span>
+   <ol type="1">
+    <li>
+     <span id="cit1">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit1a">
+       J. C. Crano and R. J. Guglielmetti,
+       <span class="italic">
+        Organic Photochromic and Thermochromic Compounds, Physicochemical Studies, Biological Applications, and Thermochromism
+       </span>
+       , Springer Science &amp; Business Media,  1999, vol. 2
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Organic%20Photochromic%20and%20Thermochromic%20Compounds,%20Physicochemical%20Studies,%20Biological%20Applications,%20and%20Thermochromism%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201999%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/1a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit1b">
+       B. L. Feringa,
+       <span class="italic">
+        Molecular switches
+       </span>
+       , Wiley Online Library,  2001
+       <a class="DOILink" href="http://dx.doi.org/10.1002/3527600329" target="_blank" title="DOI Link to resource 10.1002/3527600329">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/1b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit1c">
+       H. Dürr and H. Bouas-Laurent,
+       <span class="italic">
+        Photochromism: molecules and systems: molecules and systems
+       </span>
+       , Gulf Professional Publishing,  2003
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Photochromism:%20molecules%20and%20systems:%20molecules%20and%20systems%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202003%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/1c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit2">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit2a">
+       M. Irie,
+       <span class="italic">
+        Chem. Rev.
+       </span>
+       , 2000,
+       <span class="bold">
+        100
+       </span>
+       , 1683
+       <a class="DOILink" href="http://dx.doi.org/10.1021/cr980068l" target="_blank" title="DOI Link to resource 10.1021/cr980068l">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXjtVWiu7w%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=11777415%5Buid%5D" target="_blank" title="PubMed Link to resource 11777415">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/2a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit2b">
+       C. Joachim, J. K. Gimzewski and A. Aviram,
+       <span class="italic">
+        Nature
+       </span>
+       , 2000,
+       <span class="bold">
+        408
+       </span>
+       , 541
+       <a class="DOILink" href="http://dx.doi.org/10.1038/35046000" target="_blank" title="DOI Link to resource 10.1038/35046000">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXovFWrsr4%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=11117734%5Buid%5D" target="_blank" title="PubMed Link to resource 11117734">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/2b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit2c">
+       F. M. Raymo,
+       <span class="italic">
+        Adv. Mater.
+       </span>
+       , 2002,
+       <span class="bold">
+        14
+       </span>
+       , 401
+       <a class="DOILink" href="http://dx.doi.org/10.1002/1521-4095(20020318)14:6&lt;401::AID-ADMA401&gt;3.0.CO;2-F" target="_blank" title="DOI Link to resource 10.1002/1521-4095(20020318)14:6&lt;401::AID-ADMA401&gt;3.0.CO;2-F">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD38XisVKhsrg%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/2c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit2d">
+       V. Balzani, A. Credi and M. Venturi,
+       <span class="italic">
+        ChemPhysChem
+       </span>
+       , 2003,
+       <span class="bold">
+        4
+       </span>
+       , 49
+       <a class="DOILink" href="http://dx.doi.org/10.1002/cphc.200390007" target="_blank" title="DOI Link to resource 10.1002/cphc.200390007">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3sXntVCktA%253D%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=12596465%5Buid%5D" target="_blank" title="PubMed Link to resource 12596465">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/2d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit3">
+      M. Irie, T. Fulcaminato, K. Matsuda and S. Kobatake,
+      <span class="italic">
+       Chem. Rev.
+      </span>
+      , 2014,
+      <span class="bold">
+       114
+      </span>
+      , 12174
+      <a class="DOILink" href="http://dx.doi.org/10.1021/cr500249p" target="_blank" title="DOI Link to resource 10.1021/cr500249p">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXitFOgsrnJ" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25514509%5Buid%5D" target="_blank" title="PubMed Link to resource 25514509">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/3_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit4">
+      M. Herder, B. M. Schmidt, L. Grubert, M. Paetzel, J. Schwarz and S. Hecht,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2015,
+      <span class="bold">
+       137
+      </span>
+      , 2738
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja513027s" target="_blank" title="DOI Link to resource 10.1021/ja513027s">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXislGju70%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25679768%5Buid%5D" target="_blank" title="PubMed Link to resource 25679768">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/4_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit5">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit5a">
+       K. Uchida, E. Tsuchida, Y. Aoi, S. Nakamura and M. Irie,
+       <span class="italic">
+        Chem. Lett.
+       </span>
+       , 1999, 63
+       <a class="DOILink" href="http://dx.doi.org/10.1246/cl.1999.63" target="_blank" title="DOI Link to resource 10.1246/cl.1999.63">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXktFOkug%253D%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/5a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit5b">
+       M. Irie,
+       <span class="italic">
+        Chem. Rev.
+       </span>
+       , 2000,
+       <span class="bold">
+        100
+       </span>
+       , 1685
+       <a class="DOILink" href="http://dx.doi.org/10.1021/cr980069d" target="_blank" title="DOI Link to resource 10.1021/cr980069d">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXisFGitLc%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=11777416%5Buid%5D" target="_blank" title="PubMed Link to resource 11777416">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/5b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit5c">
+       K. Morimitsu, S. Kobatake and M. Irie,
+       <span class="italic">
+        Tetrahedron Lett.
+       </span>
+       , 2004,
+       <span class="bold">
+        45
+       </span>
+       , 1155
+       <a class="DOILink" href="http://dx.doi.org/10.1016/j.tetlet.2003.12.005" target="_blank" title="DOI Link to resource 10.1016/j.tetlet.2003.12.005">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2cXltFOgsQ%253D%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/5c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit6">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit6a">
+       S. Fukumoto, T. Nakashima and T. Kawai,
+       <span class="italic">
+        Eur. J. Org. Chem.
+       </span>
+       , 2011, 5047
+       <a class="DOILink" href="http://dx.doi.org/10.1002/ejoc.201100676" target="_blank" title="DOI Link to resource 10.1002/ejoc.201100676">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXptFKrsrY%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/6a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit6b">
+       S. Fukumoto, T. Nakashima and T. Kawai,
+       <span class="italic">
+        Angew. Chem., Int. Ed.
+       </span>
+       , 2011,
+       <span class="bold">
+        50
+       </span>
+       , 1565
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.201006844" target="_blank" title="DOI Link to resource 10.1002/anie.201006844">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXhslygsLw%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=21308905%5Buid%5D" target="_blank" title="PubMed Link to resource 21308905">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/6b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit6c">
+       W. Li, C. Jiao, X. Li, Y. Xie, K. Nakatani, H. Tian and W. Zhu,
+       <span class="italic">
+        Angew. Chem.
+       </span>
+       , 2013,
+       <span class="bold">
+        126
+       </span>
+       , 4691
+       <a class="DOILink" href="http://dx.doi.org/10.1002/ange.201310438" target="_blank" title="DOI Link to resource 10.1002/ange.201310438">
+        CrossRef
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/6c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit6d">
+       W. Li, C. Jiao, X. Li, Y. Xie, K. Nakatani, H. Tian and W. Zhu,
+       <span class="italic">
+        Angew. Chem., Int. Ed.
+       </span>
+       , 2014,
+       <span class="bold">
+        53
+       </span>
+       , 4603
+       <a class="DOILink" href="http://dx.doi.org/10.1002/anie.201310438" target="_blank" title="DOI Link to resource 10.1002/anie.201310438">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXkslCqsLo%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=24668917%5Buid%5D" target="_blank" title="PubMed Link to resource 24668917">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/6d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit7">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit7a">
+       Y. Ishibashi, H. Miyasaka, S. Kobatake, M. Irie, Y. Yokoyama,
+       <span class="italic">
+        Pacific Rim Conference on Lasers and Electro-Optics
+       </span>
+       ,  2007, vol. 1–4, p. 1364
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Pacific%20Rim%20Conference%20on%20Lasers%20and%20Electro-Optics%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202007%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+        Search PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/7a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit7b">
+       Y. Ishibashi, M. Mukaida, M. Falkenstrom, H. Miyasaka, S. Kobatake and M. Irie,
+       <span class="italic">
+        Phys. Chem. Chem. Phys.
+       </span>
+       , 2009,
+       <span class="bold">
+        11
+       </span>
+       , 2640
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=B818591C&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/B818591C">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/7b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit7c">
+       Y. Ishibashi, K. Okuno, C. Ota, T. Umesato, T. Katayama, M. Murakami, S. Kobatake, M. Irie and H. Miyasaka,
+       <span class="italic">
+        Photochem. Photobiol. Sci.
+       </span>
+       , 2010,
+       <span class="bold">
+        9
+       </span>
+       , 172
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=B9PP00116F&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/B9PP00116F">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/7c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit8">
+      S. P. Aloïse, M. Sliwa, Z. Pawlowska, J. Réhault, J. Dubois, O. Poizat, G. Buntinx, A. Perrier, F. Maurel and S. Yamaguchi,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2010,
+      <span class="bold">
+       132
+      </span>
+      , 7379
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja910813x" target="_blank" title="DOI Link to resource 10.1021/ja910813x">
+       CrossRef
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20455540%5Buid%5D" target="_blank" title="PubMed Link to resource 20455540">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/8_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit9">
+      S. Aloise, Y. Ruan, I. Hamdi, G. Buntinx, A. Perrier, F. Maurel, D. Jacquemin and M. Takeshita,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2014,
+      <span class="bold">
+       16
+      </span>
+      , 26762
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4CP03641G&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4CP03641G">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/9_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit10">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit10a">
+       E. Pontecorvo, C. Ferrante, C. G. Elles and T. Scopigno,
+       <span class="italic">
+        J. Phys. Chem. B
+       </span>
+       , 2014,
+       <span class="bold">
+        118
+       </span>
+       , 6915
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp5051047" target="_blank" title="DOI Link to resource 10.1021/jp5051047">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXptVaitro%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=24886226%5Buid%5D" target="_blank" title="PubMed Link to resource 24886226">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/10a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit10b">
+       Y. Ishibashi, M. Fujiwara, T. Umesato, H. Saito, S. Kobatake, M. Irie and H. Miyasaka,
+       <span class="italic">
+        J. Phys. Chem. C
+       </span>
+       , 2011,
+       <span class="bold">
+        115
+       </span>
+       , 4265
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp112370a" target="_blank" title="DOI Link to resource 10.1021/jp112370a">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXit1WisL0%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/10b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit11">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit11a">
+       Y. Ishibashi, K. Okuno, C. Ota, T. Umesato, T. Katayama, M. Murakami, S. Kobatake, M. Irie and H. Miyasaka,
+       <span class="italic">
+        Photochem. Photobiol. Sci.
+       </span>
+       , 2010,
+       <span class="bold">
+        9
+       </span>
+       , 172
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=B9PP00116F&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/B9PP00116F">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/11a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit11b">
+       K. Tani, Y. Ishibashi, H. Miyasaka, S. Kobatake and M. Irie,
+       <span class="italic">
+        J. Phys. Chem. C
+       </span>
+       , 2008,
+       <span class="bold">
+        112
+       </span>
+       , 11150
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp8003272" target="_blank" title="DOI Link to resource 10.1021/jp8003272">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXnvFKjsr8%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/11b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit11c">
+       H. Miyasaka, M. Murakami, A. Itaya, D. Guillaumont, S. Nakamura and M. Irie,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2001,
+       <span class="bold">
+        123
+       </span>
+       , 753
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja002545z" target="_blank" title="DOI Link to resource 10.1021/ja002545z">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3MXhsVamsg%253D%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=11456597%5Buid%5D" target="_blank" title="PubMed Link to resource 11456597">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/11c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       d
+      </i>
+      )
+      <span id="cit11d">
+       M. Murakami, H. Miyasaka, T. Okada, S. Kobatake and M. Irie,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2004,
+       <span class="bold">
+        126
+       </span>
+       , 14764
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja049177+" target="_blank" title="DOI Link to resource 10.1021/ja049177+">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2cXovVKgtLo%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=15535701%5Buid%5D" target="_blank" title="PubMed Link to resource 15535701">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/11d_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       e
+      </i>
+      )
+      <span id="cit11e">
+       T. Sumi, Y. Takagi, A. Yagi, M. Morimoto and M. Irie,
+       <span class="italic">
+        Chem. Commun.
+       </span>
+       , 2014,
+       <span class="bold">
+        50
+       </span>
+       , 3928
+       <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4CC00396A&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4CC00396A">
+        RSC
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/11e_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit12">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit12a">
+       H. Jean-Ruel, R. R. Cooney, M. Gao, C. Lu, M. A. Kochman, C. A. Morrison and R. J. D. Miller,
+       <span class="italic">
+        J. Phys. Chem. A
+       </span>
+       , 2011,
+       <span class="bold">
+        115
+       </span>
+       , 13158
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp205818h" target="_blank" title="DOI Link to resource 10.1021/jp205818h">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXht1SltLbI" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=21939249%5Buid%5D" target="_blank" title="PubMed Link to resource 21939249">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/12a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit12b">
+       H. Jean-Ruel, M. Gao, M. A. Kochman, C. Lu, L. C. Liu, R. R. Cooney, C. A. Morrison and R. J. D. Miller,
+       <span class="italic">
+        J. Phys. Chem. B
+       </span>
+       , 2013,
+       <span class="bold">
+        117
+       </span>
+       , 15894
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp409245h" target="_blank" title="DOI Link to resource 10.1021/jp409245h">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXhs1Smt7nJ" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=24117385%5Buid%5D" target="_blank" title="PubMed Link to resource 24117385">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/12b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit12c">
+       Y. Ishibashi, K. Tani, H. Miyasaka, S. Kobatake and M. Irie,
+       <span class="italic">
+        Chem. Phys. Lett.
+       </span>
+       , 2007,
+       <span class="bold">
+        437
+       </span>
+       , 243
+       <a class="DOILink" href="http://dx.doi.org/10.1016/j.cplett.2007.02.032" target="_blank" title="DOI Link to resource 10.1016/j.cplett.2007.02.032">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXjsVWgs7Y%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/12c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit13">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit13a">
+       M. Boggio-Pasqua, M. Ravaglia, M. J. Bearpark, M. Garavelli and M. A. Robb,
+       <span class="italic">
+        J. Phys. Chem. A
+       </span>
+       , 2003,
+       <span class="bold">
+        107
+       </span>
+       , 11139
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp036862e" target="_blank" title="DOI Link to resource 10.1021/jp036862e">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3sXptV2lur8%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/13a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit13b">
+       A. Perrier, S. Aloise, M. Olivucci and D. Jacquemin,
+       <span class="italic">
+        J. Phys. Chem. Lett.
+       </span>
+       , 2013,
+       <span class="bold">
+        4
+       </span>
+       , 2190
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jz401009b" target="_blank" title="DOI Link to resource 10.1021/jz401009b">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXpslKit7w%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/13b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit14">
+      S. Aloise, M. Sliwa, G. Buntinx, S. Delbaere, A. Perrier, F. Maurel, D. Jacquemin and M. Takeshita,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2013,
+      <span class="bold">
+       15
+      </span>
+      , 6226
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C3CP43806F&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C3CP43806F">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/14_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit15">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit15a">
+       S. Nakamura, K. Uchida and M. Hatakeyama,
+       <span class="italic">
+        Molecules
+       </span>
+       , 2013,
+       <span class="bold">
+        18
+       </span>
+       , 5091
+       <a class="DOILink" href="http://dx.doi.org/10.3390/molecules18055091" target="_blank" title="DOI Link to resource 10.3390/molecules18055091">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXosFCqsLg%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23644976%5Buid%5D" target="_blank" title="PubMed Link to resource 23644976">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/15a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit15b">
+       S. Nakamura, T. Kobayashi, A. Takata, K. Uchida, Y. Asano, A. Murakami, A. Goldberg, D. Guillaumont, S. Yokojima, S. Kobatake and M. Irie,
+       <span class="italic">
+        J. Phys. Org. Chem.
+       </span>
+       , 2007,
+       <span class="bold">
+        20
+       </span>
+       , 821
+       <a class="DOILink" href="http://dx.doi.org/10.1002/poc.1245" target="_blank" title="DOI Link to resource 10.1002/poc.1245">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXhtl2qs73L" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/15b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit15c">
+       D. Dulic, T. Kudernac, A. Puzys, B. L. Feringa and B. J. van Wees,
+       <span class="italic">
+        Adv. Mater.
+       </span>
+       , 2007,
+       <span class="bold">
+        19
+       </span>
+       , 2898
+       <a class="DOILink" href="http://dx.doi.org/10.1002/adma.200700161" target="_blank" title="DOI Link to resource 10.1002/adma.200700161">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXht1eisrrM" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/15c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit16">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit16a">
+       M. T. Indelli, S. Carli, M. Ghirotti, C. Chiorboli, M. Ravaglia, M. Garavelli and F. Scandola,
+       <span class="italic">
+        J. Am. Chem. Soc.
+       </span>
+       , 2008,
+       <span class="bold">
+        130
+       </span>
+       , 7286
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ja711173z" target="_blank" title="DOI Link to resource 10.1021/ja711173z">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXmtVGhurk%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=18479107%5Buid%5D" target="_blank" title="PubMed Link to resource 18479107">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/16a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit16b">
+       R. Murata, T. Yago and M. Wakasa,
+       <span class="italic">
+        Bull. Chem. Soc. Jpn.
+       </span>
+       , 2011,
+       <span class="bold">
+        84
+       </span>
+       , 1336
+       <a class="DOILink" href="http://dx.doi.org/10.1246/bcsj.20110212" target="_blank" title="DOI Link to resource 10.1246/bcsj.20110212">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XpslWisA%253D%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/16b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit16c">
+       R. Murata, T. Yago and M. Wakasa,
+       <span class="italic">
+        J. Phys. Chem. A
+       </span>
+       , 2015,
+       <span class="bold">
+        119
+       </span>
+       , 11138
+       <a class="DOILink" href="http://dx.doi.org/10.1021/acs.jpca.5b08205" target="_blank" title="DOI Link to resource 10.1021/acs.jpca.5b08205">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXhs1ylt73N" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=26490486%5Buid%5D" target="_blank" title="PubMed Link to resource 26490486">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/16c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit17">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit17a">
+       R. T. F. Jukes, V. Adamo, F. Hartl, P. Belser and L. De Cola,
+       <span class="italic">
+        Inorg. Chem.
+       </span>
+       , 2004,
+       <span class="bold">
+        43
+       </span>
+       , 2779
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ic035334e" target="_blank" title="DOI Link to resource 10.1021/ic035334e">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2cXitl2rurY%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=15106964%5Buid%5D" target="_blank" title="PubMed Link to resource 15106964">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/17a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit17b">
+       T. Fukaminato, T. Doi, M. Tanaka and M. Irie,
+       <span class="italic">
+        J. Phys. Chem. C
+       </span>
+       , 2009,
+       <span class="bold">
+        113
+       </span>
+       , 11623
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp902880d" target="_blank" title="DOI Link to resource 10.1021/jp902880d">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1MXntVGjt78%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/17b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit18">
+      M. Yoshida and T. Kamata,
+      <span class="italic">
+       Semiconductor devices
+      </span>
+      , JP2010080490A,  2010
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Semiconductor%20devices%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202010%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/18_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit19">
+      H. Tachibana,
+      <span class="italic">
+       Memory area patterning formation method of photochromic multiplexing recording device and manufacture of photochromic multiplexing recording device
+      </span>
+      , JP2012178204A,  2012
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Memory%20area%20patterning%20formation%20method%20of%20photochromic%20multiplexing%20recording%20device%20and%20manufacture%20of%20photochromic%20multiplexing%20recording%20device%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202012%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/19_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit20">
+      S. Ichikawa and K. Ogura,
+      <span class="italic">
+       Photochromic coloring material and ink composition for writing instrument
+      </span>
+      , WO2015111744A1,  2015
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Photochromic%20coloring%20material%20and%20ink%20composition%20for%20writing%20instrument%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202015%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/20_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit21">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit21a">
+       C. L. Ward and C. G. Elles,
+       <span class="italic">
+        J. Phys. Chem. A
+       </span>
+       , 2014,
+       <span class="bold">
+        118
+       </span>
+       , 10011
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp5088948" target="_blank" title="DOI Link to resource 10.1021/jp5088948">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXhslCjtLbN" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25310194%5Buid%5D" target="_blank" title="PubMed Link to resource 25310194">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/21a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit21b">
+       C. L. Ward and C. G. Elles,
+       <span class="italic">
+        J. Phys. Chem. A
+       </span>
+       , 2014,
+       <span class="bold">
+        118
+       </span>
+       , 10011
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp5088948" target="_blank" title="DOI Link to resource 10.1021/jp5088948">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXhslCjtLbN" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25310194%5Buid%5D" target="_blank" title="PubMed Link to resource 25310194">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/21b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit22">
+      D. T. Valley, D. P. Hoffman and R. A. Mathies,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2015,
+      <span class="bold">
+       17
+      </span>
+      , 9231
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4CP05323K&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4CP05323K">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/22_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit23">
+      M. Irie, K. Sakemura, M. Okinaka and K. Uchida,
+      <span class="italic">
+       J. Org. Chem.
+      </span>
+      , 1995,
+      <span class="bold">
+       60
+      </span>
+      , 8305
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jo00130a035" target="_blank" title="DOI Link to resource 10.1021/jo00130a035">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXpsVOmtbk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/23_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit24">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit24a">
+       C. Ruckebusch, S. Aloise, L. Blanchet, J. P. Huvenne and G. Buntinx,
+       <span class="italic">
+        Chemom. Intell. Lab. Syst.
+       </span>
+       , 2008,
+       <span class="bold">
+        91
+       </span>
+       , 17
+       <a class="DOILink" href="http://dx.doi.org/10.1016/j.chemolab.2007.05.007" target="_blank" title="DOI Link to resource 10.1016/j.chemolab.2007.05.007">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXislGntLw%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/24a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit24b">
+       C. Ruckebusch, M. Sliwa, P. Pernot, A. de Juan and R. Tauler,
+       <span class="italic">
+        J. Photochem. Photobiol., C
+       </span>
+       , 2012,
+       <span class="bold">
+        13
+       </span>
+       , 1
+       <a class="DOILink" href="http://dx.doi.org/10.1016/j.jphotochemrev.2011.10.002" target="_blank" title="DOI Link to resource 10.1016/j.jphotochemrev.2011.10.002">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38Xjt1GhtbY%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/24b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit25">
+      M. Takeshita, C. Tanaka, T. Miyazaki, Y. Fukushima and M. Nagai,
+      <span class="italic">
+       New J. Chem.
+      </span>
+      , 2009,
+      <span class="bold">
+       33
+      </span>
+      , 1433
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=B823492B&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/B823492B">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/25_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit26">
+      G. Buntinx, O. Poizat and N. Leygue,
+      <span class="italic">
+       J. Phys. Chem.
+      </span>
+      , 1995,
+      <span class="bold">
+       99
+      </span>
+      , 2343
+      <a class="DOILink" href="http://dx.doi.org/10.1021/j100008a016" target="_blank" title="DOI Link to resource 10.1021/j100008a016">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2MXjs1CnsL0%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/26_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit27">
+      C. V. Kumar, L. Qin and P. K. Das,
+      <span class="italic">
+       J. Chem. Soc., Faraday Trans. 2
+      </span>
+      , 1984,
+      <span class="bold">
+       80
+      </span>
+      , 783
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=F29848000783&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/F29848000783">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/27_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit28">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit28a">
+       G. Buntinx, R. Naskrecki and O. Poizat,
+       <span class="italic">
+        J. Phys. Chem.
+       </span>
+       , 1996,
+       <span class="bold">
+        100
+       </span>
+       , 19380
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp960900v" target="_blank" title="DOI Link to resource 10.1021/jp960900v">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28XntVWnsLo%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/28a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit28b">
+       B. Moine, J. Rehault, S. Aloise, J.-C. Micheau, C. Moustrou, A. Samat, O. Poizat and G. Buntinx,
+       <span class="italic">
+        J. Phys. Chem. A
+       </span>
+       , 2008,
+       <span class="bold">
+        112
+       </span>
+       , 4719
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp711865j" target="_blank" title="DOI Link to resource 10.1021/jp711865j">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXlsVKmsb4%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=18457379%5Buid%5D" target="_blank" title="PubMed Link to resource 18457379">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/28b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit29">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit29a">
+       T. Nakayama, Y. Amijima, K. Ibuki and K. Hamanoue,
+       <span class="italic">
+        Rev. Sci. Instrum.
+       </span>
+       , 1997,
+       <span class="bold">
+        68
+       </span>
+       , 4364
+       <a class="DOILink" href="http://dx.doi.org/10.1063/1.1148398" target="_blank" title="DOI Link to resource 10.1063/1.1148398">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXotVOkuro%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/29a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit29b">
+       M. Ziolek, M. Lorenc and R. Naskrecki,
+       <span class="italic">
+        Appl. Phys. B: Lasers Opt.
+       </span>
+       , 2001,
+       <span class="bold">
+        72
+       </span>
+       , 843
+       <a class="DOILink" href="http://dx.doi.org/10.1007/s003400100587" target="_blank" title="DOI Link to resource 10.1007/s003400100587">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3MXktVWjtLo%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/29b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit30">
+      M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci, G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian, A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada, M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery Jr., J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers, K. N. Kudin, V. N. Staroverov, R. Kobayashi, J. Normand, K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, M. Cossi, N. Rega, N. J. Millam, M. Klene, J. E. Knox, J. B. Cross, V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth, P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels, Ö. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski and D. J. Fox,
+      <span class="italic">
+       Gaussian 09
+      </span>
+      , Gaussian, Inc., Wallingford CT,  2009
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Gaussian%2009%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202009%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/30_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit31">
+      J. Tomasi, B. Mennucci and R. Cammi,
+      <span class="italic">
+       Chem. Rev.
+      </span>
+      , 2005,
+      <span class="bold">
+       105
+      </span>
+      , 2999
+      <a class="DOILink" href="http://dx.doi.org/10.1021/cr9904009" target="_blank" title="DOI Link to resource 10.1021/cr9904009">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2MXmsVynurc%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16092826%5Buid%5D" target="_blank" title="PubMed Link to resource 16092826">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/31_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit32">
+      C. Y. Peng, P. Y. Ayala, H. B. Schlegel and M. J. Frisch,
+      <span class="italic">
+       J. Comput. Chem.
+      </span>
+      , 1996,
+      <span class="bold">
+       17
+      </span>
+      , 49
+      <a class="DOILink" href="http://dx.doi.org/10.1002/(SICI)1096-987X(19960115)17:1&lt;49::AID-JCC5&gt;3.0.CO;2-0" target="_blank" title="DOI Link to resource 10.1002/(SICI)1096-987X(19960115)17:1&lt;49::AID-JCC5&gt;3.0.CO;2-0">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28XpvFSi" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/32_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit33">
+      A. Lietard, G. Piani, L. Poisson, B. Soep, J.-M. Mestdagh, S. Aloise, A. Perrier, D. Jacquemin and M. Takeshita,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2014,
+      <span class="bold">
+       16
+      </span>
+      , 22262
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4CP02310B&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4CP02310B">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/33_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit34">
+      P. R. Hania, A. Pugzlys, L. N. J. J. Lucas, D. de Jong, B. L. Feringa, J. H. van Esch, H. T. Jonkman and K. Duppen,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2005,
+      <span class="bold">
+       109
+      </span>
+      , 9437
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp053386e" target="_blank" title="DOI Link to resource 10.1021/jp053386e">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2MXhtVGqs73K" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16866392%5Buid%5D" target="_blank" title="PubMed Link to resource 16866392">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/34_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit35">
+      S. Aloise, C. Ruckebusch, L. Blanchet, J. Rehault, G. Buntinx and J. P. Huvenne,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2008,
+      <span class="bold">
+       112
+      </span>
+      , 224
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp075829f" target="_blank" title="DOI Link to resource 10.1021/jp075829f">
+       CrossRef
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=18154275%5Buid%5D" target="_blank" title="PubMed Link to resource 18154275">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/35_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit36">
+      S. Aloise, Z. Pawlowska, C. Ruckebusch, M. Sliwa, J. Dubois, O. Poizat, G. Buntinx, A. Perrier, F. Maurel, P. Jacques, J.-P. Malval, L. Poisson, G. Piani and J. Abe,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2012,
+      <span class="bold">
+       14
+      </span>
+      , 1945
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C2CP22254J&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C2CP22254J">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/36_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit37">
+      C. L. Ward and C. G. Elles,
+      <span class="italic">
+       J. Phys. Chem. Lett.
+      </span>
+      , 2012,
+      <span class="bold">
+       3
+      </span>
+      , 2995
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jz301330z" target="_blank" title="DOI Link to resource 10.1021/jz301330z">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XhsVGis7zL" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=26292240%5Buid%5D" target="_blank" title="PubMed Link to resource 26292240">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP03471C/37_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+   </ol>
+   <hr/>
+   <table>
+    <tr>
+     <td>
+      <h3>
+       Footnote
+      </h3>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="sup_ref">
+       †
+       <span id="fn1">
+        Electronic supplementary information (ESI) available. See DOI:
+        <a href="http://xlink.rsc.org/?DOI=c6cp03471c" target="_blank" title="Select to resolve DOI: 10.1039/c6cp03471c">
+         10.1039/c6cp03471c
+        </a>
+       </span>
+      </span>
+     </td>
+    </tr>
+   </table>
+   <table>
+    <tr>
+     <td>
+      <hr/>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       This journal is © the Owner Societies 2016
+      </b>
+     </td>
+    </tr>
+   </table>
+  </div>
+ </body>
+</html>
