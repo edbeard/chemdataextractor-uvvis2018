@@ -1,5 +1,5 @@
 from unittest import TestCase
-from model import UvvisSpectrum, UvvisPeak
+from ...model import UvvisSpectrum, UvvisPeak
 
 class TestUvvisSpectrum(TestCase):
     #def test_mergeUvvis(self):

@@ -1,0 +1,3810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:art="http://www.rsc.org/schema/rscart38" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rsc="urn:rsc.org">
+ <head>
+  <title>
+   Ligand-to-ligand charge transfer in heteroleptic Ir-complexes: comprehensive investigations of its fast dynamics and mechanism   - Physical Chemistry Chemical Physics (RSC Publishing) DOI:10.1039/C6CP02087A
+  </title>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYNF1oJ","queueTime":0,"applicationTime":1431,"ttGuid":"412729A0100FC427","agent":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,S=y.hash,this[u]=Date.now()}function o(){j--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),R=t(13),P=t("ee"),D=P.get("tracer");t(14),t("loader").features.spa=!0;var S,N=w[v],j=0;P.on(u,r),P.on(p,r),P.on(h,o),P.on(d,o),P.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),R.buffer([u,"new-xhr","send-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(R,"send-xhr"+c),a(P,"xhr-resolved"),a(P,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),N("hashchange",i,!0),N("load",i,!0),N("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(h+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),f.setCurrentRouteName=o(h+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(h){throw u(e+"err",[r,a,h],c),h}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,h(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){p([a,n,r,o])}s=i}}function h(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!p.aborted){t&&t(n,r,o);for(var i=e(o),a=l(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function d(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return h[t]=h[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},g={on:d,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},h={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=h.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(w,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=h.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===h.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=t("ee"),u=window,h=u.document,p="addEventListener",d="attachEvent",l=u.XMLHttpRequest,m=l&&l.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:l,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(16);var v=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-998.min.js"},y=l&&m&&m[p]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:v,features:{},xhrWrappable:y};h[p]?(h[p]("DOMContentLoaded",i,!1),u[p]("load",r,!1)):(h[d]("onreadystatechange",o),u[d]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,14,5,3,4]);
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Yang-Jin Cho" name="DC.Creator"/>
+  <meta content="So-Yoen Kim" name="DC.Creator"/>
+  <meta content="Minji Cho" name="DC.Creator"/>
+  <meta content="Kyung-Ryang Wee" name="DC.Creator"/>
+  <meta content="Ho-Jin Son" name="DC.Creator"/>
+  <meta content="Won-Sik Han" name="DC.Creator"/>
+  <meta content="Dae Won Cho" name="DC.Creator"/>
+  <meta content="Sang Ook Kang" name="DC.Creator"/>
+  <meta content="Ligand-to-ligand charge transfer in heteroleptic Ir-complexes: comprehensive investigations of its fast dynamics and mechanism  " name="DC.title"/>
+  <meta content="Royal Society of Chemistry" name="DC.publisher"/>
+  <meta content="2016/06/01" name="DC.Date"/>
+  <meta content="10.1039/C6CP02087A" name="DC.Identifier" scheme="doi"/>
+  <meta content="en" name="DC.Language"/>
+  <meta content="Ligand-to-ligand charge transfer in heteroleptic Ir-complexes: comprehensive investigations of its fast dynamics and mechanism  " name="citation_title"/>
+  <meta content="Yang-Jin Cho" name="citation_author"/>
+  <meta content="So-Yoen Kim" name="citation_author"/>
+  <meta content="Minji Cho" name="citation_author"/>
+  <meta content="Kyung-Ryang Wee" name="citation_author"/>
+  <meta content="Ho-Jin Son" name="citation_author"/>
+  <meta content="Won-Sik Han" name="citation_author"/>
+  <meta content="Dae Won Cho" name="citation_author"/>
+  <meta content="Sang Ook Kang" name="citation_author"/>
+  <meta content="2016/05/06" name="citation_online_date"/>
+  <meta content="2016" name="citation_date"/>
+  <meta content="Physical Chemistry Chemical Physics" name="citation_journal_title"/>
+  <meta content="18" name="citation_volume"/>
+  <meta content="22" name="citation_issue"/>
+  <meta content="15162" name="citation_firstpage"/>
+  <meta content="15169" name="citation_lastpage"/>
+  <meta content="10.1039/C6CP02087A" name="citation_doi"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticlePDF/2016/CP/C6CP02087A" name="citation_pdf_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleLanding/2016/CP/C6CP02087A" name="citation_abstract_html_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleHTML/2016/CP/C6CP02087A" name="citation_fulltext_html_url"/>
+  <link href="" rel="shortcut icon"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/rschtml2.css?ver=6_0_9" rel="stylesheet" type="text/css"/>
+  <script src="http://pubs.rsc.org/content/scripts/JQueryPlugins.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   (function ($) {
+        function grab_content(span_id) {
+            var content = $('span[id="' + span_id + '"]').text();
+
+            if (span_id.indexOf("fn", 0) != -1) {
+                return content; // could contain useful anchor text i.e. see doi:
+            }
+            else {
+                // strip external anchor text CrossRef etc. (but not Dera linked text)
+               $('span[id="' + span_id + '"] a[class !="simple"][class !="CH"][class !="TC"][class !="RTC"][class !="GB"]').each(
+            		function () {
+            					content = content.replace($(this).text(), '');
+              					}); return content;
+            }
+       }
+
+        $.fn.swapAttr = function (attribute) {
+            return this.each(function () {
+                $(this).hover(function () {
+                    var $this = $(this);
+                    var idval = $this.attr("href").replace("#", "");
+                    var textval = grab_content(idval);
+                    if (textval.replace(/\s+/g, '') != "") {
+                        $this.attr('title', textval.replace(/\s+/g, ' '));
+                    }
+                }, function () {
+                    var $this = $(this);
+                });
+            });
+        };
+
+    })(jQuery);
+
+    $(document).ready(function () {
+        $("a[href^='#']").swapAttr();
+    });
+  </script>
+  <!--6_0_9-->
+ </head>
+ <body>
+  <!--Google Tag Manager-->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-KW8L" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KW8L');
+  </script>
+  <!--End Google Tag Manager-->
+  <span id="top">
+  </span>
+  <div id="wrapper">
+   <div class="left_head">
+    <a class="URLLink" href="http://pubs.rsc.org">
+     <img alt="Royal Society of Chemistry" border="0" class="rsc-logo" src="http://pubs.rsc.org/content/NewImages/royal-society-of-chemistry-logo.png"/>
+    </a>
+    <br/>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlepdf/2016/CP/C6CP02087A" target="_blank" title="Link to PDF version">
+      View PDF Version
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C6CP02623K" target="_BLANK" title="Link to previous article (id:C6CP02623K)">
+      Previous Article
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C6CP00790B" target="_BLANK" title="Link to next article (id:C6CP00790B)">
+      Next Article
+     </a>
+    </span>
+   </div>
+   <div class="right_head">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js" type="text/javascript">
+    </script>
+    <script src="http://crossmark.crossref.org/javascripts/v1.4/crossmark.min.js" type="text/javascript">
+    </script>
+    <a href="#" id="open-crossmark" style="padding: 2.5em 0 1em 0;">
+     <img id="crossmark-icon" src="http://crossmark.crossref.org/images/crossmark_button.png" style="border: 0; display:inline;"/>
+    </a>
+    <div id="crossmark-dialog" style="display: none;" title="">
+     <iframe frameborder="0" id="crossmark-dialog-frame">
+     </iframe>
+    </div>
+   </div>
+   <div class="article_info">
+    DOI:
+    <a href="http://dx.doi.org/10.1039/C6CP02087A" target="_blank" title="Link to landing page via DOI">
+     10.1039/C6CP02087A
+    </a>
+    (Paper)
+    <span class="italic">
+     <a href="http://dx.doi.org/10.1039/1463-9084/1999" title="Link to journal home page">
+      Phys. Chem. Chem. Phys.
+     </a>
+    </span>
+    , 2016,
+    <strong>
+     18
+    </strong>
+    , 15162-15169
+   </div>
+   <h1 id="sect180">
+    <span class="title_heading">
+     Ligand-to-ligand charge transfer in heteroleptic Ir-complexes: comprehensive investigations of its fast dynamics and mechanism
+     <a href="#fn1" title="Select to navigate to footnote">
+      †
+     </a>
+    </span>
+   </h1>
+   <p class="header_text">
+    <span class="bold">
+     Yang-Jin 
+            Cho
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     So-Yoen 
+            Kim
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Minji 
+            Cho
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Kyung-Ryang 
+            Wee
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      b
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Ho-Jin 
+            Son
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Won-Sik 
+            Han
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      c
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Dae Won 
+            Cho
+    </span>
+    *
+    <sup>
+     <span class="sup_ref italic">
+      ad
+     </span>
+    </sup>
+    <span class="bold">
+     and
+    </span>
+    <span class="bold">
+     Sang Ook 
+            Kang
+    </span>
+    *
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    <br/>
+    <a id="affa">
+     <sup>
+      <span class="sup_ref italic">
+       a
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Department of Advanced Materials Chemistry, Korea University (Sejong), Sejong, 30019, South Korea. E-mail:
+     <a href="mailto:hjson@korea.ac.kr">
+      hjson@korea.ac.kr
+     </a>
+     ;
+     <a href="mailto:sangok@korea.ac.kr">
+      sangok@korea.ac.kr
+     </a>
+    </span>
+    <br/>
+    <a id="affb">
+     <sup>
+      <span class="sup_ref italic">
+       b
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Department of Chemistry, Daegu University, Gyeongsan, 38453, South Korea. E-mail:
+     <a href="mailto:krwee@daegu.ac.kr">
+      krwee@daegu.ac.kr
+     </a>
+    </span>
+    <br/>
+    <a id="affc">
+     <sup>
+      <span class="sup_ref italic">
+       c
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Department of Chemistry, Seoul Women's University, Seoul, 01797, South Korea. E-mail:
+     <a href="mailto:wshan@swu.ac.kr">
+      wshan@swu.ac.kr
+     </a>
+    </span>
+    <br/>
+    <a id="affd">
+     <sup>
+      <span class="sup_ref italic">
+       d
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Center for Photovoltaic Materials, Korea University (Sejong), Sejong, 30019, South Korea. E-mail:
+     <a href="mailto:dwcho@korea.ac.kr">
+      dwcho@korea.ac.kr
+     </a>
+    </span>
+   </p>
+   <div id="art-admin">
+    <span class="italic bold">
+     Received 
+      30th March 2016
+    </span>
+    <span class="bold italic">
+     , Accepted 6th May 2016
+    </span>
+   </div>
+   <p class="bold italic">
+    First published on the web 6th May 2016
+   </p>
+   <hr/>
+   <p class="abstract">
+    To gain new insights into ligand-to-ligand charge-transfer (LLCT) dynamics, we synthesised two heteroleptic Ir
+    <small>
+     <sup>
+      3+
+     </sup>
+    </small>
+    complexes: (Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (tpphz)) and (Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (dpq)), where dfppy, tpphz, and dpq are 2-(4,6-difluorophenyl)pyridine, tetrapyrido[3,2-
+    <span class="italic">
+     a
+    </span>
+    :2′,3′-
+    <span class="italic">
+     c
+    </span>
+    :3′′,2′′-
+    <span class="italic">
+     h
+    </span>
+    :2′′′,3′′′-
+    <span class="italic">
+     j
+    </span>
+    ]phenazine, and 2,3-bis-(2-pyridyl)-quinoxaline, respectively. The tpphz and dpq ligands have longer π-conjugation than dfppy. Therefore, the excited ligand-centred (LC) state and the metal-to-ligand charge transfer (MLCT) state of dfppy are higher than those of tpphz and dpq. The LLCT dynamics from dfppy to tpphz (or dpq) was probed using femtoscond transient absorption (TA) spectroscopy after the selective excitation of dfppy. The TA band for the LC/MLCT state of dfppy is observed at 480 nm. Because of the LLCT process, the TA bands related to the MLCT states of tpphz and dpq ligands increased, whereas those of dfppy decreased. The time constants for the LLCT process were 17 ps for Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (tpphz) and 5 ps for Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (dpq). The MLCT emission of Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (tpphz) showed strong temperature dependence, indicating that the LLCT process has a significant energy barrier. In comparison, the temperature weakly influenced the emission of Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (dpq), and thus, its LLCT process may have a smaller barrier. The anomalous rigidochromism and photodynamic behaviours can be explained in terms of the barrier between cyclometalating and ancillary ligands.
+   </p>
+   <hr/>
+   <h2 id="sect283">
+    <span class="a_heading">
+     Introduction
+    </span>
+   </h2>
+   <span>
+    The photophysical properties of heteroleptic Ir(
+    <span class="small_caps">
+     III
+    </span>
+    ) complexes with cyclometalating and ancillary ligands have been extensively investigated for applications in organic light-emitting diodes (OLEDs) because varying the ligand combination can produce Ir complexes that efficiently emit phosphorescence throughout the visible region.
+    <a href="#cit1" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       1
+      </span>
+     </sup>
+    </a>
+    The phosphorescent states of metal complexes are usually attributed to their metal-to-ligand charge-transfer state (MLCT, d–π*) mixing with the strongly spin-orbit-coupled triplet manifold of the cyclometalating ligand.
+    <a href="#cit2" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       2
+      </span>
+     </sup>
+    </a>
+    The upper excited states, such as the ligand-centred (LC, π–π*) state and the singlet MLCT (
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    MLCT) state, are assumed to eventually reach the emissive
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state through an efficient intersystem crossing aided by the heavy metal effect.
+   </span>
+   <p class="otherpara">
+    One of the most effective methods for tuning the energy of the emissive excited state involves changing the degree of π-conjugation in the structures of the participating ligands.
+    <a href="#cit3" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       3–5
+      </span>
+     </sup>
+    </a>
+    First, the π* orbitals of cyclometalating ligands contribute to the excited-state emissive transitions. Therefore, low-energy emission can be readily achieved in metal complexes by using cyclometalating ligands with extended π-conjugation.
+    <a href="#cit6" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       6,7
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    The ancillary ligand (
+    <span class="italic">
+     e.g.
+    </span>
+    , picolinate [pic] or 2,4-pentadione [acac]) plays a relatively passive role in determining the nature of the emissive state.
+    <a href="#cit7" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       7
+      </span>
+     </sup>
+    </a>
+    However, these ligands have been used to adjust the energy of the MLCT state and the degree of mixing between the excited states (LC and MLCT). Indeed, Park and co-workers
+    <a href="#cit8" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       8
+      </span>
+     </sup>
+    </a>
+    observed emission throughout the visible spectrum using a series of complexes with ancillary ligands with different structures. Prior to emission, ligand-to-ligand charge transfer (LLCT) may occur from one ligand to another,
+    <span class="italic">
+     i.e.
+    </span>
+    , from the cyclometalating ligand to the ancillary ligand or
+    <span class="italic">
+     vice versa
+    </span>
+    . In this case, the net properties of the excited metal-complexes can be controlled almost exclusively by the ancillary ligand.
+   </p>
+   <p class="otherpara">
+    In this regard, Park
+    <span class="italic">
+     et al.
+    </span>
+    reported that slow LLCT (∼10 ns) is envisaged among orbitals localized on the cyclometalating and ancillary ligands before the observed phosphorescence is generated.
+    <a href="#cit9" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       9,10
+      </span>
+     </sup>
+    </a>
+    However, Chi and co-workers insisted that the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    –T
+    <small>
+     <sub>
+      <span class="italic">
+       n
+      </span>
+     </sub>
+    </small>
+    intersystem crossing and the T
+    <small>
+     <sub>
+      <span class="italic">
+       n
+      </span>
+     </sub>
+    </small>
+    –T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    internal conversion (IC) should be very fast (less than the picosecond range) and that the LLCT mechanism is not needed to describe the excitation properties of the Ir complexes studied by Park's group.
+    <a href="#cit11" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       11,12
+      </span>
+     </sup>
+    </a>
+    These issues seem to be of general significance regarding the excited-state behaviour of related transition-metal complexes and of particular interest for the molecular design of Ir complexes associated with emission-colour tuning.
+   </p>
+   <p class="otherpara">
+    To disentangle the longstanding arguments regarding the LLCT event, we designed and synthesized heteroleptic Ir
+    <small>
+     <sup>
+      3+
+     </sup>
+    </small>
+    complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    using 2-(4,6-difluorophenyl)pyridine (dfppy) as the cyclometalating ligand and tetrapyrido[3,2-
+    <span class="italic">
+     a
+    </span>
+    :2′,3′-
+    <span class="italic">
+     c
+    </span>
+    :3′′,2′′-
+    <span class="italic">
+     h
+    </span>
+    :2′′′,3′′′-
+    <span class="italic">
+     j
+    </span>
+    ]phenazine (tpphz) and 2,3-bis(2-pyridyl)quinoxaline (dpq) as ancillary ligands, as shown in
+    <a href="#imgsch1" title="Select to navigate to scheme">
+     Scheme 1
+    </a>
+    .
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgsch1">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-s1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-s1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-s1.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Scheme 1
+       </b>
+       <span id="sch1">
+        <span class="graphic_title">
+         Molecular structures.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    In general, the electronic states should vary with the relative π* levels of the ligands, such that the electronic coupling between the two ligands might be weak for widely separated π*s. The π* levels of the cyclometalating (dfppy) and ancillary ligands (tpphz or dpq) are considerably different. Therefore, we expect that the dynamics and behaviours of LLCT processes can be readily recognized in these Ir complexes, even under ambient conditions. Herein, we observed the LLCT dynamics directly using time-resolved transient absorption (TA) spectroscopic techniques. The anomalous hypsochromic behaviours were investigated in a rigid environment, and the orbital characters were analysed
+    <span class="italic">
+     via
+    </span>
+    theoretical calculations using density functional theory (DFT).
+   </p>
+   <h2 id="sect323">
+    <span class="a_heading">
+     Results and discussion
+    </span>
+   </h2>
+   <h3 id="sect325">
+    <span class="b_heading">
+     Steady-state absorption and emission properties
+    </span>
+   </h3>
+   <span>
+    The absorption spectrum of the dfppy free ligand shows the π–π* transition bands at 273 nm with an intense band occurring at approximately 250 nm, as shown in
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    .
+    <a href="#cit13" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       13
+      </span>
+     </sup>
+    </a>
+    In contrast, the tpphz free ligand shows a strong π–π* transition band at 280 nm. The two sharp bands in the range of 350–390 nm correspond to the characteristic n–π* transition of tpphz (
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1a
+    </a>
+    ).
+    <a href="#cit14" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       14
+      </span>
+     </sup>
+    </a>
+    The dpq free ligand exhibits a moderately intense absorption at 334 nm and relatively strong absorptions at 275 and 250 nm related to π–π* transitions (
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1b
+    </a>
+    ).
+    <a href="#cit15" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       15
+      </span>
+     </sup>
+    </a>
+    Thus the excited singlet (
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    π*) state of dfppy is higher than those of other ligands.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig1">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-f1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f1.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 1
+       </b>
+       <span id="fig1">
+        <span class="graphic_title">
+         Steady-state absorption spectra of free ligands (dpq, dfppy, and tpphz) and complexes
+         <strong>
+          1
+         </strong>
+         and
+         <strong>
+          2
+         </strong>
+         (10 μM) and the emission spectra of these complexes in CH
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         Cl
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         at 298 K. Low-temperature emission spectra of complexes
+         <strong>
+          1
+         </strong>
+         and
+         <strong>
+          2
+         </strong>
+         were measured in 2-methyltetrahydrofuran (2-MTHF) at 77 K (
+         <span class="italic">
+          λ
+         </span>
+         <small>
+          <sub>
+           ex
+          </sub>
+         </small>
+         = 309 nm). The bottom photographs show the luminescence of complexes
+         <strong>
+          1
+         </strong>
+         and
+         <strong>
+          2
+         </strong>
+         under ultraviolet (UV) irradiation (365 nm) in 2-MTHF measured at 77 and 298 K, respectively.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    In contrast, the absorption spectra of the Ir(
+    <span class="small_caps">
+     III
+    </span>
+    ) complexes (
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    ) showed two distinguishable bands: the π–π* transition band at short wavelengths and the MLCT bands at longer wavelengths. The weak absorption band of complex
+    <strong>
+     1
+    </strong>
+    in the visible region of 420–500 nm can be assigned to spin-forbidden MLCT (Ir → tpphz) (
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    ) bands (
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1a
+    </a>
+    ). The weak
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT absorption band of complex
+    <strong>
+     2
+    </strong>
+    is observed clearly in the lower-energy region (∼500 nm), as shown in
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1b
+    </a>
+    . The
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT band of Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (pic) was detected at a wavelength shorter than 450 nm.
+    <a href="#cit16" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       16
+      </span>
+     </sup>
+    </a>
+    Therefore, for complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    , the absorption bands at long wavelengths (&gt;450 nm) can be assigned to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT transition bands of Ir → dpq or Ir → tpphz. However, the moderately intense absorption at approximately 380 nm is mainly contributed by the
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    MLCT transitions. The spectroscopic parameters are listed in
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    .
+   </p>
+   <div class="table_caption">
+    <b>
+     Table 1
+    </b>
+    <span id="tab1">
+     Absorption and emission spectroscopic parameters for complexes
+     <strong>
+      1
+     </strong>
+     and
+     <strong>
+      2
+     </strong>
+     and free ligands
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       Compounds
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         abs
+        </sub>
+       </small>
+       (nm), log
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       <span class="italic">
+        ε
+       </span>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+       (M
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       cm
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       )
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         em
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fnb" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+       (nm)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         em
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fnc" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+       (nm)
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="4">
+       <a id="tab1fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        The values in parentheses indicate the molar extinction coefficient values on a logarithmic scale.
+       </span>
+       <a id="tab1fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        In CH
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        Cl
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        at 298 K.
+       </span>
+       <a id="tab1fnc">
+        <span class="tfootnote">
+         c
+        </span>
+       </a>
+       <span class="sup_inf">
+        In 2-MTHF at 77 K.
+        <span class="italic">
+         λ
+        </span>
+        <small>
+         <sub>
+          ex
+         </sub>
+        </small>
+        = 309 nm.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        1
+       </strong>
+      </td>
+      <td valign="top">
+       288 (4.8), 394 (3.9), ∼460 (−)
+      </td>
+      <td valign="top">
+       615
+      </td>
+      <td align="char" char="." valign="top">
+       474
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        2
+       </strong>
+      </td>
+      <td valign="top">
+       261 (4.7), 296 (4.6), 365 (4.1), 500 (2.8)
+      </td>
+      <td valign="top">
+       635
+      </td>
+      <td align="char" char="." valign="top">
+       575
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       dfppy
+      </td>
+      <td valign="top">
+       242 (4.9), 273 (4.7)
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td align="char" char="." valign="top">
+       474
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       dpq
+      </td>
+      <td valign="top">
+       247 (4.8), 270 (4.5), 334 (4.2)
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td align="char" char="." valign="top">
+       500
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       tpphz
+      </td>
+      <td valign="top">
+       280 (4.3), ∼310, 371, 381, 391
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td align="char" char="." valign="top">
+       540
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    As shown by the bottom images in
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    , dramatic emission colour changes of complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    occurred at 77 and 298 K. The orange-red emission of complex
+    <strong>
+     1
+    </strong>
+    at 298 K changed drastically to green emission at 77 K, whereas the red emission of complex
+    <strong>
+     2
+    </strong>
+    at 298 K changed to orange-red at 77 K.
+   </p>
+   <p class="otherpara">
+    At 298 K, complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    showed strong red emissions at approximately 615 and 635 nm, respectively, in CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    . At room temperature, the red-emissions showed similar maxima in both solvents; the reasons are not only the similar polarity of CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (dielectric constant (
+    <span class="italic">
+     ε
+    </span>
+    ) = 6.97) and 2-MTHF (
+    <span class="italic">
+     ε
+    </span>
+    = 9.08), but the intrinsic emission behaviour of both complexes. The red emissions of [Ir(dpq)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ]
+    <a href="#cit17" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       17
+      </span>
+     </sup>
+    </a>
+    and [Ru(tpphz)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ]
+    <a href="#cit18" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       18
+      </span>
+     </sup>
+    </a>
+    at approximately 630 nm have been reported to be the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT emissions of the main ligands. Therefore, the red emissions observed here can be ascribed to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT emissions of tpphz or dpq.
+   </p>
+   <p class="otherpara">
+    In a glassy matrix at 77 K, complex
+    <strong>
+     1
+    </strong>
+    showed the green emission with a well-developed vibronic structure. The emission spectral features and wavelength are similar to those found in the emission spectrum of Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (pic), in which the dfppy and picolinate ligands act as cyclometalating and ancillary ligands, respectively.
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+    The π* state of the picolinate ligand is higher than that of dfppy, and thus, the green emission (approximately 474 nm) of Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (pic) is attributed to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    state. Moreover, the emission wavelength of complex
+    <strong>
+     1
+    </strong>
+    is also similar to that of the dfppy free ligand measured at 77 K, as listed in
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    . Therefore, the emissive
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state of complex
+    <strong>
+     1
+    </strong>
+    is close to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    π* state of the dfppy free ligand at 77 K. In contrast, the phosphorescence emission of the tpphz free ligand was observed at approximately 540 nm at 77 K (
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ). Therefore, the emissive triplet state of an excited tpphz free ligand is lower than the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    state of complex
+    <strong>
+     1
+    </strong>
+    . Because only the high
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    state contributes to the emission spectrum at 77 K, we can suggest that a significant energy barrier exists in the energy flow between the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    states. Therefore, in summary, complex
+    <strong>
+     1
+    </strong>
+    showed two types of emissions—greenish-blue emission (474 nm) at 77 K and red emission (615 nm) at 298 K—originating from the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    states, respectively.
+   </p>
+   <p class="otherpara">
+    For complex
+    <strong>
+     2
+    </strong>
+    , the emission at 77 K occurred at a shorter wavelength (575 nm) than that at 298 K (635 nm). The emissions at 77 and 298 K are both attributed to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    state. We will discuss the effect of temperature in greater detail later.
+   </p>
+   <h3 id="sect486">
+    <span class="b_heading">
+     Excitation spectroscopic properties
+    </span>
+   </h3>
+   <span>
+    As shown in
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    , the excitation spectra of the red emissions of complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    are identical to the steady-state absorption spectra throughout the examined range of wavelengths. The excitation spectra clearly showed weak
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    transition bands at approximately 480 and 500 nm, respectively. Therefore, the red emission can be obtained by direct excitation to the triplet MLCT states of dpq and tpphz.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig2">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-f2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f2.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 2
+       </b>
+       <span id="fig2">
+        <span class="graphic_title">
+         Absorption (blue lines) and excitation (orange lines) spectra of complexes
+         <strong>
+          1
+         </strong>
+         and
+         <strong>
+          2
+         </strong>
+         (10 μM) in CH
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         Cl
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         at 298 K. The monitoring wavelengths for
+         <strong>
+          1
+         </strong>
+         and
+         <strong>
+          2
+         </strong>
+         were 600 and 650 nm, respectively. Asterisks indicate the second order of the monitoring wavelength.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    The extinction coefficient of dfppy is higher than those of tpphz and dpq. Moreover, complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    contain two dfppy ligands. Upon photoexcitation at 309 nm, as shown in
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    and
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    , dfppy efficiently absorbs the excitation light. However, no blue-green emission related to
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    was observed at 298 K. This lack of emission from dfppy implies that
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    is the result of an energy-sinking process and that efficient energy transfer occurs from dfppy to other ligands
+    <span class="italic">
+     via
+    </span>
+    LLCT. Thus, the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    states of complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    are the final emissive states because of the LLCT at 298 K.
+   </p>
+   <h3 id="sect520">
+    <span class="b_heading">
+     Theoretical DFT calculations
+    </span>
+   </h3>
+   <span>
+    To obtain further insights into the photophysical properties of complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    , we performed theoretical DFT calculations employing the Gaussian-09 program.
+    <a href="#cit20" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       20
+      </span>
+     </sup>
+    </a>
+    The frontier orbital contour plots of three lowest unoccupied molecular orbitals (LUMOs [L], L+1 and L+2) and three highest occupied molecular orbitals (HOMO [H], H−1 and H−2) of complex
+    <strong>
+     1
+    </strong>
+    involved in the lower-energy transitions are presented in
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3
+    </a>
+    . The orbitals in the H, H−1, and H−2 levels are localized on the dfppy ligands and Ir ions. In contrast, those in the L, L+1, and L+2 levels are predominantly localized on the tpphz ligand. The frontier orbital changes of complex
+    <strong>
+     2
+    </strong>
+    have been previously reported;
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+    the H, H−1, and H−2 are mainly localized on the dfppy ligands, whereas the L and L+1 are localized on the dpq ligand.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig3">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f3_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-f3.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f3.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 3
+       </b>
+       <span id="fig3">
+        <span class="graphic_title">
+         Selected frontier orbitals and energy levels of complex
+         <strong>
+          2
+         </strong>
+         .
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Based on time-dependent (TD)-DFT calculations, the transitions at longer wavelengths have very low oscillation strengths, as listed in Table S1 in the ESI,
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    and correspond to forbidden transitions according to the selection rule related to the spin multiplicity. These transitions are attributed to combinations of various HOMOs and, primarily, L and L+1 or L+2. Therefore, these theoretical orbital characteristics imply that low-energy transitions (S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    and T
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    ) are mainly contributed by the LLCT from dfppy to dpq or tpphz. The simulated absorption spectrum of complex
+    <strong>
+     1
+    </strong>
+    precisely described the measured absorption spectrum, as shown in Fig. S1 of the ESI.
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    Based on the TD-DFT calculations, we were able to easily interpret the transitions in the absorption spectra of complex
+    <strong>
+     1
+    </strong>
+    . We have previously reported the results of the TD-DFT calculations of complex
+    <strong>
+     2
+    </strong>
+    elsewhere.
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+    Notably, the absorption band at &gt;450 nm can be assigned to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT transition of dpq or tpphz ligands.
+   </p>
+   <h3 id="sect543">
+    <span class="b_heading">
+     Time-resolved TA spectroscopic studies
+    </span>
+   </h3>
+   <span>
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    shows the TA spectra of complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    in CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    probed at various time delays following the 100 fs pulse excitations at 290 and 480 nm. Singlet manifolds (such as the
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    LC (π*) or
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    MLCT states) could be formed by excitation at 290 nm. As shown in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4a
+    </a>
+    , the TA bands of complex
+    <strong>
+     1
+    </strong>
+    occur over a broad range of 450–750 nm. The TA band at approximately 500 nm was observed after a short time delay and can be assigned as the TA band of the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    state. This TA band decreases as that at approximately 620 nm increases. The isosbestic point occurs at approximately 550 nm, indicating that two excited species in equilibrium change over time. The TA band at approximately 620 nm can be attributed to
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    . Therefore, this observation confirms the occurrence of the LLCT from
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    to
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    . The TA band at 500 nm decays with a time constant of 17 ps (decay profile in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4a
+    </a>
+    ). The TA trace was collected at 615 nm to observe the formation dynamics of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    <span class="italic">
+     via
+    </span>
+    LLCT. This temporal rise profile exhibited a qualitatively identical time constant of 17 ps as the decay trace collected at 500 nm.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig4">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f4_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-f4.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f4.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 4
+       </b>
+       <span id="fig4">
+        <span class="graphic_title">
+         TA spectra of (a and b) complex
+         <strong>
+          1
+         </strong>
+         and (b and c) complex
+         <strong>
+          2
+         </strong>
+         in CH
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         Cl
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         measured after selected time delays. All transient spectra were corrected for the chirp. The figures on the right are the temporal profiles monitored at different wavelengths. The excitation wavelengths were 290 nm (a and c) and 480 nm (b and d), respectively. The negative peaks (#) at 480 nm in (b) and (d) are attributed to the excitation pulses.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    The
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    and
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    transitions of both ligands can occur upon photoexcitation at 350 nm. The molar extinction coefficient of the
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    transition can be larger than that of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    because this transition is allowed by the selection rule for spin multiplicity. Therefore, the
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    state is generated readily upon excitation at 350 nm. After short time delays, the intensity of the TA band at 500 nm corresponding to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    state was smaller than that of the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    state at 620 nm, as shown in Fig. S2 in the ESI,
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    unlike the results obtained after excitation at 290 nm. All temporal decay or rise profiles started with significant Δ
+    <span class="italic">
+     A
+    </span>
+    values at time delays of near zero, possibly because of the fast intersystem crossing (
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    MLCT →
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT) process of each ligand. Then, the LLCT process occurs in the triplet manifold. Identical decay and rise time constants of 17 ps were also observed upon excitation at 350 nm.
+   </p>
+   <p class="otherpara">
+    In contrast, the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    state of complex
+    <strong>
+     1
+    </strong>
+    can be achieved directly by excitation at 480 nm. Thus, the TA band at approximately 620 nm dominates, as shown in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4b
+    </a>
+    , and the TA band at 500 nm is insignificant. Moreover, no rise or decay time-profiles were observed, even after short time delays. The
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    state is the final lowest state because no evolution was observed as the time delay increased, as shown in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4b
+    </a>
+    .
+   </p>
+   <p class="otherpara">
+    Upon excitation at 290 nm, the TA spectra of complex
+    <strong>
+     2
+    </strong>
+    showed the characteristic
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    band at 500 nm, as discussed above, with a decay time of 5 ps, as shown in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4c
+    </a>
+    . We attribute this time constant to the LLCT process from dffpy to dpq in the excited state. However, no significant spectral changes were observed after a delay of approximately 10 ps. Therefore, the TA spectral features of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    are similar to those of
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    . As shown in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4d
+    </a>
+    , when complex
+    <strong>
+     2
+    </strong>
+    was excited directly to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    state by 480 nm light, the TA spectra showed the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    band at 500 nm, and no evolution was observed as the time delay increased; thus, the lowest excited state of complex
+    <strong>
+     2
+    </strong>
+    is also suggested to be the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    state.
+   </p>
+   <p class="otherpara">
+    The LLCT is a forbidden process in octahedral metal-complexes because the ligands have an orthogonal structure. The tpphz ligand has a rigid π-conjugated planar structure, whereas the dpq ligand is more flexible. The LLCT process may occur through the structural distortion of the perfect octahedral geometry. Therefore, the LLCT process of complex
+    <strong>
+     2
+    </strong>
+    is expected to be efficient and fast and to have a small energy barrier.
+   </p>
+   <h3 id="sect620">
+    <span class="b_heading">
+     Temperature dependence of the emission spectra
+    </span>
+   </h3>
+   <span>
+    Complex
+    <strong>
+     1
+    </strong>
+    exhibited emission with a vibronic structure at ∼474 nm at 77 K. The emission intensity decreased, and it gradually shifted to longer wavelengths as the temperature increased, as shown in
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    . At temperatures below 134 K, the emission positions and vibronic structures were similar to the phosphorescence spectrum of Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (pic). Therefore, the low-temperature emission of complex
+    <strong>
+     1
+    </strong>
+    can be assigned to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state of dfppy. At temperatures over 134 K, however, the vibronic structure vanished, and the emission maximum shifted drastically from 474 nm to ∼570 nm. A considerable change in the emission intensity was observed in the range of 130–145 K, as shown in the inset of
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    . Because the melting point of 2-MTHF is 137 K, the change in the intensity and shift of the emission peak depends strongly on the rigidity of the solvent. In a glassy matrix at low-temperature, the main lowest emissive state may be attributed to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state of dfppy. Usually, the emission resulting from charge transfer exhibits broad spectral features without a vibrational structure. The broad emission at long wavelengths is assigned to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT emission of tpphz in fluid solutions at high temperature. At 77 K, when complex
+    <strong>
+     1
+    </strong>
+    was excited to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state of tpphz with 509 nm, broad emission at 572 nm was observed, as shown by the red line in
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    . Thus, the final emissive state of complex
+    <strong>
+     1
+    </strong>
+    is the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    state.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig5">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f5_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-f5.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f5.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 5
+       </b>
+       <span id="fig5">
+        <span class="graphic_title">
+         Emission spectra of
+         <strong>
+          1
+         </strong>
+         in 2-MTHF recorded as a function of temperature. The excitation wavelength was 355 nm. The red spectrum was measured at 77 K upon excitation at 509 nm. The inset shows the compilation of the emission intensity monitored at 470 nm as a function of the reciprocal temperature.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    shows the emission spectra of complex
+    <strong>
+     2
+    </strong>
+    in 2-MTHF upon excitation at 509 nm as a function of temperature. The excitation wavelength of 509 nm corresponds to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT transition of Ir → dpq; thus, the emission can be attributed to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    state. At 77 K, complex
+    <strong>
+     2
+    </strong>
+    exhibits emission with a moderate vibronic structure at approximately 575 nm. When complex
+    <strong>
+     2
+    </strong>
+    was excited at 355 nm (or 309 nm), overall, the observed spectral changes in its emission were identical to those resulting from excitation at 509 nm. Thus, unlike complex
+    <strong>
+     1
+    </strong>
+    , the emission behaviours of complex
+    <strong>
+     2
+    </strong>
+    do not depend on the excitation wavelength. As mentioned above, the LLCT process of complex
+    <strong>
+     2
+    </strong>
+    is not affected by an activation barrier, even at 77 K. Therefore, observing the emission originating from the MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    state is difficult.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig6">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f6_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-f6.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f6.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 6
+       </b>
+       <span id="fig6">
+        <span class="graphic_title">
+         Emission spectra of
+         <strong>
+          2
+         </strong>
+         in 2-MTHF recorded as a function of temperature. The excitation wavelength was 509 nm. The inset figure shows the compilation of the emission intensity as a function of temperature.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    As the temperature increased, the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    emission shifted to longer wavelengths and broadened. A drastic change in the emission intensity was also observed in the range of 130–140 K, as shown in the inset of
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    . Complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    exhibited rigidochromism, in which the emission properties depend on the viscosity of the system. Usually, the excited state is stabilized by solvent reorganization. In a rigid environment, however, solvent reorganization is extremely slow or may not occur. Therefore, the excited state cannot be stabilized completely, resulting in a blue shift of the emission wavelength. For complex
+    <strong>
+     2
+    </strong>
+    , the hypsochromic shift of approximately 1600 cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    occurred at somewhat a lower energy state than the LC state of free ligands (see emission wavelengths in
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ). Therefore, the hypsochromic change is attributed to emission from the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    state.
+   </p>
+   <p class="otherpara">
+    However, complex
+    <strong>
+     1
+    </strong>
+    showed a very large hypsochromic shift of ∼4800 cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    . The emission wavelength at 77 K is similar to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    emission, which is much higher than the phosphorescence wavelength (or the LC state) of the tpphz free ligand. This unusual emission behaviour is explained as follows: very intense emission from the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    state occurred at 77 K, and thus, a significant energy barrier exists in the LLCT between the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    and
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    states.
+   </p>
+   <h3 id="sect677">
+    <span class="b_heading">
+     Temperature dependence of the emission lifetimes
+    </span>
+   </h3>
+   <span>
+    The temperature dependence of the excited-state lifetimes of complex
+    <strong>
+     1
+    </strong>
+    is shown for comparison in
+    <a href="#imgfig7" title="Select to navigate to figure">
+     Fig. 7
+    </a>
+    . At 77 K, the intrinsic emission lifetimes of complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    are 6.8 and 6.2 μs, respectively, in 2-MTHF. The emissions of complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    exhibited constant lifetimes at temperature &lt;−130 K. In contrast, near the melting point of 2-MTHF, the emission lifetime drastically decreased as the temperature increased. Additionally, at temperatures over 140 K, the emission lifetimes remained nearly constant as the temperature increased. At 298 K, the emission lifetimes for complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    are 1.2 and 0.8 μs, respectively. However, when the solvent was changed to CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    , the temperature range in which the emission changed drastically shifted to approximately 174–177 K. Because the melting point of CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    is 176 K, we can conclude that the lifetimes of the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT states of complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    are affected by the solvent rigidity. In particular, for complex
+    <strong>
+     1
+    </strong>
+    , the influences of temperature variation and solvent rigidity on the LLCT process between the dfppy and tpphz ligands are strong.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig7">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f7_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-f7.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f7.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 7
+       </b>
+       <span id="fig7">
+        <span class="graphic_title">
+         Compilation of the emission lifetimes as a function of temperature for complex
+         <strong>
+          2
+         </strong>
+         . The inset figure shows the decay profiles of emission at 550 nm for complex
+         <strong>
+          2
+         </strong>
+         in 2-MTHF at different temperatures.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h3 id="sect700">
+    <span class="b_heading">
+     Mechanism
+    </span>
+   </h3>
+   <span>
+    Based on the experimental results of the temperature dependency and fs-TA, we propose a rational mechanism for the LLCT process, as shown in
+    <a href="#imgfig8" title="Select to navigate to figure">
+     Fig. 8
+    </a>
+    . Strictly speaking, it is difficult for the LLCT transition to occur in a perfect octahedral structure. Complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    have orthogonal geometries with different types of bidentate ligands that are electronically non-conjugated. In a fluid solution, however, the octahedral structure changes constantly, and this distortion allows the LLCT between orthogonal ligands.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig8">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f8_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-f8.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-f8.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 8
+       </b>
+       <span id="fig8">
+        <span class="graphic_title">
+         (a) The proposed LLCT mechanisms for complexes
+         <strong>
+          1
+         </strong>
+         and
+         <strong>
+          2
+         </strong>
+         . (b) The LLCT dynamics at 300 K and the phosphorescence lifetimes measured at 77 K and 300 K.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    After exciting dfppy in the singlet manifold (
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    LC or
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    MLCT states), a highly efficient inter-system crossing to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state occurs because of strong spin–orbit coupling with the Ir ion. The
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state of dfppy has different fates depending on the energy level of the ancillary ligand (dpq or tpphz). For complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    , because the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT states of dpq and tpphz are lower than that of dfppy, the LLCT from the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state of dfppy to the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT state of dpq or tpphz is exothermic. In contrast, the strong temperature effects observed for complex
+    <strong>
+     1
+    </strong>
+    constitute clear evidence that a significant activation barrier exists in the LLCT process. Therefore, the decay and corresponding rise components can be clearly observed in the TA profiles. Furthermore, when molecules are directly excited to
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      tpphz
+     </sub>
+    </small>
+    , no temperature effects or evolution in the TA decay profiles are observed.
+   </p>
+   <p class="otherpara">
+    For complex
+    <strong>
+     2
+    </strong>
+    , the activation barrier in the LLCT process can be ignored. As a result, we were unable to observe any emission from the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dfppy
+     </sub>
+    </small>
+    state, even at 77 K. Even when the molecule was excited at a high-energy wavelength, the observed emission originated from the
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    MLCT
+    <small>
+     <sub>
+      dpq
+     </sub>
+    </small>
+    state through an efficient LLCT process.
+   </p>
+   <h2 id="sect729">
+    <span class="a_heading">
+     Conclusions
+    </span>
+   </h2>
+   <span>
+    LLCT processes can be directly observed in the presence of energetically different ligands in metal complexes. To obtain insights into the LLCT process, we prepared a series of heteroleptic Ir(
+    <span class="small_caps">
+     III
+    </span>
+    ) metal complexes chelated by two cyclometalated dfppy ligands and an ancillary ligand (dpq or tpphz) to ensure a larger ππ* energy gap than that achieved with cyclometalated ligands. Based on the temperature dependency results, the rigidity of the environment is a very important factor affecting the LLCT process. Indeed, the LLCT appears to require some structural distortion because this transition is forbidden when the ligands are arranged in an orthogonal geometry. Complex
+    <strong>
+     1
+    </strong>
+    , which contained a flat and rigid ancillary ligand, showed slower LLCT dynamics than complex
+    <strong>
+     2
+    </strong>
+    . Complexes
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    constitute good models for understanding the LLCT dynamics based on TA spectroscopy with excitation at different wavelengths. The LLCT properties were affected by several important factors, such as the energy differences between the main and ancillary ligands, the temperature, and the rigidity of the environment.
+   </span>
+   <h2 id="sect737">
+    <span class="a_heading">
+     Experimental
+    </span>
+   </h2>
+   <h3 id="sect739">
+    <span class="b_heading">
+     General procedures
+    </span>
+   </h3>
+   <span>
+    Starting materials for the synthesis were purchased from Aldrich Chemical Co. and TCI Co., and were used without further purification. Reactions were carried out under a dried N
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    atmosphere. CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    and MeOH were freshly distilled over calcium hydride before use. Glassware, syringes, magnetic stirring bars, and needles were dried in a convection oven over 4 h. In order to monitor the progress of the reaction, commercial thin layer chromatography (TLC) plates (Merck Co.) were developed, and the spots were seen under UV light at 254 and 365 nm. Column chromatography was done with silica gel 60G (particle size 5–40 μm, Merck Co.).
+   </span>
+   <h3 id="sect745">
+    <span class="b_heading">
+     Synthesis
+    </span>
+   </h3>
+   <span>
+    The cyclometalating ligand (dfppy) and ancillary ligands (dpq
+    <a href="#cit21" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       21
+      </span>
+     </sup>
+    </a>
+    and tpphz
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+    ) were synthesized as described by a previously developed synthesis protocol. The synthetic route towards dfppy, dpq and tpphz is shown in
+    <a href="#imgsch2" title="Select to navigate to scheme">
+     Scheme 2
+    </a>
+    . The synthesis details of [Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (dpq)](PF
+    <small>
+     <sub>
+      6
+     </sub>
+    </small>
+    ) (
+    <strong>
+     2
+    </strong>
+    ) are described earlier.
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgsch2">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-s2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02087a-s2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02087a/c6cp02087a-s2.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Scheme 2
+       </b>
+       <span id="sch2">
+        <span class="graphic_title">
+         Synthetic route towards the cyclometalating ligand (dfppy) and ancillary ligands (dpq and tpphz).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    [Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (tpphz)](PF
+    <small>
+     <sub>
+      6
+     </sub>
+    </small>
+    ) (
+    <strong>
+     2
+    </strong>
+    ): a solution of [Ir(dfppy)
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (μ-Cl)]
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (1.0 g, 0.8 mmol) and 2.2 equivalent ancillary ligand (tpphz) (0.7 g, 1.8 mmol) in 2
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    1 CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    /MeOH (60 mL) was heated to reflux under an inert atmosphere of nitrogen in the dark for 14 h. The red solution was cooled to room temperature, and then a 10-fold excess of KPF
+    <small>
+     <sub>
+      6
+     </sub>
+    </small>
+    (1.5 g, 8.2 mmol) was added to the solution. The suspension was stirred for 2 h and then filtered to remove insoluble inorganic salts. The organic solvent was removed under reduced pressure and the residue was purified by silica gel column chromatography using acetone/CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (v/v = 1
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    15) as the eluent to afford pure complex
+    <strong>
+     2
+    </strong>
+    . Yield: 0.59 g (52%).
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H NMR (300.1 MHz, DMSO-d6)
+    <span class="italic">
+     δ
+    </span>
+    8.70 (d, 2H), 8.58 (d, 1H), 8.53 (d, 1H), 8.42–8.44 (m, 2H), 8.15–8.26 (m, 6H), 7.93–8.01 (m, 3H), 7.62–7.92 (m, 4H), 7.36 (t, 1H), 7.23 (t, 1H), 6.84 (t, 1H), 6.74 (t, 1H), 6.05 (d, 1H).
+    <small>
+     <sup>
+      13
+     </sup>
+    </small>
+    C NMR (75.4 MHz, DMSO-d6)
+    <span class="italic">
+     δ
+    </span>
+    158.1, 156.2, 153.8, 153.7, 152.3, 150.3, 149.9, 142.6, 140.3, 140.0, 138.7, 133.5, 133.0, 131.0, 130.2, 128.6, 127.6, 125.9, 124.7, 124.5, 124.3, 123.5, 123.4, 114.2, 113.6, 99.6, 99.0. MALDI-TOF MS:
+    <span class="italic">
+     m
+    </span>
+    /
+    <span class="italic">
+     z
+    </span>
+    = 857.174 ([M–PF
+    <small>
+     <sub>
+      6
+     </sub>
+    </small>
+    ]
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    ; C
+    <small>
+     <sub>
+      40
+     </sub>
+    </small>
+    H
+    <small>
+     <sub>
+      24
+     </sub>
+    </small>
+    F
+    <small>
+     <sub>
+      4
+     </sub>
+    </small>
+    IrN
+    <small>
+     <sub>
+      6
+     </sub>
+    </small>
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    ; calcd 857.163); anal. calcd for C
+    <small>
+     <sub>
+      40
+     </sub>
+    </small>
+    H
+    <small>
+     <sub>
+      24
+     </sub>
+    </small>
+    F
+    <small>
+     <sub>
+      10
+     </sub>
+    </small>
+    IrN
+    <small>
+     <sub>
+      6
+     </sub>
+    </small>
+    P: C, 47.95; H, 2.41; N, 8.39. Found: C, 47.86; H, 2.41; N, 8.42.
+   </p>
+   <h3 id="sect786">
+    <span class="b_heading">
+     Spectroscopic measurements
+    </span>
+   </h3>
+   <span>
+    Steady-state absorption spectra were recorded using a UV-vis spectrophotometer (Agilent Technology, Cary 5000) at room temperature. Fluorescence spectra were measured using a fluorescence spectrophotometer (Varian, Cary Eclipse). Elemental analyses were carried out using a Carlo Erba Instruments CHNS-O EA 1108 analyzer and MALDI-TOF mass spectroscopy (ABI Voyager STR) was performed at the Ochang Branch of the Korean Basic Science Institute.
+   </span>
+   <p class="otherpara">
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H and
+    <small>
+     <sup>
+      13
+     </sup>
+    </small>
+    C NMR spectra were recorded on a Varian Mercury 300 spectrometer operating at 300.1 and 75.4 MHz, respectively. The chemical shifts are given in ppm relative to the residual signal of the solvents: CDCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    7.26 ppm (
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H) and CDCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    77.0 ppm (
+    <small>
+     <sup>
+      13
+     </sup>
+    </small>
+    C).
+   </p>
+   <p class="otherpara">
+    The phosphorescence spectra at various low temperatures were measured using an intensified charge-coupled device (ICCD, Andor, iStar). The samples were excited by nanosecond laser pulses of the third harmonic generation (355 nm, FWHM of 4.5 ns) from a Q-switched Nd:YAG laser (Continuum, Surelite II-10). Phosphorescence lifetimes were measured using a digital oscilloscope (Tektronix, TDS-784D) equipped with a fast photomultiplier tube (Zolix Instruments Co., CR 131).
+   </p>
+   <p class="otherpara">
+    The sub-picosecond time-resolved absorption spectra were collected using a pump–probe TA spectroscopy system (Ultrafast Systems, Helios). The pump light was generated by using a regenerative amplified titanium sapphire laser system (Spectra Physics, Spitfire Ace, 1 kHz) pumped by a diode-pumped Q-switched laser (Spectra Physics, Empower). The seed pulse was generated using a titanium sapphire laser (Spectra Physics, MaiTai SP). The pulses (290, 350 and 480 nm) generated from an optical parametric amplifier (Spectra Physics, TOPAS prime) were used as the excitation pulse. And a white light continuum pulse, which was generated by focusing the residual of the fundamental light to a thin Sapphire crystal after the controlled optical delay, was used as a probe beam and directed to the sample cell with an optical path of 2.0 mm and detected with a CCD detector installed in the absorption spectroscopy. The pump pulse was chopped by the mechanical chopper synchronized to one-half of the laser repetition rate, resulting in a pair of the spectra with and without the pump, from which absorption change induced by the pump pulse was estimated. To obtain the transient spectrum at a chosen delay time, the raw data were corrected for the chirp, which is carried out after the measurement.
+   </p>
+   <h3 id="sect798">
+    <span class="b_heading">
+     Theoretical calculations
+    </span>
+   </h3>
+   <span>
+    Computations on the electronic ground state of complex
+    <strong>
+     1
+    </strong>
+    were performed using Becke's three-parameter density functional combined with the nonlocal functional of Lee, Yang, and Parr (B3LYP).
+    <a href="#cit23" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       23
+      </span>
+     </sup>
+    </a>
+    6-31G(d) basis sets were employed for the ligand and the relativistic effective core potential of Los Alamos and double-zeta basis set (LANL2DZ) were employed for Iridium.
+    <a href="#cit24" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       24
+      </span>
+     </sup>
+    </a>
+    The ground-state geometry was fully optimized and time-dependent density functional theory (TD-DFT) calculations were performed to obtain the vertical singlet and triplet excitation energies. All calculations were performed using the Gaussian-09 package.
+    <a href="#cit20" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       20
+      </span>
+     </sup>
+    </a>
+    On the other hand, theoretical calculation results of complex
+    <strong>
+     2
+    </strong>
+    have been reported earlier.
+    <a href="#cit19" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       19
+      </span>
+     </sup>
+    </a>
+   </span>
+   <h2 id="sect808">
+    <span class="a_heading">
+     Acknowledgements
+    </span>
+   </h2>
+   <span>
+    This study was supported by the Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education (NRF-2014R1A6A1030732 and NRF-2014R1A1A-2004199). This research was supported by the Functional Districts of the Science Belt support program, Ministry of Science, ICT and Future Planning (2015K000287).
+   </span>
+   <span id="sect810">
+    <h2 id="sect807">
+     <span class="a_heading">
+      Notes and references
+     </span>
+    </h2>
+   </span>
+   <ol type="1">
+    <li>
+     <span id="cit1">
+      M. S. Lowry and S. Bernhard,
+      <span class="italic">
+       Chem. – Eur. J.
+      </span>
+      , 2006,
+      <span class="bold">
+       12
+      </span>
+      , 7970–7977
+      <a class="DOILink" href="http://dx.doi.org/10.1002/chem.200600618" target="_blank" title="DOI Link to resource 10.1002/chem.200600618">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD28Xht1WktrrN" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16933348%5Buid%5D" target="_blank" title="PubMed Link to resource 16933348">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/1_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit2">
+      M. S. Lowey, W. R. Hudson, R. A. Pascal, Jr. and S. Bernhard,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2004,
+      <span class="bold">
+       126
+      </span>
+      , 14129–14135
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja047156+" target="_blank" title="DOI Link to resource 10.1021/ja047156+">
+       CrossRef
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=15506778%5Buid%5D" target="_blank" title="PubMed Link to resource 15506778">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/2_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit3">
+      A. B. Tamayo, S. Garon, T. Sajoto, P. I. Djurovich, I. M. Tsyba, R. Bau and M. E. Thompson,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 2005,
+      <span class="bold">
+       44
+      </span>
+      , 8723–8732
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic050970t" target="_blank" title="DOI Link to resource 10.1021/ic050970t">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2MXhtFKrt7%252FI" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16296826%5Buid%5D" target="_blank" title="PubMed Link to resource 16296826">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/3_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit4">
+      S. Lamansky, P. Djurovich, D. Murphy, F. Abdel-Razzaq, H. E. Lee, C. Adachi, P. E. Burrows, S. R. Forrest and M. E. Thompson,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2001,
+      <span class="bold">
+       123
+      </span>
+      , 4304–4312
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja003693s" target="_blank" title="DOI Link to resource 10.1021/ja003693s">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3MXis1Wjsro%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=11457197%5Buid%5D" target="_blank" title="PubMed Link to resource 11457197">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/4_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit5">
+      A. J. Wilkinson, A. E. Goeta, C. E. Foster and J. A. G. Williams,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 2004,
+      <span class="bold">
+       43
+      </span>
+      , 6513–6515
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic049272j" target="_blank" title="DOI Link to resource 10.1021/ic049272j">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2cXnsVaiur4%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=15476339%5Buid%5D" target="_blank" title="PubMed Link to resource 15476339">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/5_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit6">
+      M. Polson, S. Fracasso, V. Bertolasi, M. Ravaglia and F. Scandola,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 2004,
+      <span class="bold">
+       43
+      </span>
+      , 1950–1956
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic0351848" target="_blank" title="DOI Link to resource 10.1021/ic0351848">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2cXhtlamsr0%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=15018515%5Buid%5D" target="_blank" title="PubMed Link to resource 15018515">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/6_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit7">
+      J. Li, P. I. Djurovich, B. D. Alleyne, M. Yousufuddin, N. N. Ho, J. C. Thomas, J. C. Peters, R. Bau and M. E. Thompson,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 2005,
+      <span class="bold">
+       44
+      </span>
+      , 1713–1727
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic048599h" target="_blank" title="DOI Link to resource 10.1021/ic048599h">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2MXht1aqtb0%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=15762698%5Buid%5D" target="_blank" title="PubMed Link to resource 15762698">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/7_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit8">
+      Y. You and S. Y. Park,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2005,
+      <span class="bold">
+       127
+      </span>
+      , 12438–12439
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja052880t" target="_blank" title="DOI Link to resource 10.1021/ja052880t">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2MXotFSiurk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16144361%5Buid%5D" target="_blank" title="PubMed Link to resource 16144361">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/8_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit9">
+      Y. You, K. S. Kim, T. K. Ahn, D. Kim and S. Y. Park,
+      <span class="italic">
+       J. Phys. Chem. C
+      </span>
+      , 2007,
+      <span class="bold">
+       111
+      </span>
+      , 4052–4060
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXhvFagt7Y%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/9_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit10">
+      Y. You, J. Seo, S. H. Kim, K. S. Kim, T. K. Ahn, D. Kim and S. Y. Park,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 2008,
+      <span class="bold">
+       47
+      </span>
+      , 1476–1487
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic701778f" target="_blank" title="DOI Link to resource 10.1021/ic701778f">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXhs1emtrw%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=18254589%5Buid%5D" target="_blank" title="PubMed Link to resource 18254589">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/10_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit11">
+      H.-S. Duan, P.-T. Chou, C.-C. Hsu, J.-Y. Hung and Y. Chi,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 2009,
+      <span class="bold">
+       48
+      </span>
+      , 6501–6508
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic9003164" target="_blank" title="DOI Link to resource 10.1021/ic9003164">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1MXnsV2ltrk%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=19537805%5Buid%5D" target="_blank" title="PubMed Link to resource 19537805">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/11_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit12">
+      Y. Chi and P.-T. Chou,
+      <span class="italic">
+       Chem. Soc. Rev.
+      </span>
+      , 2010,
+      <span class="bold">
+       39
+      </span>
+      , 638–655
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=B916237B&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/B916237B">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/12_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit13">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit13a">
+       X. Gu, T. Fei, H. Zhang, H. Xu, B. Yang, Y. Ma and X. Liu,
+       <span class="italic">
+        J. Phys. Chem. A
+       </span>
+       , 2008,
+       <span class="bold">
+        112
+       </span>
+       , 8387–9393
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp8026429" target="_blank" title="DOI Link to resource 10.1021/jp8026429">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXpvFSls7Y%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=18707065%5Buid%5D" target="_blank" title="PubMed Link to resource 18707065">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/13a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit13b">
+       F. O. Garces, K. A. King and R. J. Watts,
+       <span class="italic">
+        Inorg. Chem.
+       </span>
+       , 1988,
+       <span class="bold">
+        27
+       </span>
+       , 3464–3471
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ic00293a008" target="_blank" title="DOI Link to resource 10.1021/ic00293a008">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL1cXlsV2ktLc%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/13b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       c
+      </i>
+      )
+      <span id="cit13c">
+       Y.-Y. Lyu, Y. Byun, O. Kwon, E. Han, W. S. Jeon, R. R. Das and K. Char,
+       <span class="italic">
+        J. Phys. Chem. B
+       </span>
+       , 2006,
+       <span class="bold">
+        110
+       </span>
+       , 10303–10314
+       <a class="DOILink" href="http://dx.doi.org/10.1021/jp057446s" target="_blank" title="DOI Link to resource 10.1021/jp057446s">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD28XktlWrurw%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16722733%5Buid%5D" target="_blank" title="PubMed Link to resource 16722733">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/13c_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit14">
+      J. Bolger, A. Gourdon, E. Ishow and J.-P. Launay,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 1996,
+      <span class="bold">
+       35
+      </span>
+      , 2937–2944
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic951436w" target="_blank" title="DOI Link to resource 10.1021/ic951436w">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28Xitl2qtrc%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/14_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit15">
+      X. Gu, T. Fei, H. Zhang, H. Xu, B. Yang, Y. Ma and X. Liu,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2008,
+      <span class="bold">
+       112
+      </span>
+      , 8387–8397
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp8026429" target="_blank" title="DOI Link to resource 10.1021/jp8026429">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXpvFSls7Y%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=18707065%5Buid%5D" target="_blank" title="PubMed Link to resource 18707065">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/15_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit16">
+      Y. Zhou, W. Li, Y. Liu, L. Zeng, W. Su and M. Zhou,
+      <span class="italic">
+       Dalton Trans.
+      </span>
+      , 2012,
+      <span class="bold">
+       41
+      </span>
+      , 9373–9381
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C2DT30695F&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C2DT30695F">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/16_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit17">
+      S. C. Rasmussen, M. M. Richter, E. Yi. H. Place and K. J. Brewer,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 1990,
+      <span class="bold">
+       29
+      </span>
+      , 3926–3932
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic00345a005" target="_blank" title="DOI Link to resource 10.1021/ic00345a005">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3cXls1Cns7o%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/17_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit18">
+      E. Ishow, A. Gourdon, J. P. Launay, P. Lecante, M. Verelst, C. Chiorboli, F. Scandola and C.-A. Bignozzi,
+      <span class="italic">
+       Inorg. Chem.
+      </span>
+      , 1998,
+      <span class="bold">
+       37
+      </span>
+      , 3603–3609
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ic9715815" target="_blank" title="DOI Link to resource 10.1021/ic9715815">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1cXjvFCmtrg%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=11670451%5Buid%5D" target="_blank" title="PubMed Link to resource 11670451">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/18_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit19">
+      A.-R. Hwang, W.-S. Han, K.-R. Wee, H. Y. Kim, D. W. Cho, B. K. Min, S. W. Nam, C. Pac and S. O. Kang,
+      <span class="italic">
+       J. Phys. Chem. C
+      </span>
+      , 2012,
+      <span class="bold">
+       116
+      </span>
+      , 1973–1986
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXhsF2lsLrI" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/19_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit20">
+      M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci, G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian, A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada, M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr., J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers, K. N. Kudin, V. N. Staroverov, R. Kobayashi, J. Normand, K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross, V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth, P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels, Ö. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski and D. J. Fox,
+      <span class="italic">
+       Gaussian 09, Revision D.01
+      </span>
+      , Gaussian, Inc., Wallingford CT,  2009
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Gaussian%2009,%20Revision%20D.01%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202009%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/20_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit21">
+      A. Ohta, S. Masano, S. Iwakura, A. Tamura, H. Watahiki, M. Tsutsui, Y. Akita and T. Watanabe,
+      <span class="italic">
+       J. Heterocycl. Chem.
+      </span>
+      , 1982,
+      <span class="bold">
+       19
+      </span>
+      , 465–472
+      <a class="DOILink" href="http://dx.doi.org/10.1002/jhet.5570190304" target="_blank" title="DOI Link to resource 10.1002/jhet.5570190304">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL38XlvVagtL4%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/21_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit22">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit22a">
+       J. Bolger, A. Gourdon, E. Ishow and J. P. Launay,
+       <span class="italic">
+        Inorg. Chem.
+       </span>
+       , 1996,
+       <span class="bold">
+        35
+       </span>
+       , 2937–2944
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ic951436w" target="_blank" title="DOI Link to resource 10.1021/ic951436w">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK28Xitl2qtrc%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/22a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit22b">
+       E. Ishow, A. Gourdon, J. P. Launay, P. Lecante, M. Verelst, C. Chiorboli and F. Scandola,
+       <span class="italic">
+        Inorg. Chem.
+       </span>
+       , 1998,
+       <span class="bold">
+        37
+       </span>
+       , 3603–3609
+       <a class="DOILink" href="http://dx.doi.org/10.1021/ic9715815" target="_blank" title="DOI Link to resource 10.1021/ic9715815">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1cXjvFCmtrg%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=11670451%5Buid%5D" target="_blank" title="PubMed Link to resource 11670451">
+        PubMed
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/22b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit23">
+      (
+      <i>
+       a
+      </i>
+      )
+      <span id="cit23a">
+       A. D. Becke,
+       <span class="italic">
+        J. Chem. Phys.
+       </span>
+       , 1993,
+       <span class="bold">
+        98
+       </span>
+       , 5648–5652
+       <a class="DOILink" href="http://dx.doi.org/10.1063/1.464913" target="_blank" title="DOI Link to resource 10.1063/1.464913">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK3sXisVWgtrw%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/23a_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      ; 
+  (
+      <i>
+       b
+      </i>
+      )
+      <span id="cit23b">
+       C. Lee, W. Yang and R. G. Parr,
+       <span class="italic">
+        Phys. Rev.
+       </span>
+       , 1988,
+       <span class="bold">
+        37
+       </span>
+       , 785–789
+       <a class="DOILink" href="http://dx.doi.org/10.1103/PhysRevB.37.785" target="_blank" title="DOI Link to resource 10.1103/PhysRevB.37.785">
+        CrossRef
+       </a>
+       <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL1cXktFWrtbw%253D" target="_blank" title="Link to resource in CAS">
+        CAS
+       </a>
+       <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/23b_1" target="_blank" title="Link via OpenURL Resolver">
+        <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+       </a>
+      </span>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit24">
+      P. J. Hay,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2002,
+      <span class="bold">
+       106
+      </span>
+      , 1634–1641
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp013949w" target="_blank" title="DOI Link to resource 10.1021/jp013949w">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD38Xns1Kqtw%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02087A/24_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+   </ol>
+   <hr/>
+   <table>
+    <tr>
+     <td>
+      <h3>
+       Footnote
+      </h3>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="sup_ref">
+       †
+       <span id="fn1">
+        Electronic supplementary information (ESI) available. See DOI:
+        <a href="http://xlink.rsc.org/?DOI=c6cp02087a" target="_blank" title="Select to resolve DOI: 10.1039/c6cp02087a">
+         10.1039/c6cp02087a
+        </a>
+       </span>
+      </span>
+     </td>
+    </tr>
+   </table>
+   <table>
+    <tr>
+     <td>
+      <hr/>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       This journal is © the Owner Societies 2016
+      </b>
+     </td>
+    </tr>
+   </table>
+  </div>
+ </body>
+</html>

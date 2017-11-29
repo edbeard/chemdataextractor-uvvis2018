@@ -1,0 +1,6295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:art="http://www.rsc.org/schema/rscart38" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rsc="urn:rsc.org">
+ <head>
+  <title>
+   Design and characterisation of bodipy sensitizers for dye-sensitized NiO solar cells   - Physical Chemistry Chemical Physics (RSC Publishing) DOI:10.1039/C5CP05177K
+  </title>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYNF1oJ","queueTime":1,"applicationTime":1655,"ttGuid":"622795F69A4FAB1A","agent":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,S=y.hash,this[u]=Date.now()}function o(){j--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),R=t(13),P=t("ee"),D=P.get("tracer");t(14),t("loader").features.spa=!0;var S,N=w[v],j=0;P.on(u,r),P.on(p,r),P.on(h,o),P.on(d,o),P.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),R.buffer([u,"new-xhr","send-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(R,"send-xhr"+c),a(P,"xhr-resolved"),a(P,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),N("hashchange",i,!0),N("load",i,!0),N("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(h+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),f.setCurrentRouteName=o(h+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(h){throw u(e+"err",[r,a,h],c),h}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,h(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){p([a,n,r,o])}s=i}}function h(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!p.aborted){t&&t(n,r,o);for(var i=e(o),a=l(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function d(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return h[t]=h[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},g={on:d,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},h={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=h.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(w,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=h.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===h.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=t("ee"),u=window,h=u.document,p="addEventListener",d="attachEvent",l=u.XMLHttpRequest,m=l&&l.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:l,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(16);var v=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-998.min.js"},y=l&&m&&m[p]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:v,features:{},xhrWrappable:y};h[p]?(h[p]("DOMContentLoaded",i,!1),u[p]("load",r,!1)):(h[d]("onreadystatechange",o),u[d]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,14,5,3,4]);
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Gareth H. Summers" name="DC.Creator"/>
+  <meta content="Jean-François Lefebvre" name="DC.Creator"/>
+  <meta content="Fiona A. Black" name="DC.Creator"/>
+  <meta content="E. Stephen Davies" name="DC.Creator"/>
+  <meta content="Elizabeth A. Gibson" name="DC.Creator"/>
+  <meta content="Tönu Pullerits" name="DC.Creator"/>
+  <meta content="Christopher J. Wood" name="DC.Creator"/>
+  <meta content="Karel Zidek" name="DC.Creator"/>
+  <meta content="Design and characterisation of bodipy sensitizers for dye-sensitized NiO solar cells  " name="DC.title"/>
+  <meta content="Royal Society of Chemistry" name="DC.publisher"/>
+  <meta content="2015/12/23" name="DC.Date"/>
+  <meta content="10.1039/C5CP05177K" name="DC.Identifier" scheme="doi"/>
+  <meta content="en" name="DC.Language"/>
+  <meta content="Design and characterisation of bodipy sensitizers for dye-sensitized NiO solar cells  " name="citation_title"/>
+  <meta content="Gareth H. Summers" name="citation_author"/>
+  <meta content="Jean-François Lefebvre" name="citation_author"/>
+  <meta content="Fiona A. Black" name="citation_author"/>
+  <meta content="E. Stephen Davies" name="citation_author"/>
+  <meta content="Elizabeth A. Gibson" name="citation_author"/>
+  <meta content="Tönu Pullerits" name="citation_author"/>
+  <meta content="Christopher J. Wood" name="citation_author"/>
+  <meta content="Karel Zidek" name="citation_author"/>
+  <meta content="2015/11/27" name="citation_online_date"/>
+  <meta content="2016" name="citation_date"/>
+  <meta content="Physical Chemistry Chemical Physics" name="citation_journal_title"/>
+  <meta content="18" name="citation_volume"/>
+  <meta content="2" name="citation_issue"/>
+  <meta content="1059" name="citation_firstpage"/>
+  <meta content="1070" name="citation_lastpage"/>
+  <meta content="10.1039/C5CP05177K" name="citation_doi"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticlePDF/2016/CP/C5CP05177K" name="citation_pdf_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleLanding/2016/CP/C5CP05177K" name="citation_abstract_html_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleHTML/2016/CP/C5CP05177K" name="citation_fulltext_html_url"/>
+  <link href="" rel="shortcut icon"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/rschtml2.css?ver=6_0_9" rel="stylesheet" type="text/css"/>
+  <script src="http://pubs.rsc.org/content/scripts/JQueryPlugins.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   (function ($) {
+        function grab_content(span_id) {
+            var content = $('span[id="' + span_id + '"]').text();
+
+            if (span_id.indexOf("fn", 0) != -1) {
+                return content; // could contain useful anchor text i.e. see doi:
+            }
+            else {
+                // strip external anchor text CrossRef etc. (but not Dera linked text)
+               $('span[id="' + span_id + '"] a[class !="simple"][class !="CH"][class !="TC"][class !="RTC"][class !="GB"]').each(
+            		function () {
+            					content = content.replace($(this).text(), '');
+              					}); return content;
+            }
+       }
+
+        $.fn.swapAttr = function (attribute) {
+            return this.each(function () {
+                $(this).hover(function () {
+                    var $this = $(this);
+                    var idval = $this.attr("href").replace("#", "");
+                    var textval = grab_content(idval);
+                    if (textval.replace(/\s+/g, '') != "") {
+                        $this.attr('title', textval.replace(/\s+/g, ' '));
+                    }
+                }, function () {
+                    var $this = $(this);
+                });
+            });
+        };
+
+    })(jQuery);
+
+    $(document).ready(function () {
+        $("a[href^='#']").swapAttr();
+    });
+  </script>
+  <!--6_0_9-->
+ </head>
+ <body>
+  <!--Google Tag Manager-->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-KW8L" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KW8L');
+  </script>
+  <!--End Google Tag Manager-->
+  <span id="top">
+  </span>
+  <div id="wrapper">
+   <div class="left_head">
+    <a class="URLLink" href="http://pubs.rsc.org">
+     <img alt="Royal Society of Chemistry" border="0" class="rsc-logo" src="http://pubs.rsc.org/content/NewImages/royal-society-of-chemistry-logo.png"/>
+    </a>
+    <br/>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlepdf/2016/CP/C5CP05177K" target="_blank" title="Link to PDF version">
+      View PDF Version
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C5CP05847C" target="_BLANK" title="Link to previous article (id:C5CP05847C)">
+      Previous Article
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C5CP04877J" target="_BLANK" title="Link to next article (id:C5CP04877J)">
+      Next Article
+     </a>
+    </span>
+   </div>
+   <div class="right_head">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js" type="text/javascript">
+    </script>
+    <script src="http://crossmark.crossref.org/javascripts/v1.4/crossmark.min.js" type="text/javascript">
+    </script>
+    <a href="#" id="open-crossmark" style="padding: 2.5em 0 1em 0;">
+     <img id="crossmark-icon" src="http://crossmark.crossref.org/images/crossmark_button.png" style="border: 0; display:inline;"/>
+    </a>
+    <div id="crossmark-dialog" style="display: none;" title="">
+     <iframe frameborder="0" id="crossmark-dialog-frame">
+     </iframe>
+    </div>
+    <br/>
+    <span class="oa">
+     <img src="http://pubs.rsc.org/content/newimages/open_access_blue.png"/>
+     Open Access Article
+     <br/>
+     <img src="http://pubs.rsc.org/content/newimages/CCBY.png"/>
+     This Open Access Article is licensed under a
+     <br/>
+     <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">
+      Creative Commons Attribution 3.0 Unported Licence
+     </a>
+    </span>
+   </div>
+   <div class="article_info">
+    DOI:
+    <a href="http://dx.doi.org/10.1039/C5CP05177K" target="_blank" title="Link to landing page via DOI">
+     10.1039/C5CP05177K
+    </a>
+    (Paper)
+    <span class="italic">
+     <a href="http://dx.doi.org/10.1039/1463-9084/1999" title="Link to journal home page">
+      Phys. Chem. Chem. Phys.
+     </a>
+    </span>
+    , 2016,
+    <strong>
+     18
+    </strong>
+    , 1059-1070
+   </div>
+   <h1 id="sect199">
+    <span class="title_heading">
+     Design and characterisation of bodipy sensitizers for dye-sensitized NiO solar cells
+     <a href="#fn1" title="Select to navigate to footnote">
+      †
+     </a>
+    </span>
+   </h1>
+   <p class="header_text">
+    <span class="bold">
+     Gareth H. 
+            Summers
+     <a href="#fn2" title="Select to navigate to footnote">
+      ‡
+     </a>
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      ab
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Jean-François 
+            Lefebvre
+     <a href="#fn2" title="Select to navigate to footnote">
+      ‡
+     </a>
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Fiona A. 
+            Black
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      b
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     E. 
+            Stephen Davies
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Elizabeth A. 
+            Gibson
+    </span>
+    *
+    <sup>
+     <span class="sup_ref italic">
+      ab
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Tönu 
+            Pullerits
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      c
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     Christopher J. 
+            Wood
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    <span class="bold">
+     and
+    </span>
+    <span class="bold">
+     Karel 
+            Zidek
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      c
+     </span>
+    </sup>
+    <br/>
+    <a id="affa">
+     <sup>
+      <span class="sup_ref italic">
+       a
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     School of Inorganic Chemistry, The University of Nottingham, University Park, Nottingham, NG7 2RD, UK
+    </span>
+    <br/>
+    <a id="affb">
+     <sup>
+      <span class="sup_ref italic">
+       b
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     School of Chemistry, Newcastle University, Newcastle upon Tyne, NE1 7RU, UK. E-mail:
+     <a href="mailto:Elizabeth.gibson@ncl.ac.uk">
+      Elizabeth.gibson@ncl.ac.uk
+     </a>
+    </span>
+    <br/>
+    <a id="affc">
+     <sup>
+      <span class="sup_ref italic">
+       c
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Department of Chemical Physics, Lund University, Box 124, 22241, Lund, Sweden. E-mail:
+     <a href="mailto:Tonu.Pullerits@chemphys.lu.se">
+      Tonu.Pullerits@chemphys.lu.se
+     </a>
+    </span>
+   </p>
+   <div id="art-admin">
+    <span class="italic bold">
+     Received 
+      31st August 2015
+    </span>
+    <span class="bold italic">
+     , Accepted 24th November 2015
+    </span>
+   </div>
+   <p class="bold italic">
+    First published on the web 27th November 2015
+   </p>
+   <hr/>
+   <p class="abstract">
+    A series of photosensitizers for NiO-based dye-sensitized solar cells is presented. Three model compounds containing a triphenylamine donor appended to a boron dipyrromethene (bodipy) chromophore have been successfully prepared and characterised using emission spectroscopy, electrochemistry and spectroelectrochemistry, to ultimately direct the design of dyes with more complex structures. Carboxylic acid anchoring groups and thiophene spacers were appended to the model compounds to provide five dyes which were adsorbed onto NiO and integrated into dye-sensitized solar cells. Solar cells incorporating the simple
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    dye were surprisingly promising relative to the more complex dye
+    <strong>
+     4
+    </strong>
+    . Cell performances were improved with dyes which had increased electronic communication between the donor and acceptor, achieved by incorporating a less hindered bodipy moiety. Further increases in performances were obtained from dyes which contained a thiophene spacer. Thus, the best performance was obtained for
+    <strong>
+     7
+    </strong>
+    which generated a very promising photocurrent density of 5.87 mA cm
+    <small>
+     <sup>
+      −2
+     </sup>
+    </small>
+    and an IPCE of 53%. Spectroelectrochemistry combined with time-resolved transient absorption spectroscopy were used to determine the identity and lifetime of excited state species. Short-lived (ps) transients were recorded for
+    <strong>
+     4
+    </strong>
+    ,
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    which are consistent with previous studies. Despite a longer lived (25 ns) charge-separated state for
+    <strong>
+     6
+    </strong>
+    /NiO, there was no increase in the photocurrent generated by the corresponding solar cell.
+   </p>
+   <hr/>
+   <h2 id="sect293">
+    <span class="a_heading">
+     Introduction
+    </span>
+   </h2>
+   <span>
+    Dye-sensitized photocathodes offer a versatile means of converting sunlight into electricity or fuel by reducing the redox couple in tandem dye-sensitized solar cells, or protons in water to produce hydrogen in photoelectrochemical devices.
+    <a href="#cit1" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       1–4
+      </span>
+     </sup>
+    </a>
+    These systems have garnered less interest compared to photoanodic systems, such as the conventional dye-sensitized solar cell pioneered by Grätzel. However, substituting the platinum electrode in a TiO
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    -based solar cell with a photocathode could provide a route to increasing the efficiency.
+    <a href="#cit5" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       5
+      </span>
+     </sup>
+    </a>
+    The theoretical maximum efficiency of a single junction solar cell has been calculated to be 33.4% under AM1.5 conditions but this can be increased to 45.7% by stacking two photoelectrodes in one device.
+    <a href="#cit6" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       6
+      </span>
+     </sup>
+    </a>
+    A more realistic maximum efficiency for DSCs of 20% has been proposed, but after 25 years of research, only 12% has been achieved.
+    <a href="#cit7" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       7,8
+      </span>
+     </sup>
+    </a>
+    Matching the output from a state-of-the art TiO
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    photoanode with a dye-sensitized photocathode could lead to a step change in efficiency that would make tandem DSCs competitive with thin film devices. In order to assemble a working tandem cell, the currents on both photoelectrodes must be matched and the spectral properties of the dyes must complement each other. Typically the photocathodic current densities produced from sensitized NiO electrodes are less than half of the photoanodic currents produced by a dye-sensitized TiO
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    electrode.
+    <a href="#cit8" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       8–10
+      </span>
+     </sup>
+    </a>
+    To improve the performance of the working cell, dye regeneration must be able to compete with charge recombination. Therefore, the photoinduced charge-separated state must be sufficiently long-lived (μs) and unfortunately for most organic dyes adsorbed on NiO the charge-separated state lifetime is generally shorter (
+    <span class="italic">
+     ca.
+    </span>
+    10
+    <small>
+     <sup>
+      −7
+     </sup>
+    </small>
+    s). This makes the photocathodes unsuitable for use with iodine-free electrolytes such as cobalt-based systems, which avoid the overpotential wasted in the dye regeneration step that limits the efficiency of devices using the iodide/triiodide redox couple.
+    <a href="#cit11" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       11,12
+      </span>
+     </sup>
+    </a>
+    Thus, there are a number of important considerations regarding the design of photosensitizers for NiO and the best used to date contain a combination of key features of those dyes which have generated either high photovoltages or high currents in NiO-based dye-sensitized solar cells. For example, Spiccia
+    <span class="italic">
+     et al.
+    </span>
+    reported record efficiency NiO solar cells based on Co(en)
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    <small>
+     <sup>
+      3+/2+
+     </sup>
+    </small>
+    (1.3%) and Fe(acac)
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    <small>
+     <sup>
+      3+/2+
+     </sup>
+    </small>
+    (2.51%) using a perylene-thiophene-triphenylamine sensitizer (“PMI-6T-TPA”).
+    <a href="#cit13" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       13,14
+      </span>
+     </sup>
+    </a>
+    Detailed reviews on the performance and limitations of p-type DSCs can be found in
+    <a href="#cit1" title="Select to navigate to reference">
+     ref. 1, 2 and 33
+    </a>
+    .
+   </span>
+   <p class="otherpara">
+    Based on the features of the best performing dyes, we have designed new molecular sensitizers which exhibit high extinction coefficients, donor–acceptor character and strong anchoring to the NiO surface (based on the general structure in
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1
+    </a>
+    ). This article describes the electrochemical and photochemical properties of the model structures (
+    <strong>
+     1–3
+    </strong>
+    ) and corresponding dyes (
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    ,
+    <strong>
+     4–7
+    </strong>
+    ) (
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    ). We have chosen bodipy-based acceptor groups due to the ease of functionality and typically high extinction coefficients of bodipy compounds.
+    <a href="#cit15" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       15–17
+      </span>
+     </sup>
+    </a>
+    A triphenylamine motif with a carboxylic acid group as the electron donating anchoring group has been used since these have been shown to bind to NiO and perform well in push–pull photosensitizers.
+    <a href="#cit18" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       18–21
+      </span>
+     </sup>
+    </a>
+    In order to assess the impact of the distance between the bodipy and the NiO surface on the lifetime of the photoreduced bodipy and the device performance π-spacers were incorporated into the design. Previously we reported the solar cell efficiency of dyes
+    <strong>
+     6
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    which contain thiophene groups between the amine and the bodipy. In this study we have removed the thiophene and introduced phenyl groups between the benzoic acid and the amine in
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     5
+    </strong>
+    .
+    <a href="#cit8" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       8,22
+      </span>
+     </sup>
+    </a>
+    To determine whether the rotation of the bodipy around the C–C bond between the bodipy motif and the aniline affected the electronic properties of the dye and the device performance, methyl substituents were incorporated into dyes
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     6
+    </strong>
+    but not into dyes
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    . To assess the effect of these modifications on the charge transfer dynamics at the dye/NiO interface we carried out transient absorption spectroscopy and emission experiments on the dyed films and compared them to our previous results for
+    <strong>
+     6
+    </strong>
+    .
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig1">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f1.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 1
+       </b>
+       <span id="fig1">
+        <span class="graphic_title">
+         Illustration of the principle components of the dyes designed and investigated in this work.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig2">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f2.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 2
+       </b>
+       <span id="fig2">
+        <span class="graphic_title">
+         Dyes
+         <strong>
+          1–7
+         </strong>
+         and 4,4-difluoro-8-(4-carboxyphenyl)-1,3,5,7-tetramethyl-2,6-diethyl-3
+         <span class="italic">
+          a
+         </span>
+         ,4
+         <span class="italic">
+          a
+         </span>
+         -diaza-4-bora-
+         <span class="italic">
+          s
+         </span>
+         -indacene (
+         <strong>
+          Bodipy-CO
+          <small>
+           <sub>
+            2
+           </sub>
+          </small>
+          H
+         </strong>
+         ) investigated as NiO photosensitizers in this work.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h2 id="sect344">
+    <span class="a_heading">
+     Results
+    </span>
+   </h2>
+   <h3 id="sect346">
+    <span class="b_heading">
+     Synthesis
+    </span>
+   </h3>
+   <span>
+    Details regarding the synthesis of the bodipy molecules is provided in the ESI.
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    <strong>
+     1–4
+    </strong>
+    (
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    ) were prepared by reacting 2,4-dimethyl-3-ethylpyrrole with the formyltriphenylamine derivatives, followed by the coordination to –BF
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    .
+    <strong>
+     5
+    </strong>
+    was prepared similarly by reacting 2-(4-(
+    <span class="italic">
+     tert
+    </span>
+    -butyl)phenyl)-pyrrole with the formyltriphenylamine derivatives, followed by the coordination to –BF
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    . The identity of the products were determined by NMR spectroscopy (see ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    for assigned spectra), HR ESI-MS and elemental analysis. The synthesis of
+    <strong>
+     6
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    has been reported previously.
+    <a href="#cit8" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       8,22
+      </span>
+     </sup>
+    </a>
+   </span>
+   <p class="otherpara">
+    4-Formyltriphenylamine and 4,4′-diformyltriphenylamine were prepared using the Vilsmeier–Haack reaction in 79% and 11% yield respectively, by tuning the ratio of triphenylamine
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    POCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    DMF and the reaction time. The products were separated using column chromatography and reacted with 2,4-dimethyl-3-ethylpyrrole to give the mono and bis-dipyrromethane derivatives. These were then converted to
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     3
+    </strong>
+    by the one-pot sequential oxidation with
+    <span class="italic">
+     p
+    </span>
+    -chloranil followed by reaction with boron trifluoride etherate in the presence of a base (
+    <span class="italic">
+     N
+    </span>
+    ,
+    <span class="italic">
+     N
+    </span>
+    -diisopropylethylamine) with reasonable yields (50% and 23%).
+   </p>
+   <p class="otherpara">
+    Dimethyl-4,4′-[(4-formylphenyl)amino]bis[benzoate] was prepared by performing a second Vilsmeier–Haack reaction on dimethyl-4,4′-(phenylamino)bis[benzoate] in 19% yield on account of the lower reactivity of the deactivated aniline derivative.
+    <strong>
+     2
+    </strong>
+    was then prepared in 23% yield from dimethyl-4,4′-[(4-formylphenyl)amino]bis[benzoate] using the same procedure as for
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     3
+    </strong>
+    . The presence of the ester groups was confirmed by a peak in the IR absorption spectrum in acetonitrile at 1740 cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    corresponding to the stretching frequency of the ester carbonyl. The chemical shift of the protons closest to the ester were shifted downfield from
+    <span class="italic">
+     δ
+    </span>
+    7.35–7.30 for
+    <strong>
+     1
+    </strong>
+    to
+    <span class="italic">
+     δ
+    </span>
+    7.98 for
+    <strong>
+     2
+    </strong>
+    .
+   </p>
+   <p class="otherpara">
+    The distance between the amine and the carboxylic acid was extended for
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     5
+    </strong>
+    by coupling 4,4′-[(4-bromophenyl)amino]bis-[benzaldehyde] to 4-carboxyphenylboronic acid using a palladium catalysed Suzuki coupling. This was then converted to the dye using the same procedure as for
+    <strong>
+     1–3
+    </strong>
+    .
+   </p>
+   <h3 id="sect380">
+    <span class="b_heading">
+     Dye-sensitized solar cells
+    </span>
+   </h3>
+   <span>
+    p-DSCs were constructed for the dyes containing acid anchoring groups (
+    <strong>
+     4–7
+    </strong>
+    and
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    ). The relevant parameters are shown in
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    and the photocurrent density–voltage curves are provided in
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3
+    </a>
+    . Dark current data is provided in Fig. S85 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ).
+   </span>
+   <div class="table_caption">
+    <b>
+     Table 1
+    </b>
+    <span id="tab1">
+     Photovoltaic performance of p-DSCs
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       Dye
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        V
+       </span>
+       <small>
+        <sub>
+         oc
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+       (mV)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        J
+       </span>
+       <small>
+        <sub>
+         sc
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+       (mA cm
+       <small>
+        <sup>
+         −2
+        </sup>
+       </small>
+       )
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       FF
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        η
+       </span>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fna" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+       (%)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       IPCE
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+       (%)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       APCE
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab1fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+       (%)
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="7">
+       <a id="tab1fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        <span class="italic">
+         J
+        </span>
+        <small>
+         <sub>
+          sc
+         </sub>
+        </small>
+        is the short-circuit current density at the
+        <span class="italic">
+         V
+        </span>
+        = 0 intercept,
+        <span class="italic">
+         V
+        </span>
+        <small>
+         <sub>
+          oc
+         </sub>
+        </small>
+        is the open-circuit voltage at the
+        <span class="italic">
+         J
+        </span>
+        = 0 intercept, FF is the device fill factor,
+        <span class="italic">
+         η
+        </span>
+        is the power conversion efficiency.
+       </span>
+       <a id="tab1fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        IPCE is the monochromatic incident photon-to-current conversion efficiency; APCE is calculated using APCE = IPCE/LHE where LHE = 1 × 10
+        <small>
+         <sup>
+          −
+          <span class="italic">
+           A
+          </span>
+         </sup>
+        </small>
+        where
+        <span class="italic">
+         A
+        </span>
+        is the absorptivity of the dye-sensitized NiO at
+        <span class="italic">
+         λ
+        </span>
+        <small>
+         <sub>
+          max
+         </sub>
+        </small>
+        .
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       <span class="bold">
+        Bodipy-CO
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        H
+       </span>
+      </td>
+      <td align="char" char="xb1" valign="top">
+       95 ± 7.5
+      </td>
+      <td align="char" char="xb1" valign="top">
+       1.48 ± 0.03
+      </td>
+      <td align="char" char="xb1" valign="top">
+       0.36 ± 0.01
+      </td>
+      <td align="char" char="xb1" valign="top">
+       0.05 ± 0.005
+      </td>
+      <td align="char" char="xb1" valign="top">
+       20 ± 0.5
+      </td>
+      <td align="char" char="xb1" valign="top">
+       27 ± 1.0
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        4
+       </strong>
+      </td>
+      <td align="char" char="xb1" valign="top">
+       97 ± 0.5
+      </td>
+      <td align="char" char="xb1" valign="top">
+       1.60 ± 0.07
+      </td>
+      <td align="char" char="xb1" valign="top">
+       0.38 ± 0.005
+      </td>
+      <td align="char" char="xb1" valign="top">
+       0.06 ± 0.005
+      </td>
+      <td align="char" char="xb1" valign="top">
+       27 ± 0.5
+      </td>
+      <td align="char" char="xb1" valign="top">
+       30 ± 0.5
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        5
+       </strong>
+      </td>
+      <td align="char" char="xb1" valign="top">
+       109 ± 1.5
+      </td>
+      <td align="char" char="xb1" valign="top">
+       3.70 ± 0.17
+      </td>
+      <td align="char" char="xb1" valign="top">
+       0.35 ± 0.005
+      </td>
+      <td align="char" char="xb1" valign="top">
+       0.14 ± 0.005
+      </td>
+      <td align="char" char="xb1" valign="top">
+       44 ± 3.0
+      </td>
+      <td align="char" char="xb1" valign="top">
+       45 ± 3.0
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        6
+       </strong>
+      </td>
+      <td align="char" char="xb1" valign="top">
+       95 ± 3.0
+      </td>
+      <td align="char" char="xb1" valign="top">
+       1.58 ± 0.22
+      </td>
+      <td align="char" char="xb1" valign="top">
+       0.35 ± 0.01
+      </td>
+      <td align="char" char="xb1" valign="top">
+       0.05 ± 0.005
+      </td>
+      <td align="char" char="xb1" valign="top">
+       23 ± 4.0
+      </td>
+      <td align="char" char="xb1" valign="top">
+       24 ± 4.0
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        7
+       </strong>
+      </td>
+      <td valign="top">
+       106
+      </td>
+      <td valign="top">
+       5.87
+      </td>
+      <td valign="top">
+       0.31
+      </td>
+      <td valign="top">
+       0.20
+      </td>
+      <td valign="top">
+       53
+      </td>
+      <td valign="top">
+       53
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig3">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f3_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f3.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f3.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 3
+       </b>
+       <span id="fig3">
+        <span class="graphic_title">
+         Current–voltage characteristics of the dye-sensitized NiO solar cells with 0.1 M I
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         , 1.0 M LiI electrolyte and
+         <strong>
+          4
+         </strong>
+         (red),
+         <strong>
+          5
+         </strong>
+         (purple),
+         <strong>
+          6
+         </strong>
+         (orange),
+         <strong>
+          7
+         </strong>
+         (blue) and
+         <strong>
+          Bodipy-CO
+          <small>
+           <sub>
+            2
+           </sub>
+          </small>
+          H
+         </strong>
+         (green) under AM 1.5G (100 mW cm
+         <small>
+          <sup>
+           −2
+          </sup>
+         </small>
+         ) illumination.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Modest results were obtained for devices made from the simple molecule
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    which performed better than expected relative to the more synthetically challenging dye
+    <strong>
+     4
+    </strong>
+    . In general, dyes containing bodipy groups which were less hindered around the β-positions (
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    ) outperformed dyes with more restricted rotation (
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    ,
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     6
+    </strong>
+    ). Substituting the more sterically hindered pyrroles of
+    <strong>
+     4
+    </strong>
+    for those of
+    <strong>
+     5
+    </strong>
+    leads to devices more than twice as efficient. We have attributed this increase in overall performance to the increased electronic communication between the donor and acceptor groups. A further increase in performance was achieved by the incorporation of a thiophene spacer (
+    <strong>
+     7
+    </strong>
+    ). Comparing this result to the similarly unrestricted
+    <strong>
+     5
+    </strong>
+    highlights an increase in performance when the thiophene spacer is present. Dye
+    <strong>
+     6
+    </strong>
+    was previously reported
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+    with an electrolyte consisting of 1 M LiI and 0.5 M I
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (compared to 1 M LiI and 0.1 M I
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    as used here) with results of
+    <span class="italic">
+     J
+    </span>
+    <small>
+     <sub>
+      sc
+     </sub>
+    </small>
+    = 3.15 mA cm
+    <small>
+     <sup>
+      −2
+     </sup>
+    </small>
+    ,
+    <span class="italic">
+     V
+    </span>
+    <small>
+     <sub>
+      oc
+     </sub>
+    </small>
+    = 79 mV, FF = 0.31,
+    <span class="italic">
+     η
+    </span>
+    = 0.08%, indicating an increase in the obtained photocurrent but a reduction of the photovoltage as the iodine concentration of the electrolyte increases.
+   </p>
+   <p class="otherpara">
+    The maximum IPCE for NiO solar cells with dyes
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     5
+    </strong>
+    (
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    ) increases from 27 to 44% respectively. This is accompanied by a broadening of the spectral response, with dye
+    <strong>
+     5
+    </strong>
+    exhibiting the maximum photocurrent between
+    <span class="italic">
+     ca.
+    </span>
+    480 and 600 nm compared to
+    <span class="italic">
+     ca.
+    </span>
+    480 to 540 nm for dye
+    <strong>
+     4
+    </strong>
+    . None of the dyes gave any reasonable photocurrent with the Co(
+    <span class="small_caps">
+     II
+    </span>
+    /
+    <span class="small_caps">
+     III
+    </span>
+    ) tris(4,4′-di
+    <span class="italic">
+     tert
+    </span>
+    -butyl-2,2′-dipyridyl) perchlorate electrolyte.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig4">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f4_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f4.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f4.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 4
+       </b>
+       <span id="fig4">
+        <span class="graphic_title">
+         Comparison of IPCE spectra of the dye-sensitized NiO solar cells with 0.1 M I
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         , 1.0 M LiI electrolyte and
+         <strong>
+          4
+         </strong>
+         (red),
+         <strong>
+          5
+         </strong>
+         (purple),
+         <strong>
+          6
+         </strong>
+         (orange),
+         <strong>
+          7
+         </strong>
+         (blue) and
+         <strong>
+          Bodipy-CO
+          <small>
+           <sub>
+            2
+           </sub>
+          </small>
+          H
+         </strong>
+         (green).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h3 id="sect539">
+    <span class="b_heading">
+     Steady state spectroscopic studies and excited state lifetimes
+    </span>
+   </h3>
+   <span>
+    The UV-visible absorption and emission properties are listed in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    and plotted in
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    . For
+    <strong>
+     1–4
+    </strong>
+    , the lowest energy absorption band (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    to S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    ) has a maximum at 525–526 nm with a higher energy vibronic shoulder at
+    <span class="italic">
+     ca.
+    </span>
+    30 nm from the main peak. The additional phenyl linker between the benzoic acid anchoring group and the triphenylamine in
+    <strong>
+     4
+    </strong>
+    did not affect the band at 525 nm but the absorption spectra contained an additional broad band at 360 nm. Adding a thiophene bridge between the amine and the bodipy to give
+    <strong>
+     6
+    </strong>
+    led to a 10 nm bathochromic shift in the absorption and emission spectra. Substituting the alkyl substituents around the pyrrole in
+    <strong>
+     4
+    </strong>
+    with a tertiary-butyl phenyl substituent in
+    <strong>
+     5
+    </strong>
+    lead to bathochromic shift of 14 nm in the absorption spectrum and 21 nm in the emission spectrum. Likewise the absorption and emission spectra of
+    <strong>
+     7
+    </strong>
+    were shifted by 25 nm and 48 nm respectively compared to
+    <strong>
+     6
+    </strong>
+    . To summarise, the aniline auxochrome shifts the bodipy absorption maximum to the red when either a thiophene π-spacer is introduced or the methyl substituents at positions one and seven on the bodipy are absent.
+   </span>
+   <div class="table_caption">
+    <b>
+     Table 2
+    </b>
+    <span id="tab2">
+     Visible absorption and luminescence data (
+     <span class="italic">
+      λ
+     </span>
+     <small>
+      <sub>
+       ex
+      </sub>
+     </small>
+     = 406 nm) for
+     <strong>
+      1–7
+     </strong>
+     and
+     <strong>
+      Bodipy-CO
+      <small>
+       <sub>
+        2
+       </sub>
+      </small>
+      H
+     </strong>
+     in dichloromethane (corrected for the detector response) (emission lifetimes ±0.006)
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       Dye
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         abs
+        </sub>
+       </small>
+       /nm (
+       <span class="italic">
+        ε
+       </span>
+       /dm
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       mol
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       cm
+       <small>
+        <sup>
+         −1
+        </sup>
+       </small>
+       )
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         em
+        </sub>
+       </small>
+       /nm
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       /ns
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        Φ
+       </span>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fna" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        E
+       </span>
+       <small>
+        <sub>
+         0–0
+        </sub>
+       </small>
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnb" title="">
+          </a>
+         </sup>
+        </small>
+       </i>
+       /eV
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        E
+       </span>
+       <small>
+        <sub>
+         g
+        </sub>
+       </small>
+       pred.
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+       /eV
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="7">
+       <a id="tab2fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        Emission quantum yield (
+        <span class="italic">
+         Φ
+        </span>
+        ) measurements were carried out in dichloromethane and compared to rhodamine 6G in ethanol (0.94).
+       </span>
+       <a id="tab2fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        Obtained from the intercept of the normalized absorption and emission spectra plotted in the ESI.
+       </span>
+       <a id="tab2fnc">
+        <span class="tfootnote">
+         c
+        </span>
+       </a>
+       <span class="sup_inf">
+        Obtained from TD-DFT calculations; HOMO values are with respect to vacuum.
+       </span>
+       <a id="tab2fnd">
+        <span class="tfootnote">
+         d
+        </span>
+       </a>
+       <span class="sup_inf">
+        Non-emissive in dichloromethane.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        1
+       </strong>
+      </td>
+      <td valign="top">
+       525 (53
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       800), 495 (sh, 11
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       150)
+      </td>
+      <td valign="top">
+       542
+      </td>
+      <td valign="top">
+       5.73
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td valign="top">
+       2.32
+      </td>
+      <td valign="top">
+       2.77
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        2
+       </strong>
+      </td>
+      <td valign="top">
+       526 (53
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       200), 497 (sh, 17
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       900)
+      </td>
+      <td valign="top">
+       542
+      </td>
+      <td valign="top">
+       6.65
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td valign="top">
+       2.32
+      </td>
+      <td valign="top">
+       2.77
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        3
+       </strong>
+      </td>
+      <td valign="top">
+       525 (78
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       800), 494 (sh, 25
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       000)
+      </td>
+      <td valign="top">
+       542
+      </td>
+      <td valign="top">
+       6.20
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td valign="top">
+       2.32
+      </td>
+      <td valign="top">
+       2.77
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        4
+       </strong>
+      </td>
+      <td valign="top">
+       526 (81
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       700), 360 (23
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       900), 330 (19
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       600)
+      </td>
+      <td valign="top">
+       539
+      </td>
+      <td valign="top">
+       5.8
+      </td>
+      <td valign="top">
+       0.38
+      </td>
+      <td valign="top">
+       2.33
+      </td>
+      <td valign="top">
+       2.85
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        5
+       </strong>
+      </td>
+      <td valign="top">
+       561 (65
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       824), 351 (28
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       237), 308 (41
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       488)
+      </td>
+      <td valign="top">
+       600
+      </td>
+      <td valign="top">
+       2.5
+      </td>
+      <td valign="top">
+       0.15
+      </td>
+      <td valign="top">
+       2.14
+      </td>
+      <td valign="top">
+       2.52
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        6
+       </strong>
+      </td>
+      <td valign="top">
+       540 (112
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       000), 507 (sh, 43
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       000), 412 (sh, 16
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       000), 365 (56
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       000)
+      </td>
+      <td valign="top">
+       560
+      </td>
+      <td valign="top">
+       &lt;1
+      </td>
+      <td valign="top">
+       0.03
+      </td>
+      <td valign="top">
+       2.27
+      </td>
+      <td valign="top">
+       2.84
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        7
+       </strong>
+      </td>
+      <td valign="top">
+       565 (65
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       700), 358 (32
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       554)
+      </td>
+      <td valign="top">
+       608
+      </td>
+      <td valign="top">
+       &lt;1
+      </td>
+      <td valign="top">
+       —
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab2fnd" title="">
+           d
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       2.11
+      </td>
+      <td valign="top">
+       2.26
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        Bodipy-CO
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        H
+       </strong>
+      </td>
+      <td valign="top">
+       528 (52
+       <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+       000)
+      </td>
+      <td valign="top">
+       547
+      </td>
+      <td valign="top">
+       3.3
+      </td>
+      <td valign="top">
+       —
+      </td>
+      <td valign="top">
+       2.31
+      </td>
+      <td valign="top">
+       2.73
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig5">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f5_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f5.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f5.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 5
+       </b>
+       <span id="fig5">
+        <span class="graphic_title">
+         Plot of absorption and emission (inset) spectra for
+         <strong>
+          1
+         </strong>
+         (sold green line),
+         <strong>
+          2
+         </strong>
+         (solid red line),
+         <strong>
+          3
+         </strong>
+         (solid orange line),
+         <strong>
+          4
+         </strong>
+         (solid blue line),
+         <strong>
+          5
+         </strong>
+         (dashed green line),
+         <strong>
+          6
+         </strong>
+         (dashed red line),
+         <strong>
+          7
+         </strong>
+         (dashed orange line) and
+         <strong>
+          Bodipy-CO
+          <small>
+           <sub>
+            2
+           </sub>
+          </small>
+          H
+         </strong>
+         (dashed blue line) (
+         <span class="italic">
+          λ
+         </span>
+         <small>
+          <sub>
+           ex
+          </sub>
+         </small>
+         = 500 nm) measured in dichloromethane.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Appending a second dipyrromethene had no effect on the absorption maximum of
+    <strong>
+     3
+    </strong>
+    compared to
+    <strong>
+     1
+    </strong>
+    but did significantly increase the absorption coefficient of the dye from 53
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    800 (
+    <strong>
+     1
+    </strong>
+    ) to 78
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    800 dm
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    mol
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    (
+    <strong>
+     3
+    </strong>
+    ). We attribute this hyperchromic affect to the increased probability of the π–π* electronic transition when two bodipy moieties are present in one molecule. The absorption coefficient of
+    <strong>
+     6
+    </strong>
+    (112
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    000 L mol
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    cm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ) is significantly higher than the molar absorption coefficient of
+    <strong>
+     3
+    </strong>
+    and
+    <strong>
+     4
+    </strong>
+    which both contain two bodipy chromophores. A bathochromic and hyperchromic shift is characteristic of increasing the conjugation of the chromophore. The shift between
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     6
+    </strong>
+    may result from the smaller thiophene being less effected than phenyl by the steric hindrance of the 1,7 methyl substituents on the bodipy. By comparison, the absorption coefficient of
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    are similar, possibly because the rotation around the bodipy/thiophene (
+    <strong>
+     5
+    </strong>
+    ) or bodipy/phenyl (
+    <strong>
+     7
+    </strong>
+    ) is unhindered. The absorption spectrum of both
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    were significantly broadened compared to
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     6
+    </strong>
+    but the absorption coefficients were much lower. We attribute the lowering of the absorption coefficient to a switch from a bodipy-localised π–π* transition (
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     6
+    </strong>
+    ) to a charge-transfer transition (
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    ) from the amine to the bodipy due to the free rotation around the C–C bond between the bodipy and the thiophene or phenyl moiety.
+   </p>
+   <p class="otherpara">
+    The presence of the electron withdrawing ester groups on the triphenylamine in
+    <strong>
+     3
+    </strong>
+    had very little effect on the absorption wavelength or extinction coefficient, which is consistent with the DFT calculations (see below). For
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    , the absorption and the emission maxima were red-shifted by 3 nm and 5 nm respectively relative to
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    . The solvent dependence for
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    was similar to the triphenyl-amine–bodipy conjugates. A bathochromic shift (7 nm for the absorption maximum and 14 nm for the emission maximum), rather than a slight hypsochromic shift, was observed when the solvent was switched from acetonitrile to dichloromethane.
+   </p>
+   <p class="otherpara">
+    Substantial fluorescence was observed in dichloromethane solution for
+    <strong>
+     1–4
+    </strong>
+    and
+    <strong>
+     6
+    </strong>
+    at room temperature (
+    <span class="italic">
+     λ
+    </span>
+    <small>
+     <sub>
+      ex
+     </sub>
+    </small>
+    = 500 nm) and the spectra were mirror images of the S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    → S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    transition in the absorption spectra as expected (
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    (inset)). The wavelength at maximum emission was 542 nm for
+    <strong>
+     1–3
+    </strong>
+    and 539 nm for
+    <strong>
+     4
+    </strong>
+    in dichloromethane. The small stokes shift (17 nm) is indicative of little reorganisation in geometry between the ground and excited states. While
+    <strong>
+     5
+    </strong>
+    was more emissive in dichloromethane compared to acetonitrile and acetone (
+    <span class="italic">
+     ϕ
+    </span>
+    = 0.02 in acetonitrile,
+    <span class="italic">
+     ϕ
+    </span>
+    = 0.03 in acetone,
+    <span class="italic">
+     ϕ
+    </span>
+    = 0.15 in dichloromethane), the quantum yields were much lower than
+    <strong>
+     4
+    </strong>
+    (
+    <span class="italic">
+     ϕ
+    </span>
+    = 0.38 in dichloromethane). Excitation of the higher energy band of
+    <strong>
+     5
+    </strong>
+    (at 400 nm) led to very weak emission from the bodipy in acetone and tetrahydrofuran, no emission in acetonitrile and weak, dual emission bands centred at
+    <span class="italic">
+     ca.
+    </span>
+    500 nm and 600 nm in dichloromethane.
+    <strong>
+     7
+    </strong>
+    was non-emissive in most solvents, displaying only weak emission in acetone and chloroform, as reported previously.
+   </p>
+   <p class="otherpara">
+    Kollmannsberger and coworkers observed quenching of a dimethylaniline-bodipy derivative in acetonitrile and restoration of the fluorescence on protonation.
+    <a href="#cit23" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       23
+      </span>
+     </sup>
+    </a>
+    In their studies, emission from a charge-transfer band at
+    <span class="italic">
+     ca.
+    </span>
+    600 nm was observed when diethyl ether was chosen as the solvent. We observed a very weak band at 700 nm (Fig. S47, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) which was absent in the dichloromethane spectrum and could be due a small amount of charge transfer or intersystem crossing to the triplet state.
+    <a href="#cit24" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       24
+      </span>
+     </sup>
+    </a>
+    Phosphorescence is rarely observed from bodipy chromophores because of the slow rate of intersystem crossing (10
+    <small>
+     <sup>
+      6
+     </sup>
+    </small>
+    s
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    ) in the absence of the heavy atom effect.
+    <a href="#cit16" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       16,25
+      </span>
+     </sup>
+    </a>
+   </p>
+   <p class="otherpara">
+    The effect of solvent on the electronic spectra of
+    <strong>
+     4–7
+    </strong>
+    is consistent with the trend in increasing communication between the amine and the bodipy as (a) a thiophene spacer is introduced and (b) the methyl substituents at positions one and seven are removed. For
+    <strong>
+     4
+    </strong>
+    (and
+    <strong>
+     1–3
+    </strong>
+    ), only a slight shift in absorption maximum with solvent polarity (Fig. S36–S49, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) was observed, which is not indicative of donor–acceptor interactions in the ground state. The emission quantum yield for
+    <strong>
+     4
+    </strong>
+    was
+    <span class="italic">
+     Φ
+    </span>
+    = 0.38 in dichloromethane, which is approximately half that reported elsewhere for 1,3,5,7-tetramethyl-2,6-diethyl-bodipy,
+    <a href="#cit17" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       17,26
+      </span>
+     </sup>
+    </a>
+    and in acetonitrile the emission was quenched (
+    <span class="italic">
+     Φ
+    </span>
+    = 0.02). There was a 4 nm hypsochromic shift for
+    <strong>
+     6
+    </strong>
+    on switching the solvent from dichloromethane to acetonitrile but the molar absorption coefficient was the same in both solvents. In contrast, the emission was strongly solvent dependent (Fig. S48, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). The Stokes-shift decreased with increasing polarity CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (16 nm) &gt; THF (14 nm) &gt; acetone (8 nm). Unlike the thiophene-free molecules, the emission spectrum of
+    <strong>
+     6
+    </strong>
+    was solvent dependent. When
+    <strong>
+     6
+    </strong>
+    was excited in the higher energy absorption band, the emission was similar in shape to
+    <strong>
+     1–4
+    </strong>
+    with the maximum at 560 nm. When
+    <strong>
+     6
+    </strong>
+    was excited in the higher energy absorption band (406 nm) it emitted at higher energy in CH
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    CN solution (475 nm) than when in CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    (560 nm). According to DFT calculations (see below) the higher energy band is a triphenylamine-based transition and the lower energy band is a bodipy-based transition. TDDFT calculations (Fig. S28–S31, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) are in agreement with the stabilisation of a charge transfer transition in acetonitrile compared to in dichloromethane where the bodipy π–π* transition is more favourable.
+   </p>
+   <p class="otherpara">
+    The excited state lifetimes for
+    <strong>
+     1–4
+    </strong>
+    were approximately 6 ns, which is characteristic of a bodipy singlet excited state.
+    <a href="#cit27" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       27
+      </span>
+     </sup>
+    </a>
+    The excited state lifetimes measured using single photon counting (
+    <span class="italic">
+     λ
+    </span>
+    <small>
+     <sub>
+      ex
+     </sub>
+    </small>
+    = 460 nm) decreased as the polarity of the solvent increased: dichloromethane (5.6 ns) &gt; THF (4.6 ns) &gt; acetone (3.7 ns) &gt; acetonitrile (0.96 ns). The emission lifetime (
+    <span class="italic">
+     λ
+    </span>
+    <small>
+     <sub>
+      ex
+     </sub>
+    </small>
+    = 400 nm) was slightly shorter for
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    than
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    and was almost unaffected by the polarity of the solvent (a slight decrease was observed with decreasing polarity), whereas for
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     3
+    </strong>
+    the emission lifetimes slightly increased. In dichloromethane solution, the emission lifetime of
+    <strong>
+     5
+    </strong>
+    was shorter than
+    <strong>
+     4
+    </strong>
+    and was shorter than the resolution of the instrument for the thiophene-containing dyes
+    <strong>
+     6
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    .
+   </p>
+   <h3 id="sect792">
+    <span class="b_heading">
+     Density functional theory
+    </span>
+   </h3>
+   <span>
+    To aid interpretation of the optical and electrochemical properties, DFT was used to predict the optimised geometry and the relative frontier orbital energies of
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    and
+    <strong>
+     1–7
+    </strong>
+    (
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6 and 7
+    </a>
+    and Fig. S23–S35, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). The minimised structures are similar for each triphenylamine–bodipy conjugate: the triphenylamine geometry is trigonal planar; the planar motif contains a tetrahedral boron centre coordinated to two orthogonal fluorine atoms and each molecule has the aminophenyl spacer perpendicular to the plane of the dipyrromethene (Table S2, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). Likewise, the calculated optimised geometry of
+    <strong>
+     6
+    </strong>
+    placed the bodipy at slightly smaller angles of 84°, 85° to the thiophene compared to 85°, 89° to the phenyl for
+    <strong>
+     4
+    </strong>
+    . However, the dihedral angle between the aminophenyl spacer and the plane of the dipyrromethene is much smaller (52°, 54°) for
+    <strong>
+     5
+    </strong>
+    compared to
+    <strong>
+     4
+    </strong>
+    . Likewise the dihedral angle between the thiophene spacer and the plane of the dipyrromethene is much smaller (44°, 48°) for
+    <strong>
+     7
+    </strong>
+    compared to
+    <strong>
+     6
+    </strong>
+    . The increased ability to rotate around the bond between the bodipy and the spacer in
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    is consistent with the optical properties described above. These results suggest that the electronic coupling between the amine donor and bodipy chromophore increases when thiophene is introduced between the bodipy chromophore and the aniline donor and in the absence of methyl substituents at positions one and seven on the bodipy.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig6">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f6_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f6.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f6.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 6
+       </b>
+       <span id="fig6">
+        <span class="graphic_title">
+         Optimised geometry and calculated principle energy transitions for
+         <strong>
+          4
+         </strong>
+         determined by DFT and TD-DFT (in dichloromethane solvent) using CAM-B3LYP/6-31G(d).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig7">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f7_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f7.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f7.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 7
+       </b>
+       <span id="fig7">
+        <span class="graphic_title">
+         Optimised geometry and calculated principle energy transitions for
+         <strong>
+          5
+         </strong>
+         determined by DFT and TD-DFT (in dichloromethane solvent) using B3LYP/6-31G(d).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Fig. S23–S35 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) show the electronic distribution in the frontier orbitals of
+    <strong>
+     1–7
+    </strong>
+    . For
+    <strong>
+     4
+    </strong>
+    the HOMO/HOMO−1 and LUMO/LUMO+1 orbitals are localised on the dipyrromethene moieties while the HOMO−2 is localised on triphenylamine. In
+    <strong>
+     5–7
+    </strong>
+    the HOMO is localised on the triphenylamine donor-benzoic acid anchor (including the thiophene in
+    <strong>
+     6
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    ). The HOMO−1 and HOMO−2 (degenerate in energy, shown in Fig. S24, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) are localised on the dipyrromethene moieties. The LUMO is also delocalised across the dipyrromethene motifs, with
+    <strong>
+     5
+    </strong>
+    also having electron density on two out of three phenyl groups on the amine donor. The LUMO and LUMO+1 of
+    <strong>
+     6
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    differ from
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     5
+    </strong>
+    by the presence of electron density on the thiophene as well as the bodipy.
+   </p>
+   <p class="otherpara">
+    The selected major transitions, associated oscillator strengths and simulated electronic spectra are provided in
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    for
+    <strong>
+     4
+    </strong>
+    ,
+    <a href="#imgfig7" title="Select to navigate to figure">
+     Fig. 7
+    </a>
+    for
+    <strong>
+     5
+    </strong>
+    and are presented in Table S3 and Fig. S23 and S24 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) for
+    <strong>
+     1–3
+    </strong>
+    . The vertical excitation energies calculated from the optimised geometries using time-dependent DFT (TD-DFT) were in good agreement with the experimental values (above).
+   </p>
+   <p class="otherpara">
+    The lowest energy singlet excitations appear at 445 and 456 nm for
+    <strong>
+     4
+    </strong>
+    which correspond with a HOMO → LUMO bodipy localised π–π* transition (with a combined oscillator strength of 1.32) while for
+    <strong>
+     5
+    </strong>
+    these appear at 592 and 554 nm which correspond to HOMO → LUMO and HOMO → LUMO+1 transitions which involve charge-transfer from the triphenylamine to the bodipy. The higher energy transition for 5 corresponds with the HOMO−1 → LUMO transition, which is primarily localised on the bodipy and therefore has π–π* character.
+   </p>
+   <p class="otherpara">
+    The lowest energy singlet excitations calculated for
+    <strong>
+     6
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    (calculated using B3LYP) were also charge-transfer in nature (from the triphenylamine-based HOMO – bodipy-based LUMO or LUMO+1) but for
+    <strong>
+     6
+    </strong>
+    the oscillator strength was very low (0.0066), with similar results observed for 4 calculated using B3LYP. As this was inconsistent with the high absorption coefficient of these dyes, we also carried out calculations using CAM-B3LYP for
+    <strong>
+     6
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    (Fig. S30 and S32b, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) which predicted the lowest energy transitions for
+    <strong>
+     6
+    </strong>
+    (458–459 nm) to be HOMO−1 → LUMO which is π–π* in character with a larger oscillator strength (total of 1.319), which fit more accurately with experimental observations. For
+    <strong>
+     7
+    </strong>
+    the lowest energy excitation (495 nm) was HOMO−1 → LUMO which is again bodipy based with high energy excitations (446 and 432 nm) corresponding to HOMO → LUMO transitions which have charge transfer character, however a closer agreement of spectral shape and excitation energy was seen for the B3LYP calculations. An overestimation of the excitation energies compared to the experimental values is observed for the TD-DFT calculations, which is consistent with calculations on similar molecules (
+    <span class="italic">
+     ca.
+    </span>
+    0.3 eV for B3LYP and 0.5 eV for CAM-B3LYP).
+    <a href="#cit28" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       28
+      </span>
+     </sup>
+    </a>
+   </p>
+   <h3 id="sect849">
+    <span class="b_heading">
+     Electrochemical studies
+    </span>
+   </h3>
+   <span>
+    The cyclic voltammograms for compounds
+    <strong>
+     1–3
+    </strong>
+    and
+    <strong>
+     4–5
+    </strong>
+    are shown in Fig. S77 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) and
+    <a href="#imgfig8" title="Select to navigate to figure">
+     Fig. 8
+    </a>
+    respectively and
+    <a href="#tab3" title="Select to navigate to table">
+     Table 3
+    </a>
+    summarises the electrochemical data. In order to obtain a peak separation for the reversible waves of 59 mV, as expected for Nernstian behaviour, a strong concentration of supporting electrolyte (0.5 M) was required because of the low dielectric constant of the solvent. The voltammograms of the dyes contained reversible reduction and irreversible oxidation waves when scanning at 0.2 V s
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    .
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig8">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f8_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f8.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f8.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 8
+       </b>
+       <span id="fig8">
+        <span class="graphic_title">
+         Cyclic voltammograms recorded for
+         <strong>
+          4
+         </strong>
+         (a) and
+         <strong>
+          5
+         </strong>
+         (b) in CH
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         Cl
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         containing [Bu
+         <small>
+          <sub>
+           4
+          </sub>
+         </small>
+         N][ClO
+         <small>
+          <sub>
+           4
+          </sub>
+         </small>
+         ] (0.5 M) at 0.1 V s
+         <small>
+          <sup>
+           −1
+          </sup>
+         </small>
+         .
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="table_caption">
+    <b>
+     Table 3
+    </b>
+    <span id="tab3">
+     Cyclic voltammetry data for
+     <strong>
+      1–5
+     </strong>
+     <i>
+      <small>
+       <sup style="color: red;">
+        <a href="#tab3fna" title="">
+         a
+        </a>
+       </sup>
+      </small>
+     </i>
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       1st reduction (III)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       1st oxidation (II)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       2nd oxidation (I)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       Δ
+       <span class="italic">
+        E
+       </span>
+       (Fc
+       <small>
+        <sup>
+         +
+        </sup>
+       </small>
+       /Fc)
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="5">
+       <a id="tab3fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        For 1 mM solutions in CH
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        Cl
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        containing 0.5 M [NBu
+        <small>
+         <sub>
+          4
+         </sub>
+        </small>
+        ][ClO
+        <small>
+         <sub>
+          4
+         </sub>
+        </small>
+        ] as supporting electrolyte. Potentials reported as
+        <span class="italic">
+         E
+        </span>
+        <small>
+         <sub>
+          1/2
+         </sub>
+        </small>
+        (= (
+        <span class="italic">
+         E
+        </span>
+        <small>
+         <sup>
+          a
+         </sup>
+        </small>
+        <small>
+         <sub>
+          p
+         </sub>
+        </small>
+        +
+        <span class="italic">
+         E
+        </span>
+        <small>
+         <sup>
+          c
+         </sup>
+        </small>
+        <small>
+         <sub>
+          p
+         </sub>
+        </small>
+        )/2) in V
+        <span class="italic">
+         vs.
+        </span>
+        Fe(Cp)
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        <small>
+         <sup>
+          +
+         </sup>
+        </small>
+        /Fe(Cp)
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        at 0.1 V s
+        <small>
+         <sup>
+          −1
+         </sup>
+        </small>
+        scan rate and quoted to the nearest 0.01 V. Values in parentheses are Δ
+        <span class="italic">
+         E
+        </span>
+        (=
+        <span class="italic">
+         E
+        </span>
+        <small>
+         <sup>
+          a
+         </sup>
+        </small>
+        <small>
+         <sub>
+          p
+         </sub>
+        </small>
+        −
+        <span class="italic">
+         E
+        </span>
+        <small>
+         <sup>
+          c
+         </sup>
+        </small>
+        <small>
+         <sub>
+          p
+         </sub>
+        </small>
+        ) for the couple at 0.01 V s
+        <small>
+         <sup>
+          −1
+         </sup>
+        </small>
+        .
+       </span>
+       <a id="tab3fnb">
+        <span class="tfootnote">
+         b
+        </span>
+       </a>
+       <span class="sup_inf">
+        Unresolved in cyclic voltammogram, peak maximum from square wave voltammetry.
+       </span>
+       <a id="tab3fnc">
+        <span class="tfootnote">
+         c
+        </span>
+       </a>
+       <span class="sup_inf">
+        <span class="italic">
+         E
+        </span>
+        <small>
+         <sup>
+          ad
+         </sup>
+        </small>
+        <small>
+         <sub>
+          p
+         </sub>
+        </small>
+        at a scan rate of 200 mV s
+        <small>
+         <sup>
+          −1
+         </sup>
+        </small>
+        .
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        1
+       </strong>
+      </td>
+      <td valign="top">
+       −1.68 (0.07)
+      </td>
+      <td valign="top">
+       +0.58
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab3fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       +0.76
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab3fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       (0.07)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        2
+       </strong>
+      </td>
+      <td valign="top">
+       −1.65 (0.07)
+      </td>
+      <td valign="top">
+       +0.63 (0.07)
+      </td>
+      <td valign="top">
+       +0.95 (0.10)
+      </td>
+      <td valign="top">
+       (0.07)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        3
+       </strong>
+      </td>
+      <td valign="top">
+       −1.69 (0.09)
+      </td>
+      <td valign="top">
+       +0.61 (0.09)
+      </td>
+      <td valign="top">
+       +0.89
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab3fnc" title="">
+           c
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       (0.07)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        4
+       </strong>
+      </td>
+      <td valign="top">
+       −1.66 (0.08)
+      </td>
+      <td valign="top">
+       +0.62 (0.08)
+      </td>
+      <td valign="top">
+       +0.81 (0.08)
+      </td>
+      <td valign="top">
+       (0.07)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        5
+       </strong>
+      </td>
+      <td valign="top">
+       −1.27 (0.08)
+      </td>
+      <td valign="top">
+       +0.74 (0.15)
+      </td>
+      <td valign="top">
+       +0.99 (0.10)
+      </td>
+      <td valign="top">
+       (0.15)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        6
+       </strong>
+      </td>
+      <td valign="top">
+       −1.48 (0.13)
+      </td>
+      <td valign="top">
+       +0.65
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab3fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       +0.75
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab3fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       (0.1)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        7
+       </strong>
+      </td>
+      <td valign="top">
+       −1.29 (0.14)
+      </td>
+      <td valign="top">
+       +0.63 (0.06)
+      </td>
+      <td valign="top">
+       +0.87 (0.08)
+      </td>
+      <td valign="top">
+       (0.15)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <strong>
+        Bodipy-CO
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        H
+       </strong>
+      </td>
+      <td valign="top">
+       −1.63 (0.25)
+      </td>
+      <td valign="top">
+       +0.64 (0.09)
+      </td>
+      <td valign="top">
+       +0.83
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab3fnb" title="">
+           b
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       (0.15)
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    Scanning in the positive direction gave two redox couples (I and II) which overlapped for
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     3
+    </strong>
+    in the cyclic voltammogram but were separated by 11 and 23 mV respectively in the square wave experiment (Fig. S22 and Table S1 in the ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). In the cyclic voltammetry experiment I and II are separated by 320 mV for
+    <strong>
+     2
+    </strong>
+    , with I, assigned to the triphenylamine, shifted +190 mV relative to
+    <strong>
+     1
+    </strong>
+    because of the electron withdrawing esters. The electrode potential I, associated with the amine, is unaffected by the electron withdrawing carboxylic acid group when separated by the extra phenyl unit in
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     5
+    </strong>
+    .
+   </p>
+   <p class="otherpara">
+    Scanning in the negative direction gave one reversible redox couple (III). The peak currents were approximately equal, an indication of the good stability of the radical ions. The redox potential of III was similar for
+    <strong>
+     1–4
+    </strong>
+    which suggests that the electron withdrawing ester groups affect the oxidation potential of the dye but not the reduction potential, but shifted by around 400 mV to a more positive potential for
+    <strong>
+     5
+    </strong>
+    . This is in agreement with the DFT calculations which indicate that the LUMO is located on the dipyrromethene at similar energies for each dye but shifted for
+    <strong>
+     5
+    </strong>
+    . For
+    <strong>
+     3
+    </strong>
+    and
+    <strong>
+     4
+    </strong>
+    , the potentials for II and III were similar to those for
+    <strong>
+     1
+    </strong>
+    but the peak currents were double those of
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     2
+    </strong>
+    , in agreement with two electron reduction and two electron oxidation of bodipy pair. Since there does not appear to be electronic communication between the two bodipy centres, these are considered to be two, one-electron processes and not one, two electron process. The peak current for the reversible waves in process I were approximately half the size of processes II and III, consistent with the hypothesis that this is associated with oxidation of the triphenylamine moiety.
+   </p>
+   <p class="otherpara">
+    Subtracting the
+    <span class="italic">
+     E
+    </span>
+    <small>
+     <sub>
+      0–0
+     </sub>
+    </small>
+    value (2.32 eV) from the reduction potential gives an estimate of the reduction potential of the excited state. These are 0.64 V for
+    <strong>
+     1
+    </strong>
+    , 0.67 V for
+    <strong>
+     2
+    </strong>
+    , 0.63 V for
+    <strong>
+     3
+    </strong>
+    , 0.69 for
+    <strong>
+     4
+    </strong>
+    1.05 V for
+    <strong>
+     5
+    </strong>
+    , 0.84 for
+    <strong>
+     6
+    </strong>
+    , 1.03 for
+    <strong>
+     7
+    </strong>
+    and 0.69 for
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    and are approximately equal to the first oxidation potentials measured by cyclic voltammetry. Only the redox potentials for process I in
+    <strong>
+     4–7
+    </strong>
+    are less positive than this indicating that charge-transfer from triphenylamine to the excited dipyrromethene is less likely to occur in
+    <strong>
+     1–6
+    </strong>
+    than in
+    <strong>
+     4–7
+    </strong>
+    .
+   </p>
+   <h3 id="sect1023">
+    <span class="b_heading">
+     Spectroelectrochemistry
+    </span>
+   </h3>
+   <span>
+    Spectroelectrochemistry was performed on
+    <strong>
+     1
+    </strong>
+    ,
+    <strong>
+     2
+    </strong>
+    ,
+    <strong>
+     4
+    </strong>
+    ,
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    in order to determine the absorption spectrum of the reduced and oxidised species (
+    <strong>
+     4
+    </strong>
+    /
+    <strong>
+     5
+    </strong>
+    are shown in
+    <a href="#imgfig9" title="Select to navigate to figure">
+     Fig. 9
+    </a>
+    ,
+    <strong>
+     1
+    </strong>
+    ,
+    <strong>
+     2
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    are in the ESI,
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    <strong>
+     6
+    </strong>
+    has been reported previously
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+    ). Table S6 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) gives the peak maxima and extinction coefficients for the oxidised and reduced species for
+    <strong>
+     1–4
+    </strong>
+    . This information can be used to assign the species in the cyclic voltammetry and transient absorption spectra (see below) as well as demonstrating the stability of the dyes on oxidation and reduction.
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig9">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f9_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f9.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f9.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 9
+       </b>
+       <span id="fig9">
+        <span class="graphic_title">
+         UV-visible difference spectra recorded in CH
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         Cl
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         containing [Bu
+         <small>
+          <sub>
+           4
+          </sub>
+         </small>
+         N][ClO
+         <small>
+          <sub>
+           4
+          </sub>
+         </small>
+         ] (0.5 M) using spectroelectrochemical methods showing the inter-conversion of (a)
+         <strong>
+          4
+         </strong>
+         to
+         <strong>
+          4
+         </strong>
+         <small>
+          <sup>
+           1−
+          </sup>
+         </small>
+         , (b)
+         <strong>
+          5
+         </strong>
+         to
+         <strong>
+          5
+         </strong>
+         <small>
+          <sup>
+           1−
+          </sup>
+         </small>
+         , (c)
+         <strong>
+          4
+         </strong>
+         to
+         <strong>
+          4
+         </strong>
+         <small>
+          <sup>
+           1+
+          </sup>
+         </small>
+         and (d)
+         <strong>
+          5
+         </strong>
+         to
+         <strong>
+          5
+         </strong>
+         <small>
+          <sup>
+           1+
+          </sup>
+         </small>
+         at 248 K. Arrows indicate the progress of the oxidation or reduction.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Reduction of the
+    <strong>
+     1–6
+    </strong>
+    was accompanied by a bleach of the bodipy absorption at 526 nm and the appearance of a peak at 582 nm. This is consistent with Hattori
+    <span class="italic">
+     et al.
+    </span>
+    's results for a similar 1,3,5,7-tetramethyl-2,6-diethyl-bodipy.
+    <a href="#cit29" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       29
+      </span>
+     </sup>
+    </a>
+    The absorption bands differed slightly in the UV region. Unlike
+    <strong>
+     1
+    </strong>
+    and
+    <strong>
+     4
+    </strong>
+    , where the reduction progressed through a series of well-defined isosbestic points, the reduction of
+    <strong>
+     2
+    </strong>
+    showed the development, then depletion of bands, best observed in the region between 400–500 nm. This could be attributed to the electron withdrawing ester groups stabilising the bodipy radical anion. The reduction of dye
+    <strong>
+     5
+    </strong>
+    corresponded with a bleach of the bodipy absorption at 561 nm but unlike
+    <strong>
+     1–4
+    </strong>
+    no corresponding growth was observed at lower energies, only the appearance of a peak toward the UV region. For dye
+    <strong>
+     6
+    </strong>
+    a bleach of the bodipy at 540 nm and the formation of a peak at 595 nm was observed upon a potential sweep to −1.5 V.
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+    For dye
+    <strong>
+     7
+    </strong>
+    (Fig. S72, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) the bleach of the bodipy at 565 nm was accompanied by the growth of a band at 630 nm.
+   </p>
+   <p class="otherpara">
+    Oxidation of
+    <strong>
+     2
+    </strong>
+    and
+    <strong>
+     4
+    </strong>
+    was accompanied by a bleach of the bodipy absorption at 526 nm and a growth in the peak at 407 nm attributed to oxidation of the bodipy as predicted above. For comparison, the spectroelectrochemistry of triphenylamine has been described previously. On oxidising triphenylamine, Chiu
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit30" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       30
+      </span>
+     </sup>
+    </a>
+    reported a peak at 696 nm and Chung
+    <span class="italic">
+     et al.
+    </span>
+    <a href="#cit31" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       31
+      </span>
+     </sup>
+    </a>
+    reported a peak at 660 nm. Oxidation of
+    <strong>
+     5
+    </strong>
+    corresponded with the bleach of the absorption at 561 nm and the growth of a broad peak at 605 nm that extended toward the near-IR region alongside the growth of a band at 450 nm. Similarly, oxidation of
+    <strong>
+     7
+    </strong>
+    (Fig. S73, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) was accompanied by the bleach at 565 nm and the growth of a broad absorption at 600–800 nm and a band at 450 nm.
+   </p>
+   <p class="otherpara">
+    The spectra recorded at the beginning and the end of the experiments show the extent of reversibility of the reduction and oxidation reactions and are provided in Fig. S74–S76 in the ESI.
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    We note that for
+    <strong>
+     2
+    </strong>
+    , although the reduction appears to be chemically reversible from the cyclic voltammetry and there was almost complete restoration of the ground state absorption spectrum, a small shoulder developed at
+    <span class="italic">
+     ca.
+    </span>
+    550 nm. Since this was not observed for the other dyes, we attribute this to irreversible changes associated with the ester. Subsequent reduction of
+    <strong>
+     4
+    </strong>
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    returns the spectrum to the same spectral shape as
+    <strong>
+     4
+    </strong>
+    but there is a loss of intensity in the main band; oxidation of
+    <strong>
+     4
+    </strong>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    restores the main band at 526 nm but the high energy region is changed. We attribute these changes to the presence of the carboxylic acid.
+   </p>
+   <h3 id="sect1092">
+    <span class="b_heading">
+     Transient absorption spectroscopy
+    </span>
+   </h3>
+   <span>
+    Charge transfer dynamics of dyes
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    ,
+    <strong>
+     4
+    </strong>
+    ,
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    were investigated by femtosecond time-resolved transient absorption spectroscopy in order to evaluate the charge separation at the dye–NiO interface. Details are provided in the Experimental section. The dyes were studied when dissolved in CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    to characterise the excited state and when adsorbed onto nanocrystalline NiO films to explore the formation and decay of the NiO
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    /dye
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    charge-separated state. The data was fitted to a single exponential function unless stated otherwise. The transient absorption spectra of
+    <strong>
+     6
+    </strong>
+    have been reported by us previously.
+    <a href="#cit22" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       22
+      </span>
+     </sup>
+    </a>
+    The transient absorption spectra of
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    ,
+    <strong>
+     4
+    </strong>
+    ,
+    <strong>
+     5
+    </strong>
+    , and
+    <strong>
+     7
+    </strong>
+    in CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    and adsorbed on NiO are presented in
+    <a href="#imgfig10" title="Select to navigate to figure">
+     Fig. 10
+    </a>
+    . The time constants corresponding to the kinetic traces (
+    <a href="#imgfig10" title="Select to navigate to figure">
+     Fig. 10
+    </a>
+    inset and Fig. S82–S84, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) are presented in
+    <a href="#tab4" title="Select to navigate to table">
+     Table 4
+    </a>
+    .
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig10">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f10_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c5cp05177k-f10.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c5cp05177k/c5cp05177k-f10.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 10
+       </b>
+       <span id="fig10">
+        <span class="graphic_title">
+         Time-resolved transient-absorption spectra of
+         <strong>
+          Bodipy-CO
+          <small>
+           <sub>
+            2
+           </sub>
+          </small>
+          H
+         </strong>
+         ,
+         <strong>
+          4
+         </strong>
+         ,
+         <strong>
+          5
+         </strong>
+         , and
+         <strong>
+          7
+         </strong>
+         in CH
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         Cl
+         <small>
+          <sub>
+           2
+          </sub>
+         </small>
+         solution and absorbed onto NiO films at a number of delay times (ps) after excitation at 532 nm. (Inset) Corresponding kinetic traces at the given wavelengths.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="table_caption">
+    <b>
+     Table 4
+    </b>
+    <span id="tab4">
+     Summary of time constants from the transient absorption spectra of
+     <strong>
+      4–7
+     </strong>
+     . Data for
+     <strong>
+      6
+     </strong>
+     and
+     <strong>
+      6
+     </strong>
+     /NiO is taken from Lefebvre
+     <span class="italic">
+      et al.
+     </span>
+     <a href="#cit22" title="Select to navigate to references">
+      <sup>
+       <span class="sup_ref">
+        22
+       </span>
+      </sup>
+     </a>
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       Solution
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       NiO
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       Dye
+      </th>
+      <th align="left" class="border_black" colspan="2" valign="bottom">
+       (
+       <span class="italic">
+        λ
+       </span>
+       /nm)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       /ps
+      </th>
+      <th align="left" class="border_black" colspan="2" valign="bottom">
+       Transient (
+       <span class="italic">
+        λ
+       </span>
+       /nm)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        τ
+       </span>
+       /ps
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="7">
+       <a id="tab4fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        The growth and decay of the peak were fit separately to single exponential functions.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       <strong>
+        Bodipy-CO
+        <small>
+         <sub>
+          2
+         </sub>
+        </small>
+        H
+       </strong>
+      </td>
+      <td valign="top">
+       472
+      </td>
+      <td valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       1.1 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 0.1 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       488
+      </td>
+      <td valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       4.1 ± 0.6
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       594
+      </td>
+      <td valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       2.3 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 0. 3 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       560
+      </td>
+      <td valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       0.7 ± 0.1
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="5" valign="top">
+       4
+      </td>
+      <td valign="top">
+       481
+      </td>
+      <td valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       0.8 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 0.1 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       485
+      </td>
+      <td valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       5.0 ± 1.0
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       596
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       18 ± 1
+      </td>
+      <td rowspan="2" valign="top">
+       578
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td rowspan="2" valign="top">
+       2.6 ± 0.5
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       2.7 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 0.6 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       710
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       25 ± 3 (growth)
+      </td>
+      <td rowspan="2" valign="top">
+      </td>
+      <td rowspan="2" valign="top">
+      </td>
+      <td rowspan="2" valign="top">
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       3.8 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 0.9 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       (decay)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab4fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+     </tr>
+     <tr align="left">
+      <td colspan="7" valign="top">
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="6" valign="top">
+       5
+      </td>
+      <td rowspan="2" valign="top">
+       475
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       5.8 ± 0.7
+      </td>
+      <td rowspan="2" valign="top">
+      </td>
+      <td rowspan="2" valign="top">
+      </td>
+      <td rowspan="2" valign="top">
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       61 ± 4
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       611
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       3.8 ± 0.1
+      </td>
+      <td rowspan="2" valign="top">
+       606
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       1.1 ± 0.1
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       68 ± 4
+      </td>
+      <td valign="top">
+       470 ± 70
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       705
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       1.2 ± 0.1 (growth)
+      </td>
+      <td rowspan="2" valign="top">
+       693
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       0.10 ± 0.01
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       68 ± 2 (decay)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab4fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       13 ± 1
+      </td>
+     </tr>
+     <tr align="left">
+      <td colspan="7" valign="top">
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="7" valign="top">
+       6
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab4fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td rowspan="2" valign="top">
+       425
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       20.7 ± 2.9
+      </td>
+      <td rowspan="2" valign="top">
+       425
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       12.5 ± 2.9
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       864 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 28 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+      <td valign="top">
+       49 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 28 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       470
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       9.52 ± 0.91 (growth)
+      </td>
+      <td rowspan="2" valign="top">
+       515
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       9.76 ± 1.1
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       396 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 33 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       (decay)
+      </td>
+      <td valign="top">
+       23 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 10 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       500
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       14.1 ± 1.2 (growth)
+      </td>
+      <td rowspan="2" valign="top">
+       575
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       24.1 ± 3.0
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       413 ± 50 and 896 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 26 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       (decay)
+      </td>
+      <td valign="top">
+       177 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 59 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       650
+      </td>
+      <td valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       292 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+       ± 31 × 10
+       <small>
+        <sup>
+         3
+        </sup>
+       </small>
+      </td>
+      <td colspan="2" valign="top">
+      </td>
+      <td valign="top">
+      </td>
+     </tr>
+     <tr align="left">
+      <td colspan="7" valign="top">
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="6" valign="top">
+       7
+      </td>
+      <td rowspan="2" valign="top">
+       472
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       0.8 ± 0.04 (growth)
+      </td>
+      <td rowspan="2" valign="top">
+       472
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       4.9 ± 0.1
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       190 ± 10 (decay)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab4fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       580 ± 40
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       563
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       0.6 ± 0.03
+      </td>
+      <td rowspan="2" valign="top">
+       580
+      </td>
+      <td rowspan="2" valign="top">
+       Bleach
+      </td>
+      <td valign="top">
+       2.8 ± 0.3
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       190 ± 10
+      </td>
+      <td valign="top">
+       640 ± 80
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="2" valign="top">
+       650
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       1.3 ± 0.1 (growth)
+      </td>
+      <td rowspan="2" valign="top">
+       700
+      </td>
+      <td rowspan="2" valign="top">
+       Transient
+      </td>
+      <td valign="top">
+       780 ± 500 (rise)
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       210 ± 100 (decay)
+       <i>
+        <small>
+         <sup style="color: red;">
+          <a href="#tab4fna" title="">
+           a
+          </a>
+         </sup>
+        </small>
+       </i>
+      </td>
+      <td valign="top">
+       6.5 ± 0.4 (decay)
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    The spectral shape of
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    and
+    <strong>
+     4
+    </strong>
+    in CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    excited at 532 nm are generally similar (
+    <a href="#imgfig10" title="Select to navigate to figure">
+     Fig. 10
+    </a>
+    ). The bleach centered at
+    <span class="italic">
+     ca.
+    </span>
+    530 nm corresponds to the ground state absorption of
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    and
+    <strong>
+     4
+    </strong>
+    . The ground state recovered with
+    <span class="italic">
+     τ
+    </span>
+    ≈ 2–3 ns.
+    <a href="#cit32" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       32
+      </span>
+     </sup>
+    </a>
+    The difference in time constants for the decay of the excited state and the recovery of the ground state is probably due to the overlap of the ground state recovery and stimulated emission signals, which were observed at early time delays in the solution spectra of all four dyes. Consistent with the ground state absorption spectrum, excitation of
+    <strong>
+     5
+    </strong>
+    in solution generated a broader bleach, which extended across the visible region until 620 nm and decayed more rapidly with
+    <span class="italic">
+     τ
+    </span>
+    ≈ 65 ps.
+   </p>
+   <p class="otherpara">
+    A large positive absorption between 460–500 nm was observed for
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    and
+    <strong>
+     4
+    </strong>
+    , which was attributed to the singlet excited state. These transients formed within 1 ps and decayed with
+    <span class="italic">
+     τ
+    </span>
+    = 1.1 ± 0.3 ns. The lifetime of the singlet excited state of
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    recorded in solution by transient absorption spectroscopy was slightly shorter than that measured by single photon counting (1.1 ns
+    <span class="italic">
+     vs.
+    </span>
+    3 ns). This difference could be due the lifetime being close to the resolution of the instrument used for single photon counting. The transient spectra previously observed for
+    <strong>
+     6
+    </strong>
+    were similar in shape initially, but evolved over
+    <span class="italic">
+     ca.
+    </span>
+    400 ps to be replaced by the triplet excited state spectrum (with absorption bands at 425 and 650 nm,
+    <span class="italic">
+     τ
+    </span>
+    ≈ 300 ns).
+    <a href="#cit21" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       21
+      </span>
+     </sup>
+    </a>
+    In
+    <a href="#imgfig10" title="Select to navigate to figure">
+     Fig. 10
+    </a>
+    there is no indication of triplet species in any of the spectra. However, in the transient spectra of
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     5
+    </strong>
+    a second, small absorption at 710 nm grows in over
+    <span class="italic">
+     τ
+    </span>
+    = 25 ± 3 ps for
+    <strong>
+     4
+    </strong>
+    and
+    <span class="italic">
+     τ
+    </span>
+    = 1.4 ± 0.1 ps for
+    <strong>
+     5
+    </strong>
+    . These subsequently decay on a similar timescale to the bleach (
+    <span class="italic">
+     τ
+    </span>
+    = 3.8 ± 0.9 ns for
+    <strong>
+     4
+    </strong>
+    and 68 ± 2 ps for
+    <strong>
+     5
+    </strong>
+    ). This transient resembles an oxidised triphenylamine (Seo
+    <span class="italic">
+     et al.
+    </span>
+    reported
+    <span class="italic">
+     λ
+    </span>
+    <small>
+     <sub>
+      max
+     </sub>
+    </small>
+    [TPA
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    ˙] = 640 nm in acetonitrile
+    <a href="#cit20" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       20
+      </span>
+     </sup>
+    </a>
+    ). The appearance of this transient suggests that some charge-transfer from the amine group occurs but absorption corresponding to the bodipy-based radical anion (expected at
+    <span class="italic">
+     λ
+    </span>
+    = 582 nm for
+    <strong>
+     4
+    </strong>
+    from the spectroelectrochemistry data above) is either absent or is swamped by the stimulated emission. Excitation of
+    <strong>
+     7
+    </strong>
+    in CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    solution generated a feature which absorbed broadly across the visible region up to 720 nm, which we have attributed to the first singlet excited state. This feature broadened, red-shifted slightly and increased in intensity over
+    <span class="italic">
+     τ
+    </span>
+    = 1.0 ± 0.4 ps. The broad absorption is consistent with the spectrum for a reduced bodipy and we infer that the excited dye transfers charge from the amine to the bodipy, forming an intramolecular charge-separated excited state. The peak at 700 nm which was observed for
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     5
+    </strong>
+    was absent. The higher and lower wavelength regions of the transient were fitted to first-order decay and the time constants were consistent (
+    <span class="italic">
+     τ
+    </span>
+    <small>
+     <sub>
+      472
+     </sub>
+    </small>
+    = 0.19 ± ns and
+    <span class="italic">
+     τ
+    </span>
+    <small>
+     <sub>
+      650
+     </sub>
+    </small>
+    = 0.21 ± 0.1 ns) indicating that both are due to the same excited state. The bleach centered at 565 nm decayed with a fast (
+    <span class="italic">
+     τ
+    </span>
+    = 0.60 ± 0.03 ps) and slower (
+    <span class="italic">
+     τ
+    </span>
+    = 0.19 ± 0.01 ns) component. The faster component is likely to be due to overlap with stimulated emission which should be centred at 630 nm and causes a negative absorption at 700 nm at early time delays.
+   </p>
+   <p class="otherpara">
+    The spectral features between 460–500 nm in the transient spectra for the dyes adsorbed on NiO (
+    <a href="#imgfig10" title="Select to navigate to figure">
+     Fig. 10
+    </a>
+    ) were similar to those of the dyes in solution and formed within the time resolution of the instrument. Stimulated emission was observed at early time delays for
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    /NiO and
+    <strong>
+     4
+    </strong>
+    /NiO but not in
+    <strong>
+     5
+    </strong>
+    /NiO and
+    <strong>
+     7
+    </strong>
+    /NiO. The excited state of the dyes on NiO decayed three orders of magnitude faster (
+    <span class="italic">
+     τ
+    </span>
+    <small>
+     <sub>
+      485
+     </sub>
+    </small>
+    = 4.1 ± 0.6 ps for
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    /NiO,
+    <span class="italic">
+     τ
+    </span>
+    <small>
+     <sub>
+      485
+     </sub>
+    </small>
+    = 5 ± 1 ps for
+    <strong>
+     4
+    </strong>
+    /NiO) than the dyes in solution, which suggests that in both cases the excited state is rapidly quenched by electron transfer from the NiO to the dye. Consistent with this, a broad, weak absorption persists at wavelengths longer than 600 nm in the transient spectra of
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    /NiO, which is characteristic of holes introduced in NiO (
+    <span class="italic">
+     τ
+    </span>
+    <small>
+     <sub>
+      700
+     </sub>
+    </small>
+    = 24 ± 4 ps, see Fig. S81 in ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ), and a weak feature at 580 nm, which is characteristic of the bodipy radical anion. Likewise, contrary to
+    <strong>
+     5
+    </strong>
+    in solution, a single isosbestic point at 620 nm was observed for
+    <strong>
+     5
+    </strong>
+    /NiO (suggesting that a single transient species formed) and the transient at 700 nm decayed five times faster for
+    <strong>
+     5
+    </strong>
+    /NiO (
+    <span class="italic">
+     τ
+    </span>
+    <small>
+     <sub>
+      693
+     </sub>
+    </small>
+    = 13 ± 1 ps), than for
+    <strong>
+     5
+    </strong>
+    in CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    . The presence of these features suggests that photoinduced electron transfer from NiO to the dye occurs with the subsequent formation of a charge-separated state, NiO
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    /bodipy
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    . The signals were too weak for
+    <strong>
+     4
+    </strong>
+    /NiO to extract meaningful kinetics. In the transient absorption spectra for
+    <strong>
+     7
+    </strong>
+    /NiO adsorbed onto NiO the negative absorption corresponding to the ground-state bleach was broader than for
+    <strong>
+     7
+    </strong>
+    in solution due to the electronic interactions between the dye and the NiO. A transient which absorbed broadly between 460 and 500 nm decayed on a longer timescale (
+    <span class="italic">
+     τ
+    </span>
+    <small>
+     <sub>
+      472
+     </sub>
+    </small>
+    = 0.58 ± 0.04 ns) than that for
+    <strong>
+     7
+    </strong>
+    in solution. The absorption at 650–700 nm is indicative of reduced dye,
+    <strong>
+     7
+    </strong>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    . It was difficult to extract a time constant for the decay of this transient because of the overlap with the bleach in the same spectral region (
+    <span class="italic">
+     τ
+    </span>
+    <small>
+     <sub>
+      rise
+     </sub>
+    </small>
+    = 0.78 ± 0.5 ns is consistent with the kinetics of the ground state recovery at 560 nm). Despite the complexity of the spectra for
+    <strong>
+     7
+    </strong>
+    , in general the lifetime for NiO
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    /
+    <strong>
+     7
+    </strong>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    was observed to be longer compared to the charge separated state lifetimes of
+    <strong>
+     4
+    </strong>
+    /NiO and
+    <strong>
+     5
+    </strong>
+    /NiO but shorter than
+    <strong>
+     6
+    </strong>
+    /NiO.
+   </p>
+   <h2 id="sect1440">
+    <span class="a_heading">
+     Discussion
+    </span>
+   </h2>
+   <span>
+    The performance of the p-DSCs, particularly the photocurrent, was strongly dependent on the dye structure. The IPCE of a solar cell is a product of the different charge transfer processes occurring within the operational device (IPCE = LHE·
+    <span class="italic">
+     η
+    </span>
+    <small>
+     <sub>
+      inj
+     </sub>
+    </small>
+    ·
+    <span class="italic">
+     η
+    </span>
+    <small>
+     <sub>
+      cc
+     </sub>
+    </small>
+    ·
+    <span class="italic">
+     η
+    </span>
+    <small>
+     <sub>
+      reg
+     </sub>
+    </small>
+    ).
+    <a href="#cit33" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       33
+      </span>
+     </sup>
+    </a>
+    We assume that the charge collection efficiency (
+    <span class="italic">
+     η
+    </span>
+    <small>
+     <sub>
+      cc
+     </sub>
+    </small>
+    ) is similar for each of the dyes (1) because the charge transport times should be similar for each device as the semiconductor and redox mediator are the same; (2) the charge lifetimes were similar between the dyes, apart from a slight improvement for the larger dyes (
+    <strong>
+     5–7
+    </strong>
+    ) (Fig. S91–S93, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). The charge injection efficiency (
+    <span class="italic">
+     η
+    </span>
+    <small>
+     <sub>
+      inj
+     </sub>
+    </small>
+    ) is estimated from the ratio of the excited state lifetime in the absence and the presence of NiO. The time resolved transient absorption experiments (see above) and time-resolved emission studies (Fig. S72–S74, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) have indicated that electron transfer from the NiO to the dye occurs rapidly (&lt;ps) for dyes
+    <strong>
+     4–7
+    </strong>
+    and
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    . This is despite the differences in the rate of intramolecular charge separation in the dyes in solution, which were at least 10–20 times slower for
+    <strong>
+     6
+    </strong>
+    and
+    <strong>
+     4
+    </strong>
+    compared to
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    . Also, this is despite shorter excited state lifetimes for
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    compared to
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     6
+    </strong>
+    (although we note that the driving force for charge separation is
+    <span class="italic">
+     ca.
+    </span>
+    100 meV larger for
+    <strong>
+     5
+    </strong>
+    compared to the other dyes). Thus, it appears that the dye regeneration efficiency (
+    <span class="italic">
+     η
+    </span>
+    <small>
+     <sub>
+      reg
+     </sub>
+    </small>
+    ) is responsible for the more substantial differences in the IPCE. We expected that a long lived charge-separated state would favour photoinduced electron transfer between the dye radical anion and triiodide and increase the IPCE. The driving force for electron transfer from the reduced dye to triiodide is
+    <strong>
+     4
+    </strong>
+    &gt;
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    &gt;
+    <strong>
+     6
+    </strong>
+    &gt;
+    <strong>
+     7
+    </strong>
+    &gt;
+    <strong>
+     5
+    </strong>
+    . From the time resolved transient absorption spectroscopy, we have found that the charge-separated state lifetime follows the order of
+    <strong>
+     6
+    </strong>
+    &gt;
+    <strong>
+     7
+    </strong>
+    &gt;
+    <strong>
+     5
+    </strong>
+    &gt;
+    <strong>
+     4
+    </strong>
+    &gt;
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    . The cell performance follows the similar trend of
+    <strong>
+     7
+    </strong>
+    &gt;
+    <strong>
+     5
+    </strong>
+    &gt;
+    <strong>
+     4
+    </strong>
+    &gt;
+    <strong>
+     6
+    </strong>
+    &gt;
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    . Lefebvre
+    <span class="italic">
+     et al.
+    </span>
+    estimated a 50% charge separation efficiency for
+    <strong>
+     6
+    </strong>
+    by comparing the relative amplitudes of the signals at 425 nm (which contains both contribution from
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    <strong>
+     1
+    </strong>
+    * and
+    <strong>
+     1
+    </strong>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    ) and 575 nm (which is NiO
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    /
+    <strong>
+     1
+    </strong>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    only) at early (2 ps) and late (2 ns) times. Therefore a possible explanation for the low IPCE of
+    <strong>
+     6
+    </strong>
+    compared to
+    <strong>
+     7
+    </strong>
+    could be that yield of the charge-separated state is lower for
+    <strong>
+     6
+    </strong>
+    compared to
+    <strong>
+     7
+    </strong>
+    because, in
+    <strong>
+     6
+    </strong>
+    , the rotation around the bodipy/thiophene spacer is more restricted. The IPCE for dye
+    <strong>
+     7
+    </strong>
+    is high for a NiO solar cell despite
+    <span class="italic">
+     τ
+    </span>
+    &lt; 1 ns for NiO
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    /
+    <strong>
+     7
+    </strong>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    . This implies that re-oxidation of the dye by the I
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    electrolyte is very efficient. Further investigation is required to determine whether certain functional groups on the dye promote rapid electron transfer to I
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    <small>
+     <sup>
+      −
+     </sup>
+    </small>
+    .
+   </span>
+   <h2 id="sect1513">
+    <span class="a_heading">
+     Conclusions
+    </span>
+   </h2>
+   <span>
+    We have successfully prepared and characterised a number of NiO photosensitizers based on triphenylamine–bodipy conjugates. The results have provided us with guidelines for designing molecular dyes for p-type solar cells. Adding the thiophene spacer between the amine and the bodipy has a more positive affect on the solar cell efficiency than adding phenyl between the anchor and the amine donor. This could be a result of the better electron donating properties of thiophene compared to phenyl.
+    <strong>
+     Bodipy-CO
+     <small>
+      <sub>
+       2
+      </sub>
+     </small>
+     H
+    </strong>
+    performed similarly to
+    <strong>
+     4
+    </strong>
+    suggesting that the amine donor is not required for charge separation. The less substituted bodipy dyes
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    had a broader spectral response and a higher IPCE which collectively led to a higher short-circuit photocurrent density. We attribute this to better electronic communication between the NiO and bodipy in
+    <strong>
+     5
+    </strong>
+    and
+    <strong>
+     7
+    </strong>
+    compared to the hindered dyes
+    <strong>
+     4
+    </strong>
+    and
+    <strong>
+     6
+    </strong>
+    .
+   </span>
+   <h2 id="sect1526">
+    <span class="a_heading">
+     Acknowledgements
+    </span>
+   </h2>
+   <span>
+    EAG wishes to thank The Royal Society for a Dorothy Hodgkin Fellowship, The University of Nottingham for an Anne McLaren Research Fellowship and a Nottingham-Lund Joint Research Project, the EPSRC and Newcastle University for a studentship for Fiona A. Black (EPJ5002881), COST CM1202 and LaserLab Europe.
+   </span>
+   <span id="sect1528">
+    <h2 id="sect1525">
+     <span class="a_heading">
+      References
+     </span>
+    </h2>
+   </span>
+   <ol type="1">
+    <li>
+     <span id="cit1">
+      F. Odobel, Y. Pellegrin, E. A. Gibson, A. Hagfeldt, A. L. Smeigh and L. Hammarström,
+      <span class="italic">
+       Coord. Chem. Rev.
+      </span>
+      , 2012,
+      <span class="bold">
+       256
+      </span>
+      (21–22), 2414–2423
+      <a class="DOILink" href="http://dx.doi.org/10.1016/j.ccr.2012.04.017" target="_blank" title="DOI Link to resource 10.1016/j.ccr.2012.04.017">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XmvFKns7k%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/1_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit2">
+      D. Dini, Y. Halpin, J. G. Vos and E. A. Gibson,
+      <span class="italic">
+       Coord. Chem. Rev.
+      </span>
+      , 2015,
+      <span class="bold">
+       304–305
+      </span>
+      , 179–201
+      <a class="DOILink" href="http://dx.doi.org/10.1016/j.ccr.2015.03.020" target="_blank" title="DOI Link to resource 10.1016/j.ccr.2015.03.020">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXntlCqsb0%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/2_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit3">
+      L. Li, L. Duan, F. Wen, C. Li, M. Wang, A. Hagfeldt and L. Sun,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 2012,
+      <span class="bold">
+       48
+      </span>
+      (7), 988–990
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C2CC16101J&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C2CC16101J">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/3_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit4">
+      U. Bach and T. Daeneke,
+      <span class="italic">
+       Angew. Chem., Int. Ed.
+      </span>
+      , 2012,
+      <span class="bold">
+       51
+      </span>
+      (42), 10451–10452
+      <a class="DOILink" href="http://dx.doi.org/10.1002/anie.201205437" target="_blank" title="DOI Link to resource 10.1002/anie.201205437">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XhtlGjsrjP" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22976290%5Buid%5D" target="_blank" title="PubMed Link to resource 22976290">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/4_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit5">
+      J. He, H. Lindström, A. Hagfeldt and S.-E. Lindquist,
+      <span class="italic">
+       Sol. Energy Mater. Sol. Cells
+      </span>
+      , 2000,
+      <span class="bold">
+       62
+      </span>
+      , 265–273
+      <a class="DOILink" href="http://dx.doi.org/10.1016/S0927-0248(99)00168-3" target="_blank" title="DOI Link to resource 10.1016/S0927-0248(99)00168-3">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3cXislakt7g%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/5_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit6">
+      S. P. Bremner, M. Y. Levy and C. B. Honsberg,
+      <span class="italic">
+       Prog. Photovoltaics Res. Appl.
+      </span>
+      , 2008,
+      <span class="bold">
+       16
+      </span>
+      , 225–233
+      <a class="DOILink" href="http://dx.doi.org/10.1002/pip.799" target="_blank" title="DOI Link to resource 10.1002/pip.799">
+       CrossRef
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/6_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit7">
+      H. J. Snaith,
+      <span class="italic">
+       Adv. Funct. Mater.
+      </span>
+      , 2010,
+      <span class="bold">
+       20
+      </span>
+      , 13–19
+      <a class="DOILink" href="http://dx.doi.org/10.1002/adfm.200901476" target="_blank" title="DOI Link to resource 10.1002/adfm.200901476">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3cXhtFKmsQ%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/7_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit8">
+      S. Mathew, A. Yella, P. Gao, R. Humphry-Baker, B. F. E. Curchod, N. Ashari-Astani, I. Tavernelli, U. Rothlisberger, M. K. Nazeeruddin and M. Grätzel,
+      <span class="italic">
+       Nat. Chem.
+      </span>
+      , 2014,
+      <span class="bold">
+       6
+      </span>
+      (3), 242–247
+      <a class="DOILink" href="http://dx.doi.org/10.1038/nchem.1861" target="_blank" title="DOI Link to resource 10.1038/nchem.1861">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXhs1Shtro%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=24557140%5Buid%5D" target="_blank" title="PubMed Link to resource 24557140">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/8_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit9">
+      C. J. Wood, G. H. Summers and E. A. Gibson,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 2015,
+      <span class="bold">
+       51
+      </span>
+      , 3915–3918
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4CC10230D&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4CC10230D">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/9_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit10">
+      Q.-Q. Zhang, K.-J. Jiang, J.-H. Huang, C.-W. Zhao, L.-P. Zhang, X.-P. Cui, M.-J. Su, L.-M. Yang, Y.-L. Song and X.-Q. Zhou,
+      <span class="italic">
+       J. Mater. Chem. A
+      </span>
+      , 2015,
+      <span class="bold">
+       3
+      </span>
+      , 7695–7698
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXkt1OntL8%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/10_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit11">
+      E. A. Gibson, A. L. Smeigh, L. Le Pleux, L. Hammarström, F. Odobel, G. Boschloo and A. Hagfeldt,
+      <span class="italic">
+       J. Phys. Chem. C
+      </span>
+      , 2011,
+      <span class="bold">
+       115
+      </span>
+      (19), 9772–9779
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXltlaqtbo%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/11_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit12">
+      L. Le Pleux, A. L. Smeigh, E. A. Gibson, Y. Pellegrin, E. Blart, G. Boschloo, A. Hagfeldt, L. Hammarström and F. Odobel,
+      <span class="italic">
+       Energy Environ. Sci.
+      </span>
+      , 2011,
+      <span class="bold">
+       4
+      </span>
+      (6), 2075
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXovVCmtbw%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/12_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit13">
+      S. Powar, D. Xiong, T. Daeneke, M. T. Ma, A. Gupta, G. Lee, S. Makuta, Y. Tachibana, W. Chen, L. Spiccia, Y. Cheng, G. Götz, P. Bäuerle and U. Bach,
+      <span class="italic">
+       J. Phys. Chem. C
+      </span>
+      , 2014,
+      <span class="bold">
+       118
+      </span>
+      (30), 16375–16379
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXpt1Kltr8%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/13_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit14">
+      I. R. Perera, T. Daeneke, S. Makuta, Z. Yu, Y. Tachibana, A. Mishra, P. Bäuerle, C. A. Ohlin, U. Bach and L. Spiccia,
+      <span class="italic">
+       Angew. Chem.
+      </span>
+      , 2015,
+      <span class="bold">
+       127
+      </span>
+      (12), 3829–3833
+      <a class="DOILink" href="http://dx.doi.org/10.1002/ange.201409877" target="_blank" title="DOI Link to resource 10.1002/ange.201409877">
+       CrossRef
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/14_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit15">
+      N. Boens, V. Leen and W. Dehaen,
+      <span class="italic">
+       Chem. Soc. Rev.
+      </span>
+      , 2012,
+      <span class="bold">
+       41
+      </span>
+      (3), 1130–1172
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C1CS15132K&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C1CS15132K">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/15_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit16">
+      A. C. Benniston and G. Copley,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2009,
+      <span class="bold">
+       11
+      </span>
+      (21), 4124–4131
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=B901383K&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/B901383K">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/16_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit17">
+      A. Loudet and K. Burgess,
+      <span class="italic">
+       Chem. Rev.
+      </span>
+      , 2007,
+      <span class="bold">
+       107
+      </span>
+      (11), 4891–4932
+      <a class="DOILink" href="http://dx.doi.org/10.1021/cr078381n" target="_blank" title="DOI Link to resource 10.1021/cr078381n">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXhtFeisbvF" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17924696%5Buid%5D" target="_blank" title="PubMed Link to resource 17924696">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/17_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit18">
+      D. P. Hagberg, T. Edvinsson, T. Marinado, G. Boschloo, A. Hagfeldt and L. Sun,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 2006, 2245–2247
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=B603002E&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/B603002E">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/18_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit19">
+      P. Qin, H. Zhu, T. Edvinsson, G. Boschloo, A. Hagfeldt and L. Sun,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2008,
+      <span class="bold">
+       130
+      </span>
+      (27), 8570–8571
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja8001474" target="_blank" title="DOI Link to resource 10.1021/ja8001474">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXnt1Wisrc%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=18553967%5Buid%5D" target="_blank" title="PubMed Link to resource 18553967">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/19_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit20">
+      E. T. Seo, R. F. Nelson, J. M. Fritsch, L. S. Marcoux, D. W. Leedy and R. N. Adams,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 1966,
+      <span class="bold">
+       18
+      </span>
+      (14), 3498–3503
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja00967a006" target="_blank" title="DOI Link to resource 10.1021/ja00967a006">
+       CrossRef
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/20_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit21">
+      K. A. Click, D. R. Beauchamp, B. R. Garrett, Z. Huang, C. M. Hadad and Y. Wu,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2014,
+      <span class="bold">
+       16
+      </span>
+      (47), 26103–26111
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C4CP04010D&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C4CP04010D">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/21_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit22">
+      J.-F. Lefebvre, X.-Z. Sun, J. A. Calladine, M. W. George and E. A. Gibson,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 2014,
+      <span class="bold">
+       50
+      </span>
+      (40), 5258–5260
+      <a class="RSCLink" href="http://xlink.rsc.org/?doi=C3CC46133E&amp;newsite=1" target="_blank" title="Link to RSC resource DOI:10.1039/C3CC46133E">
+       RSC
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/22_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit23">
+      M. Kollmannsberger, K. Rurack, U. Resch-genger and J. Daub,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 1998,
+      <span class="bold">
+       102
+      </span>
+      , 10211–10220
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp982701c" target="_blank" title="DOI Link to resource 10.1021/jp982701c">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1cXnsVyju7k%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/23_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit24">
+      R. P. Sabatini, T. M. McCormick, T. Lazarides, K. C. Wilson, R. Eisenberg and D. W. McCamant,
+      <span class="italic">
+       J. Phys. Chem. Lett.
+      </span>
+      , 2011,
+      <span class="bold">
+       2
+      </span>
+      (3), 223–227
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jz101697y" target="_blank" title="DOI Link to resource 10.1021/jz101697y">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXosV2htQ%253D%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/24_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit25">
+      A. Harriman, J. P. Rostron, M. Cesario, G. Ulrich and R. Ziessel,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2006,
+      <span class="bold">
+       110
+      </span>
+      (26), 7994–8002
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp054992c" target="_blank" title="DOI Link to resource 10.1021/jp054992c">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD28XlsFens7g%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16805483%5Buid%5D" target="_blank" title="PubMed Link to resource 16805483">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/25_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit26">
+      Y. Rio, W. Seitz, A. Gouloumis, P. Vázquez, J. L. Sessler, D. M. Guldi and T. Tomás,
+      <span class="italic">
+       Chem. – Eur. J.
+      </span>
+      , 2010,
+      <span class="bold">
+       16
+      </span>
+      (6), 1929–1940
+      <a class="DOILink" href="http://dx.doi.org/10.1002/chem.200902507" target="_blank" title="DOI Link to resource 10.1002/chem.200902507">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3cXhsVKjtL4%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20039345%5Buid%5D" target="_blank" title="PubMed Link to resource 20039345">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/26_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit27">
+      K. Krumova and G. Cosa,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2010,
+      <span class="bold">
+       132
+      </span>
+      (13), 17560–17569
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ja1075663" target="_blank" title="DOI Link to resource 10.1021/ja1075663">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3cXhsVGktrnO" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=21090723%5Buid%5D" target="_blank" title="PubMed Link to resource 21090723">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/27_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit28">
+      M. R. Momeni and A. Brown,
+      <span class="italic">
+       J. Chem. Theory Comput.
+      </span>
+      , 2015,
+      <span class="bold">
+       11
+      </span>
+      (6), 2619–2632
+      <a class="DOILink" href="http://dx.doi.org/10.1021/ct500775r" target="_blank" title="DOI Link to resource 10.1021/ct500775r">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2MXnsFOntrw%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=26575559%5Buid%5D" target="_blank" title="PubMed Link to resource 26575559">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/28_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit29">
+      S. Hattori, K. Ohkubo, Y. Urano, H. Sunahara, T. Nagano, Y. Wada, N. V. Tkachenko, H. Lemmetyinen and S. Fukuzumi,
+      <span class="italic">
+       J. Phys. Chem. B
+      </span>
+      , 2005,
+      <span class="bold">
+       109
+      </span>
+      (32), 15368–15375
+      <a class="DOILink" href="http://dx.doi.org/10.1021/jp050952x" target="_blank" title="DOI Link to resource 10.1021/jp050952x">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2MXmsVyntb8%253D" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16852949%5Buid%5D" target="_blank" title="PubMed Link to resource 16852949">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/29_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit30">
+      K. Yuan Chiu, T. Xiang Su, J. Hong Li, T.-H. Lin, G.-S. Liou and S.-H. Cheng,
+      <span class="italic">
+       J. Electroanal. Chem.
+      </span>
+      , 2005,
+      <span class="bold">
+       575
+      </span>
+      (1), 95–101
+      <a class="DOILink" href="http://dx.doi.org/10.1016/j.jelechem.2004.09.005" target="_blank" title="DOI Link to resource 10.1016/j.jelechem.2004.09.005">
+       CrossRef
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/30_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit31">
+      Y. Chung and Y. O. Su,
+      <span class="italic">
+       J. Chin. Chem. Soc.
+      </span>
+      , 2009,
+      <span class="bold">
+       56
+      </span>
+      , 493–503
+      <a class="DOILink" href="http://dx.doi.org/10.1002/jccs.200900074" target="_blank" title="DOI Link to resource 10.1002/jccs.200900074">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1MXhtVKmt7zO" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/31_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit32">
+      A. C. Benniston, S. Clift, J. Hagon, H. Lemmetyinen, N. V. Tkachenko, W. Clegg and R. W. Harrington,
+      <span class="italic">
+       ChemPhysChem
+      </span>
+      , 2012,
+      <span class="bold">
+       13
+      </span>
+      , 3672–3681
+      <a class="DOILink" href="http://dx.doi.org/10.1002/cphc.201200510" target="_blank" title="DOI Link to resource 10.1002/cphc.201200510">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38Xht1agsbrP" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22907846%5Buid%5D" target="_blank" title="PubMed Link to resource 22907846">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/32_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit33">
+      A. Hagfeldt, G. Boschloo, L. Sun, L. Kloo and H. Pettersson,
+      <span class="italic">
+       Chem. Rev.
+      </span>
+      , 2010,
+      <span class="bold">
+       110
+      </span>
+      , 6595–6663
+      <a class="DOILink" href="http://dx.doi.org/10.1021/cr900356p" target="_blank" title="DOI Link to resource 10.1021/cr900356p">
+       CrossRef
+      </a>
+      <a class="COILink" href="http://pubs.rsc.org/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3cXhtFChs77M" target="_blank" title="Link to resource in CAS">
+       CAS
+      </a>
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20831177%5Buid%5D" target="_blank" title="PubMed Link to resource 20831177">
+       PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C5CP05177K/33_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+   </ol>
+   <hr/>
+   <table>
+    <tr>
+     <td>
+      <h3>
+       Footnotes
+      </h3>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="sup_ref">
+       †
+       <span id="fn1">
+        Electronic supplementary information (ESI) available. See DOI:
+        <a href="http://xlink.rsc.org/?DOI=c5cp05177k" target="_blank" title="Select to resolve DOI: 10.1039/c5cp05177k">
+         10.1039/c5cp05177k
+        </a>
+       </span>
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="sup_ref">
+       ‡
+       <span id="fn2">
+        These authors contributed equally to this work.
+       </span>
+      </span>
+     </td>
+    </tr>
+   </table>
+   <table>
+    <tr>
+     <td>
+      <hr/>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       This journal is © the Owner Societies 2016
+      </b>
+     </td>
+    </tr>
+   </table>
+  </div>
+ </body>
+</html>

@@ -45,7 +45,6 @@ class Table(CaptionedElement):
         (UvvisAbsEmiQuantumYieldHeadingParser(), UvvisAbsEmiQuantumYieldCellParser()),
         (UvvisEmiQuantumYieldHeadingParser(), UvvisEmiQuantumYieldCellParser()),
         (UvvisEmiHeadingParser(), UvvisEmiCellParser()),
-        #(UvvisAbsAndExtinctionHeadingParser(), UvvisAbsAndExtinctionCellParser()),
         (UvvisAbsHeadingParser(), UvvisAbsCellParser(), UvvisAbsDisallowedHeadingParser()),
         (ExtinctionHeadingParser(), ExtinctionCellParser(), ExtinctionDisallowedHeadingParser()),
         (IrHeadingParser(), IrCellParser()),
@@ -64,6 +63,8 @@ class Table(CaptionedElement):
         self.headings = headings if headings is not None else []  # list(list(Cell))
         self.rows = rows if rows is not None else []  # list(list(Cell))
         self.footnotes = footnotes if footnotes is not None else []
+        print("Table Headings look like:")
+        print(self.headings)
 
     @property
     def document(self):
@@ -134,9 +135,12 @@ class Table(CaptionedElement):
                 allowed = False
                 disallowed = False
                 for cell in col_headings:
-                    log.debug(cell.tagged_tokens)
+                    log.info(cell.tagged_tokens)
                     results = list(heading_parser.parse(cell.tagged_tokens))
                     if results:
+                        print("cell tagged tokens are:")
+                        print(results)
+                        print(results[0].serialize())
                         allowed = True
                         log.info(cell.tagged_tokens)
                         log.info('Heading column %s: Match %s: %s' % (i, heading_parser.__class__.__name__, [c.serialize() for c in results]))

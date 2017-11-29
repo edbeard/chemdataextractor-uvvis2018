@@ -1,0 +1,3688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:art="http://www.rsc.org/schema/rscart38" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rsc="urn:rsc.org">
+ <head>
+  <title>
+   Long-living optical gain induced by solvent viscosity in a push–pull molecule   - Physical Chemistry Chemical Physics (RSC Publishing) DOI:10.1039/C6CP02988D
+  </title>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYNF1oJ","queueTime":0,"applicationTime":1473,"ttGuid":"D3DFCFCE8EFAD245","agent":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,S=y.hash,this[u]=Date.now()}function o(){j--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),R=t(13),P=t("ee"),D=P.get("tracer");t(14),t("loader").features.spa=!0;var S,N=w[v],j=0;P.on(u,r),P.on(p,r),P.on(h,o),P.on(d,o),P.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),R.buffer([u,"new-xhr","send-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(R,"send-xhr"+c),a(P,"xhr-resolved"),a(P,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),N("hashchange",i,!0),N("load",i,!0),N("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(h+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),f.setCurrentRouteName=o(h+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(h){throw u(e+"err",[r,a,h],c),h}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,h(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){p([a,n,r,o])}s=i}}function h(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!p.aborted){t&&t(n,r,o);for(var i=e(o),a=l(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function d(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return h[t]=h[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},g={on:d,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},h={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=h.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(w,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=h.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===h.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=t("ee"),u=window,h=u.document,p="addEventListener",d="attachEvent",l=u.XMLHttpRequest,m=l&&l.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:l,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(16);var v=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-998.min.js"},y=l&&m&&m[p]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:v,features:{},xhrWrappable:y};h[p]?(h[p]("DOMContentLoaded",i,!1),u[p]("load",r,!1)):(h[d]("onreadystatechange",o),u[d]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,14,5,3,4]);
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="M. M. Mróz" name="DC.Creator"/>
+  <meta content="S. Benedini" name="DC.Creator"/>
+  <meta content="A. Forni" name="DC.Creator"/>
+  <meta content="C. Botta" name="DC.Creator"/>
+  <meta content="D. Pasini" name="DC.Creator"/>
+  <meta content="E. Cariati" name="DC.Creator"/>
+  <meta content="T. Virgili" name="DC.Creator"/>
+  <meta content="Long-living optical gain induced by solvent viscosity in a push–pull molecule  " name="DC.title"/>
+  <meta content="Royal Society of Chemistry" name="DC.publisher"/>
+  <meta content="2016/07/06" name="DC.Date"/>
+  <meta content="10.1039/C6CP02988D" name="DC.Identifier" scheme="doi"/>
+  <meta content="en" name="DC.Language"/>
+  <meta content="Long-living optical gain induced by solvent viscosity in a push–pull molecule  " name="citation_title"/>
+  <meta content="M. M. Mróz" name="citation_author"/>
+  <meta content="S. Benedini" name="citation_author"/>
+  <meta content="A. Forni" name="citation_author"/>
+  <meta content="C. Botta" name="citation_author"/>
+  <meta content="D. Pasini" name="citation_author"/>
+  <meta content="E. Cariati" name="citation_author"/>
+  <meta content="T. Virgili" name="citation_author"/>
+  <meta content="2016/06/08" name="citation_online_date"/>
+  <meta content="2016" name="citation_date"/>
+  <meta content="Physical Chemistry Chemical Physics" name="citation_journal_title"/>
+  <meta content="18" name="citation_volume"/>
+  <meta content="27" name="citation_issue"/>
+  <meta content="18289" name="citation_firstpage"/>
+  <meta content="18296" name="citation_lastpage"/>
+  <meta content="10.1039/C6CP02988D" name="citation_doi"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticlePDF/2016/CP/C6CP02988D" name="citation_pdf_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleLanding/2016/CP/C6CP02988D" name="citation_abstract_html_url"/>
+  <meta content="http://pubs.rsc.org/en/Content/ArticleHTML/2016/CP/C6CP02988D" name="citation_fulltext_html_url"/>
+  <link href="" rel="shortcut icon"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+  <link href="http://pubs.rsc.org/content/stylesheets/rschtml2.css?ver=6_0_9" rel="stylesheet" type="text/css"/>
+  <script src="http://pubs.rsc.org/content/scripts/JQueryPlugins.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   (function ($) {
+        function grab_content(span_id) {
+            var content = $('span[id="' + span_id + '"]').text();
+
+            if (span_id.indexOf("fn", 0) != -1) {
+                return content; // could contain useful anchor text i.e. see doi:
+            }
+            else {
+                // strip external anchor text CrossRef etc. (but not Dera linked text)
+               $('span[id="' + span_id + '"] a[class !="simple"][class !="CH"][class !="TC"][class !="RTC"][class !="GB"]').each(
+            		function () {
+            					content = content.replace($(this).text(), '');
+              					}); return content;
+            }
+       }
+
+        $.fn.swapAttr = function (attribute) {
+            return this.each(function () {
+                $(this).hover(function () {
+                    var $this = $(this);
+                    var idval = $this.attr("href").replace("#", "");
+                    var textval = grab_content(idval);
+                    if (textval.replace(/\s+/g, '') != "") {
+                        $this.attr('title', textval.replace(/\s+/g, ' '));
+                    }
+                }, function () {
+                    var $this = $(this);
+                });
+            });
+        };
+
+    })(jQuery);
+
+    $(document).ready(function () {
+        $("a[href^='#']").swapAttr();
+    });
+  </script>
+  <!--6_0_9-->
+ </head>
+ <body>
+  <!--Google Tag Manager-->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-KW8L" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KW8L');
+  </script>
+  <!--End Google Tag Manager-->
+  <span id="top">
+  </span>
+  <div id="wrapper">
+   <div class="left_head">
+    <a class="URLLink" href="http://pubs.rsc.org">
+     <img alt="Royal Society of Chemistry" border="0" class="rsc-logo" src="http://pubs.rsc.org/content/NewImages/royal-society-of-chemistry-logo.png"/>
+    </a>
+    <br/>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlepdf/2016/CP/C6CP02988D" target="_blank" title="Link to PDF version">
+      View PDF Version
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C6CP01678B" target="_BLANK" title="Link to previous article (id:C6CP01678B)">
+      Previous Article
+     </a>
+    </span>
+    <span class="btnContainer">
+     <a class="btnLink" href="http://pubs.rsc.org/en/content/articlehtml/2016/CP/C6CP03112A" target="_BLANK" title="Link to next article (id:C6CP03112A)">
+      Next Article
+     </a>
+    </span>
+   </div>
+   <div class="right_head">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js" type="text/javascript">
+    </script>
+    <script src="http://crossmark.crossref.org/javascripts/v1.4/crossmark.min.js" type="text/javascript">
+    </script>
+    <a href="#" id="open-crossmark" style="padding: 2.5em 0 1em 0;">
+     <img id="crossmark-icon" src="http://crossmark.crossref.org/images/crossmark_button.png" style="border: 0; display:inline;"/>
+    </a>
+    <div id="crossmark-dialog" style="display: none;" title="">
+     <iframe frameborder="0" id="crossmark-dialog-frame">
+     </iframe>
+    </div>
+    <br/>
+    <span class="oa">
+     <img src="http://pubs.rsc.org/content/newimages/open_access_blue.png"/>
+     Open Access Article
+     <br/>
+     <img src="http://pubs.rsc.org/content/newimages/CCBY.png"/>
+     This Open Access Article is licensed under a
+     <br/>
+     <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">
+      Creative Commons Attribution 3.0 Unported Licence
+     </a>
+    </span>
+   </div>
+   <div class="article_info">
+    DOI:
+    <a href="http://dx.doi.org/10.1039/C6CP02988D" target="_blank" title="Link to landing page via DOI">
+     10.1039/C6CP02988D
+    </a>
+    (Paper)
+    <span class="italic">
+     <a href="http://dx.doi.org/10.1039/1463-9084/1999" title="Link to journal home page">
+      Phys. Chem. Chem. Phys.
+     </a>
+    </span>
+    , 2016,
+    <strong>
+     18
+    </strong>
+    , 18289-18296
+   </div>
+   <h1 id="sect180">
+    <span class="title_heading">
+     Long-living optical gain induced by solvent viscosity in a push–pull molecule
+     <a href="#fn1" title="Select to navigate to footnote">
+      †
+     </a>
+    </span>
+   </h1>
+   <p class="header_text">
+    <span class="bold">
+     M. M. 
+            Mróz
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     S. 
+            Benedini
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      b
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     A. 
+            Forni
+    </span>
+    *
+    <sup>
+     <span class="sup_ref italic">
+      c
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     C. 
+            Botta
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      d
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     D. 
+            Pasini
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      b
+     </span>
+    </sup>
+    ,
+    <span class="bold">
+     E. 
+            Cariati
+    </span>
+    <sup>
+     <span class="sup_ref italic">
+      e
+     </span>
+    </sup>
+    <span class="bold">
+     and
+    </span>
+    <span class="bold">
+     T. 
+            Virgili
+    </span>
+    *
+    <sup>
+     <span class="sup_ref italic">
+      a
+     </span>
+    </sup>
+    <br/>
+    <a id="affa">
+     <sup>
+      <span class="sup_ref italic">
+       a
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     IFN-CNR, Dipartimento di Fisica, Politecnico di Milano, Piazza Leonardo Da Vinci, 32, 20132 Milano, Italy. E-mail:
+     <a href="mailto:tersilla.virgili@polimi.it">
+      tersilla.virgili@polimi.it
+     </a>
+    </span>
+    <br/>
+    <a id="affb">
+     <sup>
+      <span class="sup_ref italic">
+       b
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Department of Chemistry and INSTM Research Unit, University of Pavia, Viale Taramelli, 10, 27100 Pavia, Italy
+    </span>
+    <br/>
+    <a id="affc">
+     <sup>
+      <span class="sup_ref italic">
+       c
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     ISTM – CNR, c/o Dipartimento di Chimica, Università degli Studi di Milano and INSTM Research Unit, Via Venezian, 21, 20133 Milano, Italy. E-mail:
+     <a href="mailto:aforni@istm.cnr.it">
+      aforni@istm.cnr.it
+     </a>
+    </span>
+    <br/>
+    <a id="affd">
+     <sup>
+      <span class="sup_ref italic">
+       d
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     ISMAC – CNR and INSTM Research Unit, Via Corti 12, 20133 Milano, Italy
+    </span>
+    <br/>
+    <a id="affe">
+     <sup>
+      <span class="sup_ref italic">
+       e
+      </span>
+     </sup>
+    </a>
+    <span class="italic">
+     Università degli Studi di Milano and INSTM Research Unit, Dipartimento di Chimica, via Golgi 19, 20133 Milano, Italy
+    </span>
+   </p>
+   <div id="art-admin">
+    <span class="italic bold">
+     Received 
+      4th May 2016
+    </span>
+    <span class="bold italic">
+     , Accepted 31st May 2016
+    </span>
+   </div>
+   <p class="bold italic">
+    First published on the web 8th June 2016
+   </p>
+   <hr/>
+   <p class="abstract">
+    The combination of continuum and ultrafast pump–probe spectroscopy with DFT and TDDFT calculations, in viscous and non-viscous environments, is effective in unraveling important features of the twisted intramolecular charge transfer mechanism in a new push–pull molecule that possesses aggregation induced emission properties. Long-living optical gain is found when this mechanism is inhibited, highlighting the importance of the environment rigidity in the design of materials for photonic applications.
+   </p>
+   <hr/>
+   <h2 id="sect275">
+    <span class="a_heading">
+     Introduction
+    </span>
+   </h2>
+   <span>
+    Organic compounds bearing electron donor (D) and acceptor (A) groups linked by π-conjugated bridges, commonly referred to as “push–pull” systems,
+    <a href="#cit1" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       1
+      </span>
+     </sup>
+    </a>
+    are characterized by fast intramolecular charge transfer upon light excitation.
+    <a href="#cit2" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       2
+      </span>
+     </sup>
+    </a>
+    During the last few decades, the excited state dynamics of these systems have been the subject of many experimental and computational studies.
+    <a href="#cit1" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       1,3–5
+      </span>
+     </sup>
+    </a>
+    It has been proven that after photoexcitation the excited singlet state can relax to a different conformation with higher charge transfer character (Intramolecular Charge Transfer state, ICT), which can be twisted (TICT)
+    <a href="#cit2" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       2,6
+      </span>
+     </sup>
+    </a>
+    or planar (PICT).
+    <a href="#cit7" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       7
+      </span>
+     </sup>
+    </a>
+    From an electronic point of view, the TICT conformation involves a large charge separation because the mesomeric interaction between D and A is blocked owing to their reciprocal twisting, while the PICT model postulates an ICT quinoidal structure with partial positive charges on the D and A groups. The TICT/PICT mechanisms in push–pull systems have been extensively investigated in various polar and non-polar environments
+    <a href="#cit8" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       8–13
+      </span>
+     </sup>
+    </a>
+    as well as in environments with different viscosities.
+    <a href="#cit14" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       14–19
+      </span>
+     </sup>
+    </a>
+    While the controversy on TICT and PICT mechanisms in push–pull systems is still the subject of debate at both experimental and theoretical levels,
+    <a href="#cit14" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       14,20–23
+      </span>
+     </sup>
+    </a>
+    the ICT process of photoinduced charge separation is of fundamental and practical significance. It has been used in a range of applications, including fluorescent probes, laser dyes, bistable switches and molecular rotors,
+    <a href="#cit24" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       24
+      </span>
+     </sup>
+    </a>
+    and OLED devices.
+    <a href="#cit25" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       25
+      </span>
+     </sup>
+    </a>
+    Moreover some of these “push–pull” systems have been recently found to emit more efficiently in the aggregated state than in solution.
+    <a href="#cit26" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       26,27
+      </span>
+     </sup>
+    </a>
+    This behaviour has been termed aggregation-induced-emission (AIE) since the pioneering studies of Tang and coworkers.
+    <a href="#cit28" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       28
+      </span>
+     </sup>
+    </a>
+    The restriction of intramolecular rotation (RIR) is generally the assumed mechanism to explain the AIE behaviour:
+    <a href="#cit25" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       25,26
+      </span>
+     </sup>
+    </a>
+    in solution, the free intramolecular rotation introduces a non-radiative relaxation channel for the excited state to decay that quenches the luminescence; by slowing or stopping this rotation, as a consequence of the environment rigidification or molecular aggregation, luminescence is restored.
+   </span>
+   <p class="otherpara">
+    We have previously reported on the photophysical and AIE properties of simple push–pull molecules.
+    <a href="#cit11" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       11,29,30
+      </span>
+     </sup>
+    </a>
+    In this paper, in order to shed more light on the excited state properties of push–pull systems and on the TICT mechanism, we report on the optical behavior of a new molecule, 1,1,1,5,5,5-hexafluoro-3-(
+    <span class="italic">
+     p
+    </span>
+    -dimethylaminophenyl)methylene-2,4-pentanedione,
+    <strong>
+     1
+    </strong>
+    (see
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1(a)
+    </a>
+    ). This molecule has been designed with the objective of further enhancing the push–pull character of our previously studied molecules, by changing the ester moieties with trifluoromethyl ketone groups, possessing a stronger electron-withdrawing character (the
+    <span class="italic">
+     σ
+    </span>
+    <small>
+     <sub>
+      p
+     </sub>
+    </small>
+    Hammett parameters are 0.45 and 0.80, respectively, for the two functional groups).
+    <a href="#cit31" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       31
+      </span>
+     </sup>
+    </a>
+    The molecule possesses two single bonds (N1C10, C6C7) separating the D (dimethylamino group) and A (methylene-2,4-pentanedione group) moieties, around which rotations in the excited state could be observed. It has been dissolved in solvents with different polarities and viscosities; in particular, we have studied acetonitrile (ACN) and polyethylene glycol (PEG) solutions by continuum and ultrafast spectroscopy combined with DFT and TDDFT calculations. We show that molecule
+    <strong>
+     1
+    </strong>
+    possesses AIE properties, and we demonstrate: (1) the strong dependence of the efficiency of the TICT mechanism on the solvent viscosity; (2) the presence of long-living optical gain from the first excited state in the viscous solvent, highlighting the important role of the environment rigidity in the design of materials for photonic applications.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig1">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02988d-f1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f1.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 1
+       </b>
+       <span id="fig1">
+        <span class="graphic_title">
+         (a) ORTEP drawing of
+         <strong>
+          1
+         </strong>
+         with thermal ellipsoids at the 30% probability level. O1–C2, 1.218(3) Å; O2–C4, 1.200(3) Å; C2–C3, 1.442(3) Å; C3–C4, 1.490(3) Å; C3–C6, 1.367(3) Å; C6–C7, 1.425(3) Å; C10–N1, 1.347(2) Å. (b) Partial view of crystal packing of
+         <strong>
+          1
+         </strong>
+         showing the shortest distances between centroids of the benzene rings.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <h2 id="sect304">
+    <span class="a_heading">
+     Results and discussion
+    </span>
+   </h2>
+   <h3 id="sect306">
+    <span class="b_heading">
+     Synthesis and crystal structure
+    </span>
+   </h3>
+   <span>
+    Compound
+    <strong>
+     1
+    </strong>
+    has been synthesized by Knoevenagel condensation between commercially available 4-dimethylaminobenzaldehyde and hexafluoroacetylacetone, following reported conditions,
+    <a href="#cit32" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       32
+      </span>
+     </sup>
+    </a>
+    and obtained in good yields after purification by column chromatography. Single crystals suitable for X-ray diffraction were obtained from CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    /pentane. In the solid state, the molecule assumes a conformation (see
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1(a)
+    </a>
+    ) where the dimethylamino group and the methylene bonds are essentially coplanar to the phenyl ring, one carbonyl group is almost coplanar with the phenyl ring (torsion angle O1–C2–C3–C6,
+    <span class="italic">
+     θ
+    </span>
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    , is 170(1)°) and the other is significantly out of the phenyl plane (O2–C4–C3–C6,
+    <span class="italic">
+     θ
+    </span>
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    , is −60(1)°), implying some conjugation degree only for the former one. Crystal structure analysis shows that molecules of
+    <strong>
+     1
+    </strong>
+    are stacked in a head-to-tail fashion along the
+    <span class="italic">
+     a
+    </span>
+    axis, with interplanar distances alternately equal to 3.61(1) and 3.48(1) Å and corresponding distances between centroids of the aromatic rings equal to 3.995 and 5.065 Å, respectively (see
+    <a href="#imgfig1" title="Select to navigate to figure">
+     Fig. 1b
+    </a>
+    ). Owing to the quite large distances between adjacent aromatic rings, only weak π–π interactions along the stacks are to be expected in the crystal phase. No other specific intermolecular interactions are present in the crystal structure of
+    <strong>
+     1
+    </strong>
+    .
+   </span>
+   <h3 id="sect322">
+    <span class="b_heading">
+     Photophysical characterization
+    </span>
+   </h3>
+   <span>
+    The absorption and photoluminescence (PL) spectra of the molecule dissolved in non-viscous solvents with different polarities (see Table S1 and Fig. S4, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) display a linear dependence of the Stokes shifts on the orientation polarizability Δ
+    <span class="italic">
+     f
+    </span>
+    , in agreement with the Lippert equation
+    <a href="#cit33" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       33
+      </span>
+     </sup>
+    </a>
+    <table>
+     <td class="leftEqn">
+     </td>
+     <tr>
+      <td class="eqn">
+       <span id="eqn1">
+       </span>
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-t1_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02988d-t1.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-t1.gif"/>
+       </a>
+      </td>
+      <td class="rightEqn">
+       (1)
+      </td>
+     </tr>
+    </table>
+    where
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      E
+     </sub>
+    </small>
+    and
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      G
+     </sub>
+    </small>
+    are the dipole moments of the excited and the ground state, respectively,
+    <span class="italic">
+     h
+    </span>
+    is the Planck constant,
+    <span class="italic">
+     c
+    </span>
+    is the light velocity and
+    <span class="italic">
+     a
+    </span>
+    is the Onsager cavity radius. This behavior suggests that the main dependence of the optical properties on the polarity of the solvent is related to general solvent effects.
+    <a href="#cit33" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       33
+      </span>
+     </sup>
+    </a>
+    Assuming
+    <span class="italic">
+     a
+    </span>
+    = 5.36 Å, as estimated by computing the volume inside an isosurface of 0.001 e bohr
+    <small>
+     <sup>
+      −3
+     </sup>
+    </small>
+    density, a fit from
+    <a href="#eqn1" title="">
+     eqn (1)
+    </a>
+    gives a value of
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      E
+     </sub>
+    </small>
+    −
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      G
+     </sub>
+    </small>
+    = 6.9 D (see Fig. S5, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). When the molecule is dissolved in viscous solvents, this simple relation does not hold, suggesting that additional effects, specifically related to solvent viscosity, have to be considered in the photoexcitation pathway. The Photoluminescence Quantum Yield (PLQY) has been measured in solution revealing very low values for all the non-viscous solvents (≈0.02% for ACN) while higher values are measured for the viscous ones (≈7% for the PEG solution) and in the solid state (11% for the powders, see Fig. S6, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). The observation of very weak emission in solution, whose intensity strongly increases in viscous solvents, and the quite high PLQY in the solid state demonstrates that this molecule possesses AIE properties governed by restricted intramolecular rotations, as already observed in similar compounds.
+    <a href="#cit29" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       29,30
+      </span>
+     </sup>
+    </a>
+    In the following we will focus our attention on the photophysical study of
+    <strong>
+     1
+    </strong>
+    dissolved in two solvents possessing different viscosities, acetonitrile (ACN, non-viscous) and polyethylene glycol (PEG, viscous), whose optical properties are reported in
+    <a href="#imgfig2" title="Select to navigate to figure">
+     Fig. 2
+    </a>
+    . The absorption spectra are characterized by a broad band, occurring in the blue-green region (450–550 nm), in particular in PEG the absorption peak is at ≈466 nm while in ACN at ≈462 nm. After excitation at 420 nm, PL is observed for the solutions, with the spectra centered at 525 nm in PEG (line + symbols) and at 535 nm in ACN (solid lines). The PL spectrum of the ACN solution appears broader (FWHM of around 0.43 eV) than the one of the PEG solution (FWHM of around 0.30 eV).
+   </span>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig2">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f2_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02988d-f2.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f2.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 2
+       </b>
+       <span id="fig2">
+        <span class="graphic_title">
+         Optical absorption (dashed line) and emission spectra (solid line) of
+         <strong>
+          1
+         </strong>
+         in ACN (black line) and PEG (red line + open squares) solutions.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    We performed ultrafast pump–probe measurements on the two solutions, in order to temporally resolve the spectral evolution of the excited states created after the pump excitation. In this experiment, the transmission of a white light pulse (probe) is detected at different time delays with respect to the pump excitation (520 nm). We excite in the red-edge of the absorption band to avoid giving excess energy to the system. The differential transmission spectra of the probe pulse Δ
+    <span class="italic">
+     T
+    </span>
+    /
+    <span class="italic">
+     T
+    </span>
+    (where Δ
+    <span class="italic">
+     T
+    </span>
+    =
+    <span class="italic">
+     T
+    </span>
+    <small>
+     <sub>
+      on
+     </sub>
+    </small>
+    −
+    <span class="italic">
+     T
+    </span>
+    , with
+    <span class="italic">
+     T
+    </span>
+    <small>
+     <sub>
+      on
+     </sub>
+    </small>
+    being the transmission of the probe light with the pump excitation and
+    <span class="italic">
+     T
+    </span>
+    being the transmission of the probe light without the pump excitation) taken at different probe delays are then obtained. A positive Δ
+    <span class="italic">
+     T
+    </span>
+    /
+    <span class="italic">
+     T
+    </span>
+    signal (transmission increasing after pump excitation) is an indication of bleaching of the ground state when the signal spectrally overlaps the absorption spectrum or of Stimulated Emission (SE) from the excited state when the signal overlaps the PL spectrum of the molecule. The time-resolved spectra recorded (
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3a and b
+    </a>
+    ) in both solvents show a positive broad band that can be associated with Photo Bleaching (PB peak at 500 nm) and Stimulated Emission (SE peak at around 600 nm). In the ACN solution after around 1 ps the formation of a negative Photoinduced Absorption (PA) band centered at 550 nm is observed, displaying a fast decay in a few ps timescale (solid line,
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3c
+    </a>
+    ). In contrast, in PEG solution there is no formation of a PA band in time and the positive signal decays in hundreds of ps (line + symbols,
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3c
+    </a>
+    ), indicating that in this case the molecule presents an intense and long living stimulated emission (optical gain). The presence of this long living optical gain over a wide spectral region opens up new perspective of applications for these materials such as optical amplifiers, or lasing devices.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig3">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f3_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02988d-f3.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f3.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 3
+       </b>
+       <span id="fig3">
+        <span class="graphic_title">
+         Δ
+         <span class="italic">
+          T
+         </span>
+         /
+         <span class="italic">
+          T
+         </span>
+         spectra at different probe delays for the PEG (a) and for the ACN solution (b) of
+         <strong>
+          1
+         </strong>
+         . Decays at 550 nm for the two solutions (c).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Based on these results, a plot of the potential energy surfaces of
+    <strong>
+     1
+    </strong>
+    as a function of the conformational coordinates is reported in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    , showing the excited state relaxation processes occurring in viscous (a) and non-viscous (b) solvents. Supported by DFT/TDDFT calculations (see the next section), three molecular conformations come into play, called
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    , corresponding to the minimum of the ground state (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    ), and
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      LE
+     </sub>
+    </small>
+    and
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      TICT
+     </sub>
+    </small>
+    , associated with two minima in the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    excited state. The molecule presents in both solvents a stable minimum in the excited state, instantaneously formed upon excitation, corresponding to
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      LE
+     </sub>
+    </small>
+    conformation. Therefore, after excitation, in both solutions a very fast (decay time of around 100 fs) internal conversion (IC)
+    <a href="#cit34" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       34
+      </span>
+     </sup>
+    </a>
+    brings the initial population to the lowest vibrational excited state with a modest conformational rearrangement (local excited state, LE) from which the molecule can decay radiatively (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      R1
+     </sub>
+    </small>
+    ). After that, the role of the solvent becomes crucial: in the case of PEG the viscosity of the environment keeps the molecules stable in this conformation while in ACN the molecule tends to further change its conformation and form a new state (TICT state).
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig4">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f4_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02988d-f4.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f4.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 4
+       </b>
+       <span id="fig4">
+        <span class="graphic_title">
+         A plot of the potential energy surfaces of
+         <strong>
+          1
+         </strong>
+         as a function of the conformation coordinate in PEG (a) and ACN solvent (b). Three molecular conformations are reported.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    In the latter case a competition between the radiative emission rate (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      R1
+     </sub>
+    </small>
+    ) from the first excited state and the non-radiative decay rate (
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      NR
+     </sub>
+    </small>
+    ) is present. Indeed, our pump–probe experiment shows that in the non-viscous solvent (ACN) a photoinduced absorption band at around 550 nm is efficiently generated with a rate
+    <span class="italic">
+     k
+    </span>
+    <small>
+     <sub>
+      NR
+     </sub>
+    </small>
+    of ≈(10
+    <small>
+     <sup>
+      −12
+     </sup>
+    </small>
+    s) (see
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3b and c
+    </a>
+    ) consistent with the formation of a TICT state. In the viscous solvent (PEG) instead, no photoinduced signals are detected after excitation, as shown in the pump–probe spectrum (see
+    <a href="#imgfig3" title="Select to navigate to figure">
+     Fig. 3a and c
+    </a>
+    ). The rigidity of the environment, in this case, does not allow the further intramolecular torsion required to produce the TICT state and, as a consequence, no competitive non-radiative decays are introduced in the photoexcitation pathway.
+   </p>
+   <h3 id="sect403">
+    <span class="b_heading">
+     Quantum chemical calculations
+    </span>
+   </h3>
+   <span>
+    The photophysical characterization of
+    <strong>
+     1
+    </strong>
+    in different solvents evidences the simultaneous presence of two effects in the relaxation dynamics of the excited state – one connected with the polarity of the medium, as shown by steady-state measurements, and the other with its viscosity, revealed by pump–probe experiments. Furthermore, the viscous solvent here used (PEG) is characterized by non-negligible polarity (see Table S1, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ). A proper separation of the two contributions is therefore desirable to get a reliable description of the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    potential energy surface (PES) with its hypothesized LE and TICT stationary states. It is in fact well known that, according to the TICT model, the relative stability of the highly polar TICT state with respect to the scarcely polar LE one is strongly dependent on the polarity of the medium, as well as the energy barrier separating the two minima.
+   </span>
+   <p class="otherpara">
+    Quantum chemical calculations were then performed on
+    <strong>
+     1
+    </strong>
+    in solution, to get a full account of the influence of the solvent polarity on the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    PES, devoid of viscosity effects which cannot be described within purely quantum-mechanical approaches. DFT and TDDFT calculations have been performed within the Polarized Continuum Model approach,
+    <a href="#cit35" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       35–37
+      </span>
+     </sup>
+    </a>
+    which treats the solvent as a continuum characterized by its own dielectric constant, allowing us to simulate the influence of the polarity of the medium on the ground and the excited state properties.
+   </p>
+   <p class="otherpara">
+    PCM-CAM-B3LYP/6-311++G(d,p) geometry optimizations, starting from the experimental geometry as obtained by single crystal X-ray diffractometric studies, were performed on
+    <strong>
+     1
+    </strong>
+    in all the non-viscous solvents experimentally considered (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ). A very good agreement between the optimized geometrical parameters (see Table S2, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) and the experimental ones has been obtained, confirming the negligible effect of intermolecular interactions on the intrinsic geometry of
+    <strong>
+     1
+    </strong>
+    in the crystal phase. The optimized geometry of
+    <strong>
+     1
+    </strong>
+    in ACN corresponds to the
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    conformation in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    . A close inspection of bond lengths points out a weak polarizing effect exerted on the molecule by the crystal environment. The better agreement with the experimental geometry is in fact recovered in the more polar solvents, acetone and ACN, which provide a slightly higher conjugation degree for the coplanar molecular moiety (for example, longer O1–C2 and shorter C2–C3 distances along the series of solvents), approaching the experimental one. The bond length of the out-of-plane carbonyl group is instead almost unvaried in the different solvents and in the crystal phase, though its spatial arrangement shows a slight dependence on the environment. In fact, the above mentioned O2–C4–C3–C6 torsion,
+    <span class="italic">
+     θ
+    </span>
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    = −60(1)° in the crystal phase, varies from −54 to −47° going from non-polar to polar solvent.
+   </p>
+   <div class="table_caption">
+    <b>
+     Table 1
+    </b>
+    <span id="tab1">
+     Computed dipole moments (
+     <span class="italic">
+      μ
+     </span>
+     <small>
+      <sub>
+       G
+      </sub>
+     </small>
+     ,
+     <span class="italic">
+      μ
+     </span>
+     <small>
+      <sub>
+       E,LE
+      </sub>
+     </small>
+     and
+     <span class="italic">
+      μ
+     </span>
+     <small>
+      <sub>
+       E,TICT
+      </sub>
+     </small>
+     for ground, LE and TICT excited states, respectively), absorption and emission wavelengths (
+     <span class="italic">
+      λ
+     </span>
+     <small>
+      <sub>
+       abs
+      </sub>
+     </small>
+     ,
+     <span class="italic">
+      λ
+     </span>
+     <small>
+      <sub>
+       LE
+      </sub>
+     </small>
+     and
+     <span class="italic">
+      λ
+     </span>
+     <small>
+      <sub>
+       TICT
+      </sub>
+     </small>
+     ) and relative oscillator strengths (
+     <span class="italic">
+      f
+     </span>
+     ) for compound
+     <strong>
+      1
+     </strong>
+     in different solvents
+     <i>
+      <small>
+       <sup style="color: red;">
+        <a href="#tab1fna" title="">
+         a
+        </a>
+       </sup>
+      </small>
+     </i>
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+      </th>
+      <th align="left" class="border_black" rowspan="2" valign="bottom">
+       <span class="italic">
+        μ
+       </span>
+       <small>
+        <sub>
+         G
+        </sub>
+       </small>
+       (D)
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       Absorption
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       Local excited state
+      </th>
+      <th align="left" class="border_black" colspan="3" valign="bottom">
+       TICT state
+      </th>
+     </tr>
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        μ
+       </span>
+       <small>
+        <sub>
+         E,abs
+        </sub>
+       </small>
+       (D)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         abs
+        </sub>
+       </small>
+       (nm)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        f
+       </span>
+       <small>
+        <sub>
+         abs
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        μ
+       </span>
+       <small>
+        <sub>
+         E,LE
+        </sub>
+       </small>
+       (D)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        λ
+       </span>
+       <small>
+        <sub>
+         LE
+        </sub>
+       </small>
+       (nm)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        f
+       </span>
+       <small>
+        <sub>
+         LE
+        </sub>
+       </small>
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        μ
+       </span>
+       <small>
+        <sub>
+         E,TICT
+        </sub>
+       </small>
+       (D)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       λ
+       <small>
+        <sub>
+         TICT
+        </sub>
+       </small>
+       (nm)
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       <span class="italic">
+        f
+       </span>
+       <small>
+        <sub>
+         TICT
+        </sub>
+       </small>
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="11">
+       <a id="tab1fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        Calculations performed at PCM-(TD)CAM-B3LYP/6-311++G(d,p) level of theory.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td valign="top">
+       <span class="italic">
+        n
+       </span>
+       -Hexane
+      </td>
+      <td align="char" char="." valign="top">
+       12.61
+      </td>
+      <td align="char" char="." valign="top">
+       18.87
+      </td>
+      <td align="char" char="." valign="top">
+       380
+      </td>
+      <td align="char" char="." valign="top">
+       0.98
+      </td>
+      <td colspan="3" valign="top">
+       Not minimum
+      </td>
+      <td align="char" char="." valign="top">
+       20.03
+      </td>
+      <td align="char" char="." valign="top">
+       834
+      </td>
+      <td align="char" char="." valign="top">
+       0.0002
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       Toluene
+      </td>
+      <td align="char" char="." valign="top">
+       13.15
+      </td>
+      <td align="char" char="." valign="top">
+       19.57
+      </td>
+      <td align="char" char="." valign="top">
+       390
+      </td>
+      <td align="char" char="." valign="top">
+       1.01
+      </td>
+      <td colspan="3" valign="top">
+       Not minimum
+      </td>
+      <td align="char" char="." valign="top">
+       20.78
+      </td>
+      <td align="char" char="." valign="top">
+       830
+      </td>
+      <td align="char" char="." valign="top">
+       0.0003
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       Chloroform
+      </td>
+      <td align="char" char="." valign="top">
+       14.51
+      </td>
+      <td align="char" char="." valign="top">
+       21.03
+      </td>
+      <td align="char" char="." valign="top">
+       411
+      </td>
+      <td align="char" char="." valign="top">
+       1.11
+      </td>
+      <td align="char" char="." valign="top">
+       18.44
+      </td>
+      <td align="char" char="." valign="top">
+       504
+      </td>
+      <td align="char" char="." valign="top">
+       0.71
+      </td>
+      <td align="char" char="." valign="top">
+       22.35
+      </td>
+      <td align="char" char="." valign="top">
+       827
+      </td>
+      <td align="char" char="." valign="top">
+       0.0008
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       Dichloromethane
+      </td>
+      <td align="char" char="." valign="top">
+       15.30
+      </td>
+      <td align="char" char="." valign="top">
+       21.84
+      </td>
+      <td align="char" char="." valign="top">
+       423
+      </td>
+      <td align="char" char="." valign="top">
+       1.16
+      </td>
+      <td align="char" char="." valign="top">
+       19.28
+      </td>
+      <td align="char" char="." valign="top">
+       510
+      </td>
+      <td align="char" char="." valign="top">
+       0.80
+      </td>
+      <td align="char" char="." valign="top">
+       23.17
+      </td>
+      <td align="char" char="." valign="top">
+       829
+      </td>
+      <td align="char" char="." valign="top">
+       0.0013
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       Acetone
+      </td>
+      <td align="char" char="." valign="top">
+       15.85
+      </td>
+      <td align="char" char="." valign="top">
+       22.38
+      </td>
+      <td align="char" char="." valign="top">
+       432
+      </td>
+      <td align="char" char="." valign="top">
+       1.19
+      </td>
+      <td align="char" char="." valign="top">
+       19.86
+      </td>
+      <td align="char" char="." valign="top">
+       515
+      </td>
+      <td align="char" char="." valign="top">
+       0.84
+      </td>
+      <td align="char" char="." valign="top">
+       23.71
+      </td>
+      <td align="char" char="." valign="top">
+       830
+      </td>
+      <td align="char" char="." valign="top">
+       0.0019
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       Acetonitrile (ACN)
+      </td>
+      <td align="char" char="." valign="top">
+       16.04
+      </td>
+      <td align="char" char="." valign="top">
+       22.43
+      </td>
+      <td align="char" char="." valign="top">
+       440
+      </td>
+      <td align="char" char="." valign="top">
+       1.20
+      </td>
+      <td align="char" char="." valign="top">
+       20.06
+      </td>
+      <td align="char" char="." valign="top">
+       517
+      </td>
+      <td align="char" char="." valign="top">
+       0.86
+      </td>
+      <td align="char" char="." valign="top">
+       23.89
+      </td>
+      <td align="char" char="." valign="top">
+       831
+      </td>
+      <td align="char" char="." valign="top">
+       0.0022
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    PCM-TD-CAM-B3LYP/6-311++G(d,p) calculations were then performed on the ground state optimized structures to determine the excited state properties of
+    <strong>
+     1
+    </strong>
+    in the different solvents. The lower energy transitions (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    and Table S1 (ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ) for computed and experimental values, respectively) were reproduced with relatively good agreement, with errors ranging from 0.13 (ACN) to 0.41 eV (toluene solution). This transition is associated with the π–π* electron transition from the highest occupied molecular orbital (HOMO) to the lowest unoccupied molecular orbital (LUMO). Both the HOMO and the LUMO are delocalized on the whole molecule, though the HOMO is more diffuse on the donor moiety of the molecule and the LUMO on the acceptor one (see
+    <a href="#imgfig5" title="Select to navigate to figure">
+     Fig. 5
+    </a>
+    ). The computed transition shows charge transfer character, as evidenced by the increased value of dipole moment from the ground to the excited state, with Δ
+    <span class="italic">
+     μ
+    </span>
+    =
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      E,abs
+     </sub>
+    </small>
+    −
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      G
+     </sub>
+    </small>
+    amounting to about 6.5 Debye.
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig5">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f5_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02988d-f5.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f5.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 5
+       </b>
+       <span id="fig5">
+        <span class="graphic_title">
+         Isodensity surface plot of the HOMO and the LUMO (isosurface value 0.02).
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Starting from the ground state geometries, TDDFT optimizations of the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    excited state led to different minima according to the polarity of the solvent. In weakly or strongly polar solvents a first stationary state, characterized by a modest conformational rearrangement, has been obtained (
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      LE
+     </sub>
+    </small>
+    conformation in
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    ). Such a Locally Excited (LE) state (see relevant geometrical parameters in
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ) is reached by means of a concomitant rotation around the single bond connecting the phenyl ring with the methylene bond (the torsion angle C3–C6–C7–C12,
+    <span class="italic">
+     θ
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    , becomes −28/−23° according to the solvent) and a reciprocal rotation of the carbonyl groups towards an almost coplanar disposition. In spite of the limited conformational change with respect to the ground state, the LE state is characterized by a significant red-shift of the emission with respect to the absorption bands, though associated with a very small decrease of the dipole moment (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ). In apolar solvents such a relative minimum has not been found, and the free S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    geometry optimization provided directly the absolute minimum of the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    PES, characterized by a completely twisted conformation with the
+    <span class="italic">
+     N
+    </span>
+    ,
+    <span class="italic">
+     N
+    </span>
+    -dimethylaniline (DMA) group almost perpendicular to the pentanedione group (
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      TICT
+     </sub>
+    </small>
+    conformation,
+    <a href="#imgfig4" title="Select to navigate to figure">
+     Fig. 4
+    </a>
+    ). In the case of the polar solvents, such a TICT state was recovered only by starting from a completely twisted conformation and freely optimizing this geometry. The final TICT conformation was found to be not significantly influenced by the solvent polarity (see
+    <a href="#tab2" title="Select to navigate to table">
+     Table 2
+    </a>
+    ). Emission to the ground state was computed at about 830 nm with negligible oscillator strength, suggesting its scarcely emissive character (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ).
+   </p>
+   <div class="table_caption">
+    <b>
+     Table 2
+    </b>
+    <span id="tab2">
+     Computed torsion angles (°) in the ground, local excited and twisted excited (GS, LE and TICT, respectively) states for compound
+     <strong>
+      1
+     </strong>
+     in chloroform and ACN solutions
+     <i>
+      <small>
+       <sup style="color: red;">
+        <a href="#tab2fna" title="">
+         a
+        </a>
+       </sup>
+      </small>
+     </i>
+    </span>
+   </div>
+   <table border="0" class="tgroup">
+    <colgroup>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+     <col>
+     </col>
+    </colgroup>
+    <thead align="left">
+     <tr align="left" valign="bottom">
+      <th align="left" class="border_black" valign="bottom">
+      </th>
+      <th align="left" valign="bottom">
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       GS
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       LE
+      </th>
+      <th align="left" class="border_black" valign="bottom">
+       TICT
+      </th>
+     </tr>
+    </thead>
+    <tfoot align="left">
+     <tr align="left">
+      <th colspan="5">
+       <a id="tab2fna">
+        <span class="tfootnote">
+         a
+        </span>
+       </a>
+       <span class="sup_inf">
+        Calculations performed at PCM-(TD)CAM-B3LYP/6-311++G(d,p) level of theory.
+       </span>
+      </th>
+     </tr>
+    </tfoot>
+    <tbody align="left">
+     <tr align="left">
+      <td rowspan="3" valign="top">
+       Chloroform
+      </td>
+      <td valign="top">
+       <span class="italic">
+        θ
+       </span>
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+      </td>
+      <td align="char" char="." valign="top">
+       170.9
+      </td>
+      <td align="char" char="." valign="top">
+       156.4
+      </td>
+      <td align="char" char="." valign="top">
+       161.4
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="italic">
+        θ
+       </span>
+       <small>
+        <sub>
+         2
+        </sub>
+       </small>
+      </td>
+      <td align="char" char="." valign="top">
+       −50.0
+      </td>
+      <td align="char" char="." valign="top">
+       −17.6
+      </td>
+      <td align="char" char="." valign="top">
+       −3.7
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="italic">
+        θ
+       </span>
+       <small>
+        <sub>
+         3
+        </sub>
+       </small>
+      </td>
+      <td align="char" char="." valign="top">
+       −1.0
+      </td>
+      <td align="char" char="." valign="top">
+       −28.0
+      </td>
+      <td align="char" char="." valign="top">
+       94.7
+      </td>
+     </tr>
+     <tr align="left">
+      <td colspan="5" valign="top">
+      </td>
+     </tr>
+     <tr align="left">
+      <td rowspan="3" valign="top">
+       ACN
+      </td>
+      <td valign="top">
+       <span class="italic">
+        θ
+       </span>
+       <small>
+        <sub>
+         1
+        </sub>
+       </small>
+      </td>
+      <td align="char" char="." valign="top">
+       169.9
+      </td>
+      <td align="char" char="." valign="top">
+       156.3
+      </td>
+      <td align="char" char="." valign="top">
+       160.7
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="italic">
+        θ
+       </span>
+       <small>
+        <sub>
+         2
+        </sub>
+       </small>
+      </td>
+      <td align="char" char="." valign="top">
+       −47.4
+      </td>
+      <td align="char" char="." valign="top">
+       −19.3
+      </td>
+      <td align="char" char="." valign="top">
+       −4.8
+      </td>
+     </tr>
+     <tr align="left">
+      <td valign="top">
+       <span class="italic">
+        θ
+       </span>
+       <small>
+        <sub>
+         3
+        </sub>
+       </small>
+      </td>
+      <td align="char" char="." valign="top">
+       −2.9
+      </td>
+      <td align="char" char="." valign="top">
+       −23.2
+      </td>
+      <td align="char" char="." valign="top">
+       95.4
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <hr class="hrule"/>
+   <br/>
+   <p class="otherpara">
+    In order to get further insights into the effective accessibility of the TICT state, a TDDFT rigid scan of the twisting angle
+    <span class="italic">
+     θ
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    has been performed in ACN. The obtained S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    and corresponding S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    energy scans are reported in
+    <a href="#imgfig6" title="Select to navigate to figure">
+     Fig. 6
+    </a>
+    . We obtained an energy barrier of 0.026 eV at
+    <span class="italic">
+     θ
+    </span>
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    = 60°, with the TICT state more stable than the LE one by 0.061 eV. Such a barrier is comparable with the thermal energy at room temperature, indicating that the TICT state can be considered experimentally accessible in ACN. It is also interesting to note that, from thermal analysis on the GS, LE and TICT states (see Table S3, ESI
+    <a href="#fn1" title="Select to navigate to footnote">
+     †
+    </a>
+    ), the two excited states are even closer than what was predicted by considering only the quantum-mechanical electronic contribution (0.016
+    <span class="italic">
+     vs.
+    </span>
+    0.061 eV when thermal corrections to Gibbs free energies are included, with the LE now more stable than the TICT one).
+   </p>
+   <br/>
+   <div class="image_table">
+    <table>
+     <tr>
+      <td class="imgHolder" colspan="3" id="imgfig6">
+       <a href="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f6_hi-res.gif" onclick='open(this.href, "_blank", "toolbar=1,scrollbars=yes,resizable=1"); return false;' title="Select to open image in new window">
+        <img alt="image file: c6cp02988d-f6.tif" src="http://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2016/CP/c6cp02988d/c6cp02988d-f6.gif"/>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td class="pushTitleRight">
+      </td>
+      <td class="image_title">
+       <b>
+        Fig. 6
+       </b>
+       <span id="fig6">
+        <span class="graphic_title">
+         Relaxed scan of the potential energy surface of the S
+         <small>
+          <sub>
+           1
+          </sub>
+         </small>
+         and S
+         <small>
+          <sub>
+           0
+          </sub>
+         </small>
+         states of
+         <strong>
+          1
+         </strong>
+         in acetonitrile along the twisting coordinate β at the (TD)-CAMB3LYP/6-311++G(d,p) level of theory. Energies are relative to the S
+         <small>
+          <sub>
+           0
+          </sub>
+         </small>
+         state equilibrium geometry.
+        </span>
+       </span>
+      </td>
+      <td class="pushTitleLeft">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <p class="otherpara">
+    Owing to the absence of the LE state in non-polar solvents, a lower barrier is expected for less polar solvents. This appears to be at variance with the standard TICT model, according to which the highly polar TICT state is characterized by a significantly larger dipole moment with respect to the scarcely polar LE one, involving a decrease of the activation barrier upon increasing the polarity of the medium. In our case, however, quite similar and large dipole moments have been obtained for both the LE and TICT states (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ) and, in particular, the increase of
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      E
+     </sub>
+    </small>
+    in chloroform is slightly greater than that obtained in ACN (3.9
+    <span class="italic">
+     vs.
+    </span>
+    3.8 D). The polarity of the medium seems therefore to act in the opposite way with respect to what was observed for classical dyes showing the TICT mechanism.
+   </p>
+   <p class="otherpara">
+    Owing to the low or totally absent barrier separating the LE and TICT states, TDDFT calculations suggest that the emission observed in non-viscous solvents by steady state measurements comes from the TICT state. In spite of the large error with respect to the experimental emission (about 0.8 eV in ACN, see Computational Details), the theoretical findings are fully consistent with both the experimental low PLQY and the broadening of the PL spectrum in the ACN solution. The high formation efficiency of the (scarcely emitting) TICT state in this non-viscous solvent is in fact responsible for the low PLQY of the molecule, and the broadening of the emission spectrum is consistent with the presence of contributions from the locally excited state and the more red-shifted TICT state. The dipole moment variation computed for this state,
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      E,TICT
+     </sub>
+    </small>
+    −
+    <span class="italic">
+     μ
+    </span>
+    <small>
+     <sub>
+      G
+     </sub>
+    </small>
+    , ranges from 7.4 to 7.8 D, in very good agreement with the experimentally derived Δ
+    <span class="italic">
+     μ
+    </span>
+    .
+   </p>
+   <p class="otherpara">
+    This picture is moreover fully consistent with the results of pump–probe experiments in PEG solution. Considering the polarity of PEG, slightly greater than that of dichloromethane, the LE state is predicted to exist in this solvent (see
+    <a href="#tab1" title="Select to navigate to table">
+     Table 1
+    </a>
+    ) and to be easily accessible in spite of its viscosity thanks to the moderate conformational rearrangement from
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    to
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      LE
+     </sub>
+    </small>
+    . On the other hand, considering the large amplitude of the relaxation motion
+    <span class="italic">
+     via
+    </span>
+    twisting of the DMA group, required to reach the more stable
+    <span class="italic">
+     r
+    </span>
+    <small>
+     <sub>
+      TICT
+     </sub>
+    </small>
+    conformation, we indirectly get strong evidence that such motion is hindered in viscous media and the molecule is constrained in its LE state.
+   </p>
+   <p class="otherpara">
+    We have also examined the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    PES associated with the twisting of the dimethylamine group to test the presence of other possible emissive states. A relative minimum was actually obtained where the NMe
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    group assumed a perpendicular orientation with respect to the phenyl ring, while the methylene-2,4-pentanedione moiety preserved essentially the same orientation as that obtained in the LE state. Such a minimum in ACN solution resulted however to be 0.5 eV less stable than the LE state, indicating that this relaxing channel was to be considered as forbidden at room temperature.
+   </p>
+   <h2 id="sect702">
+    <span class="a_heading">
+     Conclusions
+    </span>
+   </h2>
+   <span>
+    We have studied the relaxation dynamics of the excited state of a new push–pull molecule (
+    <strong>
+     1
+    </strong>
+    ) by considering both its dependence on the polarity of the medium, as shown by steady-state measurements, and on the viscosity of the environment, revealed by ultrafast pump–probe experiments. By a joint theoretical and experimental study, we shed light on the photoexcitation pathway of
+    <strong>
+     1
+    </strong>
+    when dissolved in a viscous, polyethylene glycol (PEG), and a non-viscous, acetonitrile (ACN), solution. We have shown that in both solvents the molecule presents a stable excited state (LE), promptly formed in 100 fs after excitation, by a modest conformational rearrangement. In the non-viscous solvent a further tilting of the
+    <span class="italic">
+     N
+    </span>
+    ,
+    <span class="italic">
+     N
+    </span>
+    -dimethylaniline group with respect to the pentanedione group creates a low emissive Twisted Intramolecular Charge Transfer (TICT) state, in about 1 ps, accounting for the weak PL emission. The presence of the two minima in the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    PES and their accessibility have been proven by DFT and TDDFT calculations in ACN as well as in other polar and non-polar solvents, allowing us to get insights into the effect of the polarity of the medium on the relaxation processes of
+    <strong>
+     1
+    </strong>
+    .
+   </span>
+   <p class="otherpara">
+    In the viscous solvent solution, on the other hand, excitation of the first excited state does not produce any further tilting of the molecule, resulting in a high PLQY more similar to the one seen in the solid state. Moreover, only in the viscous solvent long-living optical gain is observed, highlighting the important role of the environment rigidity in the design of materials for photonic applications.
+   </p>
+   <h2 id="sect712">
+    <span class="a_heading">
+     Experimental
+    </span>
+   </h2>
+   <h3 id="sect714">
+    <span class="b_heading">
+     Synthesis details
+    </span>
+   </h3>
+   <span>
+    All available compounds were purchased from commercial sources and used as received.
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H and
+    <small>
+     <sup>
+      13
+     </sup>
+    </small>
+    C NMR spectra were recorded for solutions in CDCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    on a Bruker AM200 or AMX300 with the solvent residual proton signal as a standard. GC/MS was recorded using an Electrospray Ionization instrument. Flash column chromatography was performed using Merck Silica gel 60 (230–400 Mesh).
+   </span>
+   <h3 id="sect720">
+    <span class="b_heading">
+     Synthesis of compound
+     <strong>
+      1
+     </strong>
+    </span>
+   </h3>
+   <span>
+    A solution of 4-dimethylaminobenzaldehyde (1.5 g, 10 mmol) and hexafluoroacetylacetone (1.4 mL, 10 mmol, 1 equiv.) in Ac
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    O (10 mL) was heated under reflux for 18 h. After cooling to room temperature, the reaction mixture was poured into water/ice, and the aqueous suspension was extracted with CH
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    Cl
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    . The organic phase was washed with a saturated solution of NaHCO
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    and then dried (Na
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    SO
+    <small>
+     <sub>
+      4
+     </sub>
+    </small>
+    ). The product was isolated after purification by column chromatography (SiO
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ; hexanes
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    AcOEt = 8
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2) as a red solid (1.5 g, 44%).
+    <span class="italic">
+     R
+    </span>
+    <small>
+     <sub>
+      f
+     </sub>
+    </small>
+    = 0.24 (hexanes
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    AcOEt = 8
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    :
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    2). m.p. = 82–83 °C.
+    <small>
+     <sup>
+      1
+     </sup>
+    </small>
+    H-NMR (CDCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    , 200 MHz, 25 °C)
+    <span class="italic">
+     δ
+    </span>
+    = 7.86 (s, 1H; Vinyl CH), 7.35 (d, 2H;
+    <span class="italic">
+     J
+    </span>
+    = 9 Hz; ArH), 6.67 (d, 2H;
+    <span class="italic">
+     J
+    </span>
+    = 9 Hz; ArH), 3.14 (s, 6H; –N(CH
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    )
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ).
+    <small>
+     <sup>
+      13
+     </sup>
+    </small>
+    C NMR (CDCl
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    , 75 MHz, 25 °C)
+    <span class="italic">
+     δ
+    </span>
+    = 187.6 (q, Cq;
+    <span class="italic">
+     J
+    </span>
+    = 35 Hz), 177.5 (q, Cq;
+    <span class="italic">
+     J
+    </span>
+    = 35 Hz), 154.2 (Cq), 152.0 (CH), 134.9 (CH), 119.8 (Cq), 118.2 (Cq), 117.1 (q, Cq;
+    <span class="italic">
+     J
+    </span>
+    = 300 Hz), 115.3 (q, Cq;
+    <span class="italic">
+     J
+    </span>
+    = 300 Hz), 111.9 (CH), 39.9 (CH
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    ). GC-MS = single peak at 24.75. EI-MS
+    <span class="italic">
+     m
+    </span>
+    /
+    <span class="italic">
+     z
+    </span>
+    (%) = 339 (30) [M]
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    , 270 (40) [M − CF
+    <small>
+     <sub>
+      3
+     </sub>
+    </small>
+    ]
+    <small>
+     <sup>
+      +
+     </sup>
+    </small>
+    .
+   </span>
+   <p class="otherpara">
+    For photoluminescence quantum yield (PLQY) and optical absorption measurements, solutions with concentrations of about 10
+    <small>
+     <sup>
+      −5
+     </sup>
+    </small>
+    M were used. For pump–probe measurements the solutions were prepared in such a way to obtain OD = 1 for the absorption peak maxima by using a 1 mm path cell. To ensure good solubility in PEG (molecular weight of 400), solutions of
+    <strong>
+     1
+    </strong>
+    were stirred without heating for several hours until clear.
+   </p>
+   <h3 id="sect756">
+    <span class="b_heading">
+     Photophysical measurements
+    </span>
+   </h3>
+   <span>
+    Absorption spectra were recorded using a Perkin Elmer UV/VIS/NIR Lambda 900 spectrometer. Photoluminescence (PL) spectra were collected using a nitrogen cooled CCD in conjunction with a Spex 270M monochromator by exciting with a monochromated xenon lamp. PL QYs were obtained by using a quinine sulfate solution as a reference in solution and a home-made integrating sphere
+    <a href="#cit38" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       38
+      </span>
+     </sup>
+    </a>
+    in the solid state.
+   </span>
+   <p class="otherpara">
+    Time-resolved measurements were performed using a home-built femtosecond pump–probe setup. A Ti:sapphire regenerative amplifier (Libra, Coherent) was used as a laser source, delivering 100 fs pulses at a central wavelength of 800 nm with 4 mJ pulse energy at a repetition rate of 1 kHz. For the excitation pulses, a single-stage nonlinear optical parametric amplifier (NOPA), pumped at 400 nm, allowed the excitation at 520 nm. In order to minimize bimolecular effects, the excitation density was kept as low as possible between 40 and 70 μJ cm
+    <small>
+     <sup>
+      −2
+     </sup>
+    </small>
+    , still providing a sufficient signal-to-noise ratio for clearly resolving the spectroscopic bands of all species. White light generated with a 2 mm-thick sapphire plate was used as a probe in the visible range from 450 to 780 nm. For a spectrally resolved detection of the probe light, spectrographs and CCD arrays were used. The chirp in the white light pulse was carefully taken into account during the analysis and evaluation of the obtained two-dimensional (wavelength and time) Δ
+    <span class="italic">
+     T
+    </span>
+    (
+    <span class="italic">
+     λ
+    </span>
+    ,
+    <span class="italic">
+     t
+    </span>
+    )/
+    <span class="italic">
+     T
+    </span>
+    maps before extraction of the spectral and temporal data using a homemade software. Overall, a temporal resolution of at least 150 fs was achieved for all excitation wavelengths.
+   </p>
+   <h3 id="sect766">
+    <span class="b_heading">
+     X-Ray diffraction
+    </span>
+   </h3>
+   <span>
+    Diffraction data of single crystals of
+    <strong>
+     1
+    </strong>
+    were collected on a Bruker Smart Apex II CCD area detector using graphite-monochromated Mo-Kα radiation. Data reduction was made using SAINT programs; absorption corrections based on multiscan were obtained using SADABS.
+    <a href="#cit39" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       39
+      </span>
+     </sup>
+    </a>
+    The structures were solved using SHELXS-97 and refined on F2 by full-matrix least-squares using SHELXL-97.
+    <a href="#cit40" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       40
+      </span>
+     </sup>
+    </a>
+    All the non-hydrogen atoms were refined anisotropically, hydrogen atoms were included as ‘riding’ and not refined. Crystal data and results of the refinement: intense red prism 0.35 × 0.24 × 0.20 mm, C
+    <small>
+     <sub>
+      14
+     </sub>
+    </small>
+    H
+    <small>
+     <sub>
+      11
+     </sub>
+    </small>
+    F
+    <small>
+     <sub>
+      6
+     </sub>
+    </small>
+    NO
+    <small>
+     <sub>
+      2
+     </sub>
+    </small>
+    ,
+    <span class="italic">
+     M
+    </span>
+    <small>
+     <sub>
+      r
+     </sub>
+    </small>
+    = 339.24; monoclinic,
+    <span class="italic">
+     P
+    </span>
+    2
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    /
+    <span class="italic">
+     n
+    </span>
+    ;
+    <span class="italic">
+     a
+    </span>
+    = 8.8400(5) Å,
+    <span class="italic">
+     b
+    </span>
+    = 15.0313(9) Å,
+    <span class="italic">
+     c
+    </span>
+    = 11.9237(7) Å,
+    <span class="italic">
+     β
+    </span>
+    = 111.183(1)°,
+    <span class="italic">
+     V
+    </span>
+    = 1477.33(15) Å
+    <small>
+     <sup>
+      3
+     </sup>
+    </small>
+    ;
+    <span class="italic">
+     Z
+    </span>
+    = 4;
+    <span class="italic">
+     T
+    </span>
+    = 296(2) K;
+    <span class="italic">
+     μ
+    </span>
+    (Mo) = 0.152 mm
+    <small>
+     <sup>
+      −1
+     </sup>
+    </small>
+    . 18
+    <img alt="[thin space (1/6-em)]" class="charmap" src="http://www.rsc.org/images/entities/char_2009.gif"/>
+    149 measured reflections, 2357 independent reflections, 1893 reflections with
+    <span class="italic">
+     I
+    </span>
+    &gt; 2
+    <span class="italic">
+     σ
+    </span>
+    (
+    <span class="italic">
+     I
+    </span>
+    ), 4.56 &lt; 2
+    <span class="italic">
+     θ
+    </span>
+    &lt; 48.30°,
+    <span class="italic">
+     R
+    </span>
+    <small>
+     <sub>
+      int
+     </sub>
+    </small>
+    = 0.0248. Refinement on 2357 reflections, 210 parameters. Final
+    <span class="italic">
+     R
+    </span>
+    = 0.0420, w
+    <span class="italic">
+     R
+    </span>
+    = 0.1095 for data with
+    <span class="italic">
+     F
+    </span>
+    <small>
+     <sup>
+      2
+     </sup>
+    </small>
+    &gt; 2
+    <span class="italic">
+     σ
+    </span>
+    (
+    <span class="italic">
+     F
+    </span>
+    <small>
+     <sup>
+      2
+     </sup>
+    </small>
+    ),
+    <span class="italic">
+     S
+    </span>
+    = 1.035, (Δ/
+    <span class="italic">
+     σ
+    </span>
+    )
+    <small>
+     <sub>
+      max
+     </sub>
+    </small>
+    = 0.001, Δ
+    <span class="italic">
+     ρ
+    </span>
+    <small>
+     <sub>
+      max
+     </sub>
+    </small>
+    = 0.200, Δ
+    <span class="italic">
+     ρ
+    </span>
+    <small>
+     <sub>
+      min
+     </sub>
+    </small>
+    = −0.205 e Å
+    <small>
+     <sup>
+      −3
+     </sup>
+    </small>
+    . CCDC
+    <a href="http://xlink.rsc.org/?ccdc=1440457&amp;msid=c6cp02988d" target="_new" title="View structure 1440457 using CCDC’s WebCSD">
+     1440457
+    </a>
+    (
+    <strong>
+     1
+    </strong>
+    ).
+   </span>
+   <h3 id="sect814">
+    <span class="b_heading">
+     Computational details
+    </span>
+   </h3>
+   <span>
+    All calculations have been performed using the Gaussian suite of programs.
+    <a href="#cit41" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       41
+      </span>
+     </sup>
+    </a>
+    Starting from the X-ray structure of the molecule, geometry optimization of the ground state (S
+    <small>
+     <sub>
+      0
+     </sub>
+    </small>
+    ) has been performed at the DFT level of theory, using the CAM-B3LYP functional
+    <a href="#cit42" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       42
+      </span>
+     </sup>
+    </a>
+    and the 6-311++G(d,p) basis set. The choice of this functional was dictated by its consolidated performance in predicting excited state properties, in particular when PICT/TICT charge-transfer stationary states are present in S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    , characterized by significant conformational rearrangement with respect to the GS geometry.
+    <a href="#cit22" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       22,23,37
+      </span>
+     </sup>
+    </a>
+    Calculations were carried out in different solvents, within the conductor-like polarizable continuum model, CPCM,
+    <a href="#cit43" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       43
+      </span>
+     </sup>
+    </a>
+    using the Gaussian-09 default CPCM parameters. Only non-viscous solvents have been considered, since the viscosity of the medium cannot be taken into account within purely quantum mechanical approaches. The absorption spectra of
+    <strong>
+     1
+    </strong>
+    have been computed at the TD-CAM-B3LYP/6-311++G(d,p) level of theory in each solvent. Using the same level of theory, different minima were then located on the first excited state (S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    ) by optimization of either the GS geometry as is or the twisted GS geometries with either the methylene-2,4-pentanedione moiety or the dimethylamino group alternately perpendicular to the phenyl ring. Any attempt to locate the Transition State (TS) separating the LE and TICT excited states by TDDFT failed. A structure close to the TS was then obtained by a scan of the twisting angle, optimizing all the other freedom degrees. Owing to the high computational costs, the nature of the S
+    <small>
+     <sub>
+      1
+     </sub>
+    </small>
+    minima has been verified by harmonic vibrational frequency calculations only in the case of ACN solution. The GS and ES vibrational frequencies have been computed using analytical and numerical derivatives, respectively. All transition energies have been computed within the Linear-Response PCM approximation using the equilibrium solvation.
+    <a href="#cit44" title="Select to navigate to references">
+     <sup>
+      <span class="sup_ref">
+       44
+      </span>
+     </sup>
+    </a>
+    The adoption of more sophisticated approaches, based on state-specific solvent response,
+    <a href="#cit45" title="Select to navigate to reference">
+     <sup>
+      <span class="sup_ref">
+       45,46
+      </span>
+     </sup>
+    </a>
+    aimed in particular at reducing the large error (about 0.8 eV) associated with the emission from the TICT state, is planned in future work.
+   </span>
+   <h2 id="sect829">
+    <span class="a_heading">
+     Acknowledgements
+    </span>
+   </h2>
+   <span>
+    T. V. and M. M. M. thank financial support from the project “TIMES” – Accordo Quadro Regione Lombardia – CNR Regione Lombardia. The authors thank Wojciech Mróz and Rocio Borrego-Varillas for help in the experimental set-ups. D. P. acknowledges partial financial support from ENI Corporate University and INSTM-Regione Lombardia.
+   </span>
+   <span id="sect831">
+    <h2 id="sect828">
+     <span class="a_heading">
+      Notes and references
+     </span>
+    </h2>
+   </span>
+   <ol type="1">
+    <li>
+     <span id="cit1">
+      S. R. Marder, B. Kippelen, A. K. Y. Jen and N. Peyghambarian,
+      <span class="italic">
+       Nature
+      </span>
+      , 1997,
+      <span class="bold">
+       388
+      </span>
+      , 845–851
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Nature%5BJour%5D%20AND%20388%5Bvolume%5D%20AND%20845%5Bpage%5D%20and%201997%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/1_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit2">
+      Z. R. Grabowski, K. Rotkiewicz and W. Rettig,
+      <span class="italic">
+       Chem. Rev.
+      </span>
+      , 2003,
+      <span class="bold">
+       103
+      </span>
+      , 3899–4032
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Rev.%5BJour%5D%20AND%20103%5Bvolume%5D%20AND%203899%5Bpage%5D%20and%202003%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/2_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit3">
+      M. Glasbeek and H. Zhang,
+      <span class="italic">
+       Chem. Rev.
+      </span>
+      , 2004,
+      <span class="bold">
+       104
+      </span>
+      (4), 1929–1954
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Rev.%5BJour%5D%20AND%20104%5Bvolume%5D%20AND%201929%5Bpage%5D%20and%202004%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/3_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit4">
+      J. A. Mondal, M. Sarkar, A. Samanta, H. N. Ghosh and D. K. Palit,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2007,
+      <span class="bold">
+       111
+      </span>
+      (28), 6122–6126
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Phys.%20Chem.%20A%5BJour%5D%20AND%20111%5Bvolume%5D%20AND%206122%5Bpage%5D%20and%202007%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/4_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit5">
+      M. Makowska-Janusik, F. Kajzar, A. Miniewicz, L. Mydlova and I. Rau,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2015,
+      <span class="bold">
+       119
+      </span>
+      (8), 1347–1358
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Phys.%20Chem.%20A%5BJour%5D%20AND%20119%5Bvolume%5D%20AND%201347%5Bpage%5D%20and%202015%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/5_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit6">
+      E. Ishow, R. Guillot, G. Buntix and O. Poizat,
+      <span class="italic">
+       J. Photochem. Photobiol., A
+      </span>
+      , 2012,
+      <span class="bold">
+       234
+      </span>
+      , 27–36
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Photochem.%20Photobiol.,%20A%5BJour%5D%20AND%20234%5Bvolume%5D%20AND%2027%5Bpage%5D%20and%202012%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/6_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit7">
+      K. A. Zachariasse,
+      <span class="italic">
+       Chem. Phys. Lett.
+      </span>
+      , 2000,
+      <span class="bold">
+       320
+      </span>
+      , 8–13
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Phys.%20Lett.%5BJour%5D%20AND%20320%5Bvolume%5D%20AND%208%5Bpage%5D%20and%202000%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/7_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit8">
+      A. Capobianco, A. Esposito, T. Caruso, F. Borbone, A. Carella, R. Centore and A. Peluso,
+      <span class="italic">
+       Eur. J. Org. Chem.
+      </span>
+      , 2012, 2980–2989
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Eur.%20J.%20Org.%20Chem.%5BJour%5D%20AND%20%5Bvolume%5D%20AND%202980%5Bpage%5D%20and%202012%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/8_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit9">
+      M. G. Vivas, D. L. Silva, J. Malinge, M. Boujtita, R. Zalesny, W. Bartkowiak, H. Argen, S. Canuto, L. De Boni, E. Ishow and C. R. Mendonca,
+      <span class="italic">
+       Sci. Rep.
+      </span>
+      , 2014,
+      <span class="bold">
+       4
+      </span>
+      , 4447
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Sci.%20Rep.%5BJour%5D%20AND%204%5Bvolume%5D%20AND%204447%5Bpage%5D%20and%202014%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/9_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit10">
+      R. Carlotti, A. Cesaretti, C. G. Fortuna, A. Spalletti and F. Elisei,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2015,
+      <span class="bold">
+       17
+      </span>
+      , 1877–1882
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Phys.%20Chem.%20Chem.%20Phys.%5BJour%5D%20AND%2017%5Bvolume%5D%20AND%201877%5Bpage%5D%20and%202015%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/10_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit11">
+      T. Virgili, A. Forni, E. Cariati, D. Pasini and C. Botta,
+      <span class="italic">
+       J. Phys. Chem. C
+      </span>
+      , 2013,
+      <span class="bold">
+       117
+      </span>
+      (51), 27161–27166
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Phys.%20Chem.%20C%5BJour%5D%20AND%20117%5Bvolume%5D%20AND%2027161%5Bpage%5D%20and%202013%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/11_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit12">
+      B. Carlotti, E. Benassi, A. Cesaretti, C. G. Fortuna, A. Spalletti, V. Barone and F. Elisei,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2015,
+      <span class="bold">
+       17
+      </span>
+      , 20981–20989
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Phys.%20Chem.%20Chem.%20Phys.%5BJour%5D%20AND%2017%5Bvolume%5D%20AND%2020981%5Bpage%5D%20and%202015%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/12_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit13">
+      M. J. Van der Meer, H. Zhang, W. Rettig and M. Glasbeek,
+      <span class="italic">
+       Chem. Phys. Lett.
+      </span>
+      , 2000,
+      <span class="bold">
+       329
+      </span>
+      , 673–680
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Phys.%20Lett.%5BJour%5D%20AND%20329%5Bvolume%5D%20AND%20673%5Bpage%5D%20and%202000%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/13_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit14">
+      D. Rappoport and F. Furche,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2004,
+      <span class="bold">
+       126
+      </span>
+      , 1277–1284
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Am.%20Chem.%20Soc.%5BJour%5D%20AND%20126%5Bvolume%5D%20AND%201277%5Bpage%5D%20and%202004%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/14_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit15">
+      C. Reichardt and T. Welton,
+      <span class="italic">
+       Solvents and solvent effects in organic chemistry
+      </span>
+      , Wiley-VCH, Weinheim, Germany,  2010, p. 360, ISBN 9783527324736
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Solvents%20and%20solvent%20effects%20in%20organic%20chemistry%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202010%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/15_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit16">
+      B. Carlotti, G. Consiglio, F. Elisei, C. G. Fortuna, U. Mazzucato and A. Spalletti,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 2014,
+      <span class="bold">
+       118
+      </span>
+      , 3580–3592
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Phys.%20Chem.%20A%5BJour%5D%20AND%20118%5Bvolume%5D%20AND%203580%5Bpage%5D%20and%202014%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/16_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit17">
+      A. Rei, G. Hungerford, M. Belsley, M. I. C. Ferreira and P. Schellenberg,
+      <span class="italic">
+       Int. J. Spectrosc.
+      </span>
+      , 2012, 271435
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Int.%20J.%20Spectrosc.%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20271435%5Bpage%5D%20and%202012%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/17_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit18">
+      A. Rei, G. Hungerford and M. I. C. Ferreira,
+      <span class="italic">
+       J. Phys. Chem. B
+      </span>
+      , 2008,
+      <span class="bold">
+       112
+      </span>
+      (29), 8832–8839
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Phys.%20Chem.%20B%5BJour%5D%20AND%20112%5Bvolume%5D%20AND%208832%5Bpage%5D%20and%202008%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/18_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit19">
+      D. Bingemann and N. P. Ernsting,
+      <span class="italic">
+       J. Chem. Phys.
+      </span>
+      , 1995,
+      <span class="bold">
+       102
+      </span>
+      , 2691–2700
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Chem.%20Phys.%5BJour%5D%20AND%20102%5Bvolume%5D%20AND%202691%5Bpage%5D%20and%201995%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/19_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit20">
+      C. Hättig, A. Hellweg and A. Köhn,
+      <span class="italic">
+       J. Am. Chem. Soc.
+      </span>
+      , 2006,
+      <span class="bold">
+       128
+      </span>
+      , 15672–15682
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Am.%20Chem.%20Soc.%5BJour%5D%20AND%20128%5Bvolume%5D%20AND%2015672%5Bpage%5D%20and%202006%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/20_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit21">
+      V. A. Galievsky and K. A. Zachariasse,
+      <span class="italic">
+       Acta Phys. Pol.
+      </span>
+      , 2007,
+      <span class="bold">
+       112
+      </span>
+      , S39–S56
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Acta%20Phys.%20Pol.%5BJour%5D%20AND%20112%5Bvolume%5D%20AND%20S39%5Bpage%5D%20and%202007%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/21_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit22">
+      P. Wiggins, J. A. Gareth Williams and D. J. Tozer,
+      <span class="italic">
+       J. Chem. Phys.
+      </span>
+      , 2009,
+      <span class="bold">
+       131
+      </span>
+      , 091101
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Chem.%20Phys.%5BJour%5D%20AND%20131%5Bvolume%5D%20AND%20091101%5Bpage%5D%20and%202009%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/22_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit23">
+      C. A. Guido, B. Mennucci, D. Jacquemin and C. Adamo,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2010,
+      <span class="bold">
+       12
+      </span>
+      , 8016–8023
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Phys.%20Chem.%20Chem.%20Phys.%5BJour%5D%20AND%2012%5Bvolume%5D%20AND%208016–8023%5Bpage%5D%20and%202010%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/23_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit24">
+      G. Li, D. Magana and R. B. Dyer,
+      <span class="italic">
+       J. Phys. Chem. B
+      </span>
+      , 2012,
+      <span class="bold">
+       116
+      </span>
+      (41), 12590–12596
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Phys.%20Chem.%20B%5BJour%5D%20AND%20116%5Bvolume%5D%20AND%2012590%5Bpage%5D%20and%202012%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/24_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit25">
+      Q. Zhang, B. Li, S. Huang, H. Nomura, H. Tanaka and C. Adachi,
+      <span class="italic">
+       Nat. Photonics
+      </span>
+      , 2014,
+      <span class="bold">
+       8
+      </span>
+      , 326
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Nat.%20Photonics%5BJour%5D%20AND%208%5Bvolume%5D%20AND%20326%5Bpage%5D%20and%202014%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/25_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit26">
+      Y. Hong, J. W. Y. Lam and B. Z. Tang,
+      <span class="italic">
+       Chem. Soc. Rev.
+      </span>
+      , 2011,
+      <span class="bold">
+       40
+      </span>
+      , 5361–5388
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Soc.%20Rev.%5BJour%5D%20AND%2040%5Bvolume%5D%20AND%205361%5Bpage%5D%20and%202011%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/26_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit27">
+      W. Z. Yuan, Y. Gong, S. Chen, X. Yuan Shen, J. W. Y. Lam, P. Lu, Y. Lu, Z. Wang, R. Hu and N. Xie,
+      <span class="italic">
+       Chem. Mater.
+      </span>
+      , 2012,
+      <span class="bold">
+       24
+      </span>
+      , 1518–1528
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Mater.%5BJour%5D%20AND%2024%5Bvolume%5D%20AND%201518%5Bpage%5D%20and%202012%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/27_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit28">
+      J. Luo, Z. Xie, J. W. Y. Lam, L. Cheng, H. Chen, C. Qiu, H. Sing Kwok, X. Zhan, Y. Liu and D. Zhu,
+      <span class="italic">
+       et al.
+      </span>
+      ,
+      <span class="italic">
+       Chem. Commun.
+      </span>
+      , 2001, 1740–1741
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Commun.%5BJour%5D%20AND%20%5Bvolume%5D%20AND%201740%5Bpage%5D%20and%202001%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/28_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit29">
+      E. Cariati, V. Lanzeni, E. Tordin, R. Ugo, C. Botta, A. Giacometti Schieroni, A. Sironi and D. Pasini,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2011,
+      <span class="bold">
+       13
+      </span>
+      , 18005–18014
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Phys.%20Chem.%20Chem.%20Phys.%5BJour%5D%20AND%2013%5Bvolume%5D%20AND%2018005%5Bpage%5D%20and%202011%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/29_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit30">
+      C. Coluccini, A. K. Sharma, M. Caricato, A. Sironi, E. Cariati, S. Righetto, E. Tordin, C. Botta, A. Forni and D. Pasini,
+      <span class="italic">
+       Phys. Chem. Chem. Phys.
+      </span>
+      , 2013,
+      <span class="bold">
+       15
+      </span>
+      , 1666
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Phys.%20Chem.%20Chem.%20Phys.%5BJour%5D%20AND%2015%5Bvolume%5D%20AND%201666%5Bpage%5D%20and%202013%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/30_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      ; C. Botta, S. Benedini, L. Carlucci, A. Forni, D. Marinotto, A. Nitti, D. Pasini, S. Righetto and E. Cariati,
+      <span class="italic">
+       J. Mater. Chem. C
+      </span>
+      , 2016,
+      <span class="bold">
+       4
+      </span>
+      , 2979–2989
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Mater.%20Chem.%20C%5BJour%5D%20AND%204%5Bvolume%5D%20AND%202979%5Bpage%5D%20and%202016%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/30_2" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit31">
+      C. Hansch, A. Leo and R. W. Taft,
+      <span class="italic">
+       Chem. Rev.
+      </span>
+      , 1991,
+      <span class="bold">
+       91
+      </span>
+      , 165–195
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Rev.%5BJour%5D%20AND%2091%5Bvolume%5D%20AND%20165%5Bpage%5D%20and%201991%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/31_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit32">
+      O. Attanasi, P. Filippone and A. Mei,
+      <span class="italic">
+       Synth. Commun.
+      </span>
+      , 1983,
+      <span class="bold">
+       13
+      </span>
+      , 1203–1208
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Synth.%20Commun.%5BJour%5D%20AND%2013%5Bvolume%5D%20AND%201203%5Bpage%5D%20and%201983%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/32_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit33">
+      J. R. Lakowicz,
+      <span class="italic">
+       Principles of Fluorescence Spectroscopy
+      </span>
+      , Kluwer Academic/Plenum Publishers, New York, 2nd edn,  1999
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Principles%20of%20Fluorescence%20Spectroscopy%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201999%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/33_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit34">
+      T. Virgili, D. Marinotto, C. Manzoni and G. Lanzani,
+      <span class="italic">
+       Phys. Rev. Lett.
+      </span>
+      , 2005,
+      <span class="bold">
+       94
+      </span>
+      , 117402
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Phys.%20Rev.%20Lett.%5BJour%5D%20AND%2094%5Bvolume%5D%20AND%20117402%5Bpage%5D%20and%202005%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/34_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit35">
+      J. Tomasi, B. Mennucci and R. Cammi,
+      <span class="italic">
+       Chem. Rev.
+      </span>
+      , 2005,
+      <span class="bold">
+       105
+      </span>
+      , 2999–3093
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Rev.%5BJour%5D%20AND%20105%5Bvolume%5D%20AND%202999%5Bpage%5D%20and%202005%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/35_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit36">
+      B. Mennucci,
+      <span class="italic">
+       Wiley Interdiscip. Rev.: Comput. Mol. Sci.
+      </span>
+      , 2012,
+      <span class="bold">
+       2
+      </span>
+      , 386–404
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Wiley%20Interdiscip.%20Rev.:%20Comput.%20Mol.%20Sci.%5BJour%5D%20AND%202%5Bvolume%5D%20AND%20386%5Bpage%5D%20and%202012%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/36_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit37">
+      D. Jacquemin, A. Planchat, C. Adamo and B. Mennucci,
+      <span class="italic">
+       J. Chem. Theory Comput.
+      </span>
+      , 2012,
+      <span class="bold">
+       8
+      </span>
+      , 2359–2372
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Chem.%20Theory%20Comput.%5BJour%5D%20AND%208%5Bvolume%5D%20AND%202359%5Bpage%5D%20and%202012%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/37_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit38">
+      J. Moreau, U. Giovanella, J. P. Bombenger, W. Porzio, V. Vohra, L. Spadacini, G. Di Silvestro, L. Barba, G. Arrighetti and S. Destri,
+      <span class="italic">
+       ChemPhysChem
+      </span>
+      , 2009,
+      <span class="bold">
+       10
+      </span>
+      , 647–653
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=ChemPhysChem%5BJour%5D%20AND%2010%5Bvolume%5D%20AND%20647%5Bpage%5D%20and%202009%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/38_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit39">
+      <span class="italic">
+       SMART, SAINT and SADABS
+      </span>
+      , Bruker AXS Inc., Madison, Wisconsin, USA,  1997
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=SMART,%20SAINT%20and%20SADABS%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%201997%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/39_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit40">
+      G. M. Sheldrick, A short history of SHELX,
+      <span class="italic">
+       Acta Crystallogr.
+      </span>
+      , 2008,
+      <span class="bold">
+       A64
+      </span>
+      , 112–122
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Acta%20Crystallogr.%5BJour%5D%20AND%20A64%5Bvolume%5D%20AND%20112%5Bpage%5D%20and%202008%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/40_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit41">
+      M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci and G. A. Petersson,
+      <span class="italic">
+       et al.
+      </span>
+      ,
+      <span class="italic">
+       Gaussian 09, Revision D.01
+      </span>
+      , Gaussian, Inc., Wallingford, CT,  2013
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Gaussian%2009,%20Revision%20D.01%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202013%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/41_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit42">
+      T. Yanai, D. P. Tew and N. C. Handy,
+      <span class="italic">
+       Chem. Phys. Lett.
+      </span>
+      , 2004,
+      <span class="bold">
+       393
+      </span>
+      , 51–57
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Chem.%20Phys.%20Lett.%5BJour%5D%20AND%20393%5Bvolume%5D%20AND%2051%5Bpage%5D%20and%202004%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/42_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit43">
+      V. Barone and M. Cossi,
+      <span class="italic">
+       J. Phys. Chem. A
+      </span>
+      , 1998,
+      <span class="bold">
+       102
+      </span>
+      , 1995–2001
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Phys.%20Chem.%20A%5BJour%5D%20AND%20102%5Bvolume%5D%20AND%201995%5Bpage%5D%20and%201998%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/43_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit44">
+      R. Cammi and B. Mennucci,
+      <span class="italic">
+       J. Chem. Phys.
+      </span>
+      , 1999,
+      <span class="bold">
+       110
+      </span>
+      , 9877–9886
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Chem.%20Phys.%5BJour%5D%20AND%20110%5Bvolume%5D%20AND%209877%5Bpage%5D%20and%201999%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/44_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit45">
+      R. Improta, V. Barone and F. Santoro,
+      <span class="italic">
+       Angew. Chem., Int. Ed. Engl.
+      </span>
+      , 2007,
+      <span class="bold">
+       46
+      </span>
+      , 405–408
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Angew.%20Chem.,%20Int.%20Ed.%20Engl.%5BJour%5D%20AND%2046%5Bvolume%5D%20AND%20405%5Bpage%5D%20and%202007%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/45_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+    <li>
+     <span id="cit46">
+      M. Caricato, J. Mennucci, B. Tomasi, F. Ingrosso, R. Cammi, S. Corni and G. Scalmani,
+      <span class="italic">
+       J. Chem. Phys.
+      </span>
+      , 2006,
+      <span class="bold">
+       124
+      </span>
+      , 124520
+      <a class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Chem.%20Phys.%5BJour%5D%20AND%20124%5Bvolume%5D%20AND%20124520%5Bpage%5D%20and%202006%5Bpdat%5D" target="_blank" title="Search PubMed for this citation">
+       Search PubMed
+      </a>
+      <a class="URLLink" href="http://pubs.rsc.org/en/Content/OpenURL/50002988/C6CP02988D/46_1" target="_blank" title="Link via OpenURL Resolver">
+       <img height="14px" src="http://pubs.rsc.org/en/Content/OpenURLImage/50002988"/>
+      </a>
+      .
+     </span>
+    </li>
+   </ol>
+   <hr/>
+   <table>
+    <tr>
+     <td>
+      <h3>
+       Footnote
+      </h3>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="sup_ref">
+       †
+       <span id="fn1">
+        Electronic supplementary information (ESI) available: Experimental methods. CCDC
+        <a href="http://xlink.rsc.org/?ccdc=1440457&amp;msid=c6cp02988d" target="_new" title="View structure 1440457 using CCDC’s WebCSD">
+         1440457
+        </a>
+        (
+        <strong>
+         1
+        </strong>
+        ). For ESI and crystallographic data in CIF or other electronic format see DOI:
+        <a href="http://xlink.rsc.org/?DOI=c6cp02988d" target="_blank" title="Select to resolve DOI: 10.1039/c6cp02988d">
+         10.1039/c6cp02988d
+        </a>
+       </span>
+      </span>
+     </td>
+    </tr>
+   </table>
+   <table>
+    <tr>
+     <td>
+      <hr/>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       This journal is © the Owner Societies 2016
+      </b>
+     </td>
+    </tr>
+   </table>
+  </div>
+ </body>
+</html>
