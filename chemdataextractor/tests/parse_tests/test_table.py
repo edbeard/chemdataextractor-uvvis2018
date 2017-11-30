@@ -13,16 +13,42 @@ from chemdataextractor.doc.table import Cell, Table
 
 class TestUvvisAbsHeadingParser(TestCase):
     ''''''
-    def test_UvvisAbsHeadingParser_basic(self):
-        '''Simple test case'''
-        testHeading =  [('λ', 'NN'), ('abs','NN')]
-        parser = UvvisAbsHeadingParser()
-        result = list(parser.parse(testHeading))
-        print(result)
-        if result:
-            exists = True
-        else:
-            exists=False
+    def test_UvvisAbsHeadingParser_all_uvvis_abs_title(self):
+        '''Simple cases present in uvvis_abs_title field'''
 
-        self.assertTrue(exists)
+        testHeadings =  [[('λ', 'NN'), ('abs','NN')],
+                        [('absorption', 'NN'), ('maxima', 'NN')],
+                         [('λ', 'NN'), ('solmax', 'NN')],
+                         [('uv', 'NN'), ('/','NN'), ('vis')]]
+        parser = UvvisAbsHeadingParser()
+        failed=False
+        for testHeading in testHeadings:
+            result = list(parser.parse(testHeading))
+            print(result)
+            if not result:
+                failed=True
+        self.assertFalse(failed)
+
+    def test_UvvisAbsHeadingParser_all_uvvis_units(self):
+        '''Simple test cases for uvvis_units'''
+
+        testHeadings = [[('λ', 'NN'), ('abs','NN'), ('nm', 'NN')],
+                        ]
+        parser = UvvisAbsHeadingParser()
+        failed=False
+        for testHeading in testHeadings:
+            result =list(parser.parse(testHeading))
+            print(result[0].serialize()['uvvis_spectra'][0]['peaks'])
+            try:
+                if result[0].serialize()['uvvis_spectra'][0]['peaks'][0]['units'] != 'nm':
+                    failed=True
+            except:
+                failed=True
+
+        self.assertFalse(failed)
+
+
+
+
+
 
