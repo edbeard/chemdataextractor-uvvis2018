@@ -47,8 +47,8 @@ compound_cell = Group(
 
     (Not(Start() + OneOrMore(name_blacklist) + End()) + OneOrMore(Any())('name').add_action(join).add_action(fix_whitespace) + Optional(W('(').hide() + chemical_label + W(')').hide()))('cem') |
 
-    label_before_name|
-    strict_chemical_label('cem')
+    label_before_name#|
+    #strict_chemical_label('cem')
 )('cem_phrase')
 
 label_guess = R('^\d{1}$')('label_guess') # Currently just identifies sigle digit number
