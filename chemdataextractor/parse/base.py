@@ -20,11 +20,13 @@ log = logging.getLogger(__name__)
 
 
 class BaseParser(object):
+
     """"""
 
     @abstractproperty
     def root(self):
         pass
+
 
     @abstractmethod
     def interpret(self, result, start, end):
