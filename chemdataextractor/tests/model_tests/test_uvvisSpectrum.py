@@ -1,5 +1,5 @@
 from unittest import TestCase
-from ...model import UvvisSpectrum, UvvisPeak
+from chemdataextractor.model import UvvisSpectrum, UvvisPeak
 
 class TestUvvisSpectrum(TestCase):
     #def test_mergeUvvis(self):
@@ -31,7 +31,7 @@ class TestUvvisSpectrum(TestCase):
 
     def test_justValue_multiple_values(self):
         u = UvvisSpectrum()
-        peaks = [UvvisPeak(),UvvisPeak(),UvvisPeak() ]
+        peaks = [UvvisPeak(),UvvisPeak(),UvvisPeak()]
         values = [467,234,123]
         for i, peak in enumerate(peaks):
             peak.value = values[i]
