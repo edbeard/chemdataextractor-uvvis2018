@@ -1,0 +1,16 @@
+appdirs
+beautifulsoup4
+click
+cssselect
+dawg
+lxml
+nltk
+pdfminer.six
+python-dateutil
+requests
+six
+python-crfsuite
+pyyaml
+pytest
+flake8
+
