@@ -16,7 +16,9 @@ class TestUvvisSpectrum(TestCase):
         u = UvvisSpectrum()
         peak = UvvisPeak()
         peak.value = 467
+
         u.peaks.append(peak)
+
         self.assertEqual(u.justValue(), True)
 
     def test_justValue_one_extinction(self):

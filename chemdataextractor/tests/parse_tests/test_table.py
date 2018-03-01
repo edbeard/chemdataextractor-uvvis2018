@@ -3,7 +3,7 @@
 chemdataextractor.tests.parse_tests.test_table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:copyright: Copyright 2016 by Matt Swain.
+:author: Ed Beard
 :license: MIT, see LICENSE file for more details.
 """
 

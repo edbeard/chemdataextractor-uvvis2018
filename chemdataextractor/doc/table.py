@@ -31,6 +31,7 @@ from ..nlp.tokenize import FineWordTokenizer
 from ..utils import memoized_property
 from .element import CaptionedElement
 from .text import Sentence
+from .interdependency import merge_uvvis
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -108,6 +109,12 @@ class Table(CaptionedElement):
         html_lines.append('</tbody>')
         html_lines.append('</table>')
         return '\n'.join(html_lines)
+
+    def merge_uvvis(self):
+        '''Merge compounds containing just uvvis peaks with those containing just extinction coefficients'''
+
+
+
 
     @property
     def records(self):
@@ -254,9 +261,9 @@ class Table(CaptionedElement):
                     row_compound.merge_contextual(contextual_cell_compound)
 
                 #Merge peak data from the same row
-                log.info("Merging separate uvvis value and extinction coeff. data")
-                if row_compound.uvvis_spectra:
-                    print(row_compound.uvvis_spectra[0].serialize())
+                #log.info("Merging separate uvvis value and extinction coeff. data")
+                #if row_compound.uvvis_spectra:
+                 #   print(row_compound.uvvis_spectra[0].serialize())
 
 
                 #
@@ -266,98 +273,10 @@ class Table(CaptionedElement):
                 #  both extinctions and peaks are uvvis objects
                 #
 
-                #Merging related uvvis objects
-                value_indices, ext_indices = [], []
-                for i, uvvis_obj in enumerate(row_compound.uvvis_spectra):
-                    if uvvis_obj.justValue():
-                        value_indices.append(i)
-                    if uvvis_obj.justExtinction():
-                        ext_indices.append(i)
 
-                #Merging internal value peaks with extinction peaks
-                for uvvis_obj in row_compound.uvvis_spectra:
-                    if uvvis_obj.peaks != None:
-                        #Identifying which peak objects are just values or extinctions
-                        value_peak_indices, ext_peak_indices = [], []
-                        for i, peak in enumerate(uvvis_obj.peaks):
-                            if peak.justValue():
-                                value_peak_indices.append(i)
-                            if peak.justExtinction():
-                                ext_peak_indices.append(i)
-                        #Merging these peaks if criteria are met
-                        if value_peak_indices != [] and ext_peak_indices != [] \
-                            and len(value_peak_indices) == len(ext_peak_indices):
+                # print([v.peaks[0].extinction for v in prev_row.uvvis_spectra])
 
-                            for (v, e) in zip(value_peak_indices, ext_peak_indices):
-                                print(uvvis_obj.peaks)
-                                print(v, e)
-                                print("Merging two peak level compounds")
-                                uvvis_obj.mergePeaks(v,e)
-
-                            #Removing the contextual extinction object
-                            k = 0
-                            for e in ext_peak_indices:
-                                print("Deleting extinction coefficient record")
-                                del uvvis_obj.peaks[e - k]
-                                k = k + 1
-
-
-
-                #Merging value peaks with uvvis extinctions
-                for index in value_indices:
-                    if len(row_compound.uvvis_spectra[index].peaks) == len(ext_indices) and len(ext_indices) > 1:
-                        row_compound.uvvis_spectra[index].mergePeaksAndUvvis(row_compound.uvvis_spectra, ext_indices)
-
-                        j = 0
-                        for e in ext_indices:
-                            print("Deleting extinction coefficient record")
-                            del row_compound.uvvis_spectra[e - j]
-                            j = j + 1
-
-
-                print(value_indices, ext_indices)
-                if value_indices != []  and ext_indices != [] and len(value_indices) == len(ext_indices):
-                    for (v,e) in zip(value_indices, ext_indices):
-                        print(row_compound.uvvis_spectra)
-                        print(v,e)
-                        print("Entered loop for merging")
-                        row_compound.uvvis_spectra[v].mergeUvvis(row_compound.uvvis_spectra[e])
-
-                    k=0
-                    for e in ext_indices:
-                        print("Deleting extinction coefficient record")
-                        del row_compound.uvvis_spectra[e-k]
-                        k=k+1
-
-                #Check previous row for uvvis data if this row is all extinctions
-                value_indices_prev =[]
-                if value_indices == [] and ext_indices !=[] and table_records:
-                    log.info("Using compound from previous row")
-                    prev = table_records[-1]
-                    for i, uvvis_obj in enumerate(prev.uvvis_spectra) :
-                        if uvvis_obj.justValue():
-                            value_indices_prev.append(i)
-                        print(value_indices_prev)
-
-                    if len(value_indices_prev) == len(ext_indices):
-                        for (v, e) in zip(value_indices_prev, ext_indices):
-                            print("Entered loop for merging")
-                            prev.uvvis_spectra[v].mergeUvvis(row_compound.uvvis_spectra[e])
-
-                        l = 0
-                        for e in ext_indices:
-                            print("Deleting extinction coefficient record")
-                            del row_compound.uvvis_spectra[e - l]
-                            l = l + 1
-
-
-                    print(len(prev.uvvis_spectra))
-                    print(len(row_compound.uvvis_spectra))
-                    print("CASE FOUND" +str(len( prev.uvvis_spectra)))
-
-                   # print([v.peaks[0].extinction for v in prev_row.uvvis_spectra])
-
-
+                row_compound = merge_uvvis(row_compound,table_records)
 
                 #elif value_indices != []  and ext_indices != [] and len()
 
