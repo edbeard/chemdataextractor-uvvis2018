@@ -1,7 +1,7 @@
-from unittest import TestCase
+import unittest
 from chemdataextractor.model import UvvisSpectrum, UvvisPeak
 
-class TestUvvisSpectrum(TestCase):
+class TestUvvisSpectrum(unittest.TestCase):
     #def test_mergeUvvis(self):
      #   self.fail()
 
@@ -41,3 +41,6 @@ class TestUvvisSpectrum(TestCase):
 
     #def test_justExtinction(self):
      #   self.fail()
+
+if __name__ == '__main__':
+    unittest.main()
