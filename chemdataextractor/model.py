@@ -458,6 +458,14 @@ class MeltingPoint(BaseModel):
     concentration_units = StringType(contextual=True)
     apparatus = StringType(contextual=True)
 
+class GlassTransition(BaseModel):
+    """A glass transition temperature."""
+    value = StringType()
+    units = StringType(contextual=True)
+    method = StringType(contextual=True)
+    concentration = StringType(contextual=True)
+    concentration_units = StringType(contextual=True)
+
 
 class QuantumYield(BaseModel):
     """A quantum yield measurement."""
@@ -525,6 +533,7 @@ class Compound(BaseModel):
     ir_spectra = ListType(ModelType(IrSpectrum))
     uvvis_spectra = ListType(ModelType(UvvisSpectrum))
     melting_points = ListType(ModelType(MeltingPoint))
+    glass_transitions = ListType(ModelType(GlassTransition))
     quantum_yields = ListType(ModelType(QuantumYield))
     fluorescence_lifetimes = ListType(ModelType(FluorescenceLifetime))
     electrochemical_potentials = ListType(ModelType(ElectrochemicalPotential))
