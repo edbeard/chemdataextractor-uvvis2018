@@ -5,6 +5,7 @@ cssselect
 dawg
 lxml
 nltk
+numpy
 pdfminer.six
 python-dateutil
 requests
