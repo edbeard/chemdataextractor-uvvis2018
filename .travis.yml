@@ -9,5 +9,8 @@ install:
   - conda info -a
   - conda create -q -n cde pip
   - pip install -r requirements.txt
+  - source activate cde
+  - python setup.py install
+  - cde data download
 script:
   - pytest 
