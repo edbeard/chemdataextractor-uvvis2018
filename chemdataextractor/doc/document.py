@@ -176,48 +176,53 @@ class Document(BaseDocument):
                         contextual_records.append(record)
                         continue
                     else:
-                        pass
-               #         # print(record.serialize())
-              #          # We have property values but no names or labels... try merge those from previous
-             #           if isinstance(el, Paragraph) and (head_def_record or last_product_record or last_id_record or title_record):
-            #                # head_def_record from heading takes priority if the heading directly precedes the paragraph ( NOPE: or the last_id_record has no name)
-           #                 if head_def_record_i and head_def_record_i + 1 == i: # or (last_id_record and not last_id_record.names)):
-          #                      if head_def_record:
-                               #     record.names = head_def_record.names
-                              #      record.labels = head_def_record.labels
-                             #       record.roles = head_def_record.roles
-                            #    elif last_id_record:
-                           #         record.names = last_id_record.names
-                          #          record.labels = last_id_record.labels
-                         #           record.roles = last_id_record.roles
-                        #        elif last_product_record:
-                       #             record.names = last_product_record.names
-                      #              record.labels = last_product_record.labels
-                     #               record.roles = last_product_record.roles
-                    #            elif title_record:
-                   #                 record.names = title_record.names
-                  #                  record.labels = title_record.labels
-                 #                   record.roles = title_record.roles
-                #            else:
-               #                 if last_id_record:
-              #                      record.names = last_id_record.names
-             #                       record.labels = last_id_record.labels
-            #                        record.roles = last_id_record.roles
-                               # elif head_def_record:
-                              #      record.names = head_def_record.names
-                             #       record.labels = head_def_record.labels
-                            ##        record.roles = head_def_record.roles
-                           #     elif last_product_record:
-                          #          record.names = last_product_record.names
-                         #           record.labels = last_product_record.labels
-                        #            record.roles = last_product_record.roles
-                       #         elif title_record:
-                      #              record.names = title_record.names
-                     #               record.labels = title_record.labels
-                    #                record.roles = title_record.roles
-                   #     else:
-                  #          # Consider continue here to filter records missing name/label...
-                 #           pass
+
+                        # If heading directly preceeds paragraph, merge
+                        if isinstance(el, Paragraph) and head_def_record  and (head_def_record_i and head_def_record_i + 1 == i):
+                            record.names = head_def_record.names
+                            record.labels = head_def_record.labels
+                            record.roles = head_def_record.roles
+
+                        # We have property values but no names or labels... try merge those from previous
+                        if isinstance(el, Paragraph) and (head_def_record or last_product_record or last_id_record or title_record):
+                            # head_def_record from heading takes priority if the heading directly precedes the paragraph ( NOPE: or the last_id_record has no name)
+                            if head_def_record_i and head_def_record_i + 1 == i: # or (last_id_record and not last_id_record.names)):
+                                if head_def_record:
+                                    record.names = head_def_record.names
+                                    record.labels = head_def_record.labels
+                                    record.roles = head_def_record.roles
+                                elif last_id_record:
+                                    record.names = last_id_record.names
+                                    record.labels = last_id_record.labels
+                                    record.roles = last_id_record.roles
+                                elif last_product_record:
+                                    record.names = last_product_record.names
+                                    record.labels = last_product_record.labels
+                                    record.roles = last_product_record.roles
+                                elif title_record:
+                                    record.names = title_record.names
+                                    record.labels = title_record.labels
+                                    record.roles = title_record.roles
+                            else:
+                                if last_id_record:
+                                    record.names = last_id_record.names
+                                    record.labels = last_id_record.labels
+                                    record.roles = last_id_record.roles
+                                elif head_def_record:
+                                    record.names = head_def_record.names
+                                    record.labels = head_def_record.labels
+                            #        record.roles = head_def_record.roles
+                                elif last_product_record:
+                                    record.names = last_product_record.names
+                                    record.labels = last_product_record.labels
+                                    record.roles = last_product_record.roles
+                                elif title_record:
+                                    record.names = title_record.names
+                                    record.labels = title_record.labels
+                                    record.roles = title_record.roles
+                        else:
+                           # Consider continue here to filter records missing name/label...
+                           pass
                 records.append(record)
 
         for record in records:

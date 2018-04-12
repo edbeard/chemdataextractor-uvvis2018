@@ -33,7 +33,7 @@ from .element import CaptionedElement
 from .text import Sentence
 from .interdependency import merge_uvvis
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
 
 
@@ -46,6 +46,7 @@ class Table(CaptionedElement):
         (UvvisAbsEmiQuantumYieldHeadingParser(), UvvisAbsEmiQuantumYieldCellParser()),
         (UvvisEmiQuantumYieldHeadingParser(), UvvisEmiQuantumYieldCellParser()),
         (UvvisEmiHeadingParser(), UvvisEmiCellParser()),
+        (UvvisAbsAndExtinctionHeadingParser(), UvvisAbsAndExtinctionCellParser()),
         (UvvisAbsHeadingParser(), UvvisAbsCellParser(), UvvisAbsDisallowedHeadingParser()),
         (ExtinctionHeadingParser(), ExtinctionCellParser(), ExtinctionDisallowedHeadingParser()),
         (IrHeadingParser(), IrCellParser()),
@@ -64,8 +65,6 @@ class Table(CaptionedElement):
         self.headings = headings if headings is not None else []  # list(list(Cell))
         self.rows = rows if rows is not None else []  # list(list(Cell))
         self.footnotes = footnotes if footnotes is not None else []
-        print("Table Headings look like:")
-        print(self.headings)
 
     @property
     def document(self):
@@ -110,12 +109,6 @@ class Table(CaptionedElement):
         html_lines.append('</table>')
         return '\n'.join(html_lines)
 
-    def merge_uvvis(self):
-        '''Merge compounds containing just uvvis peaks with those containing just extinction coefficients'''
-
-
-
-
     @property
     def records(self):
         """Chemical records that have been parsed from the table."""
@@ -145,23 +138,16 @@ class Table(CaptionedElement):
                     log.info(cell.tagged_tokens)
                     results = list(heading_parser.parse(cell.tagged_tokens))
                     if results:
-                        print("cell tagged tokens are:")
-                        print(results)
-                        print(results[0].serialize())
                         allowed = True
                         log.info(cell.tagged_tokens)
                         log.info('Heading column %s: Match %s: %s' % (i, heading_parser.__class__.__name__, [c.serialize() for c in results]))
                     # Results from every parser are stored as header compounds
                         if( heading_parser.__class__.__name__ == "UvvisAbsHeadingParser"):
-                            print("Header contains a Uvvis object")
                             uvvis_header = True
                         if( heading_parser.__class__.__name__ == "ExtinctionHeadingParser"):
-                            print("Header contains a Extinction object")
                             ext_header = True
                         if uvvis_header==True and ext_header==True:
                             joint_parser_indices.append(i)
-                        print(results[0].serialize())
-                        print(heading_parser.__class__.__name__)
                         header_compounds[i].extend(results)
                     #if results
 
@@ -189,7 +175,6 @@ class Table(CaptionedElement):
         log.info("Uvvis and extinction parsers found in columns " + str(joint_parser_indices))
         for index in joint_parser_indices:
             value_parsers[index] = UvvisAbsAndExtinctionCellParser()
-        print(value_parsers)
 
             #Add logic here to check if headers for uvvis and extinction were found in the same column?
             #if UvvisAbsCellParser and value_parsers
@@ -236,7 +221,8 @@ class Table(CaptionedElement):
                         #print(value_parsers[i])
                         log.info(cell.tagged_tokens)
                         results = list(value_parsers[i].parse(cell.tagged_tokens))
-                        print(results)
+                        if value_parsers[i].__class__.__name__ == 'UvvisAbsAndExtinctionCellParser':
+                            print(value_parsers[i])
                         if results:
                             log.info('Cell column %s: Match %s: %s' % (i, value_parsers[i].__class__.__name__, [c.serialize() for c in results]))
                         # For each result, merge in values from elsewhere
@@ -260,12 +246,6 @@ class Table(CaptionedElement):
                 for contextual_cell_compound in contextual_cell_compounds:
                     row_compound.merge_contextual(contextual_cell_compound)
 
-                #Merge peak data from the same row
-                #log.info("Merging separate uvvis value and extinction coeff. data")
-                #if row_compound.uvvis_spectra:
-                 #   print(row_compound.uvvis_spectra[0].serialize())
-
-
                 #
                 #This section attempts to merge uvvis/extinction objects together
                 #Currently support cases where:
@@ -282,8 +262,6 @@ class Table(CaptionedElement):
 
                 # If there's still no name/label, try running compound_cell_parser on first row cell
                 if not row_compound.names and not row_compound.labels:
-                    print(table_records)
-                    print("There was no label detected.")
                     first_cell = row[0]
                     compound_guess = list(compound_cell_parser.parse(first_cell.tagged_tokens))
                     if table_records:
@@ -294,7 +272,6 @@ class Table(CaptionedElement):
 
                     elif len(compound_guess) is not 0:
                         log.info("No compound found in previous row. Trying first row")
-                        print(compound_guess[0].serialize())
                         row_compound.merge(compound_guess[0])
 
                     #NOTE: have switched around the presidence of these two loops

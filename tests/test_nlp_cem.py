@@ -76,16 +76,17 @@ class TestCemTagger(unittest.TestCase):
         GitHub issue #12.
         """
         ct = CemTagger()
-        self.assertEqual([(('benzene-aromatic', 'NN'), 'B-CM')], ct.tag([('benzene-aromatic', 'NN')]))
-        self.assertEqual([(('-aromatic', 'JJ'), None)], ct.tag([('-aromatic', 'JJ')]))
-        self.assertEqual([(('non-aromatic', 'JJ'), None)], ct.tag([('non-aromatic', 'JJ')]))
+        self.assertEqual([(('benzene-aromatic', 'NN'), 'B-CM')], list(ct.tag([('benzene-aromatic', 'NN')])))
+        self.assertEqual([(('-aromatic', 'JJ'), None)], list(ct.tag([('-aromatic', 'JJ')])))
+        self.assertEqual([(('non-aromatic', 'JJ'), None)], list(ct.tag([('non-aromatic', 'JJ')])))
 
     def test_cems_stoplist(self):
-        """Test Document cems removes words in stoplist, ncluding words entirely made up of ignore prefix/suffix.
+        """Test Document cems removes words in stoplist, including words entirely made up of ignore prefix/suffix.
 
         GitHub issue #12.
         """
-        self.assertEqual([Span('benzene', 0, 7)], Document('benzene-aromatic').cems)
+        #Document('benzene-aromatic').cems
+        self.assertEqual(str([Span('benzene', 0, 7)]), str(Document('benzene-aromatic').cems))
         self.assertEqual([], Document('-aromatic').cems)
         self.assertEqual([], Document('non-aromatic').cems)
 

@@ -519,10 +519,15 @@ class CemTagger(BaseTagger):
         """Return True if the entity is in the stoplist."""
         for suffix in IGNORE_SUFFIX:
             if entity.endswith(suffix):
-                entity = entity[:-len(suffix)]
+                entity = entity[:-len(suffix)+1] #Leaving hypen
         for prefix in IGNORE_PREFIX:
             if entity.startswith(prefix):
-                entity = entity[len(prefix):]
+                entity = entity[len(prefix) -1:] # Leaving hyphen
+        #Removing prefix/suffix hyphen
+        if entity.startswith('-'):
+            entity = entity[1:]
+        if entity.endswith('-'):
+            entity = entity[:-1]
         if entity in STOPLIST:
             return True
         # log.debug('Entity: %s', entity)
@@ -530,6 +535,9 @@ class CemTagger(BaseTagger):
             if re.search(stop_re, entity):
                 log.debug('Killed: %s', entity)
                 return True
+        if entity == '' or entity == '-':
+            log.debug('%s entirely prefix/suffix')
+            return True
 
     def tag(self, tokens):
         """Run individual chemical entity mention taggers and return union of matches, with some postprocessing."""

@@ -123,7 +123,8 @@ uvvis_abs_disallowed = (I('emission') | W('ε') + delims +W('λ') + I('max') + d
 #(  W('ε') + W('(') +W('λ') + I('max') + W(')'))
 extinction_disallowed = W('Δ') + W('ε')
 extinction_heading = (Optional(ext_log | ext_pow) + extinction_title.hide() + delims.hide() + Optional(extinction_units))('extinction_heading')
-uvvis_and_extinction_abs_heading = (uvvis_abs_heading +delims.hide()+ extinction_heading)('uvvis_and_extinction_abs_heading') #(ZeroOrMore(delims.hide() + (uvvis_units))
+uvvis_and_extinction_abs_heading = (uvvis_abs_title.hide() + delims.hide() + extinction_title.hide() + delims.hide()
+                                    + Optional(uvvis_units + delims.hide() + extinction_units))('uvvis_and_extinction_abs_heading') #(ZeroOrMore(delims.hide() + (uvvis_units))
 
 uvvis_value = (R('^\d{3,4}(\.\d{1,2})?(sh|br)?$'))('value').add_action(split_uvvis_shape)
 peak_shape = R('^(sh(oulder)?|br(oad)?)$')('shape')
@@ -162,7 +163,7 @@ uvvis_emi_quantum_yield_cell = (
 )('uvvis_emi_quantum_yield_cell')
 
 uvvis_abs_peak = (
-    uvvis_value + delims +Optional(peak_shape) #+ Optional(delims + extinction_value)
+    uvvis_value + delims + Optional(peak_shape) #+ Optional(delims + extinction_value)
 )('uvvis_abs_peak')
 
 extinction_cell = (
@@ -175,8 +176,8 @@ uvvis_abs_cell = (
 
 #Assumes extinction on their own here are enclosed in brackets
 uvvis_and_extinction_value = (
-    (uvvis_abs_peak  + delims + extinction_cell)|
-    (W('(').hide() + extinction_value + W(')').hide())('extinction_brackets')|
+    (uvvis_abs_peak + delims + extinction_cell)|
+    (W('(').hide() + extinction_value + W(')').hide())|
     uvvis_abs_peak
 )('uvvis_and_extinction_value')
 
@@ -251,6 +252,8 @@ class CompoundHeadingParser(BaseParser):
 
     def interpret(self, result, start, end):
         """"""
+
+        print(result)
         yield Compound()
 
 
@@ -344,7 +347,7 @@ class SolventCellParser(BaseParser):
                 c.electrochemical_potentials = [ElectrochemicalPotential(**context)]
                 c.uvvis_spectra = [UvvisSpectrum(**context)]
             except TypeError as e:
-                print("Failed to parse correctly")
+                log.DEBUG("Failed to parse correctly")
         if c.serialize():
             yield c
 
@@ -381,9 +384,10 @@ class UvvisAbsAndExtinctionHeadingParser(BaseParser):
 
     def interpret(self, result, start, end):
 
+        print(result)
+
         uvvis_units = first(result.xpath('./uvvis_units/text()'))
         extinction_units = first(result.xpath('./extinction_units/text()'))
-        print("Both uvvis and extinction in same column")
 
         c = Compound()
         if uvvis_units or extinction_units:
@@ -519,15 +523,22 @@ class UvvisAbsAndExtinctionCellParser(BaseParser):
         c = Compound()
         uvvis = UvvisSpectrum()
 
-        for peak in result.xpath('./uvvis_and_extinction_value'):
-            print(peak.text)
-            print(first(peak.xpath('./extinction/text()')))
-            print(first(peak.xpath('./value/text()')))
+        for peak in result.xpath('./*'):
+            peakxml = (peak.xpath('./*'))
+            extinction, value, shape = None, None, None
+            for item in peakxml:
+                if item.tag == 'value':
+                    value = item.text
+                if item.tag == 'shape':
+                    shape = item.text
+                if item.tag == 'extinction':
+                    extinction = item.text
+
             uvvis.peaks.append(
                 UvvisPeak(
-                    extinction=first(peak.xpath('./extinction/text()')),
-                    value=first(peak.xpath('./value/text()')),
-                    shape=first(peak.xpath('./shape/text()'))
+                    extinction=extinction,
+                    shape=shape,
+                    value=value
                 )
             )
         #for ext_peak in result.xpath('./uvvis_and_extinction_value/extinction/text()'):
@@ -792,7 +803,6 @@ class CaptionContextParser(BaseParser):
         pass
 
     def interpret(self, result, start, end):
-        temp=None
         name = first(result.xpath('./subject_phrase/name/text()'))
         c = Compound(names=[name]) if name else Compound()
         context = {}
@@ -803,7 +813,7 @@ class CaptionContextParser(BaseParser):
         # Melting point shouldn't have contextual temperature
         if context:
             c.melting_points = [MeltingPoint(**context)]
-            temp = first(result.xpath('./temp_phrase'))
+        temp = first(result.xpath('./temp_phrase'))
         if temp is not None:
             context['temperature'] = first(temp.xpath('./temp/value/text()'))
             context['temperature_units'] = first(temp.xpath('./temp/units/text()'))
