@@ -273,9 +273,11 @@ def replace_rsc_img_chars(document):
             if not u2 and u1 in RSC_IMG_CHARS:
                 rep = RSC_IMG_CHARS[u1]
             else:
-                rep = (b'\u%s' % u1).decode('unicode-escape')
+                u1 = b"\u" + u1.encode('utf=8')
+                rep = u1.decode('unicode-escape')
                 if u2:
-                    rep += (b'\u%s' % u2).decode('unicode-escape')
+                    u2 = b"\u" + u2.encode('utf-8')
+                    rep += u2.decode('unicode-escape')
             if img.tail is not None:
                 rep += img.tail  # Make sure we don't remove any tail text
             parent = img.getparent()
