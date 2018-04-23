@@ -46,7 +46,10 @@ class TestParseTableUvvisAbsHeading(unittest.TestCase):
         expected = '<uvvis_abs_heading><uvvis_units>nm</uvvis_units></uvvis_abs_heading>'
         self.do_parse('λ abs nm', expected)
 
-class TestParseTableUvvisAbsValue(unittest.TestCase):
+    def test_just_units(self):
+        self.do_parse('λmax [cm-1]', '<uvvis_abs_heading><uvvis_units>cm-1</uvvis_units></uvvis_abs_heading>')
+
+class TestParseTableUvvisAbs(unittest.TestCase):
     """ Test parsing of uvvis abs values"""
 
     def do_parse(self, input, expected):
@@ -60,6 +63,7 @@ class TestParseTableUvvisAbsValue(unittest.TestCase):
     def test_just_value(self):
         self.do_parse('345', '<uvvis_abs_cell><uvvis_abs_peak><value>345</value></uvvis_abs_peak></uvvis_abs_cell>')
         self.do_parse('123 nm', '<uvvis_abs_cell><uvvis_abs_peak><value>123</value></uvvis_abs_peak></uvvis_abs_cell>')
+        self.do_parse('22 676', '<uvvis_abs_cell><uvvis_abs_peak><value>22676</value></uvvis_abs_peak></uvvis_abs_cell>')
 
 if __name__ == '__main__':
     unittest.main()

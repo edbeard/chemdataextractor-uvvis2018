@@ -24,7 +24,7 @@ from ..parse.table import CompoundHeadingParser, CompoundCellParser, UvvisAbsHea
     SolventCellParser, SolventHeadingParser, SolventInHeadingParser, UvvisAbsEmiQuantumYieldHeadingParser, \
     UvvisAbsEmiQuantumYieldCellParser, MeltingPointHeadingParser, MeltingPointCellParser, TempInHeadingParser, \
     UvvisAbsDisallowedHeadingParser, UvvisEmiQuantumYieldHeadingParser, UvvisEmiQuantumYieldCellParser, VocHeadingParser, \
-    VocCellParser, UvvisAbsAndExtinctionHeadingParser, UvvisAbsAndExtinctionCellParser
+    VocCellParser, UvvisAbsAndExtinctionHeadingParser, UvvisAbsAndExtinctionCellParser, UvvisUnitsParser
 # TODO: Sort out the above import... import module instead
 from ..nlp.tag import NoneTagger
 from ..nlp.tokenize import FineWordTokenizer
@@ -141,15 +141,17 @@ class Table(CaptionedElement):
                         allowed = True
                         log.info(cell.tagged_tokens)
                         log.info('Heading column %s: Match %s: %s' % (i, heading_parser.__class__.__name__, [c.serialize() for c in results]))
-                    # Results from every parser are stored as header compounds
-                        if( heading_parser.__class__.__name__ == "UvvisAbsHeadingParser"):
-                            uvvis_header = True
+                        if( heading_parser.__class__.__name__ == "UvvisAbsHeadingParser"):#and results[0].uvvis_spectra == []):
+                            uvvis_header=True
+                            for cell in col_headings:
+                                new_results = list(UvvisUnitsParser().parse(cell.tagged_tokens))
+                                if new_results:
+                                    results=new_results
                         if( heading_parser.__class__.__name__ == "ExtinctionHeadingParser"):
                             ext_header = True
                         if uvvis_header==True and ext_header==True:
                             joint_parser_indices.append(i)
                         header_compounds[i].extend(results)
-                    #if results
 
                     # Referenced footnote records are also stored
                     for footnote in self.footnotes:
@@ -221,7 +223,7 @@ class Table(CaptionedElement):
                         #print(value_parsers[i])
                         log.info(cell.tagged_tokens)
                         results = list(value_parsers[i].parse(cell.tagged_tokens))
-                        if value_parsers[i].__class__.__name__ == 'UvvisAbsAndExtinctionCellParser':
+                        if value_parsers[i].__class__.__name__ == 'UvvisAbsCellParser':
                             print(value_parsers[i])
                         if results:
                             log.info('Cell column %s: Match %s: %s' % (i, value_parsers[i].__class__.__name__, [c.serialize() for c in results]))

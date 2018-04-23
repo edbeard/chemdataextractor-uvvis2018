@@ -127,5 +127,18 @@ class TestTable(unittest.TestCase):
 
         self.assertEqual(gold, [record.serialize() for record in t.records])
 
+    def test_uvvis_heading_units_different_cell(self):
+        """ Tests the specific case where the uvvis units are on a different row to the statement"""
+
+        t = Table(
+            caption=Caption(''),
+            headings=[[Cell('Compound'), Cell('λmax')], [Cell(''), Cell('(cm-1)')]],
+            rows = [[Cell('Coumarin 343'), Cell('398')]]
+        )
+
+        gold = [{'names': ['Coumarin 343'],'uvvis_spectra': [ { 'peaks': [ {'units': 'cm-1', 'value': '398'}]}]}]
+
+        self.assertEqual(gold, [record.serialize() for record in t.records])
+
 if __name__ == '__main__':
     unittest.main()

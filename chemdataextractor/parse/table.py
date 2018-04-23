@@ -67,7 +67,8 @@ uvvis_abs_title = ((
 ext_log = W('log')('ext_log')
 ext_pow = ( W('10') + Optional(minus) + R('^[345]$') | R('^10\d{1}$'))('ext_pow').add_action(merge)
 extinction_title = Optional(R('^10\d$') | W('10') + minus + R('^\d$')).hide() + ('ε') + Optional(I('max') | W('λ') + I('max'))
-uvvis_units = (W('nm') | R('^eV[\-–−‒]1$') | W('eV') + minus + W('1'))('uvvis_units').add_action(merge)
+uvvis_units = (W('nm') | R('^eV[\-–−‒]1$') | W('eV') + minus + W('1') |
+    W('cm') + minus + W('1') | R('^cm[\-–−‒]1$') )('uvvis_units').add_action(merge)
 multiplier = Optional(I('×')) + (R('^10[–+]?[34]$') | (W('10') + Optional(minus) + R('^[345]$')))
 
 extinction_units = (
@@ -126,7 +127,9 @@ extinction_heading = (Optional(ext_log | ext_pow) + extinction_title.hide() + de
 uvvis_and_extinction_abs_heading = (uvvis_abs_title.hide() + delims.hide() + extinction_title.hide() + delims.hide()
                                     + Optional(uvvis_units + delims.hide() + extinction_units))('uvvis_and_extinction_abs_heading') #(ZeroOrMore(delims.hide() + (uvvis_units))
 
-uvvis_value = (R('^\d{3,4}(\.\d{1,2})?(sh|br)?$'))('value').add_action(split_uvvis_shape)
+uvvis_value = (R('^\d{3,5}(\.\d{1,2})?(sh|br)?$') |
+    ( R('^\d{1,3}?$') + R('^\d{3,5}(\.\d{1,2})?(sh|br)?$')).add_action(merge))('value').add_action(split_uvvis_shape)
+
 peak_shape = R('^(sh(oulder)?|br(oad)?)$')('shape')
 extinction_value = ((
     R('^\d+\.\d+$') + Optional(W('±') + R('^\d+\.\d+$'))|  # Scientific notation
@@ -404,7 +407,21 @@ class UvvisAbsHeadingParser(BaseParser):
         """"""
         uvvis_units = first(result.xpath('./uvvis_units/text()'))
         c = Compound()
-        if uvvis_units or extinction_units:
+        if uvvis_units:
+            c.uvvis_spectra.append(
+                UvvisSpectrum(peaks=[UvvisPeak(units=uvvis_units)])
+            )
+        yield c
+
+class UvvisUnitsParser(BaseParser):
+    """"""
+    root = uvvis_units
+
+    def interpret(self, result, start, end):
+        """"""
+        uvvis_units = first(result.xpath('./text()'))
+        c = Compound()
+        if uvvis_units:
             c.uvvis_spectra.append(
                 UvvisSpectrum(peaks=[UvvisPeak(units=uvvis_units)])
             )
