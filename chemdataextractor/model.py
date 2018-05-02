@@ -354,8 +354,7 @@ class UvvisSpectrum(BaseModel):
                 if other.peaks[i].extinction_units != "":
                     peak.extinction_units = other.peaks[i].extinction_units
 
-        print(self.serialize())
-        print("Merged extinction object into compound. Removing contextual extinction object.")
+        log.debug("Merged extinction object into compound. Removing contextual extinction object.")
 
         return self
 

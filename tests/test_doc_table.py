@@ -140,5 +140,32 @@ class TestTable(unittest.TestCase):
 
         self.assertEqual(gold, [record.serialize() for record in t.records])
 
+    def test_uvvis_caption(self):
+        """ Test's successful identification of compound from caption"""
+
+        t = Table(
+            caption=Caption('Steady state spectral properties of HMBA in different homogeneous solvents.'),
+            headings=[[Cell('Solvents'), Cell('λabs')]],
+            rows= [[Cell('Cyclohexane'), Cell('355')]]
+        )
+
+        gold = [{'names': ['HMBA'], 'uvvis_spectra': [ { 'peaks': [ {'value': '355'}], 'solvent': 'Cyclohexane'}]}]
+
+        self.assertEqual(gold, [record.serialize() for record in t.records])
+
+    def test_uvvis_caption_with_multiple_compounds_is_ignored(self):
+        """ Checks the logic that captions are only accepted as compounds for all when they are the only chemical mentioned"""
+
+        t = Table(
+            caption = Caption('Steady state spectral properties of HMBA and Carbon in different homogeneous solvents at 198 K.'),
+            headings=[[Cell('Solvents'), Cell('λabs')]],
+            rows= [[Cell('Cyclohexane'), Cell('355')]]
+        )
+
+        gold = [{'uvvis_spectra': [{'peaks': [{'value': '355'}], 'temperature': '198', 'solvent': 'Cyclohexane', 'temperature_units': 'K'}]}, {'names': ['HMBA']}, {'names': ['Carbon']}]
+
+        self.assertEqual(gold, [record.serialize() for record in t.records])
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -209,9 +209,17 @@ class Table(CaptionedElement):
         # If no parsers, skip processing table
         if value_parsers:
             # If no CompoundCellParser() in value_parsers and value_parsers[0] == [] then set CompoundCellParser()
-            if not seen_compound_col and 0 not in value_parsers:
-                log.debug('No compound column found in table, assuming first column')
-                value_parsers[0] = CompoundCellParser()
+            caption_compound_used = False
+            caption_compound = Compound()
+            if not seen_compound_col:
+                # Attempts to find a compound in caption. If there is just one and it is just chem name, add
+                if len(caption_records) == 1 and caption_records[0].names:
+                    caption_compound = caption_records[0]
+                    caption_compound_used = True
+                # If no single compound in caption, assume first column is compound
+                elif 0 not in value_parsers:
+                    log.debug('No compound column found in table, assuming first column')
+                    value_parsers[0] = CompoundCellParser()
 
             for n, row in enumerate(self.rows):
                 row_compound = Compound()
@@ -223,8 +231,8 @@ class Table(CaptionedElement):
                         #print(value_parsers[i])
                         log.info(cell.tagged_tokens)
                         results = list(value_parsers[i].parse(cell.tagged_tokens))
-                        if value_parsers[i].__class__.__name__ == 'UvvisAbsCellParser':
-                            print(value_parsers[i])
+                        # if value_parsers[i].__class__.__name__ == 'UvvisAbsCellParser':
+                        #     print(value_parsers[i])
                         if results:
                             log.info('Cell column %s: Match %s: %s' % (i, value_parsers[i].__class__.__name__, [c.serialize() for c in results]))
                         # For each result, merge in values from elsewhere
@@ -262,19 +270,44 @@ class Table(CaptionedElement):
 
                 #elif value_indices != []  and ext_indices != [] and len()
 
-                # If there's still no name/label, try running compound_cell_parser on first row cell
-                if not row_compound.names and not row_compound.labels:
-                    first_cell = row[0]
-                    compound_guess = list(compound_cell_parser.parse(first_cell.tagged_tokens))
-                    if table_records:
-                        log.info("Using compound from previous row")
-                        prev = table_records[-1]
-                        row_compound.names = prev.names
-                        row_compound.labels = prev.labels
+                # ADD LOGIC HERE (or below) to add check if all table results do not have a compound name:
+                #   If this is the case, then look in contextual records for compound name
 
-                    elif len(compound_guess) is not 0:
-                        log.info("No compound found in previous row. Trying first row")
-                        row_compound.merge(compound_guess[0])
+
+                # Merge contextual information from caption into the full row
+
+                if caption_compound_used: # If applying caption compound to all rows
+                    row_compound.merge(caption_compound)
+                    caption_records = [] # Remove compound from general results
+                else: # Merge all contextual compounds in caption
+                    for caption_compound in caption_records:
+                        if caption_compound.is_contextual:
+                            row_compound.merge_contextual(caption_compound)
+                # And also merge from any footnotes that are referenced from the caption
+                for footnote in self.footnotes:
+                    if footnote.id in self.caption.references:
+                        # print('Footnote records: %s' % [c.to_primitive() for c in footnote.records])
+                        for fn_compound in footnote.records:
+                            row_compound.merge_contextual(fn_compound)
+
+                #print(row_compound.serialize())
+
+
+
+
+                # If there's still no name/label, try running compound_cell_parser on first row cell
+                # if not row_compound.names and not row_compound.labels:
+                #     first_cell = row[0]
+                #     compound_guess = list(compound_cell_parser.parse(first_cell.tagged_tokens))
+                #     if table_records:
+                #         log.info("Using compound from previous row")
+                #         prev = table_records[-1]
+                #         row_compound.names = prev.names
+                #         row_compound.labels = prev.labels
+                #
+                #     elif len(compound_guess) is not 0:
+                #         log.info("No compound found in previous row. Trying first row")
+                #         row_compound.merge(compound_guess[0])
 
                     #NOTE: have switched around the presidence of these two loops
 
@@ -294,18 +327,6 @@ class Table(CaptionedElement):
 #                    row_compound.merge(compound_guess)
 
                     #LOGIC - if first_cell matches a simple label, make this the label.
-
-
-                # Merge contextual information from caption into the full row
-                for caption_compound in caption_records:
-                    if caption_compound.is_contextual:
-                        row_compound.merge_contextual(caption_compound)
-                # And also merge from any footnotes that are referenced from the caption
-                for footnote in self.footnotes:
-                    if footnote.id in self.caption.references:
-                        # print('Footnote records: %s' % [c.to_primitive() for c in footnote.records])
-                        for fn_compound in footnote.records:
-                            row_compound.merge_contextual(fn_compound)
 
                 log.debug(row_compound.serialize())
                 if row_compound.serialize():

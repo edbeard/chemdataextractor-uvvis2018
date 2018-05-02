@@ -108,7 +108,11 @@ class BaseText(BaseElement):
         return
 
     def serialize(self):
-        """Convert Text element to python dictionary."""
+        """Convert Text element to python dictionary.
+
+        :return: Serialized document of data
+        :rtype: doc
+        """
         data = {'type': self.__class__.__name__, 'content': self.text}
         return data
 

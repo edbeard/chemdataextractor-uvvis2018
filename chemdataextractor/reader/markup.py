@@ -48,6 +48,7 @@ class LxmlReader(six.with_metaclass(ABCMeta, BaseReader)):
     heading_css = 'h2, h3, h4, h5, h6'
     table_css = 'table'
     table_caption_css = 'caption'
+    table_title_css = 'title'
     table_head_row_css = 'thead tr'
     table_body_row_css = 'tbody tr'
     table_cell_css = 'th, td'
@@ -183,7 +184,12 @@ class LxmlReader(six.with_metaclass(ABCMeta, BaseReader)):
         return [tab]
 
     def _xpath(self, query, root):
-        result = root.xpath(query, smart_strings=False)
+        if query == 'descendant-or-self::caption':
+            result = root.xpath(query, smart_strings=False)
+            other_result = root.xpath('descendant-or-self::div ', smart_strings=False)
+            #print(etree.tostring(result, pretty_print=True))
+        else:
+            result = root.xpath(query, smart_strings=False)
         if type(result) is not list:
             result = [result]
         log.debug('Selecting XPath: {}: {}'.format(query, result))
@@ -208,6 +214,7 @@ class LxmlReader(six.with_metaclass(ABCMeta, BaseReader)):
         if root is None:
             raise ReaderError
         root = self._css(self.root_css, root)[0]
+        print(etree.tostring(root, pretty_print=True))
         for cleaner in self.cleaners:
             cleaner(root)
         specials = {}
