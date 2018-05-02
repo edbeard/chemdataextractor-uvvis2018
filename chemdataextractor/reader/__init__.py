@@ -16,6 +16,7 @@ from __future__ import unicode_literals
 
 from .acs import AcsHtmlReader
 from .cssp import CsspHtmlReader
+from .elsevier import ElsevierHtmlReader
 from .markup import HtmlReader, XmlReader
 from .pdf import PdfReader
 from .plaintext import PlainTextReader
@@ -26,6 +27,7 @@ from .uspto import UsptoXmlReader
 
 DEFAULT_READERS = [
     AcsHtmlReader(),
+    ElsevierHtmlReader(),
     RscHtmlReader(),
     NlmXmlReader(),
     UsptoXmlReader(),
