@@ -170,6 +170,12 @@ class TestParseCem(unittest.TestCase):
         ]
         self.do_parse(s, expected)
 
+    def test_section_numeral_no_brackets(self):
+        """ Tests an example where the compound name is followed by a label outside brackets"""
+        s = '2-(Pyridin-4-ylmethyl)-3-indolyl acetate 1a'
+        expected = ['<cem_phrase><cem><name>2-(Pyridin-4-ylmethyl)-3-indolyl acetate</name><label>1a</label></cem></cem_phrase>']
+        self.do_parse(s,expected)
+
 
 class TestParseCemHeading(unittest.TestCase):
 

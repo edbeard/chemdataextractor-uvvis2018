@@ -17,7 +17,7 @@ import logging
 import re
 from lxml.builder import E
 
-from .common import delim
+from .common import delim, epsilon
 from ..utils import first
 from ..model import Compound, UvvisSpectrum, UvvisPeak, QuantumYield, FluorescenceLifetime, MeltingPoint, Voc
 from ..model import ElectrochemicalPotential, IrSpectrum, IrPeak
@@ -66,15 +66,15 @@ uvvis_abs_title = ((
 )
 ext_log = W('log')('ext_log')
 ext_pow = ( W('10') + Optional(minus) + R('^[345]$') | R('^10\d{1}$'))('ext_pow').add_action(merge)
-extinction_title = Optional(R('^10\d$') | W('10') + minus + R('^\d$')).hide() + ('ε') + Optional(I('max') | W('λ') + I('max'))
+extinction_title = Optional(R('^10\d$') | W('10') + minus + R('^\d$')).hide() + epsilon + Optional(I('max') | W('λ') + I('max'))
 uvvis_units = (W('nm') | R('^eV[\-–−‒]1$') | W('eV') + minus + W('1') |
     W('cm') + minus + W('1') | R('^cm[\-–−‒]1$') )('uvvis_units').add_action(merge)
 multiplier = Optional(I('×')) + (R('^10[–+]?[34]$') | (W('10') + Optional(minus) + R('^[345]$')))
 
 extinction_units = (
     (Optional(multiplier + delims) +(
-        I('M') + minus + I('1') + I('cm') + minus + I('1') |
-        I('M') + minus + I('1cm') + minus + I('1') |
+        Optional(I('L')) + R('^m?M$') + minus + I('1') + I('cm') + minus + I('1') |
+        Optional(I('L')) + R('^m?M$') + minus + I('1cm') + minus + I('1') |
         I('dm3') + I('mol') + minus + I('1') + I('cm') + minus + I('1') |
         I('l') + I('mol') + minus + I('1') + I('cm') + minus + I('1') |
         I('l') + I('cm') + minus + I('1') + I('mol') + minus + I('1')
@@ -82,7 +82,7 @@ extinction_units = (
     |
     multiplier + I('/') + I('M') + I('/') + I('cm')|
     multiplier#| multiplier
-)('extinction_units').add_action(join)
+)('extinction_units').add_action(merge)
 
 ir_title = (
     R('^(FT-?)?IR$') + Optional(I('absorption'))
@@ -120,23 +120,24 @@ def split_uvvis_shape(tokens, start, result):
 uvvis_emi_heading = (OneOrMore(uvvis_emi_title.hide()))('uvvis_emi_heading')
 uvvis_abs_heading = (OneOrMore(uvvis_abs_title.hide()) + ZeroOrMore(delims.hide() + (uvvis_units) ))('uvvis_abs_heading')
 uvvis_abs_disallowed = (I('emission') | W('ε') + delims +W('λ') + I('max') + delims | I('k') + uvvis_abs_heading |
-                        uvvis_abs_heading + I('ex'))
+                        uvvis_abs_heading + (I('ex') | I('exc')))
 #(  W('ε') + W('(') +W('λ') + I('max') + W(')'))
 extinction_disallowed = W('Δ') + W('ε')
 extinction_heading = (Optional(ext_log | ext_pow) + extinction_title.hide() + delims.hide() + Optional(extinction_units))('extinction_heading')
 uvvis_and_extinction_abs_heading = (uvvis_abs_title.hide() + delims.hide() + extinction_title.hide() + delims.hide()
                                     + Optional(uvvis_units + delims.hide() + extinction_units))('uvvis_and_extinction_abs_heading') #(ZeroOrMore(delims.hide() + (uvvis_units))
+uvvis_and_extinction_abs_disallowed_heading = I('emission') | I('k') + uvvis_abs_heading |uvvis_abs_heading + I('ex') | extinction_disallowed
 
 uvvis_value = (R('^\d{3,5}(\.\d{1,2})?(sh|br)?$') |
     ( R('^\d{1,3}?$') + R('^\d{3,5}(\.\d{1,2})?(sh|br)?$')).add_action(merge))('value').add_action(split_uvvis_shape)
 
 peak_shape = R('^(sh(oulder)?|br(oad)?)$')('shape')
 extinction_value = ((
+    R('^\d{1,3},+\d{3,3}$')|
     R('^\d+\.\d+$') + Optional(W('±') + R('^\d+\.\d+$'))|  # Scientific notation
     R('^\d{1,3}$') + R('^\d\d\d$') + delims.hide()|  # RSC often inserts spaces within values instead of commas
-    R('^\d{1,3},+\d{3,3}$')|
-    R('^\d{1,5}$')
-    ) #+ Optional(W('×') + (R('^10\d+$') | (W('10') + R('^\d+$')))) # Identify extinction values without decimal points
+    R('^1?\d{1,5}$')
+    ) + Optional(multiplier) #+ Optional(W('×') + (R('^10\d+$') | (W('10') + R('^\d+$')))) # Identify extinction values without decimal points
 )('extinction').add_action(merge)
 
 
@@ -180,6 +181,7 @@ uvvis_abs_cell = (
 #Assumes extinction on their own here are enclosed in brackets
 uvvis_and_extinction_value = (
     (uvvis_abs_peak + delims + extinction_cell)|
+    (extinction_cell + delims + uvvis_abs_peak)|
     (W('(').hide() + extinction_value + W(')').hide())|
     uvvis_abs_peak
 )('uvvis_and_extinction_value')
@@ -282,6 +284,14 @@ class ExtinctionDisallowedHeadingParser(BaseParser):
     root = extinction_disallowed
 
     def interpret(self, result, start,end):
+        """"""
+        yield Compound()
+
+class UvvisAbsAndExtinctionDisallowedHeadingParser(BaseParser):
+    """"""
+    root = uvvis_and_extinction_abs_disallowed_heading
+
+    def interpret(self, result, start, end):
         """"""
         yield Compound()
 

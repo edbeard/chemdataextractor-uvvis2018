@@ -220,6 +220,8 @@ other_solvent = (
     I('heavy') + I('water') | I('IPA') | I('KPB') | I('MCH') | I('NPA') | I('NMP') | I('PBS') | I('HEPES') |
     I('SDS') | I('TBP') | I('TEA')
 )
+
+disallowed_label_acronyms = I('NMR') | I('IR') | I('UV')
 # Potentially problematic solvent names at the end above...
 
 solvent_name_options = (nmr_solvent | solvent_formula | other_solvent)
@@ -239,15 +241,18 @@ optquote = Optional(quote.hide())
 
 label_before_name = Optional(synthesis_of | to_give) + label_type + optdelim + label_name_cem + ZeroOrMore(optdelim + cc + optdelim + label_name_cem)
 
-likely_abbreviation = (Optional(include_prefix + Optional(hyphen)) + R('^([A-Z]{2,6}(\-[A-Z]{1,6})?|[A-Z](\-[A-Z]{2,6}))$'))('name').add_action(join).add_action(fix_whitespace)
+likely_abbreviation = (Optional(include_prefix + Optional(hyphen)) + Not(disallowed_label_acronyms) + R('^([A-Z]{2,6}(\-[A-Z]{1,6})?|[A-Z](\-[A-Z]{2,6}))$'))('name').add_action(join).add_action(fix_whitespace)
 
-name_with_optional_bracketed_label = (Optional(synthesis_of | to_give) + chemical_name + Optional(lbrct + Optional(labelled_as + optquote) + (chemical_label | lenient_chemical_label | likely_abbreviation) + optquote + rbrct))('cem')
+name_with_optional_label = (Optional(synthesis_of | to_give) + chemical_name + Optional(Optional(lbrct) + Optional(labelled_as + optquote) + (chemical_label | likely_abbreviation) + optquote + Optional(rbrct)))('cem')
+name_with_bracketted_label = (Optional(synthesis_of | to_give) + chemical_name + lbrct + Optional(labelled_as + optquote) + (chemical_label | lenient_chemical_label | likely_abbreviation) + optquote + rbrct)('cem')
+
+
 
 # Lenient name match that should be used with stricter surrounding context
 lenient_name = OneOrMore(Not(rbrct) + (bcm | icm | jj | nn | nnp | nns | hyph | cd | ls | W(',')))('name').add_action(join).add_action(fix_whitespace)
 
 # Very lenient name and label match, with format like "name (Compound 3)"
-lenient_name_with_bracketed_label = (Start() + Optional(synthesis_of) + lenient_name + lbrct + label_type.hide() + lenient_chemical_label + rbrct)('cem')
+lenient_name_with_label = (Start() + Optional(synthesis_of) + lenient_name + Optional(lbrct) + label_type.hide() + lenient_chemical_label + Optional(rbrct))('cem')
 
 # chemical name with a comma in it that hasn't been tagged.
 name_with_comma_within = Start() + Group(Optional(synthesis_of) + (cm + W(',') + cm + Not(cm) + Not(I('and')))('name').add_action(join).add_action(fix_whitespace))('cem')
@@ -256,14 +261,14 @@ name_with_comma_within = Start() + Group(Optional(synthesis_of) + (cm + W(',') +
 
 # TODO: Currently ensuring roles are captured from text preceding cem/cem_phrase ... abstract out the 'to_give"
 
-cem = (lenient_name_with_bracketed_label | label_before_name | name_with_comma_within | name_with_optional_bracketed_label)
+cem = (lenient_name_with_label | label_before_name | name_with_comma_within | name_with_bracketted_label | name_with_optional_label)
 
 cem_phrase = Group(cem)('cem_phrase')
 
 r_equals = R('^[R]$') + W('=') + OneOrMore(Not(rbrct) + (bcm | icm | nn | nnp | nns | hyph | cd | ls))
 of_table = (I('of') | I('in')) + Optional(dt) + I('table')
 
-bracketed_after_name = Optional(comma) + lbrct + Optional(labelled_as + optquote) + (chemical_label | lenient_chemical_label | likely_abbreviation) + optquote + Optional(Optional(comma) + r_equals | of_table) + rbrct
+label_after_name = Optional(comma) + Optional(lbrct) + Optional(labelled_as + optquote) + (chemical_label | lenient_chemical_label | likely_abbreviation) + optquote + Optional(Optional(comma) + r_equals | of_table) + Optional(rbrct)
 comma_after_name = comma + Optional(labelled_as + optquote) + (chemical_label | likely_abbreviation)
 
 compound_heading_ending = (Optional(comma) + ((lbrct + (chemical_label | lenient_chemical_label | lenient_name) + Optional(Optional(comma) + r_equals | of_table) + rbrct) | chemical_label) + Optional(R('^[:;]$')).hide() | comma + (chemical_label | lenient_chemical_label)) + Optional(W('.')) + End()
@@ -272,9 +277,9 @@ compound_heading_ending = (Optional(comma) + ((lbrct + (chemical_label | lenient
 section_no = Optional(I('stage') | I('step') | I('section') | I('part')) + (T('CD') | R('^\d{1,3}(\.\d{1,3}(\.\d{1,3}(\.\d{1,3})?)?)?$') | (Optional(lbrct) + roman_numeral + rbrct))
 
 compound_heading_style1 = Start() + Optional(section_no.hide()) + Optional(synthesis_of) + OneOrMore(Not(compound_heading_ending) + (bcm | icm | jj | nn | nnp | nns | hyph | sym | cd | ls | W(',')))('name').add_action(join).add_action(fix_whitespace) + compound_heading_ending + End()
-compound_heading_style2 = chemical_name + Optional(bracketed_after_name)
-compound_heading_style3 = synthesis_of + (lenient_name | chemical_name) + Optional(bracketed_after_name | comma_after_name)  # Possibly redundant?
-compound_heading_style4 = label_type + lenient_chemical_label + ZeroOrMore((T('CC') | comma) + lenient_chemical_label) + (lenient_name | chemical_name) + Optional(bracketed_after_name | comma_after_name)
+compound_heading_style2 = chemical_name + Optional(label_after_name)
+compound_heading_style3 = synthesis_of + (lenient_name | chemical_name) + Optional(label_after_name | comma_after_name)  # Possibly redundant?
+compound_heading_style4 = label_type + lenient_chemical_label + ZeroOrMore((T('CC') | comma) + lenient_chemical_label) + (lenient_name | chemical_name) + Optional(label_after_name | comma_after_name)
 # TODO: Capture label type in output
 
 compound_heading_phrase = Group(compound_heading_style1 | compound_heading_style2 | compound_heading_style3 | compound_heading_style4 | chemical_label)('cem')

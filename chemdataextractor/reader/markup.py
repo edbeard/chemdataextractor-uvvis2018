@@ -124,7 +124,8 @@ class LxmlReader(six.with_metaclass(ABCMeta, BaseReader)):
             return [element_cls('')]
         element = elements[0]
         for next_element in elements[1:]:
-            element += element_cls(' ') + next_element
+            if next_element.__class__.__name__ == element.__class__.__name__:
+                element += element_cls(' ') + next_element
         return [element]
 
     def _parse_figure(self, el, refs, specials):

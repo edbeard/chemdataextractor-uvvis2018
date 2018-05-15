@@ -31,13 +31,9 @@ class ElsevierHtmlReader(HtmlReader):
     table_caption_css = 'dl[class~=table] div[class=caption]'
     table_head_row_css = 'table thead tr'
     table_body_row_css = 'table tbody tr'
-    #table_footnote_css = 'table tfoot tr th .sup_inf'
+    table_footnote_css = 'dl[class~=tblFootnote]'
     figure_css = 'dl[class~=figure]'
     figure_caption_css = ' .caption'
-
-
-
-
 
     def detect(self, fstring, fname=None):
         """ Identifies Elsevier articles from string"""

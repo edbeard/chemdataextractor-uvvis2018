@@ -24,7 +24,7 @@ from ..parse.table import CompoundHeadingParser, CompoundCellParser, UvvisAbsHea
     SolventCellParser, SolventHeadingParser, SolventInHeadingParser, UvvisAbsEmiQuantumYieldHeadingParser, \
     UvvisAbsEmiQuantumYieldCellParser, MeltingPointHeadingParser, MeltingPointCellParser, TempInHeadingParser, \
     UvvisAbsDisallowedHeadingParser, UvvisEmiQuantumYieldHeadingParser, UvvisEmiQuantumYieldCellParser, VocHeadingParser, \
-    VocCellParser, UvvisAbsAndExtinctionHeadingParser, UvvisAbsAndExtinctionCellParser, UvvisUnitsParser
+    VocCellParser, UvvisAbsAndExtinctionHeadingParser, UvvisAbsAndExtinctionCellParser, UvvisAbsAndExtinctionDisallowedHeadingParser, UvvisUnitsParser
 # TODO: Sort out the above import... import module instead
 from ..nlp.tag import NoneTagger
 from ..nlp.tokenize import FineWordTokenizer
@@ -46,7 +46,7 @@ class Table(CaptionedElement):
         (UvvisAbsEmiQuantumYieldHeadingParser(), UvvisAbsEmiQuantumYieldCellParser()),
         (UvvisEmiQuantumYieldHeadingParser(), UvvisEmiQuantumYieldCellParser()),
         (UvvisEmiHeadingParser(), UvvisEmiCellParser()),
-        (UvvisAbsAndExtinctionHeadingParser(), UvvisAbsAndExtinctionCellParser()),
+        (UvvisAbsAndExtinctionHeadingParser(), UvvisAbsAndExtinctionCellParser(), UvvisAbsAndExtinctionDisallowedHeadingParser()),
         (UvvisAbsHeadingParser(), UvvisAbsCellParser(), UvvisAbsDisallowedHeadingParser()),
         (ExtinctionHeadingParser(), ExtinctionCellParser(), ExtinctionDisallowedHeadingParser()),
         (IrHeadingParser(), IrCellParser()),
