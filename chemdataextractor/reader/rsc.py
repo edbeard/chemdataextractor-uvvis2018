@@ -15,7 +15,8 @@ from __future__ import print_function
 from __future__ import unicode_literals
 import logging
 
-from ..doc.text import Footnote
+from ..doc.text import Footnote, Caption
+from ..doc.figure import Figure
 from ..scrape.pub.rsc import replace_rsc_img_chars
 from ..scrape.clean import clean
 from .markup import HtmlReader
@@ -40,7 +41,9 @@ class RscHtmlReader(HtmlReader):
     table_footnote_css = '.table_caption + table tfoot tr th .sup_inf'
     reference_css = 'small sup a, a[href^="#cit"], a[href^="#fn"], a[href^="#tab"]'
     figure_css = '.image_table'
-    figure_caption_css = '.graphic_title'
+    figure_image_css = 'img[src]'
+    figure_caption_css = 'img[alt]'
+    figure_id_css = 'span[id]'
     ignore_css = '.table_caption + table, .left_head, sup span.sup_ref, small sup a, a[href^="#fn"], .PMedLink'
 
     def _parse_table_footnotes(self, fns, refs, specials):
@@ -51,6 +54,19 @@ class RscHtmlReader(HtmlReader):
             footnote += Footnote('', id=fn.getprevious().get('id'))
             footnotes.append(footnote)
         return footnotes
+
+    def _parse_figure(self, el, refs, specials):
+        caps = self._css(self.figure_caption_css, el)
+        caps[0].text = caps[0].get('alt')
+        caption = self._parse_text(caps[0], refs=refs, specials=specials, element_cls=Caption)[0] if caps else Caption('')
+        img = self._css(self.figure_img_css, el)
+        img_url = img[0].attrib['src'] if img else ''
+        if 'http://pubs.rsc.org' not in img_url:
+            img_url='http://pubs.rsc.org' + img_url
+        id = self._css(self.figure_id_css, el)
+        img_id = id[0].attrib['id'] if id else ''
+        fig = Figure(caption, url=img_url, id=img_id)
+        return [fig]
 
     def detect(self, fstring, fname=None):
         """"""

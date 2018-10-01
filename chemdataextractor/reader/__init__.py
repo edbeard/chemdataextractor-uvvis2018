@@ -22,12 +22,14 @@ from .pdf import PdfReader
 from .plaintext import PlainTextReader
 from .rsc import RscHtmlReader
 from .nlm import NlmXmlReader
+from .springer import SpringerHtmlReader
 from .uspto import UsptoXmlReader
 
 
 DEFAULT_READERS = [
     AcsHtmlReader(),
     ElsevierHtmlReader(),
+    SpringerHtmlReader(),
     RscHtmlReader(),
     NlmXmlReader(),
     UsptoXmlReader(),

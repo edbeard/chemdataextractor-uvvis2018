@@ -15,6 +15,7 @@ import logging
 import unittest
 
 from chemdataextractor.model import Compound, MeltingPoint, UvvisSpectrum, UvvisPeak
+from chemdataextractor.doc.interdependency import get_indices
 
 
 logging.basicConfig(level=logging.DEBUG)
@@ -50,19 +51,55 @@ class TestModel(unittest.TestCase):
 
 class TestUvvisSpectrum(unittest.TestCase):
 
-    def test_justValue(self):
-        """Test justValue returns true appropriately"""
-        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value='467')]).justValue(), True)
-        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value='467'), UvvisPeak(value='234'), UvvisPeak(value='123')]).justValue(), True)
-        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value=None)]).justValue(), False)
-        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value='467'), UvvisPeak(value='234'), UvvisPeak(extinction='12000')]).justValue(), False)
+    def test_just_value(self):
+        """Test just_value returns true appropriately"""
+        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value='467')]).just_value(), True)
+        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value='467'), UvvisPeak(value='234'), UvvisPeak(value='123')]).just_value(), True)
+        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value=None)]).just_value(), False)
+        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value='467'), UvvisPeak(value='234'), UvvisPeak(extinction='12000')]).just_value(), False)
 
-    def test_justExtinction(self):
-        """ test justExtinction returns true appropriately"""
-        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(extinction='35000')]).justExtinction(), True)
-        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(extinction='35000'), UvvisPeak(extinction='1.6'), UvvisPeak(extinction='24000')]).justExtinction(), True)
-        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(extinction=None)]).justExtinction(), False)
-        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value='467'), UvvisPeak(extinction='24000'), UvvisPeak(extinction='12000')]).justValue(), False)
+    def test_just_extinction(self):
+        """ test just_extinction returns true appropriately"""
+        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(extinction='35000')]).just_extinction(), True)
+        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(extinction='35000'), UvvisPeak(extinction='1.6'), UvvisPeak(extinction='24000')]).just_extinction(), True)
+        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(extinction=None)]).just_extinction(), False)
+        self.assertEqual(UvvisSpectrum(peaks=[UvvisPeak(value='467'), UvvisPeak(extinction='24000'), UvvisPeak(extinction='12000')]).just_value(), False)
+
+    def test_merge_uvvis(self):
+
+        # Case 1 : one value per extinction
+        uvvis1 = UvvisSpectrum(peaks=[UvvisPeak(value='345')])
+        uvvis2 = UvvisSpectrum(peaks=[UvvisPeak(extinction='35000')])
+        uvvis1.merge_uvvis(uvvis2)
+        gold = {'peaks': [{'value': '345', 'extinction': '35000'}]}
+        self.assertEqual(gold, uvvis1.serialize())
+
+        # Case 2 : One extinction, multiple values
+        uvvis1 = UvvisSpectrum(peaks=[UvvisPeak(value='123'), UvvisPeak(value='456')])
+        uvvis2 = UvvisSpectrum(peaks=[UvvisPeak(extinction='35000')])
+        uvvis1.merge_uvvis(uvvis2)
+        gold = {'peaks': [{'extinction': '35000', 'value': '123'}, {'extinction': '35000', 'value': '456'}]}
+        self.assertEqual(gold, uvvis1.serialize())
+
+
+    def test_merge_peaks_and_uvvis(self):
+        """ Tests merge_peaks_and_uvvis correctly merges values from 1 uvvis object containing multiple peaks to
+        a list of extinctions containing one peak each"""
+
+        uvvis_value = UvvisSpectrum(peaks=[UvvisPeak(value='123'), UvvisPeak(value='456')])
+        uvvis_ext = UvvisSpectrum(peaks=[UvvisPeak(extinction='35000')])
+        uvvis_ext_2 = UvvisSpectrum(peaks=[UvvisPeak(extinction='40000')])
+        uvvis_value.merge_peaks_and_uvvis([uvvis_ext, uvvis_ext_2], [0, 1])
+        gold = {'peaks': [{'value': '123', 'extinction': '35000'}, {'value': '456', 'extinction': '40000'}]}
+        self.assertEqual(gold, uvvis_value.serialize())
+
+    def test_merge_peaks(self):
+
+        uvvis = UvvisSpectrum(peaks=[UvvisPeak(value='123'), UvvisPeak(extinction='35000')])
+        uvvis.merge_peaks(0,1)
+        gold = {'peaks': [{'extinction': '35000', 'value': '123'}, {'extinction': '35000'}]}
+        self.assertEqual(gold, uvvis.serialize())
+
 
 
 if __name__ == '__main__':

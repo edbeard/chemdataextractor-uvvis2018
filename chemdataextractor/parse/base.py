@@ -3,8 +3,6 @@
 chemdataextractor.parse.base
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
 :copyright: Copyright 2016 by Matt Swain.
 :license: MIT, see LICENSE file for more details.
 """
@@ -20,13 +18,11 @@ log = logging.getLogger(__name__)
 
 
 class BaseParser(object):
-
     """"""
 
     @abstractproperty
     def root(self):
         pass
-
 
     @abstractmethod
     def interpret(self, result, start, end):

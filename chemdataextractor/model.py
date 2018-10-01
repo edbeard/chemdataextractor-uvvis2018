@@ -319,16 +319,28 @@ class UvvisPeak(BaseModel):
     # Peak shape information (e.g. shoulder, broad)
     shape = StringType()
 
-    def justValue(self):
-        '''Checks if this peak only contains a value'''
-        if self.extinction == None and self.value != None:
+    def just_value(self):
+        """Checks if this peak only contains a value
+
+        Usage::
+            peak = UvvisPeak(value='123')
+            peak.just_value() >> returns True
+        """
+
+        if self.extinction is None and self.value is not None:
             return True
         else:
             return False
 
-    def justExtinction(self):
-        '''Checks if this peak only contains an extinction'''
-        if self.extinction != None and self.value == None:
+    def just_extinction(self):
+        """Checks if this peak only contains a value
+
+        Usage::
+            peak = UvvisPeak(extinction='35000')
+            peak.just_extinction() >> returns True
+        """
+
+        if self.extinction is not None and self.value is None:
             return True
         else:
             return False
@@ -336,19 +348,34 @@ class UvvisPeak(BaseModel):
 
 class UvvisSpectrum(BaseModel):
 
-    def mergeUvvis(self, other):
-        '''Merging data for objects in "uvvis" list'''
+    solvent = StringType(contextual=True)
+    temperature = StringType(contextual=True)
+    temperature_units = StringType(contextual=True)
+    concentration = StringType(contextual=True)
+    concentration_units = StringType(contextual=True)
+    apparatus = StringType(contextual=True)
+    peaks = ListType(ModelType(UvvisPeak))
+
+    def merge_uvvis(self, other):
+        """Merging data for objects in "uvvis" list with unpaired values and extinction objects
+
+        Usage::
+            uvvis1 = UvvisSpectrum(peaks=[UvvisPeak(value='345')])
+            uvvis2 = UvvisSpectrum(peaks=[UvvisPeak(extinction='35000')])
+            uvvis1.merge_uvvis(uvvis2)
+        """
 
         log.info('Merging: %s and %s' % (self.serialize(), other))
 
-        #One extinction coefficient for multiple peaks
+        # One extinction coefficient for multiple peaks
         if len(other.peaks) == 1 and len(self.peaks) != 1:
             for peak in self.peaks:
                 peak.extinction = other.peaks[0].extinction
                 if other.peaks[0].extinction_units != "":
                     peak.extinction_units = other.peaks[0].extinction_units
 
-        else: # Normal case of one extinction per peak
+        # Normal case of one extinction per peak
+        else:
             for i, peak in enumerate(self.peaks):
                 peak.extinction = other.peaks[i].extinction
                 if other.peaks[i].extinction_units != "":
@@ -358,53 +385,54 @@ class UvvisSpectrum(BaseModel):
 
         return self
 
-    def mergePeaksAndUvvis(self, other, indices):
-        '''Merging data for values in "peaks" list, and extinctions in "uvvis" list'''
+    def merge_peaks_and_uvvis(self, others, indices):
+        """Merges values from 1 UV/Vis object containing multiple peaks to
+        a list of extinctions containing one peak each.
 
-        log.info('Merging peak values and extinction uvvis data.')
+        note:: Should only be used through doc.interdependency.merge_peak_and_uvvis_obj,
+        as only works on specific criteria
 
-        for v,e in enumerate(indices):
-            self.peaks[v].extinction = other[e].peaks[0].extinction
-        if other[e].peaks[0].extinction_units != "":
-            self.peaks[v].extinction_units = other[e].peaks[0].extinction_units
+        :param list others: list of UvvisSpectra objects containing one extinction object each
+        :param list indices: list of indices to relate other to self
 
-        print(self.serialize())
-        print("Merged extinction object into compound. Removing contextual extinction object.")
+        """
 
-    def mergePeaks(self, v, e):
-        '''Merging data for object in "peaks" list'''
+        log.info('Merging peak values and extinction UV/Vis data.')
 
-        log.info('Merging uvvis data for objects in "peak" scope')
+        for v, e in enumerate(indices):
+            self.peaks[v].extinction = others[e].peaks[0].extinction
+        if others[e].peaks[0].extinction_units != "":
+            self.peaks[v].extinction_units = others[e].peaks[0].extinction_units
 
+        log.info("Merged extinction object into compound.")
+
+    def merge_peaks(self, v, e):
+        """ Adds the extinction at index e to the UvvisPeak objects with index v
+
+        note : This function does not delete the previous extinction - should be used indirectly through
+        doc.interdependency functionality
+
+        :param int v : index of UvvisPeak value of interest
+        :param int e : index of UvvisPeak extinction of interest
+        """
+
+        log.info('Merging UV/Vis data for objects in "peak" scope')
         self.peaks[v].extinction = self.peaks[e].extinction
-        print(self.serialize())
 
-    def justValue(self):
-        '''Checks if the UvvisSpectrum object consists just of peak values'''
+    def just_value(self):
+        """Checks if UvvisSpectrum object consists just of peak values"""
 
-        if all(peak.extinction == None and
-            peak.value != None for peak in self.peaks):
+        if all(peak.extinction is None and peak.value is not None for peak in self.peaks):
             return True
         else:
             return False
 
-    def justExtinction(self):
-        '''Checks if the object just consists of extinction values'''
-        if all(peak.value == None and
-            peak.extinction != None for peak in self.peaks):
+    def just_extinction(self):
+        """Checks if UvvisSpectrum object just consists of extinction values"""
+        if all(peak.value is None and peak.extinction is not None for peak in self.peaks):
             return True
         else:
             return False
-
-
-
-    solvent = StringType(contextual=True)
-    temperature = StringType(contextual=True)
-    temperature_units = StringType(contextual=True)
-    concentration = StringType(contextual=True)
-    concentration_units = StringType(contextual=True)
-    apparatus = StringType(contextual=True)
-    peaks = ListType(ModelType(UvvisPeak))
 
 
 class IrPeak(BaseModel):
@@ -505,24 +533,29 @@ class ElectrochemicalPotential(BaseModel):
     temperature = StringType(contextual=True)
     temperature_units = StringType(contextual=True)
     apparatus = StringType(contextual=True)
-    
+
+
 class FillFactor(BaseModel):
     """Fill factor (dye sensitised solar cells)"""
     fill_factor = StringType()
-    
+
+
 class Voc(BaseModel):
     """Open circuit voltage (dye sensitised solar cells)"""
     voc_value = StringType()
     voc_units = StringType()
 
+
 class Jsc(BaseModel):
     """Open circuit voltage (dye sensitised solar cells)"""
     jsc_value = StringType()
     jsc_units = StringType()
-    
+
+
 class Pce(BaseModel):
     """Performance Conversion Efficiency (dye sensitised solar cells)"""
-    pce = StringType()  
+    pce = StringType()
+
 
 class Compound(BaseModel):
     names = ListType(StringType())
@@ -540,6 +573,7 @@ class Compound(BaseModel):
     voc = ListType(ModelType(Voc))
     jsc = ListType(ModelType(Jsc))
     pce = ListType(ModelType(Pce))
+    microscopy = ListType(StringType())
 
     def merge(self, other):
         """Merge data from another Compound into this Compound."""

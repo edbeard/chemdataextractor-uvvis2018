@@ -22,6 +22,14 @@ Features
 - Altered doc.records method, for improved interdependency resolution
 - Additional parsers specifically aimed at table data containing UV-vis peak data and extinction coefficients
 
+API Documentation
+=================
+
+.. toctree::
+   :maxdepth: 2
+  
+   api
+
 Useful Links
 ============
 

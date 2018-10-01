@@ -56,6 +56,8 @@ class LxmlReader(six.with_metaclass(ABCMeta, BaseReader)):
     reference_css = 'a.ref'
     figure_css = 'figure'
     figure_caption_css = 'figcaption'
+    figure_img_css = 'img[src]'
+    figure_id_css = 'figure[id]'
     citation_css = 'cite'
     ignore_css = 'a.ref sup'
 
@@ -131,7 +133,11 @@ class LxmlReader(six.with_metaclass(ABCMeta, BaseReader)):
     def _parse_figure(self, el, refs, specials):
         caps = self._css(self.figure_caption_css, el)
         caption = self._parse_text(caps[0], refs=refs, specials=specials, element_cls=Caption)[0] if caps else Caption('')
-        fig = Figure(caption, id=el.get('id', None))
+        img = self._css(self.figure_img_css, el)
+        img_url = img[0].attrib['src'] if img else ''
+        id = self._css(self.figure_id_css, el)[0].attrib['id']
+        img_id = id if id != '' else ''
+        fig = Figure(caption, url=img_url, id=img_id) #id=el.get('id', None))
         return [fig]
 
     def _parse_table_rows(self, els, refs, specials):
