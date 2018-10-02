@@ -1,3 +1,4 @@
+Cython
 appdirs
 beautifulsoup4
 click
