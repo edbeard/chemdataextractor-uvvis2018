@@ -7,70 +7,74 @@ chemdataextractor.tests.parse_tests.test_table
 :license: MIT, see LICENSE file for more details.
 """
 
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+
 from unittest import TestCase
 from chemdataextractor.parse.table import UvvisAbsHeadingParser, uvvis_abs_title, uvvis_units, uvvis_abs_heading, \
 uvvis_value
-from chemdataextractor.parse.common import delim
 from chemdataextractor.parse.elements import Optional
-from chemdataextractor.parse.base import BaseParser
-from chemdataextractor.doc.table import Cell, Table
+
 
 class TestUvvisAbsHeadingParser(TestCase):
-    ''''''
-    def test_UvvisAbsHeadingParser_all_uvvis_abs_title(self):
-        '''Simple cases present in uvvis_abs_title field'''
+    """Class for testing table operations"""
 
-        testHeadings =  [[('λ', 'NN'), ('abs','NN')],
+    def test_UvvisAbsHeadingParser_all_uvvis_abs_title(self):
+        """Simple cases present in uvvis_abs_title field"""
+
+        testHeadings = [[('λ', 'NN'), ('abs', 'NN')],
                         [('absorption', 'NN'), ('maxima', 'NN')],
                          [('λ', 'NN'), ('solmax', 'NN')],
-                         [('uv', 'NN'), ('/','NN'), ('vis')]]
+                         [('uv', 'NN'), ('/', 'NN'), ('vis', 'NN')]]
         parser = UvvisAbsHeadingParser()
-        failed=False
+        failed = False
         for testHeading in testHeadings:
             result = list(parser.parse(testHeading))
             if not result:
-                failed=True
+                failed = True
         self.assertFalse(failed)
 
     def test_UvvisAbsHeadingParser_all_uvvis_units(self):
-        '''Simple test cases for uvvis_units'''
+        """Simple test cases for uvvis_units"""
 
         testHeadings = [[('λ', 'NN'), ('abs','NN'), ('nm', 'NN')],
                         ]
         parser = UvvisAbsHeadingParser()
-        failed=False
+        failed = False
         for testHeading in testHeadings:
-            result =list(parser.parse(testHeading))
+            result = list(parser.parse(testHeading))
             try:
                 if result[0].serialize()['uvvis_spectra'][0]['peaks'][0]['units'] != 'nm':
-                    failed=True
+                    failed = True
             except:
-                failed=True
+                failed = True
 
         self.assertFalse(failed)
 
 
-class Test_uvvis_abs_title(TestCase):
-    '''Testing uvvis_abs_title BaseParserObject directly'''
-    #NOTE: Use this format for all 'flagging' parsers (ie not picking up a particular value
+class TestUvvisAbsTitle(TestCase):
+    """Testing uvvis_abs_title BaseParserObject directly"""
 
     def test_uvvis_abs_title_passes(self):
-        tagged_tokens = [[('λ', 'NN'), ('abs','NN')],
+        tagged_tokens = [[('λ', 'NN'), ('abs', 'NN')],
                          [('absorption', 'NN'), ('maxima', 'NN')],
                          [('λ', 'NN'), ('solmax', 'NN')],
-                         [('uv', 'NN'), ('/','NN'), ('vis')]]
+                         [('uv', 'NN'), ('/', 'NN'), ('vis', 'NN')]]
         failed = False
         for tokens in tagged_tokens:
             result = uvvis_abs_title.scan(tokens)
             resultNumber = len(list(*result))
-            print(resultNumber)
             if resultNumber == 0:
-                failed=True
+                failed = True
 
         self.assertFalse(failed)
 
-class Test_uvvis_units(TestCase):
-    '''Testing uvvis_units BaseParserObject directly'''
+
+class TestUvvisUnits(TestCase):
+    """Testing uvvis_units BaseParserObject directly"""
+
     def test_uvvis_units_passes(self):
         tagged_tokens = [[('nm', 'NN')],
                          [('eV-1', 'NN')]]
@@ -80,51 +84,51 @@ class Test_uvvis_units(TestCase):
             uvvis_obj = list(*result)
             if uvvis_obj == []:
                 failed=True
-            #TODO: Could add this to check for specific unit types (ie 'nm' and 'eV')
-            units =uvvis_obj[0].xpath('./text()')[0]
-            print(units)
+            # TODO: Could add this to check for specific unit types (ie 'nm' and 'eV')
+            units = uvvis_obj[0].xpath('./text()')[0]
             if units != 'nm' and units != 'eV-1':
                failed=True
-           # unitsNumber = len(unit)
-           # if unitsNumber == 0:
-               # failed = True
+
         self.assertFalse(failed)
 
-class Test_uvvis_abs_heading(TestCase):
-    '''Testing the overall uvvis_abs_heading'''
+
+class TestUvvisAbsHeading(TestCase):
+    """Testing the overall uvvis_abs_heading"""
 
     def test_uvvis_abs_heading(self):
-        tagged_tokens = [[('λ', 'NN'), ('abs','NN'), ('nm', 'NN')],
-                         [('λ', 'NN'), ('abs','NN'), ('eV-1', 'NN')]]
+        tagged_tokens = [[('λ', 'NN'), ('abs', 'NN'), ('nm', 'NN')],
+                         [('λ', 'NN'), ('abs', 'NN'), ('eV-1', 'NN')]]
         failed = False
         for tokens in tagged_tokens:
             result = uvvis_abs_heading.scan(tokens)
             uvvis_obj = list(*result)
             if uvvis_obj == []:
-                failed=True
+                failed = True
 
         self.assertFalse(failed)
 
-class Test_uvvis_value(TestCase):
-    '''Testing the uvvis value identifier, including cases of multiple values and false cells around true value'''
+
+class TestUvvisValue(TestCase):
+    """Testing the uvvis value identifier, including cases of multiple values and false cells around true value"""
 
     def test_uvvis_values(self):
+
         tagged_tokens = [[('345', 'CD')],
-                         [('242.37', 'CD'), ('1234','CD')],
+                         [('242.37', 'CD'), ('1234', 'CD')],
                          [('cellfail', 'NN'), ('678', 'NN')]
                          ]
-        failed=False
+        failed = False
         multiple_values = uvvis_value + Optional(uvvis_value)
         for tokens in tagged_tokens:
             results = multiple_values.scan(tokens)
             uvvis_obj = list(*results)
-            print(uvvis_obj)
             if uvvis_obj == []:
                 failed=True
         self.assertFalse(failed)
 
     def test_uvvis_values_peakwidth(self):
-        #Checking the peak width works
+        """Checking the peak width works"""
+
         tokens = [[('345sh', 'CD')], [('345br', 'CD')]]
         failed=False
         for token in tokens:

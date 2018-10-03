@@ -135,9 +135,9 @@ class LxmlReader(six.with_metaclass(ABCMeta, BaseReader)):
         caption = self._parse_text(caps[0], refs=refs, specials=specials, element_cls=Caption)[0] if caps else Caption('')
         img = self._css(self.figure_img_css, el)
         img_url = img[0].attrib['src'] if img else ''
-        id = self._css(self.figure_id_css, el)[0].attrib['id']
-        img_id = id if id != '' else ''
-        fig = Figure(caption, url=img_url, id=img_id) #id=el.get('id', None))
+        id = self._css(self.figure_id_css, el)
+        img_id = id[0].attrib['id'] if id != [] else ''
+        fig = Figure(caption, url=img_url, id=img_id)
         return [fig]
 
     def _parse_table_rows(self, els, refs, specials):

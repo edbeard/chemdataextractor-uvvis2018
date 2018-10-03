@@ -19,10 +19,10 @@ import unittest
 from chemdataextractor import Document
 from chemdataextractor.reader import AcsHtmlReader
 
-
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
 
+# TODO : Write more tests to check expected output for each caption etc
 
 class TestAcsHtmlReader(unittest.TestCase):
 

@@ -20,7 +20,7 @@ from bs4 import UnicodeDammit
 from lxml.etree import fromstring
 from lxml.html import HTMLParser, Element
 import six
-
+from selenium import webdriver
 from ...text.processors import Substitutor, Discard, Chain, LStrip, RStrip, LAdd
 from ...text.normalize import normalize
 from .. import BLOCK_ELEMENTS
@@ -344,10 +344,10 @@ class RscSearchScraper(SearchScraper):
 
     def perform_search(self, query, page):
         log.debug('Processing query: %s' % query)
-        response = self.http.get('http://pubs.rsc.org/en/results', params={'searchtext': query, 'SortBy': 'Relevance', 'PageSize': 100})
+        response = self.http.get('http://pubs.rsc.org/en/results', params={'searchtext': query, 'SortBy': 'Relevance', 'PageSize': 100, 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0 Gecko/20100101 Firefox/24.0'})
         selector = Selector.from_html(response)
         sessionkey = selector.css('#SearchTerm::attr("value")').extract()[0]
-        searchdata = {'searchterm': sessionkey, 'resultcount': 100, 'category': 'journal', 'pageno': page}
+        searchdata = {'searchterm': sessionkey, 'resultcount': 100, 'category': 'journal', 'pageno': page, 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0 Gecko/20100101 Firefox/24.0'}
         response = self.http.post('http://pubs.rsc.org/en/search/journalresult', data=searchdata)
         return response
 

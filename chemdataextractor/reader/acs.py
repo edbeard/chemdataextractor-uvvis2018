@@ -34,7 +34,9 @@ class AcsHtmlReader(HtmlReader):
     table_caption_css = '.NLM_caption'
     table_footnote_css = '.footnote'
     figure_css = '.figure'
-    figure_caption_css = '.caption'
+    figure_caption_css = '.first.last' # TODO : Could be worth adding a '.last' capture as too
+    figure_image_css = 'img[alt=figure]'
+    figure_id_css = 'div[id]'
     citation_css = '.reference'
     ignore_css = 'a[href="JavaScript:void(0);"], a.ref sup'
 
