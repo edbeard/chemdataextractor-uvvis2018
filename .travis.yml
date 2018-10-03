@@ -13,6 +13,4 @@ install:
   - python setup.py install
   - cde data download
 script:
-  - import Cython
-  - print(Cython.__version__)
   - pytest 
